@@ -76,3 +76,27 @@ test('actual closed toggle, reverse and delete preserve stop metadata without st
   save=button(tree,'Сохранить и опубликовать').props.onClick();payload=JSON.parse(pending[2].options.body);assert.equal(payload.document.routes[0].closed,false);assert.equal(payload.document.routes[0].points.length,2);assert.equal(payload.document.routes[0].tourId,'tour-one');pending[2].resolve({ok:true,json:async()=>({...data,revision:2,publishedRevision:2,publishedDocument:payload.document})});await save;
  }finally{globalThis.fetch=original;}
 });
+
+test('actual editor keeps legacy tour binding explicit and selects a stable program from all admin choices',async()=>{
+ const pending=[],original=globalThis.fetch;globalThis.fetch=(_url,options)=>new Promise(resolve=>pending.push({resolve,options}));
+ try{
+  const data=fixture();data.tours=Array.from({length:16},(_,index)=>({id:'tour-'+index,slug:'tour-'+index,title:'Tour '+index,hidden:index===15,variants:[{id:'program-'+index,name:'Standard',visible:index!==14,status:'on_request'},...(index===0?[{id:'vip',name:'VIP',visible:true,status:'on_request'}]:[])]}));
+  data.publishedDocument.routes=[{id:'legacy',title:'Legacy route',tourId:'tour-0',closed:true,color:'sea',style:'dashed',points:[{x:10,y:20,label:'Start',color:'gold'},{x:30,y:40,label:'Bay',color:'violet'},{x:50,y:60,label:'Return',color:'coral'}]}];
+  const editor=editorHarness();editor.render();editor.effects.splice(0).forEach(fn=>fn());pending[0].resolve({ok:true,json:async()=>data});await flush();let tree=editor.render();button(tree,'Маршруты (1)').props.onClick();tree=editor.render();
+  const selectWith=value=>nodes(tree).find(node=>node.type==='select'&&nodes(node).some(option=>option.type==='option'&&option.props.value===value));
+  selectWith('legacy').props.onChange({target:{value:'legacy'}});tree=editor.render();
+  assert(text(tree).includes('У экскурсии несколько программ.'));assert(text(tree).includes('Уточните программу'));
+  assert.equal(selectWith('vip').props.value,'');assert.equal(selectWith('tour-15').props.value,'tour-0');
+  assert.equal(nodes(selectWith('tour-15')).filter(node=>node.type==='option').length,17);
+  assert(text(selectWith('tour-15')).includes('Tour 15 — архивная'));assert(text(selectWith('tour-14')).includes('Tour 14 — все программы скрыты'));
+  selectWith('vip').props.onChange({target:{value:'vip'}});tree=editor.render();
+  const save=button(tree,'Сохранить и опубликовать').props.onClick(),payload=JSON.parse(pending[1].options.body);
+  assert.deepEqual(payload.document.routes[0],{...data.publishedDocument.routes[0],variantId:'vip'});
+  pending[1].resolve({ok:true,json:async()=>({...data,revision:1,publishedRevision:1,publishedDocument:payload.document})});await save;tree=editor.render();
+  selectWith('tour-14').props.onChange({target:{value:'tour-14'}});tree=editor.render();assert.equal(selectWith('program-14').props.value,'');assert(text(selectWith('program-14')).includes('Standard — скрыта'));
+  selectWith('program-14').props.onChange({target:{value:'program-14'}});tree=editor.render();
+  const saveHidden=button(tree,'Сохранить и опубликовать').props.onClick(),hiddenPayload=JSON.parse(pending[2].options.body);
+  assert.equal(hiddenPayload.document.routes[0].tourId,'tour-14');assert.equal(hiddenPayload.document.routes[0].variantId,'program-14');assert.deepEqual(hiddenPayload.document.routes[0].points,data.publishedDocument.routes[0].points);
+  pending[2].resolve({ok:true,json:async()=>({...data,revision:2,publishedRevision:2,publishedDocument:hiddenPayload.document})});await saveHidden;
+ }finally{globalThis.fetch=original;}
+});

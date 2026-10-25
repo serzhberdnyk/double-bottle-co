@@ -1,7 +1,6 @@
 {
-  "source_commit": "2d521dc872a5535061fe370712e5063da196c21f",
-  "parent_candidate_commit": "556927cb5d1df075e492b6d9c5aee15967d4e3cc",
-  "parent_manifest_sha256": "28619e87e9e2f19caac54a526304c65843978cd16187e254a6336c7279bc5eb8",
+  "source_commit": "54a8d99af4bccd299354ab72f6bf4ced14846f73",
+  "parent_manifest_sha256": "44b1a4c44c7bc646824a06614197fef7e9ea82573f1eb5cf8ccd1a2fe8ff8c4c",
   "files": [
     {
       "path": ".dev.vars.example",
@@ -40,8 +39,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 2960,
-      "sha256": "5be9709c2254ac4239fe30659f57c912fea819f31920784d34d54e731659452e"
+      "bytes": 4051,
+      "sha256": "25730cbe4f168b65b11a30186175277acf91af95b05fb92f315283a6a84aec8b"
     },
     {
       "path": "PUBLIC-CANDIDATE-VALIDATION.json",
@@ -50,8 +49,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 10118,
-      "sha256": "07a7b991ab5d19ff625ec492fd9a06e7f841c6b9e9a9dc3a2b3471c73e19ca93"
+      "bytes": 10908,
+      "sha256": "272caffe0ce0d58e595135c72cefd887080550d56dedd636e7a0f6087ef6e5c0"
     },
     {
       "path": "SECURITY-REVIEW.json",
@@ -150,8 +149,8 @@
     },
     {
       "path": "app/admin/map-panel.tsx",
-      "bytes": 26450,
-      "sha256": "30a548ec153b2a0e80a93cc75bdf734d2b4cfe8d64a4438aca44922fa446959d"
+      "bytes": 28192,
+      "sha256": "edf0b2606fff6c3c822381793633016e352ccbac3ba575fa41f552ee35e83dc0"
     },
     {
       "path": "app/admin/operations.tsx",
@@ -220,8 +219,8 @@
     },
     {
       "path": "app/api/admin/map/route.ts",
-      "bytes": 2774,
-      "sha256": "fe492ad76759bd02ddf822d555b6b9fe834bf32d180476f3c2bc52e939a1eb40"
+      "bytes": 3054,
+      "sha256": "869eeddf0ee57e27054115b9e1ad15be4dd59e16ced5e960d09511a5a2bc77bb"
     },
     {
       "path": "app/api/admin/route.ts",
@@ -325,8 +324,8 @@
     },
     {
       "path": "app/components/CatalogUI.tsx",
-      "bytes": 33051,
-      "sha256": "cb3d6fc3b1d120adc6b10784400632c8aa76428b2cb49fad86a3bfe7a9895e4f"
+      "bytes": 33062,
+      "sha256": "8dc1cb27fc24032fe743b059d7a9cec36aee96eb718b6fefad9413cd3d843dbe"
     },
     {
       "path": "app/components/CompactTourDetail.module.css",
@@ -335,8 +334,8 @@
     },
     {
       "path": "app/components/CompactTourDetail.tsx",
-      "bytes": 9173,
-      "sha256": "4f89b96a70ca971202bad10d9d090c2767d449ce755a075605a1ffb1bb6d8c5b"
+      "bytes": 9190,
+      "sha256": "76926e8a42e76e8f982d0401c28811509c8a547db18d046eb6f30a529f23b499"
     },
     {
       "path": "app/components/Comparison.tsx",
@@ -410,8 +409,8 @@
     },
     {
       "path": "app/components/PublishedRouteMap.tsx",
-      "bytes": 3208,
-      "sha256": "08a2c49266736afa88177de30a364cb70d5b2ddae215fcbed0b503a4172ce5be"
+      "bytes": 3209,
+      "sha256": "c77524173b5fdef8f65250807f2fd0ddeff3ae0d62ab14202d750d48a0229451"
     },
     {
       "path": "app/components/SiteChrome.tsx",
@@ -470,8 +469,8 @@
     },
     {
       "path": "app/globals.css",
-      "bytes": 41035,
-      "sha256": "421d19e5e8c3b960d4660dc1f1dc6da541c1bc5e047cdc4e2abf32983427ab13"
+      "bytes": 41088,
+      "sha256": "f286f5a94a628d3a76d860e07305f093594b03e23d47337629b8b41f473f45e3"
     },
     {
       "path": "app/guide/page.tsx",
@@ -490,8 +489,8 @@
     },
     {
       "path": "app/page.tsx",
-      "bytes": 3031,
-      "sha256": "3720a5393b38a46a148fb247d81d4c6821292557932f7be2077f32d19f756f6e"
+      "bytes": 3072,
+      "sha256": "44e72ed2f0d246216db8d20b16738e547bb9f93b14b709a028b1d99ca39a6a94"
     },
     {
       "path": "app/privacy/page.tsx",
@@ -520,8 +519,8 @@
     },
     {
       "path": "app/reference-preview/CustomMapContent.tsx",
-      "bytes": 1982,
-      "sha256": "8153ae53ece6603300acc2153e4edf0a5fa871df21987a5446d243a4f53063fd"
+      "bytes": 1101,
+      "sha256": "216c812c6bc596ac34dec42c1fee6b1e6d60ecf7ad55bac548fd00555401123b"
     },
     {
       "path": "app/reference-preview/DestinationDirectory.tsx",
@@ -600,13 +599,13 @@
     },
     {
       "path": "app/reference-preview/ReferenceHome.tsx",
-      "bytes": 16635,
-      "sha256": "e02699c25a9751c5afda439e4338d28cc9795ac6aeb23e54a7d2858c6a2ad19a"
+      "bytes": 16552,
+      "sha256": "466d8ad35e6d02a4ea5975a81213064a7c9f85e8cdd6f9d8efbc7e10311765d0"
     },
     {
       "path": "app/reference-preview/SupplementalArtPOIs.tsx",
-      "bytes": 807,
-      "sha256": "8418ed562c9560047dce313ce2d4d9c5d1c17b1ea134e7311ef069ed6390cd7f"
+      "bytes": 773,
+      "sha256": "190b676cb5a8bed343077025fdd972d6587be2d8dcf868878dc804f417ad350f"
     },
     {
       "path": "app/reference-preview/ThaiStamp.module.css",
@@ -690,8 +689,8 @@
     },
     {
       "path": "app/reference-preview/reference.module.css",
-      "bytes": 63321,
-      "sha256": "8cf4bb15cbd292d6c9b48152100821bb87eb0e19a8b9f0899df3bcbe48f3e9b9"
+      "bytes": 63381,
+      "sha256": "0f4e1b9fd01ccbcab7ea5ecf4efe9ec5a0288ff729f63b3581f8172ce2d6b291"
     },
     {
       "path": "app/reference-preview/supplementary-pois.ts",
@@ -2175,13 +2174,13 @@
     },
     {
       "path": "lib/public/map-layout.ts",
-      "bytes": 10544,
-      "sha256": "886279f7bde50925a0928a6cd8ae6370f431d53f02c920581c1f1f5d9221b63f"
+      "bytes": 11223,
+      "sha256": "ddfedb5ac8542d78ea41203b8135eb13753a5c9feab9f8a26450ed3b102eba94"
     },
     {
       "path": "lib/public/map-route-display.ts",
-      "bytes": 257,
-      "sha256": "04e85c1db95d3e382c720896ffb965e220d5913fdde3dca7870e7d17ed66c5a4"
+      "bytes": 524,
+      "sha256": "05a4cbe065318af3d689bd267f1218ab3c2624401b84ca424183bf18f5bb1939"
     },
     {
       "path": "lib/public/media.ts",
@@ -2335,8 +2334,8 @@
     },
     {
       "path": "lib/server/map-editor.ts",
-      "bytes": 8878,
-      "sha256": "0c36966b04cb131dba1c8f75f9687ddf8bf949b26f96999b26fc9206b3e5bd43"
+      "bytes": 10246,
+      "sha256": "f76e4c8cfd3146b0bc95b4e77380b6941feff69e25fbeb1266f5b6f8846fc8b0"
     },
     {
       "path": "lib/server/release-variant-ownership.ts",
@@ -4080,13 +4079,13 @@
     },
     {
       "path": "tests/map-editor-enhancements.test.ts",
-      "bytes": 12840,
-      "sha256": "24ec2a4e2a3f3d96a5a431a115b46d440055817924c3ec180999f90e2aa6e6a7"
+      "bytes": 12899,
+      "sha256": "e76515b01bf9ac40a96b2639eb724c3131d079188761c41e18f3524bf5071fc4"
     },
     {
       "path": "tests/map-editor-loading.test.mjs",
-      "bytes": 10006,
-      "sha256": "37a1cb57373a8a4f37bbfde254102111c8c5ba50f87399a2c9017a4b11e21092"
+      "bytes": 13218,
+      "sha256": "cfe6725bf0788c4c42851b6eaf7d348f1bc7ba9ac6208a8380aabd98c3de4397"
     },
     {
       "path": "tests/map-editor.test.ts",
@@ -4107,6 +4106,11 @@
       "path": "tests/map-press.test.ts",
       "bytes": 3916,
       "sha256": "11329dd7f450844b3363c46aa891623f611b490569f1959c58c8ae2960f0db3b"
+    },
+    {
+      "path": "tests/map-program-binding.test.ts",
+      "bytes": 8137,
+      "sha256": "dcaa5b8519a8b007795a6a1f7082c033d20c6368205756a73461282475dde910"
     },
     {
       "path": "tests/map-shortcut-label.test.mjs",
@@ -4140,8 +4144,8 @@
     },
     {
       "path": "tests/published-map-routes.test.mjs",
-      "bytes": 11631,
-      "sha256": "3eedbf8db60d14a4ead9003a5f9e06fe4dc552632ff9194fb4cc7849e4b08296"
+      "bytes": 13517,
+      "sha256": "b8ba56eed69e68d4284d71cf2b8357f3c441ebc6b23e48b4eb3d1046b88d50b4"
     },
     {
       "path": "tests/reference-card-style.test.ts",
@@ -4299,7 +4303,7 @@
       "sha256": "6f6d890794fbe23f3e35cceb327f49d5977432a5aaf715e040a6408932da395b"
     }
   ],
-  "public_source_version": "0.8.2",
-  "parent_public_commit": "78db1725e9c39f456edc032dab1dfb7d5b8e1957",
-  "code_patch_sha256": "8e4b9c1f534d2d0faf1d546d0998feba834c969e775eba00ad5fe3a35507ef8f"
+  "public_source_version": "0.8.3",
+  "parent_public_commit": "7c526a5f9db1a20063f19e10ae6c05723da1ff66",
+  "code_patch_sha256": "7ed48512b25ae327edd7097660227716491d30920d1a5650dad77128a1824750"
 }

@@ -36,6 +36,8 @@ export function MapEditorPanel(){
  const canvas=useRef<HTMLDivElement>(null),drag=useRef<MapDrag|null>(null),pointDrag=useRef<{pointerId:number;index:number;routeId:string}|null>(null),inputId=useId();
  const item=document.placements.find(i=>i.id===selected),original=mapObjects.find(i=>i.id===selected);
  const route=document.routes.find(r=>r.id===selectedRoute);
+ const routeTour=data?.tours.find(tour=>tour.id===route?.tourId);
+ const routePrograms=routeTour?.variants||[];
  const selectedPoint=route&&pointIndex!==null?route.points[pointIndex]:undefined;
 
  function changeRoute(id:string,patch:Partial<MapRoute>){
@@ -134,7 +136,9 @@ export function MapEditorPanel(){
    </fieldset>}
    {mode==='routes'&&route&&<fieldset disabled={busy}><legend>Изменить маршрут</legend>
     <label>Название маршрута<input maxLength={120} value={route.title} onChange={event=>changeRoute(route.id,{title:event.target.value})}/></label>
-    <label>Экскурсия<select value={route.tourId||''} onChange={event=>changeRoute(route.id,{tourId:event.target.value||null})}><option value="">Без привязки к экскурсии</option>{route.tourId&&!data.tours.some(tour=>tour.id===route.tourId)&&<option value={route.tourId} disabled>Экскурсия скрыта или удалена — уберите привязку</option>}{data.tours.map(tour=><option key={tour.id} value={tour.id}>{tour.title}</option>)}</select></label>
+    <label>Экскурсия<select value={route.tourId||''} onChange={event=>changeRoute(route.id,{tourId:event.target.value||null,variantId:null})}><option value="">Без привязки к экскурсии</option>{route.tourId&&!routeTour&&<option value={route.tourId} disabled>Экскурсия отсутствует в текущем каталоге — уточните привязку</option>}{data.tours.map(tour=><option key={tour.id} value={tour.id}>{tour.title}{tour.hidden?' — архивная':tour.variants?.length&&tour.variants.every(program=>!program.visible)?' — все программы скрыты':''}</option>)}</select></label>
+    {route.tourId&&<><label>Программа<select value={route.variantId||''} disabled={!routeTour} onChange={event=>changeRoute(route.id,{variantId:event.target.value||null})}><option value="">Уточните программу</option>{route.variantId&&!routePrograms.some(program=>program.id===route.variantId)&&<option value={route.variantId} disabled>Программа удалена или перенесена — уточните привязку</option>}{routePrograms.map(program=><option key={program.id} value={program.id}>{program.name}{!program.visible?' — скрыта':program.status==='temporarily_unavailable'?' — временно недоступна':' — опубликована'}</option>)}</select></label>{!route.variantId&&<p role="status">{routePrograms.length>1?'У экскурсии несколько программ. ':''}Уточните программу: прежняя привязка к экскурсии сохранена, но маршрут не показывается посетителям до выбора программы.</p>}</>}
+    <p>В списке все экскурсии текущего каталога, включая скрытые и архивные. Черновики вне текущего каталога недоступны для привязки. Скрытые программы и архивные экскурсии не показываются посетителям.</p>
     <div className={styles.coordinates}><label>Цвет линии<select value={route.color} onChange={event=>changeRoute(route.id,{color:event.target.value as 'sea'|'land'})}><option value="sea">Голубой</option><option value="land">Зелёный</option></select></label><label>Линия<select value={route.style} onChange={event=>changeRoute(route.id,{style:event.target.value as 'solid'|'dashed'})}><option value="dashed">Пунктирная</option><option value="solid">Сплошная</option></select></label></div>
     <label className={styles.closedControl}><input type="checkbox" checked={!!route.closed} disabled={!canCloseMapRoute(route.points)} onChange={event=>changeRoute(route.id,{closed:event.target.checked})}/>Замкнуть маршрут</label>
     {!canCloseMapRoute(route.points)&&<p className={styles.revisions}>Для замыкания добавьте минимум три разные точки. При удалении до двух точек маршрут разомкнётся.</p>}

@@ -3,7 +3,7 @@ import {catalog} from '@/lib/server/catalog';
 import {database} from '@/lib/server/db';
 import type {CatalogResponse} from '@/lib/public/types';
 import {catalogQueryFromSearch,catalogHref,indexableCatalogSearch,type CatalogSearch} from '@/lib/public/catalog-navigation';
-import {publishedMapDocument} from '@/lib/server/map-editor';
+import {publishedMapLayout} from '@/lib/server/map-editor';
 import {defaultMapDocument} from '@/lib/public/map-layout';
 import {ReferenceHome} from './reference-preview/ReferenceHome';
 import {pageMetadata} from '@/lib/server/seo';
@@ -26,6 +26,6 @@ export default async function Home({searchParams}:Props={}) {
   let data: CatalogResponse | null = null;
   try { data = await catalog(database(), query); }
   catch { /* Keep the approved scene and its honest catalogue retry state. */ }
-  let mapDocument=defaultMapDocument;try{mapDocument=await publishedMapDocument(database());}catch{}
+  let mapDocument=defaultMapDocument;try{mapDocument={...defaultMapDocument,placements:await publishedMapLayout(database()),routes:[]};}catch{}
   return <ReferenceHome mapDocument={mapDocument} data={data} initialQuery={query} onlyFavorites={onlyFavorites} searchOpen={search.search!==undefined}/>;
 }

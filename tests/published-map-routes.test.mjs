@@ -23,7 +23,9 @@ function loader(locale='ru',document={version:2,placements:[],routes:[]}){
    if(specifier==='./SiteChrome')return {Header:()=>null,Footer:()=>null};
    if(specifier==='./VariantTourImage')return {VariantTourImage:()=>createElement('div',{'data-fixture-image':true})};
    if(specifier==='./ApprovedBrochures')return {ApprovedBrochures:()=>null};
-   if(specifier==='./MapPOI')return {MapPOI:()=>null};
+   if(specifier==='./MapPOI')return {MapPOI:({item})=>createElement('span',{'data-fixture-landmark':item.id},item.title)};
+   if(specifier==='./YonaBoardingPOI')return {YonaBoardingPOI:()=>null};
+   if(specifier==='./MapBoat')return {MapBoat:()=>null};
    if(specifier.startsWith('@/')||specifier.startsWith('.')){
     let resolved=specifier.startsWith('@/')?path.join(root,specifier.slice(2)):path.resolve(path.dirname(file),specifier);
     if(resolved.endsWith('.json'))return JSON.parse(readFileSync(resolved,'utf8'));
@@ -37,8 +39,8 @@ function loader(locale='ru',document={version:2,placements:[],routes:[]}){
  return relative=>load(path.join(root,relative));
 }
 const routes=[
- {id:'route-one',title:'Ocean route',tourId:'tour-1',tour:{id:'tour-1',slug:'tour-one',title:'Tour one'},color:'sea',style:'dashed',points:[{x:20,y:30,label:'Boarding',color:'coral'},{x:52.25,y:64.5,label:'Lagoon',color:'violet'}]},
- {id:'route-other',title:'Other route',tourId:'tour-2',color:'land',style:'solid',points:[{x:10,y:20},{x:30,y:40}]},
+ {id:'route-one',title:'Ocean route',tourId:'tour-1',variantId:'v1',tour:{id:'tour-1',slug:'tour-one',title:'Tour one'},color:'sea',style:'dashed',points:[{x:20,y:30,label:'Boarding',color:'coral'},{x:52.25,y:64.5,label:'Lagoon',color:'violet'}]},
+ {id:'route-other',title:'Other route',tourId:'tour-2',variantId:'v-other',color:'land',style:'solid',points:[{x:10,y:20},{x:30,y:40}]},
  {id:'unassigned',title:'Unassigned route',color:'land',style:'dashed',points:[{x:0,y:100},{x:100,y:0}]},
 ];
 const render=(Component,props)=>renderToStaticMarkup(createElement(Component,props));
@@ -115,12 +117,31 @@ test('real tour detail without a linked route retains the honest unmodified regi
  assert(html.includes('andaman-user-map.png'));
 });
 
-test('main map legend displays outside the cropped artwork and follows published context',()=>{
- const {CustomMapRouteList}=loader('en',{version:2,placements:[],routes})('app/reference-preview/CustomMapContent.tsx');
- const html=render(CustomMapRouteList,{});
- assert(html.includes('Routes on the map'));assert(html.includes('/en/tour/tour-one'));assert(html.includes('Boarding'));
- const source=readFileSync('app/reference-preview/ReferenceHome.tsx','utf8');
- assert(source.includes('</section>\n      <CustomMapRouteList/>\n      <section id="selected"'));
+test('general map excludes custom routes even with route-bearing context, preserving custom landmarks',()=>{
+ const placements=[{id:'custom-place',title:'Keep this place',image:'/media/reference/map-landmark-placeholder.svg',x:10,y:20}];
+ const {SupplementalArtPOIs}=loader('en',{version:2,placements,routes})('app/reference-preview/SupplementalArtPOIs.tsx');
+ const html=render(SupplementalArtPOIs,{});
+ assert(html.includes('Keep this place'));assert(!html.includes('Ocean route'));assert(!html.includes('Boarding'));
+ assert(!html.includes('data-editor-map-routes'));assert(!html.includes('data-route-point'));
+ const home=readFileSync('app/reference-preview/ReferenceHome.tsx','utf8');assert(!home.includes('CustomMapRouteList'));
+ const page=readFileSync('app/page.tsx','utf8');assert(page.includes('publishedMapLayout(database())'));assert(page.includes('routes:[]'));assert(!page.includes('publishedMapDocument'));
+});
+
+test('stable program IDs select only that variant; legacy tour-only links are never guessed',()=>{
+ const {routesForProgram}=loader()('lib/public/map-route-display.ts');
+ const legacy={...routes[0],id:'legacy',title:'Legacy route'};delete legacy.variantId;
+ const vip={...routes[0],id:'vip-route',title:'VIP route',variantId:'v2'};
+ const all=[...routes,legacy,vip],before=JSON.stringify(all);
+ assert.deepEqual(routesForProgram(all,'tour-1','v1'),[routes[0]]);
+ assert.deepEqual(routesForProgram(all,'tour-1','v2'),[vip]);
+ assert.deepEqual(routesForProgram(all,'tour-1','Variant'),[]);
+ assert.deepEqual(routesForProgram(all,'tour-2','v1'),[]);
+ const {CompactTourDetail}=loader()('app/components/CompactTourDetail.tsx');
+ const standard=render(CompactTourDetail,{...detailProps,mapRoutes:all});
+ const selectedVIP=render(CompactTourDetail,{...detailProps,variant:{...variant,id:'v2',name:'VIP'},mapRoutes:all});
+ assert(standard.includes('Ocean route'));assert(!standard.includes('VIP route'));assert(!standard.includes('Legacy route'));
+ assert(selectedVIP.includes('VIP route'));assert(!selectedVIP.includes('Ocean route'));assert(!selectedVIP.includes('Legacy route'));
+ assert.equal(JSON.stringify(all),before);
 });
 
 test('server detail and both display layouts carry published, ID-filtered map routes',()=>{
@@ -128,6 +149,7 @@ test('server detail and both display layouts carry published, ID-filtered map ro
  assert(page.includes('routesForTour((await publishedMapDocument(database())).routes,p.tour.id)'));
  assert(page.includes('<TourPage tour={p.tour} releaseId={p.releaseId} mapRoutes={mapRoutes}/>'));
  const ui=readFileSync('app/components/CatalogUI.tsx','utf8');
+ assert(ui.includes('routesForProgram(mapRoutes,tour.id,v.id)'));
  assert(ui.includes('<CompactTourDetail tour={tour} variant={v} mapRoutes={linkedRoutes}'));
  assert(ui.includes('linkedRoutes.length>0&&<PublishedTourRoutes routes={linkedRoutes}/>'));
 });

@@ -1,10 +1,10 @@
-# Double Bottle public source v0.8.2
+# Double Bottle public source v0.8.3
 
-This v0.8.2 public-source update applies the reviewed 28-file card, map and contact-button patch to public commit `78db1725e9c39f456edc032dab1dfb7d5b8e1957`. It corresponds to the application changes released as Sites106. See [CHANGELOG.md](CHANGELOG.md).
+This v0.8.3 public-source update applies the reviewed 18-file program-route correction to public commit `7c526a5f9db1a20063f19e10ae6c05723da1ff66`. It corresponds to the application changes released as Sites107. See [CHANGELOG.md](CHANGELOG.md).
 
-This is sanitized public source, not a production backup or deployable copy of the live Site. The reviewed v0.8.1 export was published in this repository; v0.8.2 retains its synthetic data, empty exported translation maps, DEMO brochures, bundled license notices and privacy exclusions. No production media, catalog rows or private project history are imported by this update. No blanket project OSS license is assigned.
+This is sanitized public source, not a production backup or deployable copy of the live Site. The reviewed v0.8.1 export was published in this repository; subsequent updates retain its synthetic data, empty exported translation maps, DEMO brochures, bundled license notices and privacy exclusions. No production media, catalog rows or private project history are imported by this update. No blanket project OSS license is assigned.
 
-The original v0.8.1 audit reports (`PUBLIC-CANDIDATE-VALIDATION.json`, `SOURCE-PROVENANCE.json`, `ASSET-DECISIONS.json` and `ASSET-REVIEW.json`) remain historical review records. Their prepublication status and earlier test results are not the status or test results of v0.8.2. `EXPORT-MANIFEST.json` describes the current distributed files.
+The original v0.8.1 audit reports (`PUBLIC-CANDIDATE-VALIDATION.json`, `SOURCE-PROVENANCE.json`, `ASSET-DECISIONS.json` and `ASSET-REVIEW.json`) remain historical review records. Their prepublication status and earlier test results are not the status or test results of v0.8.3. `EXPORT-MANIFEST.json` describes the current distributed files.
 
 ## Supported local setup
 
@@ -33,11 +33,17 @@ The v0.8.1 export-specific brochure sanitization changes are:
 * `app/components/ApprovedBrochures.tsx`: RU/EN/TH display labels explicitly identify DEMO samples. Existing product mappings and all sixteen links are unchanged.
 * `lib/server/approved-eight-import.ts`: the new-product `imageAlt` literal identifies a DEMO synthetic sample; new media `license`, `attribution` and `sourceUrl` identify synthetic export placeholders, not original A-Time brochures.
 
-Those brochure substitutions did not change IDs, structural stems, slugs, guards, rates, SQL or importer control flow. The v0.8.2 code changes are listed separately in the changelog. Historical supplier/provenance strings remain code identifiers and do not establish rights to omitted artwork. The original export archive and original candidate were not changed.
+Those brochure substitutions did not change IDs, structural stems, slugs, guards, rates, SQL or importer control flow. Subsequent code changes are listed separately in the changelog. Historical supplier/provenance strings remain code identifiers and do not establish rights to omitted artwork. The original export archive and original candidate were not changed.
 
 ## Validation
 
-### v0.8.2 public-source update
+### v0.8.3 public-source update
+
+The release executor confirmed 38/38 focused tests, TypeScript and production build PASS for the exact published Sites107 source. That existing evidence is reused for this code synchronization; a new full cloud build, full historical suite and browser/pixel QA are not claimed. The 18-file patch is checked against exact preimage/postimage hashes before application. The public copy retains synthetic fixtures and DEMO substitutions rather than importing production data.
+
+The cloud synchronization additionally passed 6 program-binding tests, 11 synthetic export/import tests and 4 DEMO component tests on this exact sanitized source. All 18 patch preimages and postimages matched; no source reconciliation or security-guard changes were needed.
+
+### Historical v0.8.2 public-source validation
 
 Repeated on the final patched Linux public-source copy with the unchanged pinned dependencies: production build PASS, TypeScript PASS, 62 focused card/map/contact tests PASS, 12 localization tests PASS, 4 DEMO component tests PASS and 11 synthetic export/import tests PASS. The latter export-only suite must run from a clean source archive without `.git`; running it directly inside a Git checkout intentionally fails its archive-content assertion. No test or security guard was disabled.
 
@@ -62,7 +68,7 @@ The final license/DEMO correction passed Linux production build, TypeScript, 11 
 
 The full historical Node suite was NOT rerun on this final export. On previous candidate commit `97831dffe21e3161aa92487bcfcefcc4e7f7f866` it had 314 tests, 227 passed and 87 failed. Those are historical results, not results for the final commit. The 87 failures comprised 30 excluded private-fixture cases, 3 excluded historical-document cases, 4 dataset-specific golden assertions, 14 outdated SQL fixtures, 15 stale UI mocks and 21 historical assertions needing separate review. No guards or tests were disabled to conceal failures. See `PUBLIC-CANDIDATE-VALIDATION.json`.
 
-That historical export validation performed no live database access, credential use, remote deployment, browser validation, GitHub write or access change. The v0.8.2 synchronization updates public GitHub source only; it does not deploy this synthetic copy to a Site or touch a live database.
+That historical export validation performed no live database access, credential use, remote deployment, browser validation, GitHub write or access change. These GitHub synchronizations update public source only; they do not deploy this synthetic copy to a Site or touch a live database.
 
 ## Privacy, retained assets and licenses
 
@@ -78,4 +84,4 @@ The three Nimbus source OTFs and exact source/output mapping are bundled in `ven
 
 Fifty PNG text metadata chunks are identical software markers. Five PNG C2PA chunks contain generation and signing provenance; these are not automatically secrets. Pattern checks and this bounded review are not a complete forensic audit of all binary formats.
 
-`SOURCE-PROVENANCE.json` records the original export exclusions and transformations. `EXPORT-MANIFEST.json` lists every currently distributed file except itself. The source export excludes node_modules, build outputs, local state, raw audit logs and private project history. This repository preserves its existing clean public history when adding the v0.8.2 commit.
+`SOURCE-PROVENANCE.json` records the original export exclusions and transformations. `EXPORT-MANIFEST.json` lists every currently distributed file except itself. The source export excludes node_modules, build outputs, local state, raw audit logs and private project history. This repository preserves its existing clean public history when adding release commits.

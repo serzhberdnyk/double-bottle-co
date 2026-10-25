@@ -19,7 +19,6 @@ import {BrandMark} from '../components/BrandMark';
 import {referenceCopy as copy} from './reference-copy';
 import {useReferenceCatalog} from './useReferenceCatalog';
 import {SupplementalArtPOIs} from './SupplementalArtPOIs';
-import {CustomMapRouteList} from './CustomMapContent';
 import {MapBottle} from './MapBottle';
 import {ThaiStamp} from './ThaiStamp';
 import {HeroMapPreview} from './HeroMapPreview';
@@ -144,7 +143,6 @@ export function ReferenceHome({data:initial,initialQuery,onlyFavorites=false,sea
           <dl className={styles.stats}><div><dt>{initial?.count ?? '—'}</dt><dd>{data ? tr(programWord(data.count)) : tr("каталог")}</dd></div><div><dt>{initial?.destinations.length ?? '—'}</dt><dd>{tr("направлений")}</dd></div><div><dt>{tr("Таиланд")}</dt><dd>{tr("настоящие впечатления")}</dd></div></dl>
         </div>
       </section>
-      <CustomMapRouteList/>
       <section id="selected" className={styles.selection} aria-labelledby="selection-heading">
         <h2 id="selection-heading" className={styles.visuallyHidden}>{selectionTitle || tr("Экскурсии")}</h2>
         <HomeCatalogFilters data={data||initial} query={filters} onlyFavorites={onlyFavorites} focusSearch={searchOpen} onChange={updateFilters} onReset={resetFilters}/>

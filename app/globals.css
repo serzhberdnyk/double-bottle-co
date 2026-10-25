@@ -54,6 +54,7 @@ html:lang(th) input,html:lang(th) select,html:lang(th) textarea,html:lang(th) bu
 
 /* Selected transparent bottle mark; preserve the existing wordmark typography. */
 .brand-mark{display:block;flex:none;width:var(--brand-mark-size,52px);height:var(--brand-mark-size,52px);object-fit:contain}
+.site-header .brand-mark{transform:translateY(-3px)}
 .wordmark{display:flex;align-items:center;gap:10px}.brand-copy{min-width:0}
 .footer-brand{display:flex;align-items:center;gap:10px;--brand-mark-size:36px}
 @media(max-width:560px){.site-header{gap:4px;padding-left:8px;padding-right:8px}.wordmark{gap:6px;--brand-mark-size:30px}.header-actions{gap:5px}}

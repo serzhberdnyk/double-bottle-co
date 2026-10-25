@@ -1,5 +1,17 @@
 # Changelog
 
+## v0.8.3 · 2026-10-25
+
+Public-source synchronization of the reviewed 18-file correction released as Sites107.
+
+* The bottle logo is shifted upward by 3 px in CSS.
+* Program routes are no longer displayed on the general public map.
+* Program-route bindings use both stable tour and variant IDs, rather than a tour-only association.
+* The editor can use the full administrative catalog when choosing program bindings; public visibility remains a separate concern.
+* The release executor confirmed 38/38 focused tests, TypeScript and build PASS on the exact published source. This synchronization reuses that evidence and does not claim a new full build, historical-suite pass or browser/pixel QA.
+* An additional bounded check of the sanitized copy passed 6 program-binding, 11 synthetic export/import and 4 DEMO component tests. All 18 patch preimages and postimages matched exactly.
+* Only the code/test delta and release documentation/manifest are synchronized. All production data remains excluded; synthetic JSON, DEMO brochures, license notices and clean public history are retained.
+
 ## v0.8.2 · 2026-10-25
 
 Public-source synchronization of the reviewed card, map and contact-button update.

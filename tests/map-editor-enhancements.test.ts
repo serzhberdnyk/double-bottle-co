@@ -18,8 +18,8 @@ function seedTours(db:ReturnType<typeof testDatabase>){
  }
 }
 
-test('point labels/colors and excursion link survive save, publish, readback, reload; no catalog changes',async t=>{
- const db=testDatabase();t.after(()=>db.sqlite.close());seedTours(db);const doc=document();doc.routes[0].tourId='one';
+test('point labels/colors and program link survive save, publish, readback, reload; no catalog changes',async t=>{
+ const db=testDatabase();t.after(()=>db.sqlite.close());seedTours(db);const doc=document();doc.routes[0].tourId='one';doc.routes[0].variantId='v-one';
  const before=db.sqlite.prepare('SELECT * FROM catalog_release_products').all();
  const saved=await saveMapDraft(db,doc,0,'owner');assert.deepEqual(saved.draftDocument,doc);
  const published=await saveAndPublishMap(db,doc,1,4,'owner');assert.equal(published.draftDocument,null);assert.deepEqual(published.publishedDocument,doc);
@@ -55,14 +55,14 @@ test('strict shape rejects oversized labels, unsupported colors, duplicate route
  const duplicate=document();duplicate.routes.push(duplicate.routes[0]);assert.equal(mapDocumentSchema.safeParse(duplicate).success,false);
  const forged=document();forged.routes[0].tour={id:'one',slug:'fake',title:'Fake'};assert.equal(mapDocumentSchema.safeParse(forged).success,false);
 });
-test('only real published excursions with visible variants can be linked; hidden/deleted links are not public',async t=>{
+test('missing excursions cannot be linked; archived and detached routes are not public',async t=>{
  const db=testDatabase();t.after(()=>db.sqlite.close());seedTours(db);
  assert.deepEqual((await mapTourChoices(db)).tours.map(tour=>tour.id),['one']);
- for(const tourId of ['missing','hidden','no-visible']){const doc=document();doc.routes[0].tourId=tourId;await assert.rejects(saveAndPublishMap(db,doc,0,4,'owner'),/MAP_TOUR_UNAVAILABLE/);}
- const doc=document();doc.routes[0].tourId='one';await saveAndPublishMap(db,doc,0,4,'owner');
+ const missing=document();missing.routes[0].tourId='missing';await assert.rejects(saveAndPublishMap(db,missing,0,4,'owner'),/MAP_TOUR_UNAVAILABLE/);
+ const doc=document();doc.routes[0].tourId='one';doc.routes[0].variantId='v-one';await saveAndPublishMap(db,doc,0,4,'owner');
  db.sqlite.exec("UPDATE catalog_release_products SET publication_status='archived' WHERE product_id='one'");assert.equal((await publishedMapDocument(db)).routes.length,0);
  assert.equal((await mapEditorState(db)).publishedDocument.routes[0].tourId,'one');
- doc.routes[0].tourId=null;await saveAndPublishMap(db,doc,1,4,'owner');assert.equal((await publishedMapDocument(db)).routes.length,1);
+ doc.routes[0].tourId=null;doc.routes[0].variantId=null;await saveAndPublishMap(db,doc,1,4,'owner');assert.equal((await publishedMapDocument(db)).routes.length,0);
 });
 test('stale catalog generation and catalog change between validation/write fail closed',async t=>{
  const db=testDatabase();t.after(()=>db.sqlite.close());seedTours(db);const doc=document();doc.routes[0].tourId='one';
@@ -99,7 +99,7 @@ test('modern delete then add does not copy removed/index-matched point metadata 
 });
 
 test('EN/TH public map omits links and routes whose excursion is not locale-ready',async t=>{
- const db=testDatabase();t.after(()=>db.sqlite.close());seedTours(db);db.sqlite.exec("UPDATE catalog_release_products SET title='Уникальная непереведённая экскурсия 987654' WHERE product_id='one'");const doc=document();doc.routes[0].tourId='one';await saveAndPublishMap(db,doc,0,4,'owner');
+ const db=testDatabase();t.after(()=>db.sqlite.close());seedTours(db);db.sqlite.exec("UPDATE catalog_release_products SET title='Уникальная непереведённая экскурсия 987654' WHERE product_id='one'");const doc=document();doc.routes[0].tourId='one';doc.routes[0].variantId='v-one';await saveAndPublishMap(db,doc,0,4,'owner');
  try{for(const locale of ['en','th']){Object.assign(globalThis,{__testLocale:locale});assert.equal((await publishedMapDocument(db)).routes.length,0);}}
  finally{Object.assign(globalThis,{__testLocale:'ru'});}
  assert.equal((await publishedMapDocument(db)).routes[0].tourId,'one');assert.equal((await mapEditorState(db)).publishedDocument.routes.length,1);

@@ -19,8 +19,9 @@ export type MapLayout=MapPlacement[];
 export const mapPointColors={cream:'#fff2d3',sea:'#4bd4f1',land:'#c5e877',gold:'#ffca48',coral:'#ff9d8a',violet:'#cfb6ff'} as const;
 export type MapPointColor=keyof typeof mapPointColors;
 export type MapRoutePoint={x:number;y:number;label?:string;color?:MapPointColor};
-export type MapTourChoice={id:string;slug:string;title:string};
-export type MapRoute={id:string;title:string;points:MapRoutePoint[];color:'sea'|'land';style:'solid'|'dashed';closed?:boolean;tourId?:string|null;
+export type MapProgramChoice={id:string;name:string;visible:boolean;status:'on_request'|'temporarily_unavailable'};
+export type MapTourChoice={id:string;slug:string;title:string;hidden?:boolean;variants?:MapProgramChoice[]};
+export type MapRoute={id:string;title:string;points:MapRoutePoint[];color:'sea'|'land';style:'solid'|'dashed';closed?:boolean;tourId?:string|null;variantId?:string|null;
  /** Public read model only: never accepted in saved editor input. */
  tour?:MapTourChoice};
 export function canCloseMapRoute(points:MapRoutePoint[]){return new Set(points.map(point=>`${point.x},${point.y}`)).size>=3;}
@@ -86,7 +87,11 @@ export const mapRouteSchema=z.object({
  style:z.enum(['solid','dashed']),
  closed:z.boolean().optional(),
  tourId:z.string().min(1).max(100).regex(/^[a-zA-Z0-9_-]+$/).nullable().optional(),
-}).strict().superRefine((route,ctx)=>{if(route.closed&&!canCloseMapRoute(route.points))ctx.addIssue({code:'custom',message:'MAP_CLOSED_ROUTE_NEEDS_THREE_DISTINCT_POINTS'});});
+ variantId:z.string().min(1).max(100).regex(/^[a-zA-Z0-9_-]+$/).nullable().optional(),
+}).strict().superRefine((route,ctx)=>{
+ if(route.closed&&!canCloseMapRoute(route.points))ctx.addIssue({code:'custom',message:'MAP_CLOSED_ROUTE_NEEDS_THREE_DISTINCT_POINTS'});
+ if(route.variantId&&!route.tourId)ctx.addIssue({code:'custom',message:'MAP_PROGRAM_NEEDS_TOUR'});
+});
 export const mapDocumentSchema=z.object({version:z.literal(2),placements:mapLayoutSchema,routes:z.array(mapRouteSchema).max(50)}).strict().superRefine((document,ctx)=>{
  if(new Set(document.routes.map(route=>route.id)).size!==document.routes.length)ctx.addIssue({code:'custom',message:'DUPLICATE_MAP_ROUTES'});
 });
@@ -113,13 +118,16 @@ export function mergeMapDocument(input:unknown,current:MapDocument,{preserveRout
  // Older editors know geometry only. Match unchanged/reordered points by their
  // location; only a same-length edit may fall back to the original point index.
  const previousRoutes=new Map(current.routes.map(route=>[route.id,route]));
- const routes=preserveRouteMetadata?incoming.routes.map(route=>{
+ const routes=incoming.routes.map(route=>{
   const before=previousRoutes.get(route.id);if(!before)return route;
   const points=route.points.map((point,index)=>{
    const old=before.points.find(item=>item.x===point.x&&item.y===point.y)||(before.points.length===route.points.length?before.points[index]:undefined);
    return {...point,...(!Object.hasOwn(point,'label')&&old?.label!==undefined?{label:old.label}:{}),...(!Object.hasOwn(point,'color')&&old?.color!==undefined?{color:old.color}:{})};
   });
-  return {...route,points,...(!Object.hasOwn(route,'closed')&&before.closed!==undefined?{closed:before.closed&&canCloseMapRoute(points)}:{}),...(!Object.hasOwn(route,'tourId')&&before.tourId!==undefined?{tourId:before.tourId}:{})};
- }):incoming.routes;
+  const merged=preserveRouteMetadata?{...route,points,...(!Object.hasOwn(route,'closed')&&before.closed!==undefined?{closed:before.closed&&canCloseMapRoute(points)}:{}),...(!Object.hasOwn(route,'tourId')&&before.tourId!==undefined?{tourId:before.tourId}:{})}:route;
+  // An already-open tour-only editor must not erase a newer program binding.
+  // Changing/detaching the tour never carries its old program to another owner.
+  return !Object.hasOwn(route,'variantId')&&merged.tourId===before.tourId&&before.variantId!==undefined?{...merged,variantId:before.variantId}:merged;
+ });
  return mapDocumentSchema.parse({...incoming,placements,routes});
 }

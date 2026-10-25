@@ -21,7 +21,7 @@ import {IslandMap} from './IslandMap';
 import {Header,Footer} from './SiteChrome';
 import {CompactTourDetail} from './CompactTourDetail';
 import {PublishedTourRoutes} from './PublishedRouteMap';
-import {routesForTour} from '@/lib/public/map-route-display';
+import {routesForProgram} from '@/lib/public/map-route-display';
 import type {MapRoute} from '@/lib/public/map-layout';
 import {InquiryDialogHeader} from './InquiryDialogHeader';
 import {useInquiryCopy} from './inquiry-copy';
@@ -96,7 +96,6 @@ export function InquiryForm({tour,variant,releaseId,onClose,priceOption=null,pri
  </form>;
 }
 export function TourPage({tour,releaseId,mapRoutes=[]}:{tour:Tour;releaseId:string;mapRoutes?:MapRoute[]}){
- const linkedRoutes=routesForTour(mapRoutes,tour.id);
  const {t:tr,href:localHref}=useI18n();
 
  const {language:inquiryLanguage,copy:inquiryCopy}=useInquiryCopy();
@@ -105,6 +104,7 @@ export function TourPage({tour,releaseId,mapRoutes=[]}:{tour:Tour;releaseId:stri
  useEffect(()=>{const params=new URLSearchParams(location.search),id=params.get('variant');if(tour.variants.some(v=>v.id===id))setSelected(id!);setOptionKey(params.get('priceOption')||undefined);},[tour]);
  const original=tour.variants.find(v=>v.id===selected)||tour.variants[0];if(!original)return null;
  const {variant:v,option}=selectPriceOption(original,optionKey);
+ const linkedRoutes=routesForProgram(mapRoutes,tour.id,v.id);
  function choose(id:string){setSelected(id);setOptionKey(undefined);const params=new URLSearchParams(location.search);params.set('variant',id);params.delete('priceOption');history.replaceState(null,'',location.pathname+'?'+params);}
  function chooseOption(key:string){setOptionKey(key);const params=new URLSearchParams(location.search);params.set('variant',v.id);params.set('priceOption',key);history.replaceState(null,'',location.pathname+'?'+params);}
  const selectors=tour.variants.length>1||availablePriceOptions(original).length>1?<>{tour.variants.length>1&&<VariantSelector tour={tour} value={v.id} onChange={choose}/>}<PriceOptionSelector variant={original} value={option?.key} onChange={chooseOption}/></>:null;

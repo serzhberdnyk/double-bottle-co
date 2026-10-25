@@ -2,7 +2,7 @@
 import {ApprovedBrochures} from './ApprovedBrochures';
 import {PublishedTourRoutes} from './PublishedRouteMap';
 import {mapRouteCopy} from './map-route-copy';
-import {routesForTour} from '@/lib/public/map-route-display';
+import {routesForProgram} from '@/lib/public/map-route-display';
 import type {MapRoute} from '@/lib/public/map-layout';
 import {useI18n} from '@/lib/i18n/context';
 
@@ -38,7 +38,7 @@ export function CompactTourDetail({
   onRequest, onFavorite, saved, favoriteError, mapRoutes=[],
 }: CompactTourDetailProps) {
  const {locale,t:tr,href:localHref}=useI18n();
- const linkedRoutes=routesForTour(mapRoutes,tour.id);
+ const linkedRoutes=routesForProgram(mapRoutes,tour.id,variant.id);
  const mapCopy=mapRouteCopy[locale];
 
   const model = compactTourModel(tour, variant);

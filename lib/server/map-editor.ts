@@ -1,4 +1,4 @@
-import {defaultMapDocument,legacyMapLayout,mergeMapDocument,mergeLegacyMapLayout,parseMapDocument,type MapDocument,type MapLayout,type MapTourChoice} from '../public/map-layout';
+import {defaultMapDocument,legacyMapLayout,mergeMapDocument,mergeLegacyMapLayout,parseMapDocument,type MapDocument,type MapLayout,type MapTourChoice,type MapProgramChoice} from '../public/map-layout';
 import {uuid} from './management';
 import {variantPublication} from './variant-visibility';
 import {currentLocale} from '../i18n/server';
@@ -7,15 +7,17 @@ import {catalog} from './catalog';
 type Row={revision:number;published_revision:number;draft_json:string|null;published_json:string|null};
 async function row(db:D1Database){return db.prepare('SELECT revision,published_revision,draft_json,published_json FROM map_editor_state WHERE id=1').first<Row>();}
 function storedDocument(json:string|null|undefined):MapDocument{return json?parseMapDocument(JSON.parse(json)):structuredClone(defaultMapDocument);}
-export async function mapTourChoices(db:D1Database){
+export async function mapTourChoices(db:D1Database,includeHidden=false){
  const state=await db.prepare('SELECT release_id,generation FROM catalog_state WHERE id=1').first<{release_id:string;generation:number}>();
  if(!state?.release_id)return {catalogGeneration:null,tours:[] as MapTourChoice[]};
- const result=await db.prepare(`SELECT p.product_id AS id,COALESCE(NULLIF(p.slug,''),identity.slug) AS slug,p.title FROM catalog_release_products p JOIN catalog_products identity ON identity.id=p.product_id WHERE p.release_id=? AND p.publication_status='published' AND EXISTS (SELECT 1 FROM catalog_release_variants rv JOIN catalog_variants v ON v.id=rv.variant_id WHERE rv.release_id=p.release_id AND COALESCE(rv.product_id,v.product_id)=p.product_id AND ${variantPublication('rv')}) ORDER BY p.title,p.product_id`).bind(state.release_id).all<MapTourChoice>();
- return {catalogGeneration:state.generation,tours:result.results};
+ const publication=includeHidden?"p.publication_status IN ('published','archived')":`p.publication_status='published' AND EXISTS (SELECT 1 FROM catalog_release_variants rv JOIN catalog_variants v ON v.id=rv.variant_id WHERE rv.release_id=p.release_id AND COALESCE(rv.product_id,v.product_id)=p.product_id AND ${variantPublication('rv')})`;
+ const result=await db.prepare(`SELECT p.product_id AS id,COALESCE(NULLIF(p.slug,''),identity.slug) AS slug,p.title,p.publication_status FROM catalog_release_products p JOIN catalog_products identity ON identity.id=p.product_id WHERE p.release_id=? AND ${publication} ORDER BY p.title,p.product_id`).bind(state.release_id).all<MapTourChoice&{publication_status:string}>();
+ const programs=await db.prepare(`SELECT v.id,COALESCE(rv.product_id,v.product_id) AS tourId,COALESCE(rv.name_override,rev.name) AS name,rv.visible,rv.sale_status AS status FROM catalog_release_variants rv JOIN catalog_variants v ON v.id=rv.variant_id JOIN catalog_variant_revisions rev ON rev.id=rv.revision_id WHERE rv.release_id=? AND ${variantPublication('rv',includeHidden)} ORDER BY name,v.id`).bind(state.release_id).all<Omit<MapProgramChoice,'visible'>&{tourId:string;visible:number}>();
+ return {catalogGeneration:state.generation,tours:result.results.map(({id,slug,title,publication_status})=>({id,slug,title,hidden:publication_status==='archived',variants:programs.results.filter(program=>program.tourId===id).map(({id,name,visible,status})=>({id,name,visible:visible!==0,status}))}))};
 }
 export async function publishedMapDocument(db:D1Database):Promise<MapDocument>{
  const document=storedDocument((await row(db))?.published_json);
- if(!document.routes.some(route=>route.tourId))return document;
+ if(!document.routes.some(route=>route.tourId&&route.variantId))return {...document,routes:[]};
  const choices=await mapTourChoices(db);let tours=choices.tours;
  if(tours.length&&await currentLocale()!=='ru'){
   // Reuse the catalog's complete locale-readiness rules, not just a translated
@@ -23,17 +25,17 @@ export async function publishedMapDocument(db:D1Database):Promise<MapDocument>{
   const ids=[...new Set(document.routes.map(route=>route.tourId).filter((id):id is string=>!!id))];
   const first=await catalog(db,{ids,limit:48});const ready=[...first.items];
   for(let page=2;page<=first.pages;page++)ready.push(...(await catalog(db,{ids,limit:48,page})).items);
-  tours=ready.map(({id,slug,title})=>({id,slug,title}));
+  tours=ready.map(({id,slug,title,variants})=>({id,slug,title,variants:variants.map(({id,name,visible,status})=>({id,name,visible:visible!==false,status}))}));
  }
  const byId=new Map(tours.map(tour=>[tour.id,tour]));
  // Do not leak a hidden/deleted excursion through a previously published map.
- return {...document,routes:document.routes.filter(route=>!route.tourId||byId.has(route.tourId)).map(route=>route.tourId?{...route,tour:byId.get(route.tourId)}:route)};
+ return {...document,routes:document.routes.filter(route=>route.tourId&&route.variantId&&byId.get(route.tourId)?.variants?.some(program=>program.id===route.variantId)).map(route=>{const {id,slug,title}=byId.get(route.tourId!)!;return {...route,tour:{id,slug,title}};})};
 }
 /** Existing public consumers may continue reading placements only. */
-export async function publishedMapLayout(db:D1Database):Promise<MapLayout>{return (await publishedMapDocument(db)).placements;}
+export async function publishedMapLayout(db:D1Database):Promise<MapLayout>{return storedDocument((await row(db))?.published_json).placements;}
 export async function mapEditorState(db:D1Database){
  const current=await row(db),publishedDocument=storedDocument(current?.published_json),draftDocument=current?.draft_json?storedDocument(current.draft_json):null;
- return {...await mapTourChoices(db),schemaVersion:2 as const,revision:current?.revision||0,publishedRevision:current?.published_revision||0,published:legacyMapLayout(publishedDocument),draft:draftDocument?legacyMapLayout(draftDocument):null,publishedDocument,draftDocument};
+ return {...await mapTourChoices(db,true),schemaVersion:2 as const,revision:current?.revision||0,publishedRevision:current?.published_revision||0,published:legacyMapLayout(publishedDocument),draft:draftDocument?legacyMapLayout(draftDocument):null,publishedDocument,draftDocument};
 }
 async function validateUploadedMedia(db:D1Database,document:MapDocument){
  const paths=new Set(document.placements.flatMap(item=>[item.image,...item.photos||[]]).filter(path=>path.startsWith('/api/catalog-media/')));
@@ -42,6 +44,7 @@ async function validateUploadedMedia(db:D1Database,document:MapDocument){
 function validateRouteTours(document:MapDocument,tours:MapTourChoice[]){
  const ids=new Set(tours.map(tour=>tour.id));
  if(document.routes.some(route=>route.tourId&&!ids.has(route.tourId)))throw Error('MAP_TOUR_UNAVAILABLE');
+ if(document.routes.some(route=>route.variantId&&!tours.find(tour=>tour.id===route.tourId)?.variants?.some(program=>program.id===route.variantId)))throw Error('MAP_PROGRAM_UNAVAILABLE');
 }
 export async function saveMapDraft(db:D1Database,input:unknown,revision:number,actor:string){
  const current=await mapEditorState(db);if(current.revision!==revision)throw Error('MAP_CONFLICT');

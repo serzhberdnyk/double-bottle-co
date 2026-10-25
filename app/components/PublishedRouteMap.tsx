@@ -5,7 +5,7 @@ import {mapPointColors,mapRouteLinePoints,type MapRoute} from '@/lib/public/map-
 import {mapRouteCopy} from './map-route-copy';
 import styles from './PublishedRouteMap.module.css';
 
-/** The same source-art plane is used in the editor, main map and tour page. */
+/** The same source-art plane is used in the editor and selected program map. */
 export function PublishedRouteOverlay({routes}:{routes:MapRoute[]}) {
   const {locale}=useI18n();
   const copy=mapRouteCopy[locale];

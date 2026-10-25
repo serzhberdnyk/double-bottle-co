@@ -570,6 +570,7 @@
 
 /* Place the selected mark beside the unchanged brand name and tagline. */
 .heroBrand{display:flex;align-items:center;gap:12px;--brand-mark-size:64px}
+.heroBrand :global(.brand-mark){transform:translateY(-3px)}
 .footerBrand{align-items:center;--brand-mark-size:36px}.footerBrand>div{display:flex;align-items:center;gap:13px}
 @media(max-width:760px){.heroBrand{gap:8px;--brand-mark-size:40px}.footerBrand{flex-direction:row;align-items:center}.footerBrand>div{display:block}.footerBrand>div>span{display:block;margin-top:8px}}
 @media(max-width:360px){.heroBrand{--brand-mark-size:32px}}
