@@ -1,0 +1,200 @@
+{
+  "releaseId": "synthetic_1508",
+  "tour": {
+    "id": "synthetic_812",
+    "slug": "synthetic-813",
+    "title": "synthetic_814",
+    "description": "synthetic_815",
+    "category": "sea",
+    "image": null,
+    "imageAlt": "",
+    "status": "on_request",
+    "featuredRank": 1,
+    "variants": [
+      {
+        "id": "synthetic_816",
+        "revisionId": "synthetic_817",
+        "name": "synthetic_818",
+        "description": "synthetic_1509",
+        "duration": "synthetic_572",
+        "days": 1,
+        "transport": "synthetic_573",
+        "format": "synthetic_266",
+        "status": "on_request",
+        "stops": [],
+        "itinerary": [
+          "synthetic_820",
+          "synthetic_821",
+          "synthetic_822",
+          "synthetic_823",
+          "synthetic_824",
+          "synthetic_825",
+          "synthetic_826",
+          "synthetic_827",
+          "synthetic_828"
+        ],
+        "includes": [
+          "synthetic_346",
+          "synthetic_829",
+          "synthetic_830",
+          "synthetic_831"
+        ],
+        "extras": [
+          "synthetic_832",
+          "synthetic_833",
+          "synthetic_834",
+          "synthetic_835"
+        ],
+        "conditions": [
+          "synthetic_585",
+          "synthetic_836",
+          "synthetic_837",
+          "synthetic_289"
+        ],
+        "earliestDate": null,
+        "priceOptions": [
+          {
+            "key": "synthetic_838",
+            "label": "synthetic_839",
+            "serviceDateFrom": null,
+            "serviceDateUntil": null,
+            "conditions": [
+              "synthetic_292",
+              "synthetic_840"
+            ],
+            "supplements": []
+          },
+          {
+            "key": "synthetic_841",
+            "label": "synthetic_842",
+            "serviceDateFrom": null,
+            "serviceDateUntil": null,
+            "conditions": [
+              "synthetic_292",
+              "synthetic_840"
+            ],
+            "supplements": []
+          }
+        ],
+        "rates": [
+          {
+            "id": "synthetic_1510",
+            "optionKey": "synthetic_838",
+            "amountMinor": 10000,
+            "currency": "THB",
+            "unit": "synthetic_591",
+            "audience": "group",
+            "validFrom": "2026-01-01",
+            "validUntil": null,
+            "conditions": "synthetic_844",
+            "supplements": []
+          },
+          {
+            "id": "synthetic_1511",
+            "optionKey": "synthetic_841",
+            "amountMinor": 10000,
+            "currency": "THB",
+            "unit": "synthetic_591",
+            "audience": "group",
+            "validFrom": "2026-01-01",
+            "validUntil": null,
+            "conditions": "synthetic_844",
+            "supplements": []
+          }
+        ]
+      },
+      {
+        "id": "synthetic_846",
+        "revisionId": "synthetic_847",
+        "name": "synthetic_848",
+        "description": "synthetic_849",
+        "duration": "synthetic_572",
+        "days": 1,
+        "transport": "synthetic_573",
+        "format": "synthetic_266",
+        "status": "on_request",
+        "stops": [],
+        "itinerary": [
+          "synthetic_820",
+          "synthetic_821",
+          "synthetic_822",
+          "synthetic_823",
+          "synthetic_824",
+          "synthetic_825",
+          "synthetic_826",
+          "synthetic_827",
+          "synthetic_828"
+        ],
+        "includes": [
+          "synthetic_346",
+          "synthetic_829",
+          "synthetic_830",
+          "synthetic_831"
+        ],
+        "extras": [
+          "synthetic_832",
+          "synthetic_833",
+          "synthetic_834",
+          "synthetic_835"
+        ],
+        "conditions": [
+          "synthetic_585",
+          "synthetic_836",
+          "synthetic_837",
+          "synthetic_289"
+        ],
+        "earliestDate": null,
+        "priceOptions": [
+          {
+            "key": "synthetic_850",
+            "label": "synthetic_851",
+            "serviceDateFrom": null,
+            "serviceDateUntil": null,
+            "conditions": [
+              "synthetic_292",
+              "synthetic_840"
+            ],
+            "supplements": []
+          },
+          {
+            "key": "synthetic_852",
+            "label": "synthetic_853",
+            "serviceDateFrom": null,
+            "serviceDateUntil": null,
+            "conditions": [
+              "synthetic_292",
+              "synthetic_840"
+            ],
+            "supplements": []
+          }
+        ],
+        "rates": [
+          {
+            "id": "synthetic_1512",
+            "optionKey": "synthetic_850",
+            "amountMinor": 10000,
+            "currency": "THB",
+            "unit": "synthetic_591",
+            "audience": "group",
+            "validFrom": "2026-01-01",
+            "validUntil": null,
+            "conditions": "synthetic_844",
+            "supplements": []
+          },
+          {
+            "id": "synthetic_1513",
+            "optionKey": "synthetic_852",
+            "amountMinor": 10000,
+            "currency": "THB",
+            "unit": "synthetic_591",
+            "audience": "group",
+            "validFrom": "2026-01-01",
+            "validUntil": null,
+            "conditions": "synthetic_844",
+            "supplements": []
+          }
+        ]
+      }
+    ]
+  }
+}

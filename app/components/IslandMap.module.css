@@ -1,0 +1,20 @@
+.viewport { touch-action: pan-y pinch-zoom; }
+.viewport.fixedViewport, .viewport.fixedViewport:active { cursor:default; touch-action:pan-y pinch-zoom; }
+.viewport:focus-visible { outline:3px solid #f1db9a; outline-offset:-5px; }
+.hitArea { fill:transparent; stroke:transparent; stroke-width:3px; cursor:pointer; pointer-events:all; }
+.hitArea:hover, .hitArea:focus-visible, .hitArea[data-highlighted="true"] { fill:#f3d48455; stroke:#fff3c1; stroke-width:2.5px; outline:none; }
+.hitArea[data-selected="true"] { fill:#f5d89a66; stroke:#fff5c9; stroke-width:3px; }
+.marker[data-highlighted="true"] { z-index:12; }
+.marker[data-highlighted="true"] :global(.marker-dot) { box-shadow:0 0 0 5px #f4edc73d; background:#f5e4b0; }
+.controls button[aria-pressed="true"] { background:#d6e7d4; box-shadow:inset 0 0 0 2px #285a55; }
+.controls button { touch-action:manipulation; }
+.status { position:absolute; top:15px; left:50%; transform:translateX(-50%); padding:7px 12px; border:1px solid #f0ead577; color:#fff7db; background:#154f59e6; font-size:12px; pointer-events:none; z-index:4; max-width:70%; text-align:center; }
+.unmapped { padding:24px 20px 20px; }
+.unmapped h3 { font-size:26px; margin:0 30px 12px 0; }
+.unmapped p { font-size:14px; margin-bottom:16px; }
+@media (max-width:560px) {
+  .fixedViewport .marker :global(.marker-name) { max-width:72px; white-space:normal; }
+}
+@media (prefers-reduced-motion:reduce) {
+  .viewport *, .marker, .marker * { animation:none!important; transition:none!important; scroll-behavior:auto!important; }
+}

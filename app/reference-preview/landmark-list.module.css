@@ -1,0 +1,38 @@
+.landmarkButton {
+  display:flex;
+  align-items:center;
+  gap:12px;
+  width:100%;
+  min-width:44px;
+  min-height:64px;
+  padding:10px 14px;
+  border:1px solid #b9b8a7;
+  border-radius:6px;
+  background:#f7f3e7;
+  color:#183f43;
+  font-family:ReferenceUI,Arial,sans-serif;
+  text-align:left;
+  cursor:pointer;
+  touch-action:manipulation;
+  transition:background-color .15s ease,border-color .15s ease;
+}
+
+.landmarkButton img {
+  width:36px;
+  height:36px;
+  flex-shrink:0;
+  object-fit:contain;
+  pointer-events:none;
+}
+
+.landmarkLabel {display:flex;flex-direction:column;gap:3px;min-width:0;font-size:14px;line-height:1.3}
+.landmarkLabel small {font-size:11px;line-height:1.3;color:#566761}
+.landmarkButton:hover,.landmarkButton[data-state="open"] {background:#ebe7d8;border-color:#6a827a}
+.landmarkButton:focus-visible {outline:3px solid #194c50;outline-offset:3px}
+
+.landmarkPopover:global(.destination-popover) {
+  max-height:min(640px,var(--radix-popover-content-available-height));
+  overflow-y:auto;
+}
+
+@media(prefers-reduced-motion:reduce) {.landmarkButton {transition:none}}

@@ -1,0 +1,206 @@
+{
+  "releaseId": "synthetic_1508",
+  "tour": {
+    "id": "synthetic_362",
+    "slug": "synthetic-363",
+    "title": "synthetic_364",
+    "description": "synthetic_365",
+    "category": "evening",
+    "image": null,
+    "imageAlt": "synthetic_368",
+    "status": "on_request",
+    "featuredRank": 1,
+    "variants": [
+      {
+        "id": "synthetic_369",
+        "revisionId": "synthetic_370",
+        "name": "synthetic_371",
+        "description": "synthetic_372",
+        "duration": "synthetic_373",
+        "days": 1,
+        "transport": "synthetic_374",
+        "format": "synthetic_266",
+        "status": "on_request",
+        "stops": [
+          {
+            "destinationId": "synthetic_375",
+            "sequence": 1,
+            "visitType": "landing",
+            "required": false,
+            "note": "synthetic_377",
+            "name": "synthetic_378",
+            "lat": 1,
+            "lng": 1
+          }
+        ],
+        "itinerary": [
+          "synthetic_377",
+          "synthetic_379"
+        ],
+        "includes": [],
+        "extras": [],
+        "conditions": [
+          "synthetic_380"
+        ],
+        "earliestDate": null,
+        "priceOptions": [
+          {
+            "key": "synthetic_381",
+            "label": "synthetic_382",
+            "serviceDateFrom": null,
+            "serviceDateUntil": null,
+            "conditions": [
+              "synthetic_292",
+              "synthetic_1514"
+            ],
+            "supplements": []
+          }
+        ],
+        "rates": []
+      },
+      {
+        "id": "synthetic_384",
+        "revisionId": "synthetic_385",
+        "name": "synthetic_386",
+        "description": "synthetic_387",
+        "duration": "synthetic_373",
+        "days": 1,
+        "transport": "synthetic_374",
+        "format": "synthetic_266",
+        "status": "on_request",
+        "stops": [
+          {
+            "destinationId": "synthetic_375",
+            "sequence": 1,
+            "visitType": "landing",
+            "required": false,
+            "note": "synthetic_377",
+            "name": "synthetic_378",
+            "lat": 1,
+            "lng": 1
+          },
+          {
+            "destinationId": "synthetic_388",
+            "sequence": 2,
+            "visitType": "landing",
+            "required": false,
+            "note": "synthetic_389",
+            "name": "synthetic_390",
+            "lat": 1,
+            "lng": 1
+          }
+        ],
+        "itinerary": [
+          "synthetic_377",
+          "synthetic_379",
+          "synthetic_391",
+          "synthetic_389"
+        ],
+        "includes": [],
+        "extras": [],
+        "conditions": [
+          "synthetic_380"
+        ],
+        "earliestDate": null,
+        "priceOptions": [
+          {
+            "key": "synthetic_392",
+            "label": "synthetic_393",
+            "serviceDateFrom": null,
+            "serviceDateUntil": null,
+            "conditions": [
+              "synthetic_292",
+              "synthetic_1514"
+            ],
+            "supplements": []
+          }
+        ],
+        "rates": []
+      },
+      {
+        "id": "synthetic_394",
+        "revisionId": "synthetic_395",
+        "name": "synthetic_396",
+        "description": "synthetic_397",
+        "duration": "synthetic_373",
+        "days": 1,
+        "transport": "synthetic_374",
+        "format": "synthetic_266",
+        "status": "on_request",
+        "stops": [
+          {
+            "destinationId": "synthetic_375",
+            "sequence": 1,
+            "visitType": "landing",
+            "required": false,
+            "note": "synthetic_377",
+            "name": "synthetic_378",
+            "lat": 1,
+            "lng": 1
+          },
+          {
+            "destinationId": "synthetic_388",
+            "sequence": 2,
+            "visitType": "landing",
+            "required": false,
+            "note": "synthetic_389",
+            "name": "synthetic_390",
+            "lat": 1,
+            "lng": 1
+          }
+        ],
+        "itinerary": [
+          "synthetic_377",
+          "synthetic_379",
+          "synthetic_391",
+          "synthetic_389"
+        ],
+        "includes": [],
+        "extras": [],
+        "conditions": [
+          "synthetic_380"
+        ],
+        "earliestDate": null,
+        "priceOptions": [
+          {
+            "key": "synthetic_398",
+            "label": "synthetic_399",
+            "serviceDateFrom": null,
+            "serviceDateUntil": null,
+            "conditions": [
+              "synthetic_292",
+              "synthetic_1514"
+            ],
+            "supplements": []
+          }
+        ],
+        "rates": [
+          {
+            "id": "synthetic_1515",
+            "optionKey": "synthetic_398",
+            "amountMinor": 10000,
+            "currency": "THB",
+            "unit": "synthetic_295",
+            "audience": "adult",
+            "validFrom": "2026-01-01",
+            "validUntil": null,
+            "conditions": "synthetic_1516",
+            "supplements": []
+          },
+          {
+            "id": "synthetic_1517",
+            "optionKey": "synthetic_398",
+            "amountMinor": 5000,
+            "currency": "THB",
+            "unit": "synthetic_299",
+            "audience": "child",
+            "validFrom": "2026-01-01",
+            "validUntil": null,
+            "conditions": "synthetic_1518",
+            "supplements": []
+          }
+        ]
+      }
+    ]
+  }
+}

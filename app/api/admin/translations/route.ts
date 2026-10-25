@@ -1,0 +1,17 @@
+import {z} from 'zod';
+import {database} from '@/lib/server/db';
+import {catalogEditorActor} from '@/lib/server/catalog-editor-auth';
+import {json,sameOrigin} from '@/lib/server/http';
+import {activeState,publishedLocalizationSources} from '@/lib/server/catalog';
+import {publicTextSources} from '@/lib/i18n/catalog';
+import {translationSeed,catalogTranslationStatus} from '@/lib/server/localization';
+import type {TranslationRow} from '@/app/admin/translation-batch';
+export const dynamic='force-dynamic';
+export async function GET(req:Request){if(!await catalogEditorActor(req))return json({error:'Доступ закрыт'},403);try{const db=database(),state=await activeState(db),source=await publishedLocalizationSources(db),sources=publicTextSources(source),rows=await db.prepare('SELECT locale,source_text,translated_text,published_text,revision FROM catalog_localizations').all<TranslationRow>(),seed={en:translationSeed('en'),th:translationSeed('th')};const dictionaries={en:{...seed.en},th:{...seed.th}};for(const row of rows.results)if(row.published_text)dictionaries[row.locale][row.source_text]=row.published_text;const latest=await activeState(db);if(latest.release_id!==state.release_id||latest.generation!==state.generation)return json({error:'Каталог изменился во время загрузки. Обновите список.'},409);return json({sources,rows:rows.results,seed,readiness:catalogTranslationStatus(source,dictionaries,state.release_id,state.generation)});}catch{return json({error:'Не удалось загрузить переводы'},503);}}
+const input=z.object({action:z.enum(['save','publish']),locale:z.enum(['en','th']),source:z.string().min(1).max(12000),translation:z.string().min(1).max(16000),revision:z.number().int().min(0)}).strict();
+export async function POST(req:Request){const actor=await catalogEditorActor(req);if(!actor||!sameOrigin(req))return json({error:'Доступ закрыт'},403);try{const text=await req.text();if(text.length>40000)return json({error:'Текст слишком большой'},413);const body=input.parse(JSON.parse(text));if(/[А-Яа-яЁё]/.test(body.translation))return json({error:'Перевод должен быть на выбранном языке, без непереведённого русского текста.'},400);const db=database(),sources=publicTextSources(await publishedLocalizationSources(db));if(!sources.includes(body.source))return json({error:'Исходный текст изменился. Обновите список.'},409);const now=new Date().toISOString();let result;
+ if(body.revision===0){result=await db.prepare('INSERT OR IGNORE INTO catalog_localizations(locale,source_text,translated_text,published_text,revision,updated_at,updated_by) VALUES(?,?,?,?,1,?,?)').bind(body.locale,body.source,body.translation,body.action==='publish'?body.translation:null,now,actor).run();}
+ else if(body.action==='publish'){result=await db.prepare('UPDATE catalog_localizations SET translated_text=?,published_text=?,revision=revision+1,updated_at=?,updated_by=? WHERE locale=? AND source_text=? AND revision=?').bind(body.translation,body.translation,now,actor,body.locale,body.source,body.revision).run();}
+ else{result=await db.prepare('UPDATE catalog_localizations SET translated_text=?,revision=revision+1,updated_at=?,updated_by=? WHERE locale=? AND source_text=? AND revision=?').bind(body.translation,now,actor,body.locale,body.source,body.revision).run();}
+ if(!result.meta.changes)return json({error:'Перевод уже изменён. Обновите список перед сохранением.'},409);return json({revision:body.revision+1,published:body.action==='publish'});
+ }catch{return json({error:'Не удалось сохранить перевод. Проверьте поля и обновите список.'},400);}}

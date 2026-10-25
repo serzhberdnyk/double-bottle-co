@@ -1,0 +1,27 @@
+.trigger {position:absolute;z-index:5;transform:translate(-50%,-50%);width:84px;height:110px;min-width:44px;min-height:44px;padding:0;border:0;background:transparent;cursor:zoom-in;pointer-events:auto;touch-action:manipulation;font:12px/1.2 ReferenceUI,Arial,sans-serif;color:#153552}
+.trigger span {position:absolute;bottom:-15px;left:50%;transform:translateX(-50%)}
+.trigger:hover span,.trigger:focus-visible span {background:#ffca48}.trigger:focus-visible {outline:2px solid #ffca48;outline-offset:2px;border-radius:45%}
+.preview {position:fixed;z-index:120;right:24px;top:10vh;width:min(450px,44vw);max-height:80vh;display:flex;flex-direction:column;border:2px solid #153552;background:#fff2d3;color:#153552;box-shadow:6px 6px 0 #153552;font-family:ReferenceUI,Arial,sans-serif}
+.previewHeader {display:flex;align-items:center;justify-content:space-between;padding-left:16px;font-size:21px}
+.previewHeader button,.header button {display:grid;place-items:center;flex-shrink:0;width:44px;height:44px;background:transparent;border:0;color:inherit;cursor:pointer}
+.previewMap {max-height:calc(80vh - 98px);overflow:auto;background:#05669a}.previewMap img {display:block;width:100%;height:auto}
+.expand {display:flex;align-items:center;justify-content:center;gap:8px;min-height:48px;border:0;border-top:2px solid #153552;background:#ffca48;color:#153552;font:17px ReferenceUI,Arial,sans-serif;cursor:pointer}
+.overlay {position:fixed;inset:0;z-index:160;background:#071f34b5}
+.dialog {position:fixed;z-index:161;left:50%;top:50%;transform:translate(-50%,-50%);width:min(850px,calc(100vw - 24px));height:min(900px,calc(100dvh - 28px));display:flex;flex-direction:column;overflow:hidden;border:2px solid #153552;background:#fff2d3;box-shadow:5px 5px 0 #153552;color:#153552;font-family:ReferenceUI,Arial,sans-serif}
+.header {display:flex;align-items:center;justify-content:space-between;gap:12px;padding:8px 10px 8px 18px;border-bottom:1px solid #15355255}
+.header h2 {margin:0;font:400 28px/1.1 ReferenceDisplay,Georgia,serif}
+.toolbar {display:flex;align-items:center;gap:4px;padding:6px 12px;border-bottom:1px solid #15355255;flex-wrap:wrap}
+.toolbar button {display:grid;place-items:center;width:44px;height:44px;border:1px solid #153552;background:#fff8e7;color:#153552;cursor:pointer}.toolbar button:disabled {opacity:.4;cursor:default}
+.toolbar span {min-width:48px;text-align:center;font-size:15px}.toolbar p {flex:1;min-width:150px;margin:0 0 0 10px;font-size:13px;line-height:1.25}
+.mapViewport {flex:1;min-height:0;overflow:auto;overscroll-behavior:contain;background:#075da0;touch-action:pan-x pan-y pinch-zoom;scrollbar-color:#f4cf6a #075da0}
+.mapArt {position:relative;margin:0 auto}
+.mapArt>img[data-phiphi-detail-image] {display:block;width:100%;height:auto;max-width:none;user-select:none}
+.mapArt>.passingBoat {position:absolute;left:66%;top:22%;width:18%;height:auto;max-width:none;pointer-events:none;user-select:none;animation:boatPass 8s ease-in-out both;filter:drop-shadow(0 2px 2px #07294166)}
+@keyframes boatPass {0% {opacity:0;transform:translateX(-8px)}20%,75% {opacity:.9}100% {opacity:0;transform:translateX(20px)}}
+.parkEmblems {position:absolute;left:0;bottom:4%;width:100%;display:flex;align-items:center;justify-content:space-between;padding:0 3%;box-sizing:border-box;pointer-events:none;user-select:none}
+.parkEmblems>img {display:block;width:27%;height:auto;max-width:none;margin:0;object-fit:contain;filter:drop-shadow(0 2px 2px #05285170)}
+@media(prefers-reduced-motion:reduce){.mapArt>.passingBoat {display:none;animation:none}}
+.links {display:flex;justify-content:center;gap:8px 24px;flex-wrap:wrap;flex-shrink:0;padding:3px 12px;border-top:1px solid #15355255;font-size:15px}
+.links a {display:flex;align-items:center;min-height:44px;text-decoration:underline;text-underline-offset:3px}
+.dialog button:focus-visible,.dialog a:focus-visible,.mapViewport:focus-visible,.preview button:focus-visible {outline:3px solid #ec6b3f;outline-offset:-3px}
+@media(max-width:760px){.preview {display:none}.dialog {width:calc(100vw - 16px);height:calc(100dvh - 20px)}.header {padding:4px 6px 4px 13px}.header h2 {font-size:24px}.toolbar {padding:6px 8px}.toolbar p {font-size:12px;min-width:115px;margin-left:7px}.links {gap:5px 18px;font-size:14px}}

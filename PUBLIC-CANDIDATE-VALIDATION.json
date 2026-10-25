@@ -1,0 +1,1186 @@
+{
+  "status": "Prepared for final independent review; no publication or deployment performed.",
+  "source_commit": "72f3aa5e4a4716d40c4023746f15d7b5481ef55f",
+  "parent_archive_sha256": "eb026faeb6ecaa138773887aabe55663d7a27debcb564389904908065e566951",
+  "parent_manifest_sha256": "0edefde2361b939c3ffbf5f8fb6bb0f8bce32177ded54119cba8b74dc8d81fc4",
+  "environment": {
+    "os": "Linux",
+    "node": "24.19.0",
+    "pnpm": "11.25.0",
+    "application_env": "Cleared; no production credentials"
+  },
+  "install": {
+    "result": "PASS",
+    "mode": "fresh frozen offline install from exact matching project cache",
+    "packages_reused": 640,
+    "packages_downloaded": 0,
+    "lifecycle_scripts_executed": false,
+    "package_sha256": "9b44cc7deff247855ab042f13056b27db916feffdfcfa032df055a04def64105",
+    "lockfile_sha256": "095ba6f301ba3997da2c251dfc4b805c220624bdf0921d905eaceee0d1fb29c9",
+    "online_attempt": "Zero downloads; registry request timed out. One normal escalation failed before command startup. No sandbox repair or bypass attempted."
+  },
+  "original_candidate": {
+    "build": "PASS",
+    "typecheck": "PASS after isolated sequential retry",
+    "node_suite": {
+      "tests": 304,
+      "pass": 210,
+      "fail": 94,
+      "groups": {
+        "sanitization_excluded_private_fixtures": 30,
+        "sanitization_excluded_historical_docs": 3,
+        "historical_sql_fixture_schema_drift": 14,
+        "sanitization_dataset_specific_expectations": 11,
+        "historical_assertion_drift_requires_separate_review": 21,
+        "historical_test_mock_drift": 15
+      }
+    },
+    "localization_tests": {
+      "pass": 12,
+      "fail": 0
+    },
+    "python_ownership_tests": {
+      "pass": 8,
+      "fail": 0
+    },
+    "importer_probe": "FAIL: SLUG_IN_USE: undefined"
+  },
+  "revised_candidate": {
+    "build": "PASS with bounded workers/heap after one resource SIGKILL",
+    "typecheck": "PASS",
+    "synthetic_contract_tests": {
+      "pass": 10,
+      "fail": 0
+    },
+    "localization_tests": {
+      "pass": 12,
+      "fail": 0
+    },
+    "python_ownership_tests": {
+      "pass": 8,
+      "fail": 0
+    },
+    "focused_lint": "PASS",
+    "node_suite": {
+      "tests": 314,
+      "pass": 227,
+      "fail": 87,
+      "groups": {
+        "sanitization_excluded_private_fixtures": 30,
+        "sanitization_excluded_historical_docs": 3,
+        "historical_sql_fixture_schema_drift": 14,
+        "sanitization_dataset_specific_expectations": 4,
+        "historical_assertion_drift_requires_separate_review": 21,
+        "historical_test_mock_drift": 15
+      },
+      "not_rerun_for_final_export": true
+    },
+    "validated_commit": "97831dffe21e3161aa92487bcfcefcc4e7f7f866",
+    "historical_only": true
+  },
+  "scope": {
+    "runtime_code_changed": true,
+    "package_or_lock_changed": false,
+    "production_schema_changed": false,
+    "public_assets_changed": true,
+    "guards_or_existing_tests_disabled": false,
+    "browser_qa": "NOT RUN",
+    "live_database": "NOT ACCESSED",
+    "deployment": "NOT RUN",
+    "github_writes": "NOT RUN",
+    "repository_lint": "NOT RUN; focused component/scripts/tests lint PASS. Importer has one pre-existing error and one warning, unchanged by exact diagnostic comparison.",
+    "runtime_change_scope": "Only ApprovedBrochures labels in RU/EN/TH; importer imageAlt literal, media license, attribution and sourceUrl literals. Exact replacement assertion passed.",
+    "public_asset_change_scope": "Sixteen JPEG contents replaced with original DEMO placeholders; font sources/notices added/corrected. Existing WOFF and other retained image bytes unchanged."
+  },
+  "fixture_repairs": [
+    "content/approved-eight/programs.json",
+    "tests/fixtures/public-catalog-generation3.json",
+    "tests/fixtures/public-review-safety/jet-ski-south.json",
+    "tests/fixtures/public-review-safety/khao-sok.json",
+    "tests/fixtures/public-review-safety/phi-phi-overnight.json",
+    "tests/fixtures/vip-localized-content.json"
+  ],
+  "new_files": [
+    "PUBLIC-CANDIDATE-VALIDATION.json",
+    "tests/fixtures/sanitized-import-packet.json",
+    "tests/sanitized-candidate.test.ts"
+  ],
+  "additional_exclusions": [
+    {
+      "path": "docs/qa/elysiam-form-success.jpg",
+      "reason": "Operational screenshot with visible enquiry reference of unverified synthetic provenance; reference value not recorded"
+    }
+  ],
+  "security": {
+    "baseline_findings": {
+      "example_configuration": 2,
+      "local_development_mock_identity": 1,
+      "third_party_font_attribution": 16,
+      "test_identity": 21,
+      "literal_rejection_test": 1
+    },
+    "png_text_chunks": 50,
+    "png_text_groups": [
+      {
+        "keyword": "Software",
+        "category": "software_marker",
+        "value_bytes": 16,
+        "value_sha256": "5ecb94062b007e846cfab7c6a74e06cdbd58bf93621d65d20a9ca37d1327424b",
+        "count": 50
+      }
+    ],
+    "png_crc_errors": 0,
+    "additional_cabx_pngs": 5,
+    "cabx_assessment": "Standard generation and signing provenance with public issuer metadata. Raw values not copied. No user contacts identified in bounded inspection.",
+    "raw_private_values_in_new_reports": false,
+    "original_archive_unchanged": true
+  },
+  "asset_review": {
+    "retained_asset_records": 411,
+    "groups": [
+      {
+        "category": "original_illustration_brand_cover_or_other_assets",
+        "paths": [
+          "public/assets/language-flags.png",
+          "public/brand/apple-touch-icon-v1.png",
+          "public/brand/double-bottle-mark-v1.png",
+          "public/brand/double-bottle-selected-v1.png",
+          "public/brand/favicon-32-v1.png",
+          "public/brand/favicon-v1.ico",
+          "public/favicon.svg",
+          "public/media/cheow-lan-project-1600.webp",
+          "public/media/cheow-lan-project-480.webp",
+          "public/media/cheow-lan-project-960.webp",
+          "public/media/cheow-lan-project.webp",
+          "public/media/covers/avatar-world-queue-approved-1600.webp",
+          "public/media/covers/avatar-world-queue-approved-480.webp",
+          "public/media/covers/avatar-world-queue-approved-960.webp",
+          "public/media/covers/bangkok-queue-approved-1600.webp",
+          "public/media/covers/bangkok-queue-approved-480.webp",
+          "public/media/covers/bangkok-queue-approved-960.webp",
+          "public/media/covers/carnival-magic-queue-approved-1600.webp",
+          "public/media/covers/carnival-magic-queue-approved-480.webp",
+          "public/media/covers/carnival-magic-queue-approved-960.webp",
+          "public/media/covers/cheow-lan-day-queue-approved-1600.webp",
+          "public/media/covers/cheow-lan-day-queue-approved-480.webp",
+          "public/media/covers/cheow-lan-day-queue-approved-960.webp",
+          "public/media/covers/coral-rawai-queue-approved-1600.webp",
+          "public/media/covers/coral-rawai-queue-approved-480.webp",
+          "public/media/covers/coral-rawai-queue-approved-960.webp",
+          "public/media/covers/elephant-spa-approved-1600.webp",
+          "public/media/covers/elephant-spa-approved-480.webp",
+          "public/media/covers/elephant-spa-approved-960.webp",
+          "public/media/covers/elephant-spa-option-b-approved-1600.webp",
+          "public/media/covers/elephant-spa-option-b-approved-480.webp",
+          "public/media/covers/elephant-spa-option-b-approved-960.webp",
+          "public/media/covers/elephant-spa-queue-approved-1600.webp",
+          "public/media/covers/elephant-spa-queue-approved-480.webp",
+          "public/media/covers/elephant-spa-queue-approved-960.webp",
+          "public/media/covers/eleven-islands-approved-1600.webp",
+          "public/media/covers/eleven-islands-approved-480.webp",
+          "public/media/covers/eleven-islands-approved-960.webp",
+          "public/media/covers/fantasea-queue-approved-1600.webp",
+          "public/media/covers/fantasea-queue-approved-480.webp",
+          "public/media/covers/fantasea-queue-approved-960.webp",
+          "public/media/covers/five-pearls-queue-approved-1600.webp",
+          "public/media/covers/five-pearls-queue-approved-480.webp",
+          "public/media/covers/five-pearls-queue-approved-960.webp",
+          "public/media/covers/glowing-plankton-queue-approved-1600.webp",
+          "public/media/covers/glowing-plankton-queue-approved-480.webp",
+          "public/media/covers/glowing-plankton-queue-approved-960.webp",
+          "public/media/covers/illustration-coming-soon-1600.webp",
+          "public/media/covers/illustration-coming-soon-480.webp",
+          "public/media/covers/illustration-coming-soon-960.webp",
+          "public/media/covers/james-bond-catamaran-approved-1600.webp",
+          "public/media/covers/james-bond-catamaran-approved-480.webp",
+          "public/media/covers/james-bond-catamaran-approved-960.webp",
+          "public/media/covers/james-bond-cave-queue-approved-1600.webp",
+          "public/media/covers/james-bond-cave-queue-approved-480.webp",
+          "public/media/covers/james-bond-cave-queue-approved-960.webp",
+          "public/media/covers/james-bond-yao-queue-approved-1600.webp",
+          "public/media/covers/james-bond-yao-queue-approved-480.webp",
+          "public/media/covers/james-bond-yao-queue-approved-960.webp",
+          "public/media/covers/jet-ski-north-queue-approved-1600.webp",
+          "public/media/covers/jet-ski-north-queue-approved-480.webp",
+          "public/media/covers/jet-ski-north-queue-approved-960.webp",
+          "public/media/covers/jet-ski-south-approved-1600.webp",
+          "public/media/covers/jet-ski-south-approved-480.webp",
+          "public/media/covers/jet-ski-south-approved-960.webp",
+          "public/media/covers/jet-ski-south-approved-v2-1600.webp",
+          "public/media/covers/jet-ski-south-approved-v2-480.webp",
+          "public/media/covers/jet-ski-south-approved-v2-960.webp",
+          "public/media/covers/khao-lak-safari-queue-approved-1600.webp",
+          "public/media/covers/khao-lak-safari-queue-approved-480.webp",
+          "public/media/covers/khao-lak-safari-queue-approved-960.webp",
+          "public/media/covers/khao-sok-approved-1600.webp",
+          "public/media/covers/khao-sok-approved-480.webp",
+          "public/media/covers/khao-sok-approved-960.webp",
+          "public/media/covers/khao-sok-approved-v2-1600.webp",
+          "public/media/covers/khao-sok-approved-v2-480.webp",
+          "public/media/covers/khao-sok-approved-v2-960.webp",
+          "public/media/covers/krabi-catamaran-queue-approved-1600.webp",
+          "public/media/covers/krabi-catamaran-queue-approved-480.webp",
+          "public/media/covers/krabi-catamaran-queue-approved-960.webp",
+          "public/media/covers/krabi-sunset-approved-1600.webp",
+          "public/media/covers/krabi-sunset-approved-480.webp",
+          "public/media/covers/krabi-sunset-approved-960.webp",
+          "public/media/covers/kuala-lumpur-queue-approved-1600.webp",
+          "public/media/covers/kuala-lumpur-queue-approved-480.webp",
+          "public/media/covers/kuala-lumpur-queue-approved-960.webp",
+          "public/media/covers/phang-nga-skywalk-queue-approved-1600.webp",
+          "public/media/covers/phang-nga-skywalk-queue-approved-480.webp",
+          "public/media/covers/phang-nga-skywalk-queue-approved-960.webp",
+          "public/media/covers/phi-phi-bamboo-queue-approved-1600.webp",
+          "public/media/covers/phi-phi-bamboo-queue-approved-480.webp",
+          "public/media/covers/phi-phi-bamboo-queue-approved-960.webp",
+          "public/media/covers/phi-phi-catamaran-approved-1600.webp",
+          "public/media/covers/phi-phi-catamaran-approved-480.webp",
+          "public/media/covers/phi-phi-catamaran-approved-960.webp",
+          "public/media/covers/phi-phi-fishing-approved-1600.webp",
+          "public/media/covers/phi-phi-fishing-approved-480.webp",
+          "public/media/covers/phi-phi-fishing-approved-960.webp",
+          "public/media/covers/phi-phi-four-islands-queue-approved-1600.webp",
+          "public/media/covers/phi-phi-four-islands-queue-approved-480.webp",
+          "public/media/covers/phi-phi-four-islands-queue-approved-960.webp",
+          "public/media/covers/phi-phi-khai-maiton-queue-approved-1600.webp",
+          "public/media/covers/phi-phi-khai-maiton-queue-approved-480.webp",
+          "public/media/covers/phi-phi-khai-maiton-queue-approved-960.webp",
+          "public/media/covers/phi-phi-khai-queue-approved-1600.webp",
+          "public/media/covers/phi-phi-khai-queue-approved-480.webp",
+          "public/media/covers/phi-phi-khai-queue-approved-960.webp",
+          "public/media/covers/phi-phi-lazy-queue-approved-1600.webp",
+          "public/media/covers/phi-phi-lazy-queue-approved-480.webp",
+          "public/media/covers/phi-phi-lazy-queue-approved-960.webp",
+          "public/media/covers/phi-phi-overnight-queue-approved-1600.webp",
+          "public/media/covers/phi-phi-overnight-queue-approved-480.webp",
+          "public/media/covers/phi-phi-overnight-queue-approved-960.webp",
+          "public/media/covers/phi-phi-racha-party-approved-1600.webp",
+          "public/media/covers/phi-phi-racha-party-approved-480.webp",
+          "public/media/covers/phi-phi-racha-party-approved-960.webp",
+          "public/media/covers/phi-phi-sunrise-approved-v2-1600.webp",
+          "public/media/covers/phi-phi-sunrise-approved-v2-480.webp",
+          "public/media/covers/phi-phi-sunrise-approved-v2-960.webp",
+          "public/media/covers/phi-phi-sunset-queue-approved-1600.webp",
+          "public/media/covers/phi-phi-sunset-queue-approved-480.webp",
+          "public/media/covers/phi-phi-sunset-queue-approved-960.webp",
+          "public/media/covers/phuket-city-queue-approved-1600.webp",
+          "public/media/covers/phuket-city-queue-approved-480.webp",
+          "public/media/covers/phuket-city-queue-approved-960.webp",
+          "public/media/covers/racha-coral-approved-1600.webp",
+          "public/media/covers/racha-coral-approved-480.webp",
+          "public/media/covers/racha-coral-approved-960.webp",
+          "public/media/covers/racha-coral-maiton-queue-approved-1600.webp",
+          "public/media/covers/racha-coral-maiton-queue-approved-480.webp",
+          "public/media/covers/racha-coral-maiton-queue-approved-960.webp",
+          "public/media/covers/racha-sunrise-queue-approved-1600.webp",
+          "public/media/covers/racha-sunrise-queue-approved-480.webp",
+          "public/media/covers/racha-sunrise-queue-approved-960.webp",
+          "public/media/covers/rafting-atv-approved-1600.webp",
+          "public/media/covers/rafting-atv-approved-480.webp",
+          "public/media/covers/rafting-atv-approved-960.webp",
+          "public/media/covers/rafting-atv-approved-v2-1600.webp",
+          "public/media/covers/rafting-atv-approved-v2-480.webp",
+          "public/media/covers/rafting-atv-approved-v2-960.webp",
+          "public/media/covers/sea-fishing-queue-approved-1600.webp",
+          "public/media/covers/sea-fishing-queue-approved-480.webp",
+          "public/media/covers/sea-fishing-queue-approved-960.webp",
+          "public/media/covers/similan-diving-queue-approved-1600.webp",
+          "public/media/covers/similan-diving-queue-approved-480.webp",
+          "public/media/covers/similan-diving-queue-approved-960.webp",
+          "public/media/covers/similan-early-approved-1600.webp",
+          "public/media/covers/similan-early-approved-480.webp",
+          "public/media/covers/similan-early-approved-960.webp",
+          "public/media/covers/similan-early-approved-v2-1600.webp",
+          "public/media/covers/similan-early-approved-v2-480.webp",
+          "public/media/covers/similan-early-approved-v2-960.webp",
+          "public/media/covers/similan-lazy-queue-approved-1600.webp",
+          "public/media/covers/similan-lazy-queue-approved-480.webp",
+          "public/media/covers/similan-lazy-queue-approved-960.webp",
+          "public/media/covers/singapore-queue-approved-1600.webp",
+          "public/media/covers/singapore-queue-approved-480.webp",
+          "public/media/covers/singapore-queue-approved-960.webp",
+          "public/media/covers/sunrise-phang-nga-queue-approved-1600.webp",
+          "public/media/covers/sunrise-phang-nga-queue-approved-480.webp",
+          "public/media/covers/sunrise-phang-nga-queue-approved-960.webp",
+          "public/media/jet-ski-south-project-480.webp",
+          "public/media/jet-ski-south-project-960.webp",
+          "public/media/jet-ski-south-project.webp",
+          "public/media/maya-bay-project-480.webp",
+          "public/media/maya-bay-project-960.webp",
+          "public/media/maya-bay-project.webp",
+          "public/media/phang-nga-project-1600.webp",
+          "public/media/phang-nga-project-480.webp",
+          "public/media/phang-nga-project-960.webp",
+          "public/media/phang-nga-project.webp",
+          "public/media/racha-project-1600.webp",
+          "public/media/racha-project-480.webp",
+          "public/media/racha-project-960.webp",
+          "public/media/racha-project.webp",
+          "public/media/reference/airport-plane-cutout.png",
+          "public/media/reference/airport-plane.svg",
+          "public/media/reference/andaman-clean-plate.webp",
+          "public/media/reference/andaman-user-map.png",
+          "public/media/reference/big-buddha-cutout.png",
+          "public/media/reference/diving-user-boat.png",
+          "public/media/reference/diving-user-boat.webp",
+          "public/media/reference/doublebottle-map-bottle.webp",
+          "public/media/reference/doublebottle-mobile-bottle.webp",
+          "public/media/reference/illustrated-land.png",
+          "public/media/reference/illustrated-sea.png",
+          "public/media/reference/map-landmark-placeholder.svg",
+          "public/media/reference/national-parks-user-logo.png",
+          "public/media/reference/phi-phi-longtail.webp",
+          "public/media/reference/phi-phi-park-logo.webp",
+          "public/media/reference/phi-phi-user-detail.png",
+          "public/media/reference/phuket-airport-beach-original.png",
+          "public/media/reference/phuket-airport-user-logo.png",
+          "public/media/reference/pirate-user-boat.png",
+          "public/media/reference/pirate-user-boat.webp",
+          "public/media/reference/tat-badge-user-reference.png",
+          "public/media/reference/thailand-park-logo.webp",
+          "public/media/reference/tour-arrival-chest.png",
+          "public/media/reference/yona-user-icon.webp",
+          "public/media/thai-stamps/stamp-01.webp",
+          "public/media/thai-stamps/stamp-02.webp",
+          "public/media/thai-stamps/stamp-03.webp",
+          "public/media/thai-stamps/stamp-04.webp",
+          "public/media/thai-stamps/stamp-05.webp",
+          "public/media/thai-stamps/stamp-06.webp",
+          "public/media/thai-stamps/stamp-07.webp",
+          "public/media/thai-stamps/stamp-08.webp",
+          "public/media/thai-stamps/stamp-09.webp",
+          "public/media/thai-stamps/stamp-10.webp",
+          "public/media/thai-stamps/stamp-11.webp",
+          "public/media/thai-stamps/stamp-12.webp",
+          "public/media/thai-stamps/stamp-13.webp",
+          "public/media/thai-stamps/stamp-14.webp",
+          "public/media/thai-stamps/stamp-15.webp",
+          "public/media/thai-stamps/stamp-16.webp",
+          "public/media/thai-stamps/stamp-17.webp",
+          "public/media/thai-stamps/stamp-18.webp",
+          "public/media/thai-stamps/stamp-19.webp",
+          "public/media/thai-stamps/stamp-20.webp",
+          "docs/identity/doublebottle/avatar-world-queue-approved.svg",
+          "docs/identity/doublebottle/bangkok-queue-approved.svg",
+          "docs/identity/doublebottle/carnival-magic-queue-approved.svg",
+          "docs/identity/doublebottle/cheow-lan-day-queue-approved.svg",
+          "docs/identity/doublebottle/coral-rawai-queue-approved.svg",
+          "docs/identity/doublebottle/elephant-spa-option-b-approved.svg",
+          "docs/identity/doublebottle/eleven-islands-approved.svg",
+          "docs/identity/doublebottle/fantasea-queue-approved.svg",
+          "docs/identity/doublebottle/five-pearls-queue-approved.svg",
+          "docs/identity/doublebottle/glowing-plankton-queue-approved.svg",
+          "docs/identity/doublebottle/illustration-coming-soon.svg",
+          "docs/identity/doublebottle/james-bond-catamaran-approved.svg",
+          "docs/identity/doublebottle/james-bond-cave-queue-approved.svg",
+          "docs/identity/doublebottle/james-bond-yao-queue-approved.svg",
+          "docs/identity/doublebottle/jet-ski-north-queue-approved.svg",
+          "docs/identity/doublebottle/jet-ski-south-approved-v2.svg",
+          "docs/identity/doublebottle/khao-lak-safari-queue-approved.svg",
+          "docs/identity/doublebottle/khao-sok-approved-v2.svg",
+          "docs/identity/doublebottle/krabi-catamaran-queue-approved.svg",
+          "docs/identity/doublebottle/krabi-sunset-approved.svg",
+          "docs/identity/doublebottle/kuala-lumpur-queue-approved.svg",
+          "docs/identity/doublebottle/phang-nga-skywalk-queue-approved.svg",
+          "docs/identity/doublebottle/phi-phi-bamboo-queue-approved.svg",
+          "docs/identity/doublebottle/phi-phi-catamaran-approved.svg",
+          "docs/identity/doublebottle/phi-phi-fishing-approved.svg",
+          "docs/identity/doublebottle/phi-phi-four-islands-queue-approved.svg",
+          "docs/identity/doublebottle/phi-phi-khai-maiton-queue-approved.svg",
+          "docs/identity/doublebottle/phi-phi-khai-queue-approved.svg",
+          "docs/identity/doublebottle/phi-phi-lazy-queue-approved.svg",
+          "docs/identity/doublebottle/phi-phi-overnight-queue-approved.svg",
+          "docs/identity/doublebottle/phi-phi-racha-party-approved.svg",
+          "docs/identity/doublebottle/phi-phi-sunrise-approved-v2.svg",
+          "docs/identity/doublebottle/phi-phi-sunset-queue-approved.svg",
+          "docs/identity/doublebottle/phuket-city-queue-approved.svg",
+          "docs/identity/doublebottle/racha-coral-approved.svg",
+          "docs/identity/doublebottle/racha-coral-maiton-queue-approved.svg",
+          "docs/identity/doublebottle/racha-sunrise-queue-approved.svg",
+          "docs/identity/doublebottle/rafting-atv-approved-v2.svg",
+          "docs/identity/doublebottle/sea-fishing-queue-approved.svg",
+          "docs/identity/doublebottle/similan-diving-queue-approved.svg",
+          "docs/identity/doublebottle/similan-early-approved-v2.svg",
+          "docs/identity/doublebottle/similan-lazy-queue-approved.svg",
+          "docs/identity/doublebottle/singapore-queue-approved.svg",
+          "docs/identity/doublebottle/sunrise-phang-nga-queue-approved.svg",
+          "docs/identity/elysiam-avatar-world-queue-approved.png",
+          "docs/identity/elysiam-avatar-world-queue-approved.svg",
+          "docs/identity/elysiam-bangkok-queue-approved.png",
+          "docs/identity/elysiam-bangkok-queue-approved.svg",
+          "docs/identity/elysiam-carnival-magic-queue-approved.png",
+          "docs/identity/elysiam-carnival-magic-queue-approved.svg",
+          "docs/identity/elysiam-cheow-lan-day-queue-approved.png",
+          "docs/identity/elysiam-cheow-lan-day-queue-approved.svg",
+          "docs/identity/elysiam-coral-rawai-queue-approved.png",
+          "docs/identity/elysiam-coral-rawai-queue-approved.svg",
+          "docs/identity/elysiam-cover-placeholder.png",
+          "docs/identity/elysiam-cover-placeholder.svg",
+          "docs/identity/elysiam-elephant-beach-mantra-spa.png",
+          "docs/identity/elysiam-elephant-beach-mantra-spa.svg",
+          "docs/identity/elysiam-elephant-spa-option-b-approved.png",
+          "docs/identity/elysiam-elephant-spa-option-b-approved.svg",
+          "docs/identity/elysiam-elephant-spa-queue-approved.png",
+          "docs/identity/elysiam-elephant-spa-queue-approved.svg",
+          "docs/identity/elysiam-eleven-islands-approved.png",
+          "docs/identity/elysiam-eleven-islands-approved.svg",
+          "docs/identity/elysiam-fantasea-queue-approved.png",
+          "docs/identity/elysiam-fantasea-queue-approved.svg",
+          "docs/identity/elysiam-five-pearls-queue-approved.png",
+          "docs/identity/elysiam-five-pearls-queue-approved.svg",
+          "docs/identity/elysiam-glowing-plankton-queue-approved.png",
+          "docs/identity/elysiam-glowing-plankton-queue-approved.svg",
+          "docs/identity/elysiam-james-bond-approved.png",
+          "docs/identity/elysiam-james-bond-approved.svg",
+          "docs/identity/elysiam-james-bond-cave-queue-approved.png",
+          "docs/identity/elysiam-james-bond-cave-queue-approved.svg",
+          "docs/identity/elysiam-james-bond-yao-queue-approved.png",
+          "docs/identity/elysiam-james-bond-yao-queue-approved.svg",
+          "docs/identity/elysiam-jet-ski-north-queue-approved.png",
+          "docs/identity/elysiam-jet-ski-north-queue-approved.svg",
+          "docs/identity/elysiam-jet-ski-south-approved-v2.png",
+          "docs/identity/elysiam-jet-ski-south-approved-v2.svg",
+          "docs/identity/elysiam-jet-ski-south.png",
+          "docs/identity/elysiam-jet-ski-south.svg",
+          "docs/identity/elysiam-khao-lak-safari-queue-approved.png",
+          "docs/identity/elysiam-khao-lak-safari-queue-approved.svg",
+          "docs/identity/elysiam-khao-sok-approved-v2.png",
+          "docs/identity/elysiam-khao-sok-approved-v2.svg",
+          "docs/identity/elysiam-khao-sok-cheow-lan.png",
+          "docs/identity/elysiam-khao-sok-cheow-lan.svg",
+          "docs/identity/elysiam-krabi-catamaran-queue-approved.png",
+          "docs/identity/elysiam-krabi-catamaran-queue-approved.svg",
+          "docs/identity/elysiam-krabi-sunset-approved.png",
+          "docs/identity/elysiam-krabi-sunset-approved.svg",
+          "docs/identity/elysiam-kuala-lumpur-queue-approved.png",
+          "docs/identity/elysiam-kuala-lumpur-queue-approved.svg",
+          "docs/identity/elysiam-phang-nga-skywalk-queue-approved.png",
+          "docs/identity/elysiam-phang-nga-skywalk-queue-approved.svg",
+          "docs/identity/elysiam-phi-phi-approved.png",
+          "docs/identity/elysiam-phi-phi-approved.svg",
+          "docs/identity/elysiam-phi-phi-bamboo-queue-approved.png",
+          "docs/identity/elysiam-phi-phi-bamboo-queue-approved.svg",
+          "docs/identity/elysiam-phi-phi-fishing-approved.png",
+          "docs/identity/elysiam-phi-phi-fishing-approved.svg",
+          "docs/identity/elysiam-phi-phi-four-islands-queue-approved.png",
+          "docs/identity/elysiam-phi-phi-four-islands-queue-approved.svg",
+          "docs/identity/elysiam-phi-phi-khai-maiton-queue-approved.png",
+          "docs/identity/elysiam-phi-phi-khai-maiton-queue-approved.svg",
+          "docs/identity/elysiam-phi-phi-khai-queue-approved.png",
+          "docs/identity/elysiam-phi-phi-khai-queue-approved.svg",
+          "docs/identity/elysiam-phi-phi-lazy-queue-approved.png",
+          "docs/identity/elysiam-phi-phi-lazy-queue-approved.svg",
+          "docs/identity/elysiam-phi-phi-overnight-queue-approved.png",
+          "docs/identity/elysiam-phi-phi-overnight-queue-approved.svg",
+          "docs/identity/elysiam-phi-phi-racha-party-approved.png",
+          "docs/identity/elysiam-phi-phi-racha-party-approved.svg",
+          "docs/identity/elysiam-phi-phi-sunrise-approved-v2.png",
+          "docs/identity/elysiam-phi-phi-sunrise-approved-v2.svg",
+          "docs/identity/elysiam-phi-phi-sunset-queue-approved.png",
+          "docs/identity/elysiam-phi-phi-sunset-queue-approved.svg",
+          "docs/identity/elysiam-phuket-city-queue-approved.png",
+          "docs/identity/elysiam-phuket-city-queue-approved.svg",
+          "docs/identity/elysiam-racha-coral-approved.png",
+          "docs/identity/elysiam-racha-coral-approved.svg",
+          "docs/identity/elysiam-racha-coral-maiton-queue-approved.png",
+          "docs/identity/elysiam-racha-coral-maiton-queue-approved.svg",
+          "docs/identity/elysiam-racha-sunrise-queue-approved.png",
+          "docs/identity/elysiam-racha-sunrise-queue-approved.svg",
+          "docs/identity/elysiam-rafting-atv-approved-v2.png",
+          "docs/identity/elysiam-rafting-atv-approved-v2.svg",
+          "docs/identity/elysiam-rafting-atv.png",
+          "docs/identity/elysiam-rafting-atv.svg",
+          "docs/identity/elysiam-sea-fishing-queue-approved.png",
+          "docs/identity/elysiam-sea-fishing-queue-approved.svg",
+          "docs/identity/elysiam-similan-diving-queue-approved.png",
+          "docs/identity/elysiam-similan-diving-queue-approved.svg",
+          "docs/identity/elysiam-similan-early.png",
+          "docs/identity/elysiam-similan-early.svg",
+          "docs/identity/elysiam-similan-lazy-queue-approved.png",
+          "docs/identity/elysiam-similan-lazy-queue-approved.svg",
+          "docs/identity/elysiam-similans-approved-v2.png",
+          "docs/identity/elysiam-similans-approved-v2.svg",
+          "docs/identity/elysiam-singapore-queue-approved.png",
+          "docs/identity/elysiam-singapore-queue-approved.svg",
+          "docs/identity/elysiam-sunrise-phang-nga-queue-approved.png",
+          "docs/identity/elysiam-sunrise-phang-nga-queue-approved.svg"
+        ],
+        "count": 363
+      },
+      {
+        "category": "template_svg_assets",
+        "paths": [
+          "public/file.svg",
+          "public/globe.svg",
+          "public/window.svg",
+          "public/VERCEL-MIT-NOTICE.txt"
+        ],
+        "count": 3
+      },
+      {
+        "category": "fonts_and_license_notices",
+        "paths": [
+          "public/fonts/LICENSE.txt",
+          "public/fonts/atlas-serif-bold.woff",
+          "public/fonts/atlas-serif.woff",
+          "public/fonts/nimbus-sans-regular.woff",
+          "public/fonts/reference/Prata-OFL.txt",
+          "public/fonts/reference/RobotoCondensed-Apache-2.0.txt",
+          "public/fonts/reference/SOURCES.txt",
+          "public/fonts/reference/prata.woff",
+          "public/fonts/reference/roboto-condensed-medium.woff",
+          "public/fonts/reference/roboto-condensed-regular.woff",
+          "vendor/urw-base35/NimbusRoman-Bold.otf",
+          "vendor/urw-base35/NimbusRoman-Regular.otf",
+          "vendor/urw-base35/NimbusSans-Regular.otf"
+        ],
+        "count": 10
+      },
+      {
+        "category": "map_data_and_attribution",
+        "paths": [
+          "public/map/README.txt",
+          "public/map/andaman.geojson"
+        ],
+        "count": 2
+      },
+      {
+        "category": "synthetic_demo_placeholders",
+        "paths": [
+          "public/media/atime-4pearl.jpg",
+          "public/media/atime-4pearl1.jpg",
+          "public/media/atime-cheo1d.jpg",
+          "public/media/atime-cheo1d1.jpg",
+          "public/media/atime-citytour.jpg",
+          "public/media/atime-citytour1.jpg",
+          "public/media/atime-khaolak.jpg",
+          "public/media/atime-khaolak1.jpg",
+          "public/media/atime-ohosky.jpg",
+          "public/media/atime-ohosky1.jpg",
+          "public/media/atime-ohovip.jpg",
+          "public/media/atime-ohovip1.jpg",
+          "public/media/atime-simila.jpg",
+          "public/media/atime-simila1.jpg",
+          "public/media/atime-ttoa.jpg",
+          "public/media/atime-ttoa1.jpg",
+          "assets-source/demo-brochure-placeholder.svg"
+        ],
+        "count": 16
+      },
+      {
+        "category": "user_supplied_or_approved_derivative",
+        "paths": [
+          "public/media/reference/cheow-lan-minibus-small.png",
+          "public/media/reference/cheow-lan-user-map.png",
+          "public/media/reference/cheow-lan-user-minibus.png"
+        ],
+        "count": 3
+      },
+      {
+        "category": "historical_qa_screenshots",
+        "paths": [
+          "docs/qa/elysiam-desktop-1448.jpg",
+          "docs/qa/elysiam-desktop-oct04.png",
+          "docs/qa/elysiam-mobile-map-oct04.png",
+          "docs/qa/elysiam-mobile-map.jpg",
+          "docs/qa/elysiam-tablet-oct04.png"
+        ],
+        "count": 5
+      },
+      {
+        "category": "public_licensed_photo_attributions",
+        "paths": [
+          "public/media/cheow-lan.webp",
+          "public/media/phang-nga.webp",
+          "public/media/phi-phi.webp",
+          "public/media/racha.webp"
+        ],
+        "count": 4
+      }
+    ],
+    "interpretation": "See current ASSET-DECISIONS.json; original operator brochure bytes excluded. Historical unlabeled inventory is not a count of rights violations.",
+    "evidence": {
+      "fonts": "Bundled license describes AGPL-3 with Font exception and mentions COPYING; per-file mapping and notice completeness need review.",
+      "operator_brochures": "Site-use instructions are not a general public source redistribution grant.",
+      "user_supplied": "Two source attachments and one approved derivative; general redistribution rights not established.",
+      "photos": "Four public credits carry CC BY or CC BY-SA license URLs; recorded evidence not independent verification.",
+      "map": "Bundled OpenStreetMap/ODbL attribution; preserve attribution and review derived data obligations.",
+      "illustrations": "Some PNGs include Software or C2PA generation provenance. That does not itself settle redistribution rights."
+    },
+    "current_decisions": "ASSET-DECISIONS.json"
+  },
+  "remaining_failures": [
+    {
+      "test": "tests/acceptance.test.ts",
+      "path": "acceptance.test.ts:1:1",
+      "category": "sanitization_excluded_private_fixtures"
+    },
+    {
+      "test": "complete fresh packet adds four provider-specific products and five variants; no duplicates or lost services",
+      "path": "approved-eight-import.test.ts:6:1",
+      "category": "sanitization_excluded_private_fixtures"
+    },
+    {
+      "test": "existing approved tariffs and Four Pearls corrected route are kept; source brochure conflict remains separate",
+      "path": "approved-eight-import.test.ts:16:1",
+      "category": "sanitization_excluded_private_fixtures"
+    },
+    {
+      "test": "all new and matched brochure fields translate into EN/TH and images are intact; no internal NET data in public assets",
+      "path": "approved-eight-import.test.ts:23:1",
+      "category": "sanitization_excluded_private_fixtures"
+    },
+    {
+      "test": "import endpoint retains existing owner authorization, same-origin writes and optimistic generation guard",
+      "path": "approved-eight-import.test.ts:29:1",
+      "category": "sanitization_excluded_private_fixtures"
+    },
+    {
+      "test": "Presentation override preserves all source photos, catalog facts, rates and program identities",
+      "path": "approved-tour-cover.test.ts:34:1",
+      "category": "sanitization_excluded_private_fixtures"
+    },
+    {
+      "test": "Every unapproved tour gets the same honest neutral placeholder, including no-photo tours",
+      "path": "approved-tour-cover.test.ts:57:1",
+      "category": "sanitization_excluded_private_fixtures"
+    },
+    {
+      "test": "Cover manifest contains 43 unique canonical programs with bounded responsive assets",
+      "path": "approved-tour-cover.test.ts:86:1",
+      "category": "sanitization_excluded_historical_docs"
+    },
+    {
+      "test": "Only individually approved artworks remain mapped; withdrawn revisions stay unused",
+      "path": "approved-tour-cover.test.ts:105:1",
+      "category": "sanitization_excluded_historical_docs"
+    },
+    {
+      "test": "Creation drafts survive reload with stable IDs, preview privately, and retry the same request idempotently",
+      "path": "catalog-creation.test.ts:37:1",
+      "category": "historical_sql_fixture_schema_drift"
+    },
+    {
+      "test": "Validation rejects incomplete fields, invalid rates/dates and unknown destinations; custom slugs are reserved",
+      "path": "catalog-creation.test.ts:52:1",
+      "category": "historical_sql_fixture_schema_drift"
+    },
+    {
+      "test": "Cancel keeps a resumable draft and never inserts or deletes a catalog product",
+      "path": "catalog-creation.test.ts:70:1",
+      "category": "historical_sql_fixture_schema_drift"
+    },
+    {
+      "test": "Explicit publication adds exactly one card, preserves original43 and inquiry snapshots, and repeated publish is idempotent",
+      "path": "catalog-creation.test.ts:79:1",
+      "category": "historical_sql_fixture_schema_drift"
+    },
+    {
+      "test": "Concurrent catalog generation and stale draft revisions fail without partial product rows",
+      "path": "catalog-creation.test.ts:98:1",
+      "category": "historical_sql_fixture_schema_drift"
+    },
+    {
+      "test": "Creation API enforces existing editor authorization and same-origin rules without granting operations or backup access",
+      "path": "catalog-creation.test.ts:107:1",
+      "category": "historical_sql_fixture_schema_drift"
+    },
+    {
+      "test": "A user supplied fixed price retains its currency, amount and validity without fabricated prices",
+      "path": "catalog-creation.test.ts:129:1",
+      "category": "historical_sql_fixture_schema_drift"
+    },
+    {
+      "test": "Draft, preview, self-publication and restore preserve old releases, other tours, terms and inquiry snapshots",
+      "path": "catalog-editor.test.ts:26:1",
+      "category": "sanitization_excluded_private_fixtures"
+    },
+    {
+      "test": "Stale revisions, concurrent catalog changes, unknown rate identities and invalid prices fail closed",
+      "path": "catalog-editor.test.ts:45:1",
+      "category": "sanitization_excluded_private_fixtures"
+    },
+    {
+      "test": "Raster upload is private before publication, becomes the actual cover, and remains in backups",
+      "path": "catalog-editor.test.ts:54:1",
+      "category": "sanitization_excluded_private_fixtures"
+    },
+    {
+      "test": "Copying a catalog release does not re-expose the previously disputed overnight child tariff",
+      "path": "catalog-editor.test.ts:68:1",
+      "category": "sanitization_excluded_private_fixtures"
+    },
+    {
+      "test": "Selling prices can be added, edited and cleared in release-local drafts without rewriting history",
+      "path": "catalog-editor.test.ts:77:1",
+      "category": "sanitization_excluded_private_fixtures"
+    },
+    {
+      "test": "New selling rates reject duplicate audiences, unknown options and zero; existing identities stay guarded",
+      "path": "catalog-editor.test.ts:93:1",
+      "category": "sanitization_excluded_private_fixtures"
+    },
+    {
+      "test": "Overnight conflicting child amount is on request for display and quote, adult and route unchanged",
+      "path": "catalog-presentation-safety.test.ts:8:1",
+      "category": "sanitization_dataset_specific_expectations"
+    },
+    {
+      "test": "Jet ski published group rates and occupancy remain unchanged, obsolete unknown-price description is clarified",
+      "path": "catalog-presentation-safety.test.ts:17:1",
+      "category": "sanitization_dataset_specific_expectations"
+    },
+    {
+      "test": "Khao Sok keeps known 7000/6500 rates and empty alternatives; disputed child age cannot be used for automatic quote",
+      "path": "catalog-presentation-safety.test.ts:24:1",
+      "category": "sanitization_dataset_specific_expectations"
+    },
+    {
+      "test": "Comic presentation preserves production data, requests and accessibility",
+      "path": "comic-tour-presentation.test.ts:11:1",
+      "category": "historical_assertion_drift_requires_separate_review"
+    },
+    {
+      "test": "Every price state is immediately grouped with its title, before preserved metadata",
+      "path": "compact-card-presentation.test.ts:10:1",
+      "category": "historical_test_mock_drift"
+    },
+    {
+      "test": "Published price semantics are preserved: from, person, craft, request and future dates",
+      "path": "compact-card-presentation.test.ts:24:1",
+      "category": "historical_test_mock_drift"
+    },
+    {
+      "test": "All variants contribute rates, and display date restrictions still apply",
+      "path": "compact-card-presentation.test.ts:34:1",
+      "category": "historical_test_mock_drift"
+    },
+    {
+      "test": "Availability and favorite behavior remain present and distinct from card navigation",
+      "path": "compact-card-presentation.test.ts:48:1",
+      "category": "historical_test_mock_drift"
+    },
+    {
+      "test": "Layout has no footer spacer or fixed card height; wrapping stays safe at every breakpoint",
+      "path": "compact-card-presentation.test.ts:58:1",
+      "category": "historical_assertion_drift_requires_separate_review"
+    },
+    {
+      "test": "Compact facts, sequence and inclusion content come from the published variant, never raw pricing",
+      "path": "compact-tour.test.ts:16:1",
+      "category": "sanitization_excluded_private_fixtures"
+    },
+    {
+      "test": "Compact header keeps icon-link accessible names and essential conditions are open",
+      "path": "compact-tour.test.ts:49:1",
+      "category": "historical_assertion_drift_requires_separate_review"
+    },
+    {
+      "test": "Compact requests return focus to the actual clicked CTA and preserve the boat caveat",
+      "path": "compact-tour.test.ts:60:1",
+      "category": "historical_assertion_drift_requires_separate_review"
+    },
+    {
+      "test": "actual compact detail has one primary request, one adult price and footer in RU/EN/TH",
+      "path": "detail-duplicate-removal.test.ts:13:1",
+      "category": "historical_test_mock_drift"
+    },
+    {
+      "test": "Land texture covers the complete geographic source, including visible overflow",
+      "path": "editorial-style.test.ts:11:1",
+      "category": "historical_assertion_drift_requires_separate_review"
+    },
+    {
+      "test": "Each canonical destination retains a direct, encoded catalogue route",
+      "path": "exact-art-directory.test.ts:6:1",
+      "category": "sanitization_excluded_private_fixtures"
+    },
+    {
+      "test": "Directory includes accessible modal semantics, honest counts and nonspatial landmark cards",
+      "path": "exact-art-directory.test.ts:17:1",
+      "category": "historical_assertion_drift_requires_separate_review"
+    },
+    {
+      "test": "Separate canonical catalogue still supports both list and real interactive geographic map",
+      "path": "exact-art-directory.test.ts:28:1",
+      "category": "historical_assertion_drift_requires_separate_review"
+    },
+    {
+      "test": "Fishing presentation retains literal itinerary, extras, conditions and destination links",
+      "path": "fishing-tour.test.ts:15:1",
+      "category": "sanitization_excluded_private_fixtures"
+    },
+    {
+      "test": "Requested cleanup removes only the hero directions panel, caption and compass",
+      "path": "hero-cleanup.test.ts:6:1",
+      "category": "historical_assertion_drift_requires_separate_review"
+    },
+    {
+      "test": "tests/home-catalog-consolidation.test.ts",
+      "path": "home-catalog-consolidation.test.ts:1:1",
+      "category": "historical_test_mock_drift"
+    },
+    {
+      "test": "Comic draft changes presentation only: canonical copy, markup, handlers and rates stay byte-identical to postrollback v42",
+      "path": "home-comic-draft.test.ts:7:1",
+      "category": "historical_assertion_drift_requires_separate_review"
+    },
+    {
+      "test": "Approved home composition removes the header and eyebrow, keeps the brand link and one unchanged h1",
+      "path": "home-comic-draft.test.ts:29:1",
+      "category": "historical_assertion_drift_requires_separate_review"
+    },
+    {
+      "test": "Main and previous review URL execute the same approved home with real published data and 4+20 feed",
+      "path": "home-routes.test.ts:45:1",
+      "category": "sanitization_excluded_private_fixtures"
+    },
+    {
+      "test": "Main and previous review URL retain the illustrated retry state when catalogue is unavailable",
+      "path": "home-routes.test.ts:61:1",
+      "category": "historical_test_mock_drift"
+    },
+    {
+      "test": "Rendered shared tour/header/footer navigation returns to the corrected main route",
+      "path": "home-routes.test.ts:66:1",
+      "category": "historical_test_mock_drift"
+    },
+    {
+      "test": "translation administration reuses auth/origin protection, drafts and optimistic publication",
+      "path": "i18n-admin.test.ts:2:1",
+      "category": "historical_sql_fixture_schema_drift"
+    },
+    {
+      "test": "localized pagination/search include products beyond first48",
+      "path": "i18n-catalog.test.ts:6:1",
+      "category": "historical_sql_fixture_schema_drift"
+    },
+    {
+      "test": "incomplete locale destination never appears in hreflang/sitemap; RU unaffected",
+      "path": "i18n-catalog.test.ts:7:1",
+      "category": "historical_sql_fixture_schema_drift"
+    },
+    {
+      "test": "saved translation draft does not alter public copy; publish is additive only",
+      "path": "i18n-catalog.test.ts:8:1",
+      "category": "historical_sql_fixture_schema_drift"
+    },
+    {
+      "test": "Inquiry alternatives contain only supplied business destinations, without guest data or prefilled messages",
+      "path": "inquiry-contacts.test.ts:6:1",
+      "category": "historical_assertion_drift_requires_separate_review"
+    },
+    {
+      "test": "sourceHash uses raw exact UTF8, not JSON quoting; changed RU fails",
+      "path": "khaosok-split-locales.test.mjs:8:1",
+      "category": "sanitization_dataset_specific_expectations"
+    },
+    {
+      "test": "Airport list mode keeps the existing close and focus restoration handlers",
+      "path": "landmark-list.test.ts:45:1",
+      "category": "historical_assertion_drift_requires_separate_review"
+    },
+    {
+      "test": "tests/map-engine.test.ts",
+      "path": "map-engine.test.ts:1:1",
+      "category": "sanitization_excluded_private_fixtures"
+    },
+    {
+      "test": "Source-pixel placement is proportional to the exact art box, without a geographic projection",
+      "path": "map-poi.test.ts:29:1",
+      "category": "historical_assertion_drift_requires_separate_review"
+    },
+    {
+      "test": "One native button and Radix popover supply the shared keyboard, dismissal and focus contract",
+      "path": "map-poi.test.ts:43:1",
+      "category": "historical_assertion_drift_requires_separate_review"
+    },
+    {
+      "test": "Optional placement uncertainty is part of the art card accessible description only",
+      "path": "map-poi.test.ts:65:1",
+      "category": "historical_assertion_drift_requires_separate_review"
+    },
+    {
+      "test": "Party presentation retains literal itinerary, extras, conditions and destination links",
+      "path": "party-tour.test.ts:15:1",
+      "category": "sanitization_excluded_private_fixtures"
+    },
+    {
+      "test": "Illustrated covers omit generic caption; photo fallback retains its caveat",
+      "path": "party-tour.test.ts:25:1",
+      "category": "historical_assertion_drift_requires_separate_review"
+    },
+    {
+      "test": "Price selector marks pointer focus, restores keyboard focus, and resets after blur",
+      "path": "price-option-pointer-focus.test.ts:12:1",
+      "category": "historical_assertion_drift_requires_separate_review"
+    },
+    {
+      "test": "Explicit invalid option is empty; selected options never pool commercial rates",
+      "path": "price-options.test.ts:17:1",
+      "category": "sanitization_excluded_private_fixtures"
+    },
+    {
+      "test": "Craft, role and season cannot produce passenger-multiplied or summer totals",
+      "path": "price-options.test.ts:30:1",
+      "category": "sanitization_excluded_private_fixtures"
+    },
+    {
+      "test": "Price option promises include conditions, supplements and service dates",
+      "path": "price-options.test.ts:39:1",
+      "category": "sanitization_excluded_private_fixtures"
+    },
+    {
+      "test": "Inquiry validates option and service season and records selected public terms",
+      "path": "price-options.test.ts:51:1",
+      "category": "sanitization_excluded_private_fixtures"
+    },
+    {
+      "test": "Programme edits round-trip per variant through draft, preview and publish without changing rates, terms or stops",
+      "path": "programme-editor.test.ts:28:1",
+      "category": "historical_sql_fixture_schema_drift"
+    },
+    {
+      "test": "Legacy draft without itinerary preserves programme; invalid explicit programmes never save",
+      "path": "programme-editor.test.ts:49:1",
+      "category": "historical_sql_fixture_schema_drift"
+    },
+    {
+      "test": "Changed RU programme gates stale EN until an explicit translation publication",
+      "path": "programme-editor.test.ts:58:1",
+      "category": "historical_sql_fixture_schema_drift"
+    },
+    {
+      "test": "Lower gallery loads more inline and its full-card links keep canonical detail navigation",
+      "path": "reference-card-style.test.ts:7:1",
+      "category": "historical_assertion_drift_requires_separate_review"
+    },
+    {
+      "test": "Unknown on-request format is omitted without changing the price label",
+      "path": "reference-card-style.test.ts:40:1",
+      "category": "historical_assertion_drift_requires_separate_review"
+    },
+    {
+      "test": "Same-page feed consumes all and only 43 published catalogue products, with no invented Phi Phi price",
+      "path": "reference-feed-catalogue.test.ts:10:1",
+      "category": "sanitization_excluded_private_fixtures"
+    },
+    {
+      "test": "Exact-art hero never overlays the unaligned geographic engine or manual anchors",
+      "path": "reference-map.test.ts:24:1",
+      "category": "historical_assertion_drift_requires_separate_review"
+    },
+    {
+      "test": "All 43 cover masters match manifest hashes, and requests stay on the existing live workflow",
+      "path": "review-queue.test.ts:22:1",
+      "category": "sanitization_excluded_historical_docs"
+    },
+    {
+      "test": "Sitemap paths use the active publication, public destinations and historical tour slug fallback",
+      "path": "seo-foundation.test.ts:257:1",
+      "category": "sanitization_excluded_private_fixtures"
+    },
+    {
+      "test": "Sitemap excludes destinations whose published products or variants are temporarily unavailable",
+      "path": "seo-foundation.test.ts:279:1",
+      "category": "sanitization_excluded_private_fixtures"
+    },
+    {
+      "test": "Sitemap and robots handlers block unapproved hosts without querying the catalogue",
+      "path": "seo-foundation.test.ts:354:1",
+      "category": "historical_test_mock_drift"
+    },
+    {
+      "test": "Approved sitemap handler emits only published paths and fails safely when data is unavailable",
+      "path": "seo-foundation.test.ts:378:1",
+      "category": "historical_test_mock_drift"
+    },
+    {
+      "test": "Actual catalogue and destination routes preserve page 2 and enforce safe self-canonicals",
+      "path": "seo-foundation.test.ts:399:1",
+      "category": "sanitization_excluded_private_fixtures"
+    },
+    {
+      "test": "Admin and visual preview route metadata stays noindex after public indexing is approved",
+      "path": "seo-foundation.test.ts:444:1",
+      "category": "historical_test_mock_drift"
+    },
+    {
+      "test": "Unicode search covers all published programmes, destination names and punctuation",
+      "path": "simple-catalog-search.test.ts:11:1",
+      "category": "sanitization_excluded_private_fixtures"
+    },
+    {
+      "test": "One real tariff renders no selector or label and is selected with its original rates",
+      "path": "single-price-option.test.ts:21:1",
+      "category": "historical_test_mock_drift"
+    },
+    {
+      "test": "Disabled and unavailable entries do not create a second choice or become the default",
+      "path": "single-price-option.test.ts:27:1",
+      "category": "historical_test_mock_drift"
+    },
+    {
+      "test": "Multiple real choices stay selectable and explicit selection keeps only matching rates",
+      "path": "single-price-option.test.ts:35:1",
+      "category": "historical_test_mock_drift"
+    },
+    {
+      "test": "Future and on-request tariffs remain choices; an impossible or finished service window does not",
+      "path": "single-price-option.test.ts:43:1",
+      "category": "historical_test_mock_drift"
+    },
+    {
+      "test": "Sunrise presentation retains literal itinerary, extras, conditions and destination links",
+      "path": "sunrise-tour.test.ts:15:1",
+      "category": "sanitization_excluded_private_fixtures"
+    },
+    {
+      "test": "company labels follow existing bindings, survive content revisions and never mutate/publicly expose suppliers",
+      "path": "supplier-sort.test.ts:32:1",
+      "category": "sanitization_excluded_private_fixtures"
+    },
+    {
+      "test": "admin selection uses existing IDs and defaults to existing order",
+      "path": "supplier-sort.test.ts:54:1",
+      "category": "historical_assertion_drift_requires_separate_review"
+    }
+  ],
+  "limitations": [
+    "Historical test drift is not proof that runtime behavior is defect-free.",
+    "Synthetic catalog content must not be deployed as real offers.",
+    "No complete forensic analysis of non-PNG binary assets.",
+    "Independent security review, rights review and project licensing decision remain required."
+  ],
+  "license_followup": {
+    "scope": "Three license corrections plus authorized synthetic brochure substitution and narrow truthful labels only",
+    "previous_runtime_validation_retained_as_historical": true,
+    "new_checks": {
+      "application_files_compared": 287,
+      "application_files_byte_identical": 285,
+      "application_files_changed": [
+        "app/components/ApprovedBrochures.tsx",
+        "lib/server/approved-eight-import.ts"
+      ],
+      "changed_application_scope": "Only ApprovedBrochures labels in RU/EN/TH; importer imageAlt literal, media license, attribution and sourceUrl literals. Exact replacement assertion passed.",
+      "ids_slugs_rates_guards_sql_importer_control_flow_unchanged": true,
+      "package_and_lock_unchanged": true,
+      "full_agpl_font_exception_unchanged": true,
+      "all_retained_woff_bytes_identical": true,
+      "woff_file_count": 6,
+      "user_cheowlan_pngs_unchanged": [
+        "public/media/reference/cheow-lan-user-map.png",
+        "public/media/reference/cheow-lan-user-minibus.png",
+        "public/media/reference/cheow-lan-minibus-small.png"
+      ],
+      "brochure_count": 16,
+      "all_brochures_decode_and_demo": true,
+      "old_brochure_hash_collisions": 0,
+      "nimbus_3_of_3_byte_reproducible": true,
+      "font_recipe_environment": {
+        "python": "3.12.14",
+        "fontTools": "4.61.1"
+      },
+      "final_build": "PASS; Linux bounded-worker build, exit 0",
+      "typescript": "PASS",
+      "synthetic_contract_tests": {
+        "pass": 11,
+        "fail": 0
+      },
+      "brochure_component_tests": {
+        "pass": 4,
+        "fail": 0
+      },
+      "localization_tests": {
+        "pass": 12,
+        "fail": 0
+      },
+      "release_ownership_tests": {
+        "pass": 8,
+        "fail": 0
+      },
+      "focused_lint": "PASS for changed component, new renderer and new/extended tests",
+      "importer_lint": {
+        "baseline_existing_errors": 1,
+        "baseline_existing_warnings": 1,
+        "new_findings": 0,
+        "identical_diagnostics": true,
+        "changed_literal_lines_new_findings": 0
+      },
+      "full_historical_suite": "NOT RUN on this final export; prior commit results retained as historical evidence only",
+      "new_runtime_dangling_references": 0
+    },
+    "asset_decisions": "ASSET-DECISIONS.json"
+  },
+  "remaining_failures_scope": "These 87 failures are from prior candidate commit 97831dffe21e3161aa92487bcfcefcc4e7f7f866, not a run of the final export.",
+  "final_export_validation": {
+    "date_utc": "2026-10-25",
+    "results": {
+      "application_files_compared": 287,
+      "application_files_byte_identical": 285,
+      "application_files_changed": [
+        "app/components/ApprovedBrochures.tsx",
+        "lib/server/approved-eight-import.ts"
+      ],
+      "changed_application_scope": "Only ApprovedBrochures labels in RU/EN/TH; importer imageAlt literal, media license, attribution and sourceUrl literals. Exact replacement assertion passed.",
+      "ids_slugs_rates_guards_sql_importer_control_flow_unchanged": true,
+      "package_and_lock_unchanged": true,
+      "full_agpl_font_exception_unchanged": true,
+      "all_retained_woff_bytes_identical": true,
+      "woff_file_count": 6,
+      "user_cheowlan_pngs_unchanged": [
+        "public/media/reference/cheow-lan-user-map.png",
+        "public/media/reference/cheow-lan-user-minibus.png",
+        "public/media/reference/cheow-lan-minibus-small.png"
+      ],
+      "brochure_count": 16,
+      "all_brochures_decode_and_demo": true,
+      "old_brochure_hash_collisions": 0,
+      "nimbus_3_of_3_byte_reproducible": true,
+      "font_recipe_environment": {
+        "python": "3.12.14",
+        "fontTools": "4.61.1"
+      },
+      "final_build": "PASS; Linux bounded-worker build, exit 0",
+      "typescript": "PASS",
+      "synthetic_contract_tests": {
+        "pass": 11,
+        "fail": 0
+      },
+      "brochure_component_tests": {
+        "pass": 4,
+        "fail": 0
+      },
+      "localization_tests": {
+        "pass": 12,
+        "fail": 0
+      },
+      "release_ownership_tests": {
+        "pass": 8,
+        "fail": 0
+      },
+      "focused_lint": "PASS for changed component, new renderer and new/extended tests",
+      "importer_lint": {
+        "baseline_existing_errors": 1,
+        "baseline_existing_warnings": 1,
+        "new_findings": 0,
+        "identical_diagnostics": true,
+        "changed_literal_lines_new_findings": 0
+      },
+      "full_historical_suite": "NOT RUN on this final export; prior commit results retained as historical evidence only",
+      "new_runtime_dangling_references": 0
+    },
+    "build_environment": "Cleared environment; no production credentials; Node 24.19.0, pnpm 11.25.0; bounded heap/workers",
+    "test_commands": [
+      "node --experimental-loader ./tests/visibility-route-loader.mjs --test tests/sanitized-candidate.test.ts",
+      "node --test tests/demo-brochures.test.mjs",
+      "node --test scripts/test-catalog-localization.cjs",
+      "python3 tests/release-ownership.test.py",
+      "node node_modules/typescript/bin/tsc --noEmit --incremental false",
+      "node node_modules/eslint/bin/eslint.js app/components/ApprovedBrochures.tsx tests/sanitized-candidate.test.ts tests/demo-brochures.test.mjs scripts/render-demo-brochures.mjs",
+      "pnpm build",
+      "python3 scripts/subset-public-nimbus.py --check"
+    ],
+    "full_suite": "NOT RUN for this final export. Prior 314/227/87 remains historical only."
+  }
+}

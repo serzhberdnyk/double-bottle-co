@@ -1,0 +1,27 @@
+{
+  "status": "synthetic-review-only",
+  "provenance": {
+    "method": "assistant_literal_translation",
+    "source": "Independent offline test data",
+    "sourceReferences": [
+      "synthetic-fixture-v1"
+    ],
+    "review": "Not production or user approved publication copy"
+  },
+  "ru": {
+    "title": "Синтетическая отдельная программа",
+    "description": "Только искусственные данные для тестирования."
+  },
+  "en": {
+    "title": "Synthetic separate program",
+    "description": "Artificial data for tests only."
+  },
+  "th": {
+    "title": "โปรแกรมทดสอบ",
+    "description": "ข้อมูลจำลองสำหรับการทดสอบเท่านั้น"
+  },
+  "sourceHashes": {
+    "title": "c822b8b29d6747bb9b4c76430f8245aa583db26d30ad43124dcb373386c23680",
+    "description": "81b9059ba2a36226c90f57d216cf85c8afa0e77fb3f73d3d31ea98334c46898f"
+  }
+}

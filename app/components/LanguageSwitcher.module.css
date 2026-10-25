@@ -1,0 +1,8 @@
+@font-face{font-family:TicketCondensed;src:url('/fonts/reference/roboto-condensed-medium.woff') format('woff');font-weight:500;font-display:swap}
+.switcher{position:relative;isolation:isolate;display:grid;grid-template-columns:repeat(3,minmax(44px,1fr));width:clamp(176px,20vw,240px);aspect-ratio:441/113;container-type:inline-size;max-width:100%;padding:0;border:0;background:transparent;box-shadow:none;color:#0a3049}
+.art{position:absolute;inset:0;z-index:-1;display:block;width:100%;height:100%;overflow:visible;pointer-events:none}
+.language{display:flex;align-items:center;justify-content:center;min-width:44px;min-height:44px;padding:0;color:#0a3049;background:transparent;border:0;text-decoration:none;font-family:TicketCondensed,'Arial Narrow',Impact,sans-serif;font-size:clamp(25px,14.5cqw,35px);font-weight:900;font-synthesis:weight;line-height:1;letter-spacing:-.035em;-webkit-text-stroke:.25px currentColor;box-shadow:none;touch-action:manipulation}
+.face{display:block;transform:scaleX(.88);transform-origin:center;pointer-events:none}
+.language:focus-visible{outline:3px solid #ec6b3f;outline-offset:-6px;border-radius:6px}
+.language:active .face{transform:translateY(1px) scaleX(.88)}
+@media(hover:hover){.switcher:has(.language[data-lang=ru]:hover) .ru:not([data-active=true]),.switcher:has(.language[data-lang=en]:hover) .en:not([data-active=true]),.switcher:has(.language[data-lang=th]:hover) .th:not([data-active=true]){fill:#ffe4a0}}

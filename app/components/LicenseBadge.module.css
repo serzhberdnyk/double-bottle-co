@@ -1,0 +1,7 @@
+.badge { display:flex; flex:0 0 auto; align-items:center; gap:6px; width:max-content; margin-left:auto; padding:0 12px 0 0; border-radius:32px 9px 9px 32px; background:#3a77c1; color:white; line-height:1.1; }
+.emblem { position:relative; width:64px; height:64px; flex:0 0 64px; overflow:hidden; border-radius:50%; }
+.emblem img { position:absolute; width:239.23445%; max-width:none; height:auto; left:-7.6555%; top:-71.05263%; }
+.words { display:flex; flex-direction:column; align-items:center; gap:6px; font-family:Arial,sans-serif; }
+.words>span { font-size:12px; font-weight:800; letter-spacing:.015em; white-space:nowrap; }
+.words strong { font-size:19px; font-weight:800; letter-spacing:.01em; }
+@media(max-width:560px) { .badge { order:4; } }

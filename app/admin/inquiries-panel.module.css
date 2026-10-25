@@ -1,0 +1,24 @@
+.panel{background:#fffaf0;color:#153552;overflow-wrap:anywhere}
+.heading{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.heading h2{margin:0}
+.heading button{margin:0;min-height:44px;background:#fff2d3}
+.heading button:disabled{opacity:.55;cursor:wait}
+.heading button:focus-visible{outline:3px solid #e39453;outline-offset:3px}
+.hint,.id{color:#506579;font-size:13px;line-height:1.5}
+.hint{margin:12px 0 0}
+.list{list-style:none;padding:0;margin:20px 0 0;display:grid;gap:16px}
+.card{padding:18px;border:1px solid #b8c8c5;background:#fffdf7;min-width:0}
+.cardHeading{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.label,.fields dt{font-size:12px;color:#506579;line-height:1.5}
+.cardHeading p{margin:4px 0 0;font-size:15px}
+.status{border:1px solid #b8c8c5;padding:5px 9px;background:#eef1e8;font-size:13px;max-width:100%}
+.id{margin:8px 0 16px}
+.fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px 24px;margin:0;font-size:14px;line-height:1.6}
+.fields div{min-width:0}
+.fields dd{margin:4px 0 0;white-space:pre-wrap}
+.fields dd p{margin:4px 0 0}
+.comment{grid-column:1/-1}
+.error{color:#913d2a;font-size:14px;line-height:1.5}
+@media(max-width:600px){.card{padding:14px}.fields{grid-template-columns:minmax(0,1fr);gap:14px}.heading button{width:100%}}
+
+.window{position:relative}.window>summary{cursor:pointer;list-style:none;padding:7px 12px;border:1px solid #153552;background:#fff2d3;font-size:14px}.window[open]>summary{background:#ffca48}.window>summary:focus-visible{outline:3px solid #ec6b3f;outline-offset:3px}.badge{display:inline-grid;place-items:center;min-width:22px;height:22px;margin-left:5px;border-radius:50%;background:#153552;color:#fff2d3;font-size:12px}.popup{position:absolute;right:0;top:calc(100% + 10px);width:min(620px,calc(100vw - 40px));max-height:60vh;overflow:auto;border:2px solid #153552;background:#fffaf0;box-shadow:5px 5px 0 #153552;padding:12px}.popup .panel{margin:0;padding:0}.popup h2{font-size:18px}.popup .card{padding:10px}.popup .list{gap:10px;margin-top:10px}.popup .fields{gap:8px}.toast{position:fixed;right:20px;bottom:20px;display:flex;align-items:center;gap:14px;background:#ffca48;color:#153552;border:2px solid #153552;padding:10px 14px;box-shadow:4px 4px 0 #153552;z-index:60;font-size:14px}.toast button{border:0;background:none;color:inherit;font-size:22px;cursor:pointer}@media(max-width:600px){.popup{position:fixed;left:12px;right:12px;top:12vh;width:auto;max-height:75vh}.toast{left:12px;right:12px;bottom:12px}}

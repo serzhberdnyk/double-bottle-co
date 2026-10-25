@@ -1,0 +1,442 @@
+[
+  {
+    "library_file_id": "libfile_f2c7061308b48191a2f282c13646cb4b",
+    "file_id": "file_00000000734081f5b7a1e1d458dfaaf3",
+    "name": "Vintage Thai Musician Postage Stamp.png",
+    "bytes": 3831311,
+    "sha256": "aa987c3ceae527448c8ad34b28a4a439b4cd8b3cee3bf9fdc16423de4d6cb627",
+    "size": [
+      1566,
+      1004
+    ],
+    "mode": "RGBA",
+    "version": 0,
+    "optimized": {
+      "path": "public/media/thai-stamps/stamp-01.webp",
+      "bytes": 29228,
+      "size": [
+        256,
+        166
+      ],
+      "sha256": "9059c93bea0bf5013586aaa37ccccd4bcc97f3ed420c8a8a5264b59256843924"
+    }
+  },
+  {
+    "library_file_id": "libfile_2712b8d98b5c8191b7e3850ac9627c6c",
+    "file_id": "file_00000000b41081f58185b70fc639f832",
+    "name": "Vintage Thai Elephant Postage Stamp.png",
+    "bytes": 3254239,
+    "sha256": "72065e91a2742380ee172438ad94b2f5b04eccd4ec3b9666e6c6ffc342e2264c",
+    "size": [
+      1158,
+      1358
+    ],
+    "mode": "RGB",
+    "version": 0,
+    "optimized": {
+      "path": "public/media/thai-stamps/stamp-02.webp",
+      "bytes": 28158,
+      "size": [
+        218,
+        256
+      ],
+      "sha256": "c8fdaefd42974927ad33bf8f4e17f326bf3e03737d63c4f0eb2e839917f4f8a6"
+    }
+  },
+  {
+    "library_file_id": "libfile_45e6e825978c8191ab8fe3d7f7d529b1",
+    "file_id": "file_0000000024f881f5aec422dfa00decab",
+    "name": "Vintage Thai Talking Myna Postage Stamp.png",
+    "bytes": 3453149,
+    "sha256": "2232d9fe25e21b2391ccfffe6f4cec736fa898312559619180a9646a93a98b1c",
+    "size": [
+      1149,
+      1368
+    ],
+    "mode": "RGBA",
+    "version": 0,
+    "optimized": {
+      "path": "public/media/thai-stamps/stamp-03.webp",
+      "bytes": 32428,
+      "size": [
+        215,
+        256
+      ],
+      "sha256": "b6925e3b304a7afb23fffe07f9dd89cd6d4e7e382b35c23236cc1140056407a8"
+    }
+  },
+  {
+    "library_file_id": "libfile_d32ad7d7d75c81918d690cfd110f579e",
+    "file_id": "file_00000000810c822f981074290133301c",
+    "name": "Vintage Thai Traditional Costume Postage Stamp.png",
+    "bytes": 3118827,
+    "sha256": "f9462b0392ad45670926ac74116376583705d0c820adc4f8e76551957dfc9ac5",
+    "size": [
+      1589,
+      990
+    ],
+    "mode": "RGBA",
+    "version": 0,
+    "optimized": {
+      "path": "public/media/thai-stamps/stamp-04.webp",
+      "bytes": 24108,
+      "size": [
+        256,
+        161
+      ],
+      "sha256": "f9af3d02cd383ede84a8c6eeb2c74101563f4f140716e2976f26937732b66cbc"
+    }
+  },
+  {
+    "library_file_id": "libfile_711ef6409a948191b4c3a81a7028826e",
+    "file_id": "file_000000003b5481f68a323dafe690bda3",
+    "name": "Screenshot 2026-10-12 160403.png",
+    "bytes": 371775,
+    "sha256": "2ce6c651332fcc3e1d250e18b8cc8b4b9a4bb3ff3d0a531a1ee83bc416062290",
+    "size": [
+      547,
+      347
+    ],
+    "mode": "RGBA",
+    "version": 0,
+    "optimized": {
+      "path": "public/media/thai-stamps/stamp-05.webp",
+      "bytes": 15244,
+      "size": [
+        256,
+        162
+      ],
+      "sha256": "cfe35ba42ae55919ccc879ac4579605570c4d5749616191abc90ac15eef1b083"
+    }
+  },
+  {
+    "library_file_id": "libfile_a18679d8ca34819188bf5b2196b07306",
+    "file_id": "file_000000001604820c8c3bbeee934c0d9d",
+    "name": "Distressed Bangkok Noi Postmark Stamp.png",
+    "bytes": 784500,
+    "sha256": "df43479f13613609c7f57575c49f0aae779dee646c386978df213b9731c3dfd5",
+    "size": [
+      1292,
+      1218
+    ],
+    "mode": "RGBA",
+    "version": 0,
+    "optimized": {
+      "path": "public/media/thai-stamps/stamp-06.webp",
+      "bytes": 25146,
+      "size": [
+        256,
+        253
+      ],
+      "sha256": "da14c2383b28f3b8746cb6b36f28ca36fe22d05773cd1e185da262676f4dadb3"
+    }
+  },
+  {
+    "library_file_id": "libfile_3043b6c77fd08191afca44723cf44463",
+    "file_id": "file_00000000bcbc8230811f505f3379fd14",
+    "name": "Thai Celestial Letter Writing Stamp.png",
+    "bytes": 3207866,
+    "sha256": "1917ef57d8bee3ad79651cdd9c2ea1103f97c7782123f962be7107dfae4e797f",
+    "size": [
+      1580,
+      995
+    ],
+    "mode": "RGB",
+    "version": 0,
+    "optimized": {
+      "path": "public/media/thai-stamps/stamp-07.webp",
+      "bytes": 23032,
+      "size": [
+        256,
+        161
+      ],
+      "sha256": "a27a5ec5694d72a3d6884f480878c1113491361c8a4da4cdaed90f8c63fbecd5"
+    }
+  },
+  {
+    "library_file_id": "libfile_60ade11aea908191988e0c3ad2843686",
+    "file_id": "file_0000000074ac81f89f25e181334103f8",
+    "name": "Thai Children’s Day Dance Stamp.png",
+    "bytes": 2663830,
+    "sha256": "4a88ad9504b0e6af72a9c86883900421720172889ae5e3791628fb1a419533ec",
+    "size": [
+      1012,
+      1554
+    ],
+    "mode": "RGB",
+    "version": 0,
+    "optimized": {
+      "path": "public/media/thai-stamps/stamp-08.webp",
+      "bytes": 20158,
+      "size": [
+        167,
+        256
+      ],
+      "sha256": "fd1020dce55ac438bb4df561923578b7d5ad4ba7cf9711419302847fe6fb7817"
+    }
+  },
+  {
+    "library_file_id": "libfile_727ce3bf0cd0819191ce0aa974fd1057",
+    "file_id": "file_0000000073b082109b30704fd78dc519",
+    "name": "Distressed Bangkok Postal Portrait Seal.png",
+    "bytes": 1079706,
+    "sha256": "aeaea15c8d1edc02bc01deaeeb5b8e61bdfedbee60cddafe3ea157981804d2f1",
+    "size": [
+      1350,
+      1165
+    ],
+    "mode": "RGBA",
+    "version": 0,
+    "optimized": {
+      "path": "public/media/thai-stamps/stamp-09.webp",
+      "bytes": 32370,
+      "size": [
+        256,
+        224
+      ],
+      "sha256": "3bca91a0aea712258d46d205b3e25014a5e96391ec48274396e3469da0161a29"
+    }
+  },
+  {
+    "library_file_id": "libfile_d7d03097ddf88191a7d351169c24ab00",
+    "file_id": "file_00000000abc88209a6f5198d0a0acb43",
+    "name": "Thai Children’s Day Vintage Postage Stamp.png",
+    "bytes": 3208530,
+    "sha256": "601e5629be4e24307d2c531a51dfeece3a4fba39ebac29b092f97480258579f7",
+    "size": [
+      1117,
+      1408
+    ],
+    "mode": "RGB",
+    "version": 0,
+    "optimized": {
+      "path": "public/media/thai-stamps/stamp-10.webp",
+      "bytes": 23282,
+      "size": [
+        203,
+        256
+      ],
+      "sha256": "9e0b90bff3feac25bd66eac5be867203b16a9ab95c2a7bfa3051bca4e1c0fc06"
+    }
+  },
+  {
+    "library_file_id": "libfile_1f940a4c935481918a938c5dc9e3936f",
+    "file_id": "file_00000000545c81f899c5ef7aa5ffec4d",
+    "name": "Thai Tuk-Tuk Commemorative Stamp.png",
+    "bytes": 3328007,
+    "sha256": "b3b86a5d2c6970eadc11a712b2e803d4f42cbf41846dded9f07d0f046b5f66e3",
+    "size": [
+      1587,
+      991
+    ],
+    "mode": "RGB",
+    "version": 0,
+    "optimized": {
+      "path": "public/media/thai-stamps/stamp-11.webp",
+      "bytes": 19370,
+      "size": [
+        256,
+        160
+      ],
+      "sha256": "215b0d2fa239ec1a94fbe7229cf5aa1026e5fa3c9b4a3d6f0f9c4c8d802939aa"
+    }
+  },
+  {
+    "library_file_id": "libfile_ee629897e34081918c09f6f3e1f71161",
+    "file_id": "file_000000008e1882308b402fac595b7145",
+    "name": "Thai Education Year 1970 Commemorative Stamp.png",
+    "bytes": 2732973,
+    "sha256": "58d81ad58c5a533628c767c0fac6728ddd9b8fc3d81fe783b1fd850d6eb10297",
+    "size": [
+      1573,
+      1000
+    ],
+    "mode": "RGB",
+    "version": 0,
+    "optimized": {
+      "path": "public/media/thai-stamps/stamp-12.webp",
+      "bytes": 19146,
+      "size": [
+        256,
+        163
+      ],
+      "sha256": "2623fba7e0563e273f5896772f418edd51aefa76a366cca1d3973ea0b78cd45b"
+    }
+  },
+  {
+    "library_file_id": "libfile_082684e2a23c81918ba8c32456acbe4a",
+    "file_id": "file_00000000218082108f2e08e454cc3778",
+    "name": "Distressed Bangkok Noi Postal Stamp.png",
+    "bytes": 1510297,
+    "sha256": "6cedb3a242af0454d196f40b445b1c44b4cb483d1a5dfee15de1a1e165e9285c",
+    "size": [
+      1268,
+      1240
+    ],
+    "mode": "RGBA",
+    "version": 0,
+    "optimized": {
+      "path": "public/media/thai-stamps/stamp-13.webp",
+      "bytes": 42182,
+      "size": [
+        256,
+        248
+      ],
+      "sha256": "94ee4c1621fefee96478aad91ad61e1f9b7c90d5b38dfdc439541f6b90bc3332"
+    }
+  },
+  {
+    "library_file_id": "libfile_bf2d77d1859081919dc5a19835afcf06",
+    "file_id": "file_000000001934821094f3d0b89b89d05c",
+    "name": "Vintage Thailand Spotted-Necked Dove Stamp.png",
+    "bytes": 3237700,
+    "sha256": "2df399f7c7c608c82c3c53718a3f2bcc98953fa3fe4914bb078d200c7b25b149",
+    "size": [
+      1132,
+      1390
+    ],
+    "mode": "RGBA",
+    "version": 0,
+    "optimized": {
+      "path": "public/media/thai-stamps/stamp-14.webp",
+      "bytes": 32806,
+      "size": [
+        206,
+        256
+      ],
+      "sha256": "2c6747cb6efbea4d18097f7f86c5e07d2754642262d07aa16db99517b039a26d"
+    }
+  },
+  {
+    "library_file_id": "libfile_a51b132acec88191b12057a84721b7ca",
+    "file_id": "file_000000006c58820cbe695e27f10628e2",
+    "name": "Thai Underwater Fish Postage Stamp.png",
+    "bytes": 2856990,
+    "sha256": "ab7485ffde27647999bc8c9e060e99e2db6a8dd7f0e99aad8bc9360e3b422aae",
+    "size": [
+      1598,
+      984
+    ],
+    "mode": "RGB",
+    "version": 0,
+    "optimized": {
+      "path": "public/media/thai-stamps/stamp-15.webp",
+      "bytes": 17280,
+      "size": [
+        256,
+        158
+      ],
+      "sha256": "635316989e20c6d961a677e1caa01b0a76091effdcc863c707bc926c07d42892"
+    }
+  },
+  {
+    "library_file_id": "libfile_0d0c2379754c8191a2e93cfbf5d6b867",
+    "file_id": "file_0000000044348210896bae97c46c30c6",
+    "name": "Weathered Bangkok ASEAN Postmark.png",
+    "bytes": 1145626,
+    "sha256": "5dd6775fe7728112e2212636fcc3ac341ce3097a7c9a5b62fed338557becabf1",
+    "size": [
+      1284,
+      1225
+    ],
+    "mode": "RGBA",
+    "version": 0,
+    "optimized": {
+      "path": "public/media/thai-stamps/stamp-16.webp",
+      "bytes": 30948,
+      "size": [
+        256,
+        241
+      ],
+      "sha256": "2962261c6883b6dfae7741e85e3ff027d9ff2c106822cbf4e0d7bcbce6f836a9"
+    }
+  },
+  {
+    "library_file_id": "libfile_59d1496b3a008191a273679c8f69746d",
+    "file_id": "file_00000000921881f5a15ee664f02efaea",
+    "name": "Vintage Thai Dancer Postage Stamp.png",
+    "bytes": 3897958,
+    "sha256": "306833018f3491ef579ea9b87c0fff36dc6f16f6182b1c168c6d54377eb8746a",
+    "size": [
+      1006,
+      1563
+    ],
+    "mode": "RGB",
+    "version": 0,
+    "optimized": {
+      "path": "public/media/thai-stamps/stamp-17.webp",
+      "bytes": 17912,
+      "size": [
+        165,
+        256
+      ],
+      "sha256": "8b609604fd845f3a7ac462d1177c906eb430607cd2094a36603349b5cb61b2e3"
+    }
+  },
+  {
+    "library_file_id": "libfile_aa9b4d371dec8191b455887b42a1426e",
+    "file_id": "file_0000000001f881f58f8c029a6cee4b59",
+    "name": "Vintage Thai Great Hornbill Postage Stamp.png",
+    "bytes": 3231571,
+    "sha256": "1302af030eb10b9aca9d754f262f12e59db964fd2bef48d85b9df3ba400d8385",
+    "size": [
+      1135,
+      1386
+    ],
+    "mode": "RGBA",
+    "version": 0,
+    "optimized": {
+      "path": "public/media/thai-stamps/stamp-18.webp",
+      "bytes": 31850,
+      "size": [
+        209,
+        256
+      ],
+      "sha256": "60b342ebc8f0b6f574a27918f93b6060c36b68cfe5bc1ac1b46432316bf9a394"
+    }
+  },
+  {
+    "library_file_id": "libfile_759680ab5858819185d83d9b960eec00",
+    "file_id": "file_0000000062cc820ea322576e4ece19b4",
+    "name": "Vintage Thai Kingfisher Postage Stamp.png",
+    "bytes": 2665789,
+    "sha256": "8f55297b7f2bd802e95933f1258171c1633ce775e3ea8ccaf40cf5b0a42eb845",
+    "size": [
+      1136,
+      1385
+    ],
+    "mode": "RGB",
+    "version": 0,
+    "optimized": {
+      "path": "public/media/thai-stamps/stamp-19.webp",
+      "bytes": 24666,
+      "size": [
+        210,
+        256
+      ],
+      "sha256": "775ecaf01e51ff81ed1392bba15608bbb6dca84fc1eedf0524aa823fb33ff9bb"
+    }
+  },
+  {
+    "library_file_id": "libfile_05d38e54af7c81919c9fcda20a07f48b",
+    "file_id": "file_000000000b1881fb8cda8c1c81b236e8",
+    "name": "Vintage Thai Rice Postage Stamp.png",
+    "bytes": 3181550,
+    "sha256": "4d7728148f1ab8fe6c883efca168331e57b577de619cae8f21150627df89b40b",
+    "size": [
+      1518,
+      1036
+    ],
+    "mode": "RGBA",
+    "version": 0,
+    "optimized": {
+      "path": "public/media/thai-stamps/stamp-20.webp",
+      "bytes": 30336,
+      "size": [
+        256,
+        175
+      ],
+      "sha256": "bc8c988a468ceb576d4d8a1252ed9d412e5ac50a1f8977c6c1c396906829d09e"
+    }
+  }
+]

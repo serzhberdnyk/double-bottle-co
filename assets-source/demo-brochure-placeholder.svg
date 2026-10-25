@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1400" viewBox="0 0 1000 1400">
+  <rect width="1000" height="1400" fill="#f5f5f5"/>
+  <rect x="48" y="48" width="904" height="1304" fill="white" stroke="#333" stroke-width="4"/>
+  <g font-family="Nimbus Sans, sans-serif" text-anchor="middle" fill="#111">
+    <text x="500" y="430" font-size="170" font-weight="bold">DEMO</text>
+    <text x="500" y="530" font-size="38">PUBLIC SOURCE PLACEHOLDER</text>
+    <text x="500" y="680" font-size="34">Operator brochure omitted.</text>
+    <text x="500" y="745" font-size="30">Synthetic sample only.</text>
+    <text x="500" y="810" font-size="30">Not an offer. No real tour information.</text>
+    <text x="500" y="1120" font-size="25">No operator artwork is included.</text>
+    <text x="500" y="1240" font-size="23">PUBLIC REVIEW COPY / NOT FOR PRODUCTION</text>
+  </g>
+</svg>

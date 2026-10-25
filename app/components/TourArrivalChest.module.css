@@ -1,0 +1,32 @@
+.viewport {
+  position: fixed;
+  overflow: hidden;
+  pointer-events: none;
+  user-select: none;
+  z-index: 20;
+  contain: paint;
+}
+
+.chest {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: clamp(88px, 20%, 148px);
+  height: auto;
+  max-height: 60%;
+  object-fit: contain;
+  filter: drop-shadow(0 3px 3px #442a1533);
+  animation: arrive 1700ms ease-in-out both;
+}
+
+@keyframes arrive {
+  0% { opacity: 0; transform: translateY(calc(100% + 24px)) rotate(5deg); }
+  24% { opacity: 1; transform: translateY(-6px) rotate(-2deg); }
+  34%, 65% { opacity: 1; transform: translateY(0) rotate(0); }
+  100% { opacity: 0; transform: translateY(calc(100% + 24px)) rotate(4deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .viewport { display: none; }
+  .chest { animation: none; }
+}

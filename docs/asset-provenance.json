@@ -1,0 +1,84 @@
+{
+  "verified_on": "2026-10-04",
+  "map": {
+    "recommended_file": "southwest-thailand-land-osm.geojson",
+    "source": "OpenStreetMap coastline ways",
+    "raw_file": "osm-coastlines.json",
+    "source_timestamp": "2026-10-04T08:41:36Z",
+    "bbox": [
+      97.2,
+      7.2,
+      99.5,
+      9.2
+    ],
+    "license": "ODbL-1.0",
+    "license_url": "https://opendatacommons.org/licenses/odbl/1-0/",
+    "attribution": "© OpenStreetMap contributors",
+    "attribution_url": "https://www.openstreetmap.org/copyright",
+    "method": "Shapely 2.1.2 clips source ways to bbox, polygonizes with bbox edge, selects land on left of directed coastline segments per OSM specification, and applies topology-preserving simplification of 0.00018 degrees. No shoreline was hand-drawn. Inland water is not included.",
+    "rebuild_script": "build_map.py"
+  },
+  "points": "destination-points.geojson",
+  "photos": [
+    {
+      "file": "phi-phi-maya-bay.jpg",
+      "destination": "Phi Phi",
+      "creator": "Vyacheslav Argenberg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Maya_Bay,_Koh_Phi_Phi,_Krabi,_Thailand.jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/8/88/Maya_Bay%2C_Koh_Phi_Phi%2C_Krabi%2C_Thailand.jpg",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "credit": "© Vyacheslav Argenberg / Wikimedia Commons / CC BY 4.0",
+      "dimensions": [
+        3072,
+        2048
+      ],
+      "modifications": "None; original file bytes retained."
+    },
+    {
+      "file": "phang-nga-karst-islands.jpg",
+      "destination": "Phang Nga Bay",
+      "creator": "Vyacheslav Argenberg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Phang_Nga_Bay,_Karst_islands,_Thailand.jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Phang_Nga_Bay%2C_Karst_islands%2C_Thailand.jpg",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "credit": "© Vyacheslav Argenberg / Wikimedia Commons / CC BY 4.0",
+      "dimensions": [
+        3072,
+        2048
+      ],
+      "modifications": "None; original file bytes retained."
+    },
+    {
+      "file": "racha-yai.jpg",
+      "destination": "Racha Yai",
+      "creator": "ELPHUKET (Elyor Sherkulov)",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Racha_Yai_Island.jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Racha_Yai_Island.jpg",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "credit": "ELPHUKET (Elyor Sherkulov) / Wikimedia Commons / CC BY-SA 4.0",
+      "dimensions": [
+        4000,
+        3000
+      ],
+      "modifications": "None; original file bytes retained."
+    },
+    {
+      "file": "cheow-lan-shoreline.jpg",
+      "destination": "Cheow Lan Lake",
+      "creator": "The Cosmonaut",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Cheow_Lan_Lake_shoreline.jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Cheow_Lan_Lake_shoreline.jpg",
+      "license": "CC BY-SA 2.5 CA",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.5/ca/",
+      "credit": "The Cosmonaut / Wikimedia Commons / CC BY-SA 2.5 CA",
+      "dimensions": [
+        4910,
+        3220
+      ],
+      "modifications": "None; original file bytes retained."
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+import test from 'node:test';import assert from 'node:assert/strict';import * as React from 'react';import ts from 'typescript';import {readFileSync} from 'node:fs';
+import {mapBoats,boatAnchorPosition} from '../app/reference-preview/map-boats.ts';
+const file=ts.createSourceFile('MapBoat.tsx',readFileSync('app/reference-preview/MapBoat.tsx','utf8'),ts.ScriptTarget.Latest,true,ts.ScriptKind.TSX),fn=file.statements.find(n=>ts.isFunctionDeclaration(n));
+const code=ts.transpileModule(fn.getText(file).replace('export function','function'),{compilerOptions:{jsx:ts.JsxEmit.React,target:ts.ScriptTarget.ES2022}}).outputText;
+const press=()=>{},MapPOI=()=>null;
+function render(kind,saved=null){return new Function('React','useI18n','useInquiryCopy','mapBoats','boatAnchorPosition','useMapPlacement','reactToMapPress','styles','poi','MapPOI','customMapItem',code+';return MapBoat;')(React,()=>({t:text=>text}),()=>({language:'ru'}),mapBoats,boatAnchorPosition,()=>saved,press,{trigger:'old-trigger',label:'old-label',artwork:'old-art'},{trigger:'common-trigger',artTrigger:'common-art',artLabel:'common-label',illustration:'common-artwork'},MapPOI,item=>item)({kind});}
+test('Diving shares the normal map-POI presentation while its action, source art and center stay unchanged',()=>{
+ const node=render('diving');assert.equal(node.type,'button');assert.equal(node.props.className,'common-trigger common-art');assert.equal(node.props.onClick,press);assert.equal(node.props['aria-label'],mapBoats.diving.ru.action);
+ const expected=boatAnchorPosition('diving');assert.equal(node.props.style.left,expected.left);assert.equal(node.props.style.top,expected.top);assert.equal(node.props.style.transform,'translate(-50%,-50%)');
+ const [picture,label]=node.props.children;assert.equal(picture.props.children[0].props.srcSet,mapBoats.diving.optimized);assert.equal(picture.props.children[1].props.className,'common-artwork');assert.equal(label.props.className,'common-label');assert.equal(label.props.children,mapBoats.diving.ru.title);
+});
+test('the separate pirate control retains its existing appearance and action',()=>{const node=render('pirate');assert.equal(node.props.className,'old-trigger');assert.equal(node.props.onClick,press);assert.equal(node.props.children[1].props.className,'old-label');});
+test('previously customized Diving keeps its existing editable map-POI flow',()=>{const item={id:'diving',x:73,y:8,image:mapBoats.diving.optimized,sizePx:91};const node=render('diving',item);assert.equal(node.type,MapPOI);assert.equal(node.props.item.sizePx,91);assert.deepEqual(node.props.anchor,{x:73*12.8,y:8*10.83});});

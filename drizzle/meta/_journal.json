@@ -1,0 +1,104 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1791103727100,
+      "tag": "0000_curious_may_parker",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1791104528267,
+      "tag": "0001_tan_stranger",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1791105191664,
+      "tag": "0002_curved_demogoblin",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "6",
+      "when": 1791105368783,
+      "tag": "0003_aromatic_multiple_man",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "6",
+      "when": 1791105400000,
+      "tag": "0004_immutable_snapshots",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "6",
+      "when": 1791813288654,
+      "tag": "0005_daffy_james_howlett",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "6",
+      "when": 1792554012132,
+      "tag": "0006_catalog_content_editor",
+      "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "6",
+      "when": 1792558016391,
+      "tag": "0007_map_editor",
+      "breakpoints": true
+    },
+    {
+      "idx": 8,
+      "version": "6",
+      "when": 1792569823608,
+      "tag": "0008_catalog_creation_drafts",
+      "breakpoints": true
+    },
+    {
+      "idx": 9,
+      "version": "6",
+      "when": 1792586937072,
+      "tag": "0009_catalog_localizations",
+      "breakpoints": true
+    },
+    {
+      "idx": 10,
+      "version": "6",
+      "when": 1792724979240,
+      "tag": "0010_variant_visibility",
+      "breakpoints": true
+    },
+    {
+      "idx": 11,
+      "version": "6",
+      "when": 1792728000000,
+      "tag": "0011_variant_names",
+      "breakpoints": true
+    },
+    {
+      "idx": 12,
+      "version": "6",
+      "when": 1792729200000,
+      "tag": "0012_variant_images",
+      "breakpoints": true
+    },
+    {
+      "idx": 13,
+      "version": "6",
+      "when": 1792782000000,
+      "tag": "0013_release_variant_ownership",
+      "breakpoints": true
+    }
+  ]
+}

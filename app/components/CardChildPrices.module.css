@@ -1,0 +1,9 @@
+.children{margin-top:6px;min-width:0;font-size:12px;line-height:1.4;overflow-wrap:anywhere;color:inherit}
+.children p{margin:0}.children p+p{margin-top:4px}.children .amount{font-size:inherit;font-weight:600}.children small{display:block;font-size:10px;line-height:1.35;opacity:.78}
+
+/* The catalogue pairs adult and child quotes side by side; other price surfaces stay unchanged. */
+.compact{margin-top:0;font-size:13px;line-height:1.4}
+.compact .amount{display:block;font-size:21px;line-height:1.25;font-weight:500;letter-spacing:-.015em;font-variant-numeric:tabular-nums}
+.compact p+p{margin-top:8px}
+.compact small{font-size:12px;line-height:1.4;opacity:1;color:#506579;margin-top:4px}
+@media(max-width:600px){.compact .amount{font-size:22px}}

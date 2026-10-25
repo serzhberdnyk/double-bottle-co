@@ -1,0 +1,41 @@
+{
+  "fonts": [
+    {
+      "source": "vendor/urw-base35/NimbusSans-Regular.otf",
+      "output": "public/fonts/nimbus-sans-regular.woff",
+      "source_sha256": "7c25be4d78155523080ab85b10277150657ff7dabbcad7037bdd536c9b6d0d08",
+      "output_sha256": "2ab1836c8f906c5f7cdd612113f709c3a05c3e02a15077e8a290f98ac3ebe2bf",
+      "distributed_sha256": "2ab1836c8f906c5f7cdd612113f709c3a05c3e02a15077e8a290f98ac3ebe2bf",
+      "byte_identical": true
+    },
+    {
+      "source": "vendor/urw-base35/NimbusRoman-Regular.otf",
+      "output": "public/fonts/atlas-serif.woff",
+      "source_sha256": "fd41669443616a7ae890c42e53a58f47fa24a940fd1e367acaff665cf5b6e9d8",
+      "output_sha256": "e5b57573da205d10fa37a7c1728027c5aa605373cd75d92c2bf40bcf297d988b",
+      "distributed_sha256": "e5b57573da205d10fa37a7c1728027c5aa605373cd75d92c2bf40bcf297d988b",
+      "byte_identical": true
+    },
+    {
+      "source": "vendor/urw-base35/NimbusRoman-Bold.otf",
+      "output": "public/fonts/atlas-serif-bold.woff",
+      "source_sha256": "e0ad81923bc6d85d5426f796217c87963ca1ae3c65e22c87a25b6c6353de299e",
+      "output_sha256": "99390967f7674199a6a919a275747082d2e5e6b4972e559ecc4ed1846b2d82dc",
+      "distributed_sha256": "99390967f7674199a6a919a275747082d2e5e6b4972e559ecc4ed1846b2d82dc",
+      "byte_identical": true
+    }
+  ],
+  "all_byte_identical": true,
+  "fonttools_version": "4.61.1",
+  "license_path": "public/fonts/LICENSE.txt",
+  "license_sha256": "1315a62758a603a3e6e87a79b8389563789c59c1740b9db8bc2b20e2e2145458",
+  "recipe": "scripts/subset-public-nimbus.py",
+  "unicode_ranges": [
+    "U+0020..007E",
+    "U+0400..052F",
+    "U+2000..206F",
+    "U+0E3F"
+  ],
+  "runtime_font_binaries_changed": false,
+  "python_version": "3.12.14"
+}

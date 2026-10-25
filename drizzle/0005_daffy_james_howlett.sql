@@ -1,0 +1,1 @@
+ALTER TABLE `catalog_public_rates` ADD `option_key` text;

@@ -1,0 +1,53 @@
+.stamp {
+  position:absolute;
+  z-index:5;
+  top:48px;
+  left:calc(35% - 32px);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  --stamp-width:86px;
+  --stamp-height:96px;
+  width:var(--stamp-width);
+  height:var(--stamp-height);
+  overflow:visible;
+  transform:rotate(7deg);
+  pointer-events:none;
+  user-select:none;
+}
+.layers {
+  position:relative;
+  flex:none;
+  line-height:0;
+  overflow:visible;
+}
+.stamp[data-thai-stamp] .postage {
+  display:block;
+  width:auto;
+  height:auto;
+  max-width:var(--stamp-width);
+  max-height:var(--stamp-height);
+  object-fit:contain;
+  filter:drop-shadow(0 2px 1px #15355220);
+}
+.stamp[data-thai-stamp] .postmark {
+  position:absolute;
+  left:0;
+  top:50%;
+  display:block;
+  width:calc(var(--stamp-width) * .6);
+  height:calc(var(--stamp-height) * .6);
+  max-width:none;
+  object-fit:contain;
+  transform:translate(-50%,-50%) rotate(-17deg);
+  opacity:1;
+}
+@media(min-width:761px) and (max-width:1100px) {
+  .stamp {left:calc(45% - 24px);--stamp-width:70px;--stamp-height:80px}
+}
+@media(max-width:760px) {
+  .stamp {top:52px;left:auto;right:6%;--stamp-width:54px;--stamp-height:44px;transform:rotate(5deg)}
+}
+@media(max-width:389px) {
+  .stamp {top:62px;right:7%;--stamp-width:54px;--stamp-height:34px;transform:none}
+}

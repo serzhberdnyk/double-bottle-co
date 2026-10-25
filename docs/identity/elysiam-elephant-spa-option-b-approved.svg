@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1800" height="1200" viewBox="0 0 1800 1200">
+<title>Elephant Beach и Mantra Spa — Elysiam. Вариант B: близкое знакомство</title>
+<desc>Original editable vector drawing. Organic close-up portrait of an Asian elephant, with ocean waves and lotus flowers. No AI-generated image assets.</desc>
+<defs>
+ <clipPath id="frame"><path d="M24 24H1776V1176H24Z"/></clipPath>
+ <style>.ink{stroke:#123055;stroke-width:14;stroke-linecap:round;stroke-linejoin:round}.fine{fill:none;stroke:#123055;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}.light{fill:none;stroke:#FFF0CF;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}.type{font-family:'DejaVu Sans Condensed',sans-serif;font-weight:700}</style>
+</defs>
+<rect width="1800" height="1200" fill="#FFF0CF"/>
+<g clip-path="url(#frame)">
+<rect x="24" y="24" width="1752" height="1152" fill="#0B69C7"/>
+<!-- Warm open sky behind the portrait -->
+<path d="M1109 110C1308 10 1628 91 1776 276L1800 895C1675 1028 1430 1067 1239 964C1046 857 980 651 1002 419C1016 272 1028 174 1109 110Z" fill="#FFCA45"/>
+<!-- Printmaking sun streaks -->
+<path d="M1607 156L1631 108M1698 230L1744 205M1496 112L1500 76" stroke="#FFF0CF" stroke-width="10" stroke-linecap="round"/>
+<!-- Ocean and a ribbon of beach; quieter than the portrait -->
+<path d="M24 758C187 765 333 736 483 748S781 814 965 775S1341 780 1776 760V1100H24Z" fill="#24BFBD"/>
+<path d="M24 840C170 812 273 832 373 827M499 838C622 827 704 866 798 840M867 883C926 872 977 875 1046 864" fill="none" stroke="#FFF0CF" stroke-width="10" stroke-linecap="round"/>
+<path d="M24 932C203 862 480 945 656 918S925 903 1076 950L1180 1090H24Z" fill="#FFF0CF"/>
+<path d="M24 977C232 915 442 1002 690 965S946 976 1100 1014" fill="none" stroke="#FFCA45" stroke-width="25"/>
+<path d="M96 888C206 877 273 906 334 894M485 879C540 880 582 894 621 884M669 936C744 916 807 924 859 909" fill="none" stroke="#0B69C7" stroke-width="8" stroke-linecap="round"/>
+<!-- Title, each line slightly off registration, like a printed comic cover -->
+<g class="type" transform="rotate(-2 510 332)">
+ <g fill="#123055" transform="translate(10 14)">
+  <text x="79" y="225" font-size="144" letter-spacing="-5">ELEPHANT</text>
+  <text x="79" y="392" font-size="174" letter-spacing="-4">BEACH</text>
+ </g>
+ <g fill="#FFF0CF">
+  <text x="79" y="225" font-size="144" letter-spacing="-5">ELEPHANT</text>
+  <text x="79" y="392" font-size="174" letter-spacing="-4">BEACH</text>
+  <text x="85" y="510" font-size="71" letter-spacing="2">И MANTRA SPA</text>
+ </g>
+ <path d="M85 545C304 542 522 547 800 538" fill="none" stroke="#FFCA45" stroke-width="9"/>
+</g>
+<!-- Sea breeze accents -->
+<path d="M135 657Q156 637 184 654Q207 630 230 650M290 681Q305 663 325 677Q345 657 366 674" class="light"/>
+<!-- Elephant shoulder: naturally cropped portrait, no mini-body -->
+<path d="M1112 705C1013 718 964 836 926 1056L930 1110H1575C1567 963 1527 817 1446 736C1358 697 1230 682 1112 705Z" fill="#0B69C7" class="ink"/>
+<path d="M1097 774C1020 846 1010 963 1005 1097H1142C1120 959 1143 860 1191 803Z" fill="#24BFBD"/>
+
+<!-- Broad neck joins the head naturally into the cropped shoulder -->
+<path d="M1272 559C1322 551 1392 571 1428 612C1445 647 1458 713 1469 772L1344 824L1236 748Z" fill="#0B69C7"/>
+<!-- Far ear, visible as a smaller folded rim -->
+<g transform="translate(1540 430) scale(.88 .90) translate(-1540 -430)">
+<path d="M1473 365C1595 342 1690 428 1698 559C1706 673 1649 771 1570 818C1545 788 1522 750 1512 703C1505 590 1480 499 1473 365Z" fill="#0B69C7" class="ink"/>
+<path d="M1558 419C1640 451 1659 526 1654 596C1649 648 1629 690 1593 726C1589 624 1579 528 1558 419Z" fill="#24BFBD"/>
+</g>
+<!-- Near ear has the rounded fan and narrowing lower point of an Asian elephant -->
+<g transform="translate(1300 400) scale(.84 .85) translate(-1300 -400)">
+<path d="M1332 379C1258 319 1156 313 1082 363C999 419 964 514 979 604C990 686 1026 747 1081 799C1118 834 1166 868 1206 850C1271 824 1308 755 1322 682C1343 578 1344 470 1332 379Z" fill="#24BFBD" class="ink"/>
+<path d="M1243 383C1162 360 1092 399 1054 461C1016 524 1018 600 1052 673C1082 737 1128 784 1181 810C1221 760 1260 705 1267 638C1280 551 1283 449 1243 383Z" fill="#0B69C7"/>
+<path d="M1225 410C1171 391 1116 425 1083 471C1048 521 1049 587 1075 638" class="light"/>
+<path d="M1080 692C1102 731 1132 758 1166 779M1110 393C1076 415 1052 447 1036 483" class="fine"/>
+<path d="M1119 367C1155 352 1193 350 1229 359M999 533C995 564 998 593 1006 618" fill="none" stroke="#123055" stroke-width="3.5" stroke-linecap="round"/>
+</g>
+<!-- Head. Domed forehead and gentle cheek flowing continuously into trunk -->
+<path d="M1254 367C1258 307 1294 256 1351 250C1390 246 1418 266 1437 286C1468 269 1504 278 1534 304C1573 339 1593 377 1603 432C1616 508 1598 565 1588 629C1579 682 1570 729 1567 787C1563 851 1541 906 1497 937C1452 970 1390 969 1346 940C1306 914 1288 869 1297 832C1302 812 1315 801 1329 808C1340 814 1339 829 1338 842C1334 868 1354 890 1382 897C1417 906 1454 887 1468 852C1482 816 1476 770 1467 731C1456 682 1447 647 1433 617C1385 633 1331 615 1306 584C1270 539 1245 457 1254 367Z" fill="#24BFBD" class="ink"/>
+<!-- Face light and shadow define an organic plane, not polygon facets -->
+<path d="M1290 362C1303 316 1325 288 1359 288C1400 288 1417 321 1454 322C1475 323 1496 341 1505 366C1470 350 1440 355 1414 372C1380 361 1354 369 1334 390C1320 405 1307 426 1304 449C1290 424 1282 392 1290 362Z" fill="#FFF0CF"/>
+<path d="M1272 409C1287 456 1294 513 1325 551C1351 582 1393 588 1433 573C1452 584 1463 611 1474 642C1496 705 1507 763 1508 812C1508 873 1472 916 1430 928C1471 926 1508 900 1526 863C1548 818 1541 771 1547 726C1554 667 1568 622 1571 578C1576 551 1575 530 1570 510C1545 522 1524 511 1504 504C1474 494 1464 507 1444 526C1410 550 1370 537 1352 518C1317 484 1310 442 1298 406Z" fill="#0B69C7"/>
+<!-- Brow and fine forehead creases -->
+<path d="M1334 397C1357 384 1383 388 1401 401M1434 321C1457 311 1485 323 1495 339M1428 344C1450 334 1474 341 1487 354" class="fine"/>
+<!-- A calm, small, elephant-like eye, surrounded by soft wrinkles -->
+<path d="M1345 450C1362 435 1385 437 1401 452C1385 467 1362 467 1345 450Z" fill="#FFF0CF" stroke="#123055" stroke-width="5" stroke-linejoin="round"/>
+<ellipse cx="1378" cy="451" rx="10" ry="11" fill="#123055"/>
+<circle cx="1381" cy="447" r="3" fill="#FFF0CF"/>
+<path d="M1336 439C1354 421 1382 421 1401 435M1349 478C1367 486 1386 485 1401 476M1327 463L1318 469" class="fine"/>
+<!-- The far cheek turns away; a short contour keeps the three-quarter view natural -->
+<path d="M1536 438C1547 445 1552 459 1550 470" fill="none" stroke="#123055" stroke-width="5" stroke-linecap="round"/>
+<!-- Mouth and jaw -->
+<path d="M1369 563C1383 571 1405 572 1420 569" class="fine"/>
+<!-- Curved trunk creases follow its taper; short broken strokes keep the drawing loose -->
+<path d="M1471 582C1493 591 1516 592 1535 587M1484 625C1500 630 1515 631 1530 628M1498 673C1510 676 1523 675 1535 671M1509 720L1536 718M1514 765L1537 765M1513 810L1532 813M1505 851L1520 858M1483 884L1494 900M1450 905L1455 925M1411 911L1410 932M1378 902L1370 919" class="fine"/>
+<path d="M1307 830C1314 825 1321 826 1326 832" class="fine"/>
+<!-- Interrupted contour lines preserve the handmade ink feel -->
+<path d="M1274 324C1285 298 1304 278 1324 268M1576 471C1581 493 1578 518 1573 536M1547 890C1534 914 1515 932 1494 943" fill="none" stroke="#123055" stroke-width="3.5" stroke-linecap="round"/>
+<path d="M1287 513L1300 526M1302 527L1311 534M1321 549L1333 555" fill="none" stroke="#123055" stroke-width="4" stroke-linecap="round"/>
+<!-- An intimate comic sparkle, kept outside the anatomy -->
+<path d="M956 366L973 340M956 399L924 393M989 325L987 296" stroke="#FFF0CF" stroke-width="9" stroke-linecap="round"/>
+<!-- Lotus spa still life in the foreground -->
+<g transform="translate(406 906)">
+ <path d="M-171 107C-107 47 27 48 173 96C94 151-70 158-171 107Z" fill="#24BFBD" class="ink"/>
+ <path d="M-121 53C-78 46-25 57 9 106C-57 100-104 85-121 53Z" fill="#FFCA45" stroke="#123055" stroke-width="8" stroke-linejoin="round"/>
+ <path d="M124 38C111 80 72 101 6 109C30 66 76 41 124 38Z" fill="#FFCA45" stroke="#123055" stroke-width="8" stroke-linejoin="round"/>
+ <path d="M-66 4C-16 15 9 58 7 108C-34 90-65 56-66 4Z" fill="#FFF0CF" stroke="#123055" stroke-width="8" stroke-linejoin="round"/>
+ <path d="M65 -2C70 43 44 86 7 108C0 56 21 20 65 -2Z" fill="#FFF0CF" stroke="#123055" stroke-width="8" stroke-linejoin="round"/>
+ <path d="M6 -54C39-22 44 26 8 70C-27 36-28-13 6-54Z" fill="#FFCA45" stroke="#123055" stroke-width="8" stroke-linejoin="round"/>
+ <path d="M-30 122C-9 127 25 127 49 119" class="fine"/>
+</g>
+<!-- Bottom strip belongs to the cover series -->
+<path d="M24 1093H1776V1176H24Z" fill="#0B69C7"/>
+<path d="M24 1093H1776" stroke="#FFF0CF" stroke-width="9"/>
+<text class="type" x="78" y="1151" font-size="44" letter-spacing="8" fill="#FFF0CF">ELYSIAM</text>
+<text class="type" x="1713" y="1151" text-anchor="end" font-size="39" letter-spacing="3" fill="#FFF0CF">ПЛЯЖ · MANTRA SPA</text>
+</g>
+</svg>

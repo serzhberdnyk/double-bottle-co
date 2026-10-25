@@ -1,0 +1,42 @@
+<!doctype html><meta charset="utf-8"><title>Local image preparation QA</title>
+<h1>Local image preparation QA</h1><p>No application upload; generated fixtures only.</p><button id="run">Run real-codec tests</button><pre id="output"></pre>
+<script type="module">
+import {prepareImage} from '/prepare-editor-image.js';
+const output=document.querySelector('#output');
+const assert=(ok,message)=>{if(!ok)throw Error(message);};
+const blob=(canvas,type='image/png',quality=.94)=>new Promise(resolve=>canvas.toBlob(resolve,type,quality));
+const canvas=(w,h)=>{const c=document.createElement('canvas');c.width=w;c.height=h;return c;};
+const file=(b,name)=>new File([b],name,{type:b.type});
+async function inspect(b){const bitmap=await createImageBitmap(b),c=canvas(bitmap.width,bitmap.height);c.getContext('2d').drawImage(bitmap,0,0);bitmap.close();return c;}
+function noise(w,h,alpha=false){const c=canvas(w,h),ctx=c.getContext('2d'),d=ctx.createImageData(w,h);let seed=123456789;for(let i=0;i<d.data.length;i+=4){seed=(Math.imul(seed,1664525)+1013904223)>>>0;d.data[i]=seed&255;d.data[i+1]=(seed>>>8)&255;d.data[i+2]=(seed>>>16)&255;const x=(i/4)%w,y=Math.floor(i/4/w);d.data[i+3]=alpha&&(x<60||y<60||x>w-60||y>h-60)?0:255;}ctx.putImageData(d,0,0);return c;}
+// Insert TIFF orientation=6 into a generated JPEG, without external fixture/photo data.
+async function orient6(b){const bytes=new Uint8Array(await b.arrayBuffer());const exif=new Uint8Array([255,225,0,34,69,120,105,102,0,0,77,77,0,42,0,0,0,8,0,1,1,18,0,3,0,0,0,1,0,6,0,0,0,0,0,0]);return new Blob([bytes.slice(0,2),exif,bytes.slice(2)],{type:'image/jpeg'});}
+document.querySelector('#run').onclick=async()=>{
+ const results=[];output.textContent='Running…';
+ const check=async(name,fn)=>{try{results.push({name,status:'pass',details:await fn()});}catch(e){results.push({name,status:'FAIL',error:String(e)});}output.textContent=JSON.stringify(results,null,2);};
+ await check('large JPEG real encoder; adaptive budget and aspect',async()=>{
+  const c=noise(4000,3000),source=file(await blob(c,'image/jpeg'),'large.jpg');c.width=c.height=1;
+  assert(source.size>512*1024,'fixture must exceed server budget');const result=await prepareImage(source),decoded=await inspect(result);
+  assert(result.size<=512*1024,'byte budget');assert(decoded.width<=1600&&decoded.height<=1600,'edge budget');assert(Math.abs(decoded.width/decoded.height-4/3)<.003,'uncropped aspect');
+  const details={source:source.size,result:result.size,width:decoded.width,height:decoded.height,type:result.type};decoded.width=decoded.height=1;return details;
+ });
+ await check('transparent PNG real WebP output retains alpha',async()=>{
+  const c=noise(2400,1200,true),source=file(await blob(c),'icon.png');c.width=c.height=1;
+  const result=await prepareImage(source),decoded=await inspect(result),ctx=decoded.getContext('2d');
+  assert(result.size<=512*1024,'byte budget');assert(Math.abs(decoded.width/decoded.height-2)<.003,'aspect');assert(ctx.getImageData(0,0,1,1).data[3]===0,'transparent corner');assert(ctx.getImageData(Math.floor(decoded.width/2),Math.floor(decoded.height/2),1,1).data[3]===255,'opaque centre');
+  const details={source:source.size,result:result.size,type:result.type};decoded.width=decoded.height=1;return details;
+ });
+ await check('small JPEG passes through exactly',async()=>{const c=canvas(320,200);c.getContext('2d').fillRect(0,0,320,200);const source=file(await blob(c,'image/jpeg'),'small.jpg');assert(await prepareImage(source)===source,'must not reencode');});
+ await check('EXIF orientation 6 is normalized during resize',async()=>{
+  const c=canvas(2400,1200),ctx=c.getContext('2d');ctx.fillStyle='red';ctx.fillRect(0,0,1200,1200);ctx.fillStyle='blue';ctx.fillRect(1200,0,1200,1200);
+  const result=await prepareImage(file(await orient6(await blob(c,'image/jpeg')),'oriented.jpg')),decoded=await inspect(result),d=decoded.getContext('2d');
+  assert(decoded.width===800&&decoded.height===1600,'oriented portrait dimensions');const top=d.getImageData(400,100,1,1).data,bottom=d.getImageData(400,1500,1,1).data;assert(top[0]>200&&bottom[2]>200,'rotated colour positions');return {width:decoded.width,height:decoded.height};
+ });
+ await check('corrupt image returns readable error',async()=>{let failed=false;try{await prepareImage(new File(['broken'],'bad.png',{type:'image/png'}));}catch(e){failed=/повреждён/.test(e.message);}assert(failed,'readable error');});
+ await check('cancel at compression then retry same file',async()=>{
+  const c=canvas(2000,1000);c.getContext('2d').fillRect(0,0,2000,1000);const source=file(await blob(c),'cancel.png'),abort=new AbortController();let cancelled=false;
+  try{await prepareImage(source,{signal:abort.signal,onProgress:s=>{if(s.startsWith('Подгонка'))abort.abort();}});}catch(e){cancelled=e.name==='AbortError';}assert(cancelled,'abort');assert((await prepareImage(source)).size<=512*1024,'retry');
+ });
+ await fetch('/results',{method:'POST',body:JSON.stringify({userAgent:navigator.userAgent,results},null,2)});
+};
+</script>

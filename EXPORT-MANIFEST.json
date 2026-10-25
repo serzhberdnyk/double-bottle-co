@@ -1,0 +1,4252 @@
+{
+  "source_commit": "72f3aa5e4a4716d40c4023746f15d7b5481ef55f",
+  "parent_candidate_commit": "97831dffe21e3161aa92487bcfcefcc4e7f7f866",
+  "parent_manifest_sha256": "16afdd7b8bb5dfd19fdd34bb70184f02f87a3bfc542836e69cdbd4ee4045c164",
+  "files": [
+    {
+      "path": ".dev.vars.example",
+      "bytes": 521,
+      "sha256": "5676d58751e35c1aa73724c5e7b102584c81d511c60b5a975c6dda29b934a734"
+    },
+    {
+      "path": ".env.example",
+      "bytes": 403,
+      "sha256": "7b2af62c9d94ebe5c39d651f3b99deee16bc31f37bea2e19ee67444e8572eea6"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 853,
+      "sha256": "7ebeebd9cbe9eee7945745fac84a8c5283508db053ddfdbd362f0d006d6ecb5a"
+    },
+    {
+      "path": ".npmrc",
+      "bytes": 45,
+      "sha256": "a3909ac0447c469fda12c57374993be70f47ce73e49fd3124678c7c047f2214d"
+    },
+    {
+      "path": ".openai/hosting.json",
+      "bytes": 53,
+      "sha256": "7476941f14b52aedd00b7e706e628173992ad473f282399eccfbd244f8b97637"
+    },
+    {
+      "path": "ASSET-DECISIONS.json",
+      "bytes": 10639,
+      "sha256": "05a82811c632694c36f38d51844359ddf00f1b4c43221e9a35fa6b2379055251"
+    },
+    {
+      "path": "ASSET-REVIEW.json",
+      "bytes": 181996,
+      "sha256": "0a72b808302992a9f7ce853184c470ae6e3590990459b12bc5ac4341ed6de3c0"
+    },
+    {
+      "path": "PUBLIC-CANDIDATE-VALIDATION.json",
+      "bytes": 58910,
+      "sha256": "45c3af67767145ce71917f232a4d1d6fb114168004c47b25a10d5ce91260b98a"
+    },
+    {
+      "path": "README.md",
+      "bytes": 8286,
+      "sha256": "c962b0ae80d3c5d5f2dc9727abf808e19dc2eabb07b07ae0ca92a9a4a7b86146"
+    },
+    {
+      "path": "SECURITY-REVIEW.json",
+      "bytes": 18286,
+      "sha256": "7be818b469a8bf41663caec6aa24ae56dc6eeb9cd578f98d7c5f3ba01e3b761a"
+    },
+    {
+      "path": "SOURCE-PROVENANCE.json",
+      "bytes": 16768,
+      "sha256": "e745e5f91a612a24c468bbb90e36286ba1d0ae000dca690d748d486aab32d1d1"
+    },
+    {
+      "path": "app/[locale]/[[...segments]]/page.tsx",
+      "bytes": 2296,
+      "sha256": "9ed6715cf1d36c6d0365ee959660dfbaf0a2dc583223fec03452fe4266715142"
+    },
+    {
+      "path": "app/about/page.tsx",
+      "bytes": 1018,
+      "sha256": "e2d4b0026832ddb8a2351f9550532620e24fb06509f87bcd2b7abd76e46af4c7"
+    },
+    {
+      "path": "app/admin/BulkTranslations.tsx",
+      "bytes": 3700,
+      "sha256": "58772461adb080dace0efc29b205de769f913674458e9db2309fa417fe49861d"
+    },
+    {
+      "path": "app/admin/TranslationConfirmation.tsx",
+      "bytes": 1267,
+      "sha256": "9207b2d567976cce849c320024f3d5f4b9358eb26139764737217305cd7061a7"
+    },
+    {
+      "path": "app/admin/admin-workspace.module.css",
+      "bytes": 1313,
+      "sha256": "d947b67df9ca0dc43907df501eec167b5b4c6085d778cd03f4a28bf8a98184ab"
+    },
+    {
+      "path": "app/admin/admin-workspace.tsx",
+      "bytes": 646,
+      "sha256": "3025f63ac54bdad37ae09f54c901666b3a0a68fe81b1d1b06a7fff280a490d0e"
+    },
+    {
+      "path": "app/admin/approved-import-panel.tsx",
+      "bytes": 2733,
+      "sha256": "c1740e08e7b09bb1730578a43dfc771af8ece7b4e4ac02b6df1a4e1c8898fdbc"
+    },
+    {
+      "path": "app/admin/catalog-panel.module.css",
+      "bytes": 4184,
+      "sha256": "53452a14f1d451e9152940d2f9aa1e89a26f7ee28966efd3751fb2c3b609ee4d"
+    },
+    {
+      "path": "app/admin/catalog-panel.tsx",
+      "bytes": 12625,
+      "sha256": "99fac0f9593634d0e844d0c88ced692213ce81198fa2d391a4cb08143d4c5c47"
+    },
+    {
+      "path": "app/admin/create-tour-panel.tsx",
+      "bytes": 10944,
+      "sha256": "d57efd7ec7f83734c84d093362d01642baa5373b53d617fc42788f0ffa963fab"
+    },
+    {
+      "path": "app/admin/image-guidance.module.css",
+      "bytes": 812,
+      "sha256": "3f4910929ead339bbe96bd7c7a5230178212266ebb476341d4f846e48aeb260d"
+    },
+    {
+      "path": "app/admin/image-guidance.tsx",
+      "bytes": 5349,
+      "sha256": "c376c39c28b590271ee28f6c843a0272f6bfd4e2addc6248dd8e64605516f2c7"
+    },
+    {
+      "path": "app/admin/inquiries-data.ts",
+      "bytes": 3894,
+      "sha256": "45865e9371aca4525121963303620e0cdfe746e2310d80178d9a37dd74301f3d"
+    },
+    {
+      "path": "app/admin/inquiries-panel.module.css",
+      "bytes": 2578,
+      "sha256": "155218c93c34d81701387a5352b199f4d13a3fef73be549d2df4e7bafef63c44"
+    },
+    {
+      "path": "app/admin/inquiries-panel.tsx",
+      "bytes": 5145,
+      "sha256": "aaed55f2f48fe45a4a9d4fe7cca9b8a89e119ed5b5c2c397c6b03b14321fd751"
+    },
+    {
+      "path": "app/admin/khaosok-split-panel.tsx",
+      "bytes": 4033,
+      "sha256": "da91825b98e1fdf146d0f3ed26d7c414f842818fa15373a225a67c5d72f9fd12"
+    },
+    {
+      "path": "app/admin/map-panel.module.css",
+      "bytes": 3156,
+      "sha256": "a59eee967b7b11aae9c7b2b8b176ce18e40b6c9898ac055a072b18f19e618bed"
+    },
+    {
+      "path": "app/admin/map-panel.tsx",
+      "bytes": 25457,
+      "sha256": "462b980529256742f1a893ef4e388f5b2b5e57c6a678395487f8f553cec5a2b0"
+    },
+    {
+      "path": "app/admin/operations.tsx",
+      "bytes": 4827,
+      "sha256": "5e667feb7a6ef9a42bb9466a5eff2854a06e081f52ea9af83cda8b234c17a405"
+    },
+    {
+      "path": "app/admin/page.tsx",
+      "bytes": 1259,
+      "sha256": "792b62ed2f6d40c6dcb2e40813ea5852b96c86213e20e2b004fd3fda9d78a669"
+    },
+    {
+      "path": "app/admin/panel.tsx",
+      "bytes": 311,
+      "sha256": "2a40fc3fe7e15e2b3a7325681eb72eefb07c276bc7a9762b43f8f856c8a7c12e"
+    },
+    {
+      "path": "app/admin/programme-editor.tsx",
+      "bytes": 2333,
+      "sha256": "75d5d96f5344de6bd30f087b0be68b788eabf9a80a18570ec2bfdc2765bf4dc2"
+    },
+    {
+      "path": "app/admin/selling-price-fields.tsx",
+      "bytes": 3200,
+      "sha256": "edeb192fd095ae1d8f6cfc5529e0d953c58d30703260c039010624a74c497abb"
+    },
+    {
+      "path": "app/admin/translation-batch.ts",
+      "bytes": 2971,
+      "sha256": "e61871941fd6d9fd9a999b9a2afef6aeff676178240307f26816e12c7f7617a4"
+    },
+    {
+      "path": "app/admin/translations-panel.tsx",
+      "bytes": 8339,
+      "sha256": "360e6401a757754e5208d020787f04b429269c31f2290c430edd83f360b05186"
+    },
+    {
+      "path": "app/admin/variant-image-editor.tsx",
+      "bytes": 3100,
+      "sha256": "7648d3bc3cea168258afaece44b865def88548f39767b658767136ea90e18720"
+    },
+    {
+      "path": "app/api/admin/approved-programs/route.ts",
+      "bytes": 2341,
+      "sha256": "85d2299724ed789a46ae6bc2e75c45924fca91ddd4dd74aa63ce4b8f6f8f4398"
+    },
+    {
+      "path": "app/api/admin/backup/route.ts",
+      "bytes": 607,
+      "sha256": "da032341c0a72af7d1c5826ba188288b6afeb5cbb571cd7edcf12f0852227f37"
+    },
+    {
+      "path": "app/api/admin/catalog/media/route.ts",
+      "bytes": 796,
+      "sha256": "c71423e7fdd59ee70dec421c67abf0a35feb728203d8e889ddb4781123884dba"
+    },
+    {
+      "path": "app/api/admin/catalog/route.ts",
+      "bytes": 3463,
+      "sha256": "1f855664fe062e855e71f4ec16bc5e0d03b20f05f6f4a25831f663db60a7c987"
+    },
+    {
+      "path": "app/api/admin/khaosok-split/route.ts",
+      "bytes": 1222,
+      "sha256": "a3cd05b6e73d05923a2c7681f4eaf829ada4ccfb437e95a355ef5d6c67ecebab"
+    },
+    {
+      "path": "app/api/admin/map/route.ts",
+      "bytes": 1978,
+      "sha256": "64e66c37b7208f724d6ec5c04abc821947c2f60ed520937ee34f5b1defe73a00"
+    },
+    {
+      "path": "app/api/admin/route.ts",
+      "bytes": 3770,
+      "sha256": "111d8816d38efc758c65fba373f3176e492c9aab918bf933f83f830ed96d2a7f"
+    },
+    {
+      "path": "app/api/admin/translations/route.ts",
+      "bytes": 3883,
+      "sha256": "31349fbb8d36ab6ca9cebccc72d8acdae37f8c9d4b6c81fa9a4bc7d2d3f0c4c1"
+    },
+    {
+      "path": "app/api/catalog-media/[id]/route.ts",
+      "bytes": 398,
+      "sha256": "558b9860e52ac84204a99df1dcb541f8c31bf62f72a5be5b6870949753d4b478"
+    },
+    {
+      "path": "app/api/catalog/route.ts",
+      "bytes": 735,
+      "sha256": "ce27a771d6a358359f26feeff7e78a761f2e65646df6545512e0362760ead94b"
+    },
+    {
+      "path": "app/api/favorites/route.ts",
+      "bytes": 1795,
+      "sha256": "ba3935f1172e90aee7af35ce424e1e5dea6968dd80ca79f11ec5fdb945d872a8"
+    },
+    {
+      "path": "app/api/inquiries/[id]/route.ts",
+      "bytes": 486,
+      "sha256": "ba37cd4b3e719c2b770b84893473b8820084921d4495fcb73440949174386d96"
+    },
+    {
+      "path": "app/api/inquiries/route.ts",
+      "bytes": 1139,
+      "sha256": "e86fcc3b42a9e3cdb279f2815b03cdd91a9110f62c7265522d34ce3ad3a11042"
+    },
+    {
+      "path": "app/api/products/[slug]/route.ts",
+      "bytes": 487,
+      "sha256": "8840a9f8da045a57c721d4ec1228432ca9d9ad641654cb29085135d84713cd38"
+    },
+    {
+      "path": "app/api/session/route.ts",
+      "bytes": 354,
+      "sha256": "5a0959b41a6e380bb9ac54d21ece884f3b717f738ebb8f78081b62f607d3af07"
+    },
+    {
+      "path": "app/catalog/page.tsx",
+      "bytes": 543,
+      "sha256": "5dfdd26ccaff44272cedddcdca922deb4f03bc14700d70e44e9e9118608dd87a"
+    },
+    {
+      "path": "app/chatgpt-auth.ts",
+      "bytes": 2550,
+      "sha256": "4265a2e7c2dcb3a6f4b7026f762bf5b6e4caec76cc13c0a45987ee9a9f2e42cc"
+    },
+    {
+      "path": "app/cheow-lan/CheowLanMapPage.tsx",
+      "bytes": 2778,
+      "sha256": "c29a13e55079f4608960f6f11be28ab73b6c664a35a48860f8a97257238d8b11"
+    },
+    {
+      "path": "app/cheow-lan/cheow-lan.module.css",
+      "bytes": 2382,
+      "sha256": "ab5ac1de2ac0ef93355645f375a423ed7bdccbaf16cb6e344459235d3d7f8395"
+    },
+    {
+      "path": "app/cheow-lan/page.tsx",
+      "bytes": 487,
+      "sha256": "d7b2996c9d64dbafd2d3dd0dec1f00a04291f01d1513dafd6b304ea121e78f0a"
+    },
+    {
+      "path": "app/components/ApprovedBrochures.tsx",
+      "bytes": 1082,
+      "sha256": "a310391d69182b0da32af4f243287eb432be6082476e38d77115cb9033586a1d"
+    },
+    {
+      "path": "app/components/BottlePrice.module.css",
+      "bytes": 638,
+      "sha256": "b4fb5fee33eddb833009c5dd4e19d145ae3ffb5ba0855a8f4e22454d3c9ecb19"
+    },
+    {
+      "path": "app/components/BottlePrice.tsx",
+      "bytes": 1015,
+      "sha256": "857b548e457ef25dbc71ba0953c4e5180387ba206ad102159f89419a4f1d569b"
+    },
+    {
+      "path": "app/components/BrandMark.tsx",
+      "bytes": 157,
+      "sha256": "2429dc089d76f6507e5796cd56e1b56e8c9502fffea5e34bfd5cf12309d04c9a"
+    },
+    {
+      "path": "app/components/CardChildPrices.module.css",
+      "bytes": 748,
+      "sha256": "76bdb44280138a8301d8af4c8a6f60aa9d09c9a511f5de07e11ee555361bfa8c"
+    },
+    {
+      "path": "app/components/CardChildPrices.tsx",
+      "bytes": 1124,
+      "sha256": "3e8cb6286df581cb62d320a160b3dee8d51439828c89f952346885e0dc462dc7"
+    },
+    {
+      "path": "app/components/CatalogUI.tsx",
+      "bytes": 32694,
+      "sha256": "36685e68cd71ba0e750148382116d0aecdd6e7680a1590e655a2323ebeef6e8e"
+    },
+    {
+      "path": "app/components/CompactTourDetail.module.css",
+      "bytes": 26512,
+      "sha256": "6e3c95d6ef4098653a1cc781fd6f7a4e8f5db8db25955bca16a60e79587a645a"
+    },
+    {
+      "path": "app/components/CompactTourDetail.tsx",
+      "bytes": 8984,
+      "sha256": "f6779b730a7081cb1c11c53fce754f6810817ad984fe11b44131b0242e90edd2"
+    },
+    {
+      "path": "app/components/Comparison.tsx",
+      "bytes": 2671,
+      "sha256": "934c037c9e8c41546879b182fe0571ffcff5b1b235e97a931253e199c1350d9e"
+    },
+    {
+      "path": "app/components/ContactModal.module.css",
+      "bytes": 1532,
+      "sha256": "21e1530c9bf3b217b81c5d67b71956ec5f402dc6662944a4b59a62433d8efd24"
+    },
+    {
+      "path": "app/components/ContactModal.tsx",
+      "bytes": 1818,
+      "sha256": "a3a3f2d4e17291fa8af493d860e903ca0773845a86080cae68c11df8dceb0af8"
+    },
+    {
+      "path": "app/components/GeoArtwork.tsx",
+      "bytes": 5429,
+      "sha256": "740110f9a4fe4732798c879e25fcf32f8936713448890b38a266f6a0fa5ba2fb"
+    },
+    {
+      "path": "app/components/InquiryDialogHeader.module.css",
+      "bytes": 1520,
+      "sha256": "65ef46ddf60b25bd09aa3108ab97e7577dcd637b149d8eb309b66767e2b6a546"
+    },
+    {
+      "path": "app/components/InquiryDialogHeader.tsx",
+      "bytes": 2369,
+      "sha256": "4bda957375d70b43b9099cad533cd0c1a3e60718fcd571d14b89d99988452770"
+    },
+    {
+      "path": "app/components/IslandMap.module.css",
+      "bytes": 1539,
+      "sha256": "07bd3fab3fdbbb16364956292a54b5a59401cc95ac5b17a7fb6d2ee84ae18945"
+    },
+    {
+      "path": "app/components/IslandMap.tsx",
+      "bytes": 25030,
+      "sha256": "d03aa93f240457ee8095e26d2aaf75d05a6a362f1441def59bb74eea14bb357c"
+    },
+    {
+      "path": "app/components/LanguageSwitcher.module.css",
+      "bytes": 1455,
+      "sha256": "f317f6db24f9ef2c3e5dd2ae8abc4519a9fa1a514f6620283732daf4fbfa1583"
+    },
+    {
+      "path": "app/components/LanguageSwitcher.tsx",
+      "bytes": 2012,
+      "sha256": "e9577b367793821fe2609ff0f307d0f983b2632f987d8a4ab6196c1db1b115d3"
+    },
+    {
+      "path": "app/components/LicenseBadge.module.css",
+      "bytes": 749,
+      "sha256": "ad4c762bb902a3152717ba74256bee15e46955b2215bde76a6ea4ab14bd6252d"
+    },
+    {
+      "path": "app/components/LicenseBadge.tsx",
+      "bytes": 695,
+      "sha256": "63e636962261545f28b4054fdb27826760bd66304592e116da3075ee64221bd9"
+    },
+    {
+      "path": "app/components/PriceOptions.tsx",
+      "bytes": 3310,
+      "sha256": "d13fde086d898603ccdbc1098317f876d98b1752e10e1d7ce1ef3c0663832b2b"
+    },
+    {
+      "path": "app/components/SiteChrome.tsx",
+      "bytes": 2914,
+      "sha256": "34d6f8a68587a1f6483a46fa364f29c9d9dc4cb3f837d9a53d8718809a211086"
+    },
+    {
+      "path": "app/components/TourArrivalChest.module.css",
+      "bytes": 788,
+      "sha256": "ba4e0baa76268c19e5625b867238194a07bb7a769dcfc30cafe1ec9f697ee091"
+    },
+    {
+      "path": "app/components/TourArrivalChest.tsx",
+      "bytes": 2675,
+      "sha256": "2cae9711b4c55888da8e4e38835944fccc62efa590728977fd1043fe083ed9d6"
+    },
+    {
+      "path": "app/components/TourImage.tsx",
+      "bytes": 1709,
+      "sha256": "2beb0fe652d3200363c8f56dd2b5b9de64112e9229aedf194292a46f63194976"
+    },
+    {
+      "path": "app/components/VariantTourImage.tsx",
+      "bytes": 772,
+      "sha256": "9ec4168908f7afc0c7714f613d8bf4ffe830c5938a12e6c737fac08d69a23b5a"
+    },
+    {
+      "path": "app/components/inquiry-copy.ts",
+      "bytes": 1990,
+      "sha256": "21bfec48b3793e04086b40575a7532cc7bd2f55dcd8d3e4a0a10bae3366f7052"
+    },
+    {
+      "path": "app/components/localized-price.ts",
+      "bytes": 1242,
+      "sha256": "adc95992cca9046c3dd4ed9866bab6de4ea84acb08669e18b177e699635c400f"
+    },
+    {
+      "path": "app/credits/page.tsx",
+      "bytes": 1152,
+      "sha256": "7354269033c5936c56a419def088660d078ff2f9d677a4eb4526b402c3b39047"
+    },
+    {
+      "path": "app/destination/[slug]/page.tsx",
+      "bytes": 1772,
+      "sha256": "c83a54e631698412d0a3b9bbbdeff5b1e79be3c566ed07e7a8a7f27cd1fdb8a2"
+    },
+    {
+      "path": "app/destinations/page.tsx",
+      "bytes": 1455,
+      "sha256": "8db4512b45e860f8cc304d774f11fa94012a085acb8264786fe1b459453a32cc"
+    },
+    {
+      "path": "app/globals.css",
+      "bytes": 41035,
+      "sha256": "421d19e5e8c3b960d4660dc1f1dc6da541c1bc5e047cdc4e2abf32983427ab13"
+    },
+    {
+      "path": "app/guide/page.tsx",
+      "bytes": 1018,
+      "sha256": "410046ed51fd442221561e1776f4a3d8f3cf56d42a750add4537fa5c06e700b6"
+    },
+    {
+      "path": "app/layout.tsx",
+      "bytes": 1363,
+      "sha256": "ecab2e6623e569c5ccad414856d820af962a44e0cb905d554719f4a64bcdd016"
+    },
+    {
+      "path": "app/not-found.tsx",
+      "bytes": 1293,
+      "sha256": "5844470cdaaa0a27601cb994132f15900a8573dbe47d854b7691703377431d19"
+    },
+    {
+      "path": "app/page.tsx",
+      "bytes": 3031,
+      "sha256": "3720a5393b38a46a148fb247d81d4c6821292557932f7be2077f32d19f756f6e"
+    },
+    {
+      "path": "app/privacy/page.tsx",
+      "bytes": 1026,
+      "sha256": "70fb30efc66a433f7d93d45c33399d504a3b51a3d2779616802711657da1c54c"
+    },
+    {
+      "path": "app/reference-preview/AirportMarker.tsx",
+      "bytes": 3312,
+      "sha256": "4842deb95bce53591a5e04be27e50ac7d7edafdcd69849e57955e0fcfd42df82"
+    },
+    {
+      "path": "app/reference-preview/BigBuddhaMarker.tsx",
+      "bytes": 3144,
+      "sha256": "e55c6431df8b212393ec672453f9f715450e9f1dcc3700b5fbd74b943cbc821c"
+    },
+    {
+      "path": "app/reference-preview/CheowLanMapLink.module.css",
+      "bytes": 787,
+      "sha256": "aa1a68ec4b63e2f3377b0f59d8bbb22628f9d00abf1885cd5e7e739b564f33cb"
+    },
+    {
+      "path": "app/reference-preview/CheowLanMapLink.tsx",
+      "bytes": 1551,
+      "sha256": "5ce294d2bb90b95a8440367df69ff6af13ed0bdf2b164ddb7b5df5d44b62b36a"
+    },
+    {
+      "path": "app/reference-preview/CustomMapContent.tsx",
+      "bytes": 1779,
+      "sha256": "4aedcde097f473d45c748e01f34b3022edb5a1680dc56cc4ea56bb9723ad1c62"
+    },
+    {
+      "path": "app/reference-preview/DestinationDirectory.tsx",
+      "bytes": 2814,
+      "sha256": "eeaddb760742b78d3253182064eb6684a1791c5368c940bc68d180da202b1599"
+    },
+    {
+      "path": "app/reference-preview/HeroMapPreview.module.css",
+      "bytes": 1595,
+      "sha256": "89e61326877a3ecf870a583cba77d58eb5bb10112ba8961c4b642f8280ce43a3"
+    },
+    {
+      "path": "app/reference-preview/HeroMapPreview.tsx",
+      "bytes": 1604,
+      "sha256": "32f31b4918c4344d0d998f71ed7799abff508ff457dda3e5daf0d62902c96a4e"
+    },
+    {
+      "path": "app/reference-preview/HomeCatalogFilters.tsx",
+      "bytes": 5536,
+      "sha256": "8809ab8badb2ecc7895c4971f76952ebc2dd601be04ab1171a488425f3145e84"
+    },
+    {
+      "path": "app/reference-preview/MapBoat.module.css",
+      "bytes": 1155,
+      "sha256": "b882be0f371074783d6d2f2d8fc428fc0f8fcac371960d9f3c263c459f2c1a72"
+    },
+    {
+      "path": "app/reference-preview/MapBoat.tsx",
+      "bytes": 2584,
+      "sha256": "5d4e6bb55ed78a948bade2a9399e5611354eb9540dd7808614067907661c1566"
+    },
+    {
+      "path": "app/reference-preview/MapBottle.module.css",
+      "bytes": 3851,
+      "sha256": "0a074476b71cdb17a7f92bc6ef354e1188749cfbd75da0d3e1516f9af9de7bc8"
+    },
+    {
+      "path": "app/reference-preview/MapBottle.tsx",
+      "bytes": 2634,
+      "sha256": "55f7c437c86b8209c38bf3bc01a0df0c83c91e06017342e1302d84d9a3dc92ac"
+    },
+    {
+      "path": "app/reference-preview/MapLayoutContext.tsx",
+      "bytes": 673,
+      "sha256": "424929f9a8c0599930c53680cc5ef55cbc6a3d5fa2ee8ee679f4d86dd39132ff"
+    },
+    {
+      "path": "app/reference-preview/MapPOI.module.css",
+      "bytes": 5314,
+      "sha256": "80e7b22035de7677955164420c8d8e378a2ad61db5a749ac9e54ea3e79080d98"
+    },
+    {
+      "path": "app/reference-preview/MapPOI.tsx",
+      "bytes": 5720,
+      "sha256": "1f516c61f91e313f63bc9d6a101850de501dc02854d87343f7c3829242f3dce2"
+    },
+    {
+      "path": "app/reference-preview/MapShortcutLabel.module.css",
+      "bytes": 390,
+      "sha256": "354abe44621bdc1cdfc17790588518adad0e83186a1f625e0711757be4948c80"
+    },
+    {
+      "path": "app/reference-preview/POIArtwork.tsx",
+      "bytes": 971,
+      "sha256": "6824f2466bbf927a3d985541667c52a71bbee37de7870e06e1e437910fc39223"
+    },
+    {
+      "path": "app/reference-preview/PhiPhiDetail.module.css",
+      "bytes": 4276,
+      "sha256": "33f8ef04d093f13e570e873fc20d64322fda689e8b88f0787a2e8be41750dbc4"
+    },
+    {
+      "path": "app/reference-preview/PhiPhiDetail.tsx",
+      "bytes": 7832,
+      "sha256": "6de2a9f212e94bb2fb79d0cb4b4a9e8a3f2201a0a31b19ad81b2a9270c831d5f"
+    },
+    {
+      "path": "app/reference-preview/ReferenceHome.tsx",
+      "bytes": 16490,
+      "sha256": "fe76d2df7ed47de9df6bad6bc5cb9d0dd778647ee1d0d1767f5940ab8d774b39"
+    },
+    {
+      "path": "app/reference-preview/SupplementalArtPOIs.tsx",
+      "bytes": 807,
+      "sha256": "8418ed562c9560047dce313ce2d4d9c5d1c17b1ea134e7311ef069ed6390cd7f"
+    },
+    {
+      "path": "app/reference-preview/ThaiStamp.module.css",
+      "bytes": 1277,
+      "sha256": "e066e555cfb2f333cf9c897daf0ed2cd26df993ffae3dc1e80e92759ac558f2f"
+    },
+    {
+      "path": "app/reference-preview/ThaiStamp.tsx",
+      "bytes": 2030,
+      "sha256": "5ba286375b640580a6389ac873499117ce6b6fd76436d556f3907b633bcb3280"
+    },
+    {
+      "path": "app/reference-preview/YonaBoardingPOI.tsx",
+      "bytes": 2061,
+      "sha256": "c7e6bde2d5c82fd4a50b3862123dd42b7f3da9473155d5476693e67527e1f3c5"
+    },
+    {
+      "path": "app/reference-preview/airport-landmark.ts",
+      "bytes": 581,
+      "sha256": "487c9a600d8024a3141dc48dcd1cf8c358cd5a33f93735279f934bef480af74e"
+    },
+    {
+      "path": "app/reference-preview/catalog-filter-options.ts",
+      "bytes": 752,
+      "sha256": "5f409d56ccc0510364b9c9a59fdd3a5b665306f51a21a515b30370f79677123c"
+    },
+    {
+      "path": "app/reference-preview/landmark-list.module.css",
+      "bytes": 1084,
+      "sha256": "016c657ff9af6ba6c6c3d61cf11589a438999026e6894cf31f55a919cb1e399a"
+    },
+    {
+      "path": "app/reference-preview/map-boats.ts",
+      "bytes": 1141,
+      "sha256": "bf9dbfa290b5339bfa36652467d336599ac08fd3caa6cbbfd1d0542ac4ddbf02"
+    },
+    {
+      "path": "app/reference-preview/map-press.ts",
+      "bytes": 1555,
+      "sha256": "9cd5e70a6e4cd6f278b2e2e88e24ceaa3a0c412de63c07bf226699b58db03bc5"
+    },
+    {
+      "path": "app/reference-preview/page.tsx",
+      "bytes": 362,
+      "sha256": "d5dae90ba640ad842e8378d9a901585a7c98113b7bab083f9f75b4c032c78a46"
+    },
+    {
+      "path": "app/reference-preview/reference-art-anchors.ts",
+      "bytes": 1033,
+      "sha256": "47a8c3150fa5882e358dacc6eb46287a759349f773b7b8e3fdd64ee7c4ce3d4e"
+    },
+    {
+      "path": "app/reference-preview/reference-catalog.ts",
+      "bytes": 623,
+      "sha256": "43229f0c696e256920d152c19665fe6f78626b2fafdad313b0ac2bf04744f2e7"
+    },
+    {
+      "path": "app/reference-preview/reference-copy.ts",
+      "bytes": 1046,
+      "sha256": "cb140100a30137b27e0d8639b8bce49e83521d030af0cd5c19bdc24c71735c36"
+    },
+    {
+      "path": "app/reference-preview/reference-feed.ts",
+      "bytes": 9448,
+      "sha256": "eebdd8be7279553449805d0b91a08aa35563da27efa834a03003e3bdbef44710"
+    },
+    {
+      "path": "app/reference-preview/reference-landmarks.ts",
+      "bytes": 549,
+      "sha256": "691965001dd08ac04e1122d9c952ac96cf5ed87b35de08b36d31470174be3d98"
+    },
+    {
+      "path": "app/reference-preview/reference-map.ts",
+      "bytes": 698,
+      "sha256": "e624bf641649c3514f8edea5b2a39bfa3ec0212f48baace9bfa2b6b68f0f0d9d"
+    },
+    {
+      "path": "app/reference-preview/reference-navigation.ts",
+      "bytes": 4044,
+      "sha256": "2f00fa7f16ce945621ace550ae875ce8272dab5bdc518cbb87001c0e070c0dfb"
+    },
+    {
+      "path": "app/reference-preview/reference.module.css",
+      "bytes": 62263,
+      "sha256": "08aa40c432bcd80a400bfef5a47362ea655ec9e6771b19419c683f88d18e2148"
+    },
+    {
+      "path": "app/reference-preview/supplementary-pois.ts",
+      "bytes": 2522,
+      "sha256": "b995dc36dd0b05eb0e65675e273456801ebb9e18438f638f22b32880d3766d3a"
+    },
+    {
+      "path": "app/reference-preview/useReferenceCatalog.ts",
+      "bytes": 2335,
+      "sha256": "3ec862fd32776ce91149972ed30530beccd7f647e3aca88a041879a501402c84"
+    },
+    {
+      "path": "app/robots.txt/route.ts",
+      "bytes": 326,
+      "sha256": "32e9e5344ecce7dcc3c305a1fcd5e97b787b6447ba2c87c690a575015aa2896f"
+    },
+    {
+      "path": "app/sitemap.xml/route.ts",
+      "bytes": 808,
+      "sha256": "f5221b369108ae741f4beec75e88450b629de46a42e9df9bf77cbb2501fd9018"
+    },
+    {
+      "path": "app/tour/[slug]/page.tsx",
+      "bytes": 2059,
+      "sha256": "22dd9672c7ad2750aa066c6e55604347f41b5812f22029204d6d96854424bc08"
+    },
+    {
+      "path": "assets-source/demo-brochure-placeholder.svg",
+      "bytes": 881,
+      "sha256": "12e22fe8e50bd6e118fed519d8733c7afff3d6b6524696d1f22dd503ef43d80b"
+    },
+    {
+      "path": "build/connector-preview-plugin.mjs",
+      "bytes": 7211,
+      "sha256": "a6a9fe2086e302f94a3f91e3c1a68a45bb3aa07d4a79faf01b14732191eb4e80"
+    },
+    {
+      "path": "build/connector-preview-worker.mjs",
+      "bytes": 594,
+      "sha256": "c1b6b2c420cb67d9e28f8f4ae440f578c0dfd4cb840a12cfe4b58076629a17ba"
+    },
+    {
+      "path": "build/sites-vite-plugin.LICENSE",
+      "bytes": 1063,
+      "sha256": "7de1e115d165f176e68f962acdb809b5ab8d8ae78d3981e0701392b2ac50c713"
+    },
+    {
+      "path": "build/sites-vite-plugin.ts",
+      "bytes": 7185,
+      "sha256": "07af20e7097d9ed1d76f7c446d02997550b8fc5ca89668b249e25eabd62c6834"
+    },
+    {
+      "path": "build/sites-worker.ts",
+      "bytes": 1999,
+      "sha256": "ec3b6b4286fbcf173087436cb9d6a4d432e7a8045b5468db301fff7df98aecc7"
+    },
+    {
+      "path": "cloudflare-env.d.ts",
+      "bytes": 99,
+      "sha256": "8b0eca84aa3364cc7ccc43cc3af6beb88dd34ebd410de08690bf094ce39fbcb0"
+    },
+    {
+      "path": "components.json",
+      "bytes": 420,
+      "sha256": "31f4ca67a4a62572571003d3d5aac85ee6fbfca67a192924bac6b168d95e98fd"
+    },
+    {
+      "path": "components/connector-error.tsx",
+      "bytes": 1082,
+      "sha256": "2d0d04559952ce9c9a327cca499f4b99f35d885cccfce375230e116695d3f155"
+    },
+    {
+      "path": "components/ui/accordion.tsx",
+      "bytes": 2048,
+      "sha256": "a4f153089ba886dfcf73fac26b5c01ca933fa12fbe88df6fb723912bfffdfbb0"
+    },
+    {
+      "path": "components/ui/alert-dialog.tsx",
+      "bytes": 5439,
+      "sha256": "9a8d950f2b9b4352d5ebb762fb44d5c28c2d353aa29712071973656a8736e311"
+    },
+    {
+      "path": "components/ui/alert.tsx",
+      "bytes": 1614,
+      "sha256": "2cc59b5f7bda91c1670884b1bf46bfc8a2a6f226cef184f5762acc037188885b"
+    },
+    {
+      "path": "components/ui/aspect-ratio.tsx",
+      "bytes": 274,
+      "sha256": "b1c157886236782cb92d8fbcd4749532aaf6d8aabefd6e157ca40358f902f407"
+    },
+    {
+      "path": "components/ui/attachment.tsx",
+      "bytes": 6002,
+      "sha256": "ae8a25dd1a896d3964e3ef54d97e51221b418cde287dfd794428b89951c5c790"
+    },
+    {
+      "path": "components/ui/avatar.tsx",
+      "bytes": 2916,
+      "sha256": "58a846bf1617b94b9681921db9b8461d0145f311424663d11678a06b6153cb34"
+    },
+    {
+      "path": "components/ui/badge.tsx",
+      "bytes": 1776,
+      "sha256": "46a0de5224f6a5d5d63d45246534288518dce888f031064bff925bbc7fe6ad97"
+    },
+    {
+      "path": "components/ui/breadcrumb.tsx",
+      "bytes": 2350,
+      "sha256": "d4c0831bba2212e778248f54a6ace6ef378df8bba4616d1abf27787a31eabae5"
+    },
+    {
+      "path": "components/ui/bubble.tsx",
+      "bytes": 4699,
+      "sha256": "870cc0c5cfc8a515053f7e41e706a6bd017a909b45f1305fd3b164a52cc4483b"
+    },
+    {
+      "path": "components/ui/button-group.tsx",
+      "bytes": 2202,
+      "sha256": "784c89d8ee683e1bc972ae69e6ea8225a7f63abe22aa1b5fc3423ae8a2a399c0"
+    },
+    {
+      "path": "components/ui/button.tsx",
+      "bytes": 2392,
+      "sha256": "cc36af0f8b5019c33cc039fbf03bb952a513072b15b55b53c592b78af3e5f4c4"
+    },
+    {
+      "path": "components/ui/calendar.tsx",
+      "bytes": 7832,
+      "sha256": "3855fbe0d3f8ad3a4b93071f98b76a9f6782d46ec8b05f5d2ddbee1e4e39bc84"
+    },
+    {
+      "path": "components/ui/card.tsx",
+      "bytes": 1987,
+      "sha256": "c48dd3b96be90a7066f1aebf294f0af9d00ebcdc367d5d4aca55429ade570c1c"
+    },
+    {
+      "path": "components/ui/carousel.tsx",
+      "bytes": 5556,
+      "sha256": "b7ea0dda3903d972c186f739e23da61f547bc83b5a0bf13b16856577846d5fc3"
+    },
+    {
+      "path": "components/ui/chart.tsx",
+      "bytes": 10614,
+      "sha256": "45aa5ea4a386f4fb5b8869ff4bab3a08cf89255190ee322043baf84c3e950b6a"
+    },
+    {
+      "path": "components/ui/checkbox.tsx",
+      "bytes": 1214,
+      "sha256": "b23ab9d4deeedf2ac8f512c368361ede681aa383437ef48563a6f9b7dbe95f27"
+    },
+    {
+      "path": "components/ui/collapsible.tsx",
+      "bytes": 795,
+      "sha256": "c6598e5584f4258b5d9fefadbc5ad6a66888ad58729f4b634a0bb2d9c513188b"
+    },
+    {
+      "path": "components/ui/combobox.tsx",
+      "bytes": 9158,
+      "sha256": "2d68e78b2dc7e38a085f222dede60a80b4f8229a6e91732c484605e204d46735"
+    },
+    {
+      "path": "components/ui/command.tsx",
+      "bytes": 4818,
+      "sha256": "361193df1e3d64a9e9b5048f045264782fcb387aab3f00f2b805fdcbf538b16a"
+    },
+    {
+      "path": "components/ui/context-menu.tsx",
+      "bytes": 8268,
+      "sha256": "2cf1fcf59df0649a3e2a126d1df2f639145f6b6bf5689ee54af1f40ab1245017"
+    },
+    {
+      "path": "components/ui/dialog.tsx",
+      "bytes": 4303,
+      "sha256": "dce39c6adc47d997bd2567f8b7a72f466b0134715105cd42f9194007b8ecdb14"
+    },
+    {
+      "path": "components/ui/direction.tsx",
+      "bytes": 506,
+      "sha256": "84ae2ad658207f0e0f367978e5508cd8027cd00c29c41d3d13db21a708c3d1e6"
+    },
+    {
+      "path": "components/ui/drawer.tsx",
+      "bytes": 4255,
+      "sha256": "cb6eaf58eb0757ca91af284e5d925b89a42ad7eb19cb3f44c575a3487aa9350f"
+    },
+    {
+      "path": "components/ui/dropdown-menu.tsx",
+      "bytes": 8418,
+      "sha256": "98f0dcdae38225b73734aceeb9213dd751fea2c72ea520df31003cd133deac8a"
+    },
+    {
+      "path": "components/ui/empty.tsx",
+      "bytes": 2396,
+      "sha256": "ae95bdcf367a076ae02e7925f14522a148798f72d9651749c6d55497dba584c0"
+    },
+    {
+      "path": "components/ui/field.tsx",
+      "bytes": 6159,
+      "sha256": "ba67d76f017ac059fc86cf8c344e0b2991c4322d3619e125498c19b87f6eefbd"
+    },
+    {
+      "path": "components/ui/form.tsx",
+      "bytes": 3757,
+      "sha256": "315b46bb75ab7d1c6061b5d750aa4bedf6e7a455e15e2d7f9182f053d5972b1e"
+    },
+    {
+      "path": "components/ui/hover-card.tsx",
+      "bytes": 1526,
+      "sha256": "f5d8df42c59370ec14d61bcc54f7d68e9bb7dfa0d6a872b2f7cffc2aafbf23b8"
+    },
+    {
+      "path": "components/ui/input-group.tsx",
+      "bytes": 5065,
+      "sha256": "6afbd58fea4c438e6252dc4568bddc122e84ababead4ad5cee50ace01100c9a0"
+    },
+    {
+      "path": "components/ui/input-otp.tsx",
+      "bytes": 2254,
+      "sha256": "161946daa89f0eda2575b9271c0494e35807c4ffb55598a49f67160c17fec299"
+    },
+    {
+      "path": "components/ui/input.tsx",
+      "bytes": 962,
+      "sha256": "8c4612a7c41319ac5049daa3b34b080f9784b6245c17780eb87c127e58e473db"
+    },
+    {
+      "path": "components/ui/item.tsx",
+      "bytes": 4486,
+      "sha256": "6e2144d6d87142dbbe56d568810bf546318c8aa661447ebb0d76ebbf382cb45f"
+    },
+    {
+      "path": "components/ui/kbd.tsx",
+      "bytes": 862,
+      "sha256": "6088c3a5432338b1719c17e9b5d0e1fa74fd1f66060f248fc88909d33a82cd13"
+    },
+    {
+      "path": "components/ui/label.tsx",
+      "bytes": 606,
+      "sha256": "a476e41f08b9de5bd447de66a33d8bc2ad18f2fa6b96c064778bab4b6f439f4c"
+    },
+    {
+      "path": "components/ui/marker.tsx",
+      "bytes": 1864,
+      "sha256": "3d798763f094b2bb5e7ade2d5cd1b9bab498bc8ca7fd4cfaf4e5835bdedc34a0"
+    },
+    {
+      "path": "components/ui/menubar.tsx",
+      "bytes": 8389,
+      "sha256": "9243af8afcea03703398ccd1c2a8c0a87ad6cbaf2bd272fb609f5b79fe46aebb"
+    },
+    {
+      "path": "components/ui/message-scroller.tsx",
+      "bytes": 3992,
+      "sha256": "bb7660a248e4e9589c3816c7c1c199ea1381a70d2c8476ae895b567a7a4d86cf"
+    },
+    {
+      "path": "components/ui/message.tsx",
+      "bytes": 2232,
+      "sha256": "9d2952bf3b641081f09aa2739535e6bbd1be0a4946789752a2c20d8aaef43185"
+    },
+    {
+      "path": "components/ui/native-select.tsx",
+      "bytes": 1995,
+      "sha256": "007516b111fca8c98a6c40c94ab91bb68cc5b52afce1ed1f5e510c3d86e7347c"
+    },
+    {
+      "path": "components/ui/navigation-menu.tsx",
+      "bytes": 6658,
+      "sha256": "889d358a77de88e9cb6f39ea4895ea4c76eaf01d731b74e44f1c41e97a78a044"
+    },
+    {
+      "path": "components/ui/pagination.tsx",
+      "bytes": 2717,
+      "sha256": "374ad135c3d4ff3ec080a0009cd9745cdd0e12faa89d2b0e86074f11e5127fd1"
+    },
+    {
+      "path": "components/ui/popover.tsx",
+      "bytes": 2357,
+      "sha256": "31c350309ff5d3034e6ecf1b0eda75ba8855bdbf987fc7ad6d71f0ef07c5a447"
+    },
+    {
+      "path": "components/ui/progress.tsx",
+      "bytes": 755,
+      "sha256": "c8c26e8f5f041c3cdf4915347dc1d9c022f9448f149990fadcaf303e952fa57d"
+    },
+    {
+      "path": "components/ui/radio-group.tsx",
+      "bytes": 1460,
+      "sha256": "fe5ce39636d0818c2bf9c4eebddff893d1225fa2c81b5fa4bb8cbb39a8c913ce"
+    },
+    {
+      "path": "components/ui/resizable.tsx",
+      "bytes": 1815,
+      "sha256": "bc63958467aa00557c551bb0d96a5ae4c965c1e1ba2380e595949d933b132f7c"
+    },
+    {
+      "path": "components/ui/scroll-area.tsx",
+      "bytes": 1639,
+      "sha256": "8bd9d986b2844c9a87de825c6de4787b6739b36c3dc9a05ccf3eb107160e4043"
+    },
+    {
+      "path": "components/ui/select.tsx",
+      "bytes": 6353,
+      "sha256": "0b796a108a4eb5ba52d9ad938b7aea36dc56ae66c703a6d0a23dbc24f96daff3"
+    },
+    {
+      "path": "components/ui/separator.tsx",
+      "bytes": 694,
+      "sha256": "6da346505c8629a4668420d2a5ca48891383bbe0b0ceb14163537c671879427e"
+    },
+    {
+      "path": "components/ui/sheet.tsx",
+      "bytes": 4188,
+      "sha256": "63863cf2df8f8973e52b3459ac9bdbf81be1262dbc70eb53d5271ffb03488e16"
+    },
+    {
+      "path": "components/ui/sidebar.tsx",
+      "bytes": 21526,
+      "sha256": "4a8d73e7730a2b1fcecfca31299ed26db65c2307b84197a59c6ec7c01c7ad28e"
+    },
+    {
+      "path": "components/ui/skeleton.tsx",
+      "bytes": 276,
+      "sha256": "ba48dd5be5a6a1378bd4e011028654b5bf419f1e7d20ee4b9f8330c1264e7239"
+    },
+    {
+      "path": "components/ui/slider.tsx",
+      "bytes": 1991,
+      "sha256": "0e37484f4b416e79ac18c655cac961aefacf6e67085cfc2b320ea8af545635a3"
+    },
+    {
+      "path": "components/ui/sonner.tsx",
+      "bytes": 1034,
+      "sha256": "13ccc9b0fe4248e622f83a1d3b2f0566b72b5e04162d7d0c8db8945ecc71b55f"
+    },
+    {
+      "path": "components/ui/spinner.tsx",
+      "bytes": 331,
+      "sha256": "3e6e6e8d37fb4069f8e43e55318f8db06fbc36e6c8be0096da3c9337c1c798b9"
+    },
+    {
+      "path": "components/ui/switch.tsx",
+      "bytes": 1408,
+      "sha256": "386d4d4deb39f34126f9700fe9bf5393d238485dd94018bba9d154dda84c62ae"
+    },
+    {
+      "path": "components/ui/table.tsx",
+      "bytes": 2478,
+      "sha256": "20e5a7f224959c6b75802995706a97e9da171f693d4b6b1b436388fcd9df96f3"
+    },
+    {
+      "path": "components/ui/tabs.tsx",
+      "bytes": 3782,
+      "sha256": "865d0194331b9b2be36723fa79d3575dc83078b4cb941cafee87cb72fc2cff46"
+    },
+    {
+      "path": "components/ui/textarea.tsx",
+      "bytes": 759,
+      "sha256": "253cdeb487c73beaaccdf47fc163e36e7d5b7ae6ddf09a4f64998a109a112979"
+    },
+    {
+      "path": "components/ui/toggle-group.tsx",
+      "bytes": 2308,
+      "sha256": "69f643e889e933f05c1439084480d8646f66a161c7d1cf0730ee926382ade35e"
+    },
+    {
+      "path": "components/ui/toggle.tsx",
+      "bytes": 1565,
+      "sha256": "ba4d0b0a2b2fee75dc36dfc19e32082e721024b919050c97fd5dc70faa924e16"
+    },
+    {
+      "path": "components/ui/tooltip.tsx",
+      "bytes": 1830,
+      "sha256": "a0784eb77831a799fad7991df4f1b666f876201565a80175e1aa68733574a2e4"
+    },
+    {
+      "path": "content/approved-eight/copy.json",
+      "bytes": 27,
+      "sha256": "b09b970b993fd7e07e7613cf2d7ef0ba67f9cc2f1769161e97d130de4f01fae1"
+    },
+    {
+      "path": "content/approved-eight/programs.json",
+      "bytes": 13215,
+      "sha256": "4473ac5958d1814fc17e5b498e47923073b3dead1f8a75cc2bd834ff9470e50b"
+    },
+    {
+      "path": "content/catalog-backfill-gen76.json",
+      "bytes": 27,
+      "sha256": "b09b970b993fd7e07e7613cf2d7ef0ba67f9cc2f1769161e97d130de4f01fae1"
+    },
+    {
+      "path": "content/cheow-lan-map-provenance.json",
+      "bytes": 998,
+      "sha256": "06beae793a2ef1800d405b3aad356ac7543f98469c5b75c80c2e7c98f8125b40"
+    },
+    {
+      "path": "content/media-credits.json",
+      "bytes": 1973,
+      "sha256": "1e54779eb74d08a984fcee45a7eecff43878ecc4baeb0217cb191dc73e8f0e0d"
+    },
+    {
+      "path": "db/index.ts",
+      "bytes": 423,
+      "sha256": "dc7610b00b918e0ffff1360a63626f16655ced3064b2eaf96095a4101fb14bcd"
+    },
+    {
+      "path": "db/schema.ts",
+      "bytes": 11014,
+      "sha256": "928285cd9ca456e08bee14b385ffab64ed9f57224d734fe24aac6fad700ebd22"
+    },
+    {
+      "path": "docs/asset-provenance.json",
+      "bytes": 3460,
+      "sha256": "000316e3edeb59ca6729b1392a4ecc2e72ff94e91ffa244cc367d779f08cf47c"
+    },
+    {
+      "path": "docs/identity/doublebottle/avatar-world-queue-approved.svg",
+      "bytes": 35255,
+      "sha256": "e353c4b3859ead9033918ab5b12fd81f4d480cb1647005d535818d8a0c5ec6c3"
+    },
+    {
+      "path": "docs/identity/doublebottle/bangkok-queue-approved.svg",
+      "bytes": 32558,
+      "sha256": "e02652ad0b7df8352a789b3cc4f0760c92f826303c62e9b4808b124a1318ad09"
+    },
+    {
+      "path": "docs/identity/doublebottle/carnival-magic-queue-approved.svg",
+      "bytes": 38987,
+      "sha256": "e54780bb8abcfe54d8951ec443c97279920ae2e30f60c66b955cb6cc2b402159"
+    },
+    {
+      "path": "docs/identity/doublebottle/cheow-lan-day-queue-approved.svg",
+      "bytes": 17137,
+      "sha256": "27161036f14981409f4e6e49604fbffe6a2427ff19318163713d5ea6d9968b77"
+    },
+    {
+      "path": "docs/identity/doublebottle/coral-rawai-queue-approved.svg",
+      "bytes": 16673,
+      "sha256": "0f369439d0534533c65fd4d148a5d683ace09cf7e7126ef56fbca7549a29561e"
+    },
+    {
+      "path": "docs/identity/doublebottle/elephant-spa-option-b-approved.svg",
+      "bytes": 9274,
+      "sha256": "2ec1a7637631d60148cc5b9deed6738e124532f137d5369c4db32cc2701aeb0b"
+    },
+    {
+      "path": "docs/identity/doublebottle/eleven-islands-approved.svg",
+      "bytes": 24750,
+      "sha256": "d14597d11959a93abbf47f2e7b20db55687abd2d701b44db3d3b0143699c7a06"
+    },
+    {
+      "path": "docs/identity/doublebottle/fantasea-queue-approved.svg",
+      "bytes": 32916,
+      "sha256": "ebb8533341224605ce9d5cd93091ed63e1f944c5c8c0ed3854bb2938ab666952"
+    },
+    {
+      "path": "docs/identity/doublebottle/five-pearls-queue-approved.svg",
+      "bytes": 19419,
+      "sha256": "5604d6448158e999b61c08b85e47cb3bc5bf2522907a3955293f467f30847ce3"
+    },
+    {
+      "path": "docs/identity/doublebottle/glowing-plankton-queue-approved.svg",
+      "bytes": 19259,
+      "sha256": "e671b8dec46a6169657266fdd6d6e08901eb43b1fe95e5cacac0ea22bd3aa3f6"
+    },
+    {
+      "path": "docs/identity/doublebottle/illustration-coming-soon.svg",
+      "bytes": 10138,
+      "sha256": "7ec7c5882fe01750e1d0d2c99c30bc1dc1a8bb3b6fbc6a69b0eee9f15da26551"
+    },
+    {
+      "path": "docs/identity/doublebottle/james-bond-catamaran-approved.svg",
+      "bytes": 18840,
+      "sha256": "d5e51b86b6aa24ad48db9c70a7da06276cefd6cdc05f223cf56ef7ef201ada91"
+    },
+    {
+      "path": "docs/identity/doublebottle/james-bond-cave-queue-approved.svg",
+      "bytes": 16567,
+      "sha256": "6c90c0d786856cdc6d51fde61a5b76a8d750c5a36259967611fa710349232035"
+    },
+    {
+      "path": "docs/identity/doublebottle/james-bond-yao-queue-approved.svg",
+      "bytes": 23431,
+      "sha256": "d5dc1511b0563b81846e518c092872fb120edf79e7240eaf233c6f608d273e8d"
+    },
+    {
+      "path": "docs/identity/doublebottle/jet-ski-north-queue-approved.svg",
+      "bytes": 22286,
+      "sha256": "41bb3f5842e28b7315271b5b47aac5441cc37400d870e9632b7acdfa7f6dbf55"
+    },
+    {
+      "path": "docs/identity/doublebottle/jet-ski-south-approved-v2.svg",
+      "bytes": 21858,
+      "sha256": "0a90961a66f2744db368f1fbcf8f59dfd1df62257c2d009512c5447458afe6d2"
+    },
+    {
+      "path": "docs/identity/doublebottle/khao-lak-safari-queue-approved.svg",
+      "bytes": 16816,
+      "sha256": "c5c7f64f9233cbef4131261e126e0b42802f6b8d39d2a5e16eee04d18b799e2a"
+    },
+    {
+      "path": "docs/identity/doublebottle/khao-sok-approved-v2.svg",
+      "bytes": 21646,
+      "sha256": "2a0b391e349edb27e380f4dc33560657a68f7e006c17311ba6dca223deec36c8"
+    },
+    {
+      "path": "docs/identity/doublebottle/krabi-catamaran-queue-approved.svg",
+      "bytes": 14319,
+      "sha256": "48d605821bcba82c77b8cf88a529141fd1ed61072c60a4c293dd31ed19e117b5"
+    },
+    {
+      "path": "docs/identity/doublebottle/krabi-sunset-approved.svg",
+      "bytes": 17782,
+      "sha256": "1ec5fa47ec1a99bea7055ff27a4a5fb77bc324a3ca0005295387774d01fcafdf"
+    },
+    {
+      "path": "docs/identity/doublebottle/kuala-lumpur-queue-approved.svg",
+      "bytes": 18358,
+      "sha256": "e7b7d205dfd0939aa88934e60e40e3e46a53180767893ab139648aa0de5d5e5e"
+    },
+    {
+      "path": "docs/identity/doublebottle/phang-nga-skywalk-queue-approved.svg",
+      "bytes": 18010,
+      "sha256": "ad58b4f70afcb82b71825031048ee2e715c8cbaa4f4389862852eb345affaf5a"
+    },
+    {
+      "path": "docs/identity/doublebottle/phi-phi-bamboo-queue-approved.svg",
+      "bytes": 19430,
+      "sha256": "6535180b05027b9ae8e37a995d96c6e977aa739cabad79124f99f1f76455405b"
+    },
+    {
+      "path": "docs/identity/doublebottle/phi-phi-catamaran-approved.svg",
+      "bytes": 15730,
+      "sha256": "85cff97350720d0e9ffccad74df2aa79227f623cf17f09a8ce5100c3f4d5375e"
+    },
+    {
+      "path": "docs/identity/doublebottle/phi-phi-fishing-approved.svg",
+      "bytes": 16835,
+      "sha256": "339105f6d7307a33d4c0061bde4565d76feffb08b35ccee9bab3431959965f8e"
+    },
+    {
+      "path": "docs/identity/doublebottle/phi-phi-four-islands-queue-approved.svg",
+      "bytes": 23403,
+      "sha256": "f3fae64b6af578182ea438a644da4987ea825d7d59b711c81eafd3a2b9d0f646"
+    },
+    {
+      "path": "docs/identity/doublebottle/phi-phi-khai-maiton-queue-approved.svg",
+      "bytes": 15395,
+      "sha256": "2337b487d034c58feb04703c55c1680e8a0b3665d0363ef6ced11cc45c53f87b"
+    },
+    {
+      "path": "docs/identity/doublebottle/phi-phi-khai-queue-approved.svg",
+      "bytes": 11595,
+      "sha256": "a664bf0bca3f66a41efe61c529dec4e0187c6eac21b1947be4e06842634e898b"
+    },
+    {
+      "path": "docs/identity/doublebottle/phi-phi-lazy-queue-approved.svg",
+      "bytes": 15005,
+      "sha256": "852f8cbf74054f30705c9be1d6940fb2564426a19cb064ae49391c6ea77e6dd8"
+    },
+    {
+      "path": "docs/identity/doublebottle/phi-phi-overnight-queue-approved.svg",
+      "bytes": 24625,
+      "sha256": "377545321c2938f81a81c711ef82b9eb0573e6c04f0df7c613d4fc6a2f91f6b6"
+    },
+    {
+      "path": "docs/identity/doublebottle/phi-phi-racha-party-approved.svg",
+      "bytes": 20990,
+      "sha256": "f94fef5cd969a35ad4c340d8b5671bf7dd273e1ef0165b2ad4f7a5db56785abf"
+    },
+    {
+      "path": "docs/identity/doublebottle/phi-phi-sunrise-approved-v2.svg",
+      "bytes": 16421,
+      "sha256": "fb66dad7f356a13942a02fd53964a6874a6f728b73f38cd767556ac3cf0fd112"
+    },
+    {
+      "path": "docs/identity/doublebottle/phi-phi-sunset-queue-approved.svg",
+      "bytes": 18697,
+      "sha256": "4a17d6f9afd249016d85a0f72929c33afc9e3237c44f855ed72a549458c95516"
+    },
+    {
+      "path": "docs/identity/doublebottle/phuket-city-queue-approved.svg",
+      "bytes": 31526,
+      "sha256": "76e8a91d8f489bf4994a00cef6b217fee8da40fbd9ec33d1bb7e4dda069da937"
+    },
+    {
+      "path": "docs/identity/doublebottle/racha-coral-approved.svg",
+      "bytes": 20129,
+      "sha256": "9a3d39a5f7b4d3aba3e8effc18f92138f4fa35cea545b6f2971c90196deacebe"
+    },
+    {
+      "path": "docs/identity/doublebottle/racha-coral-maiton-queue-approved.svg",
+      "bytes": 27154,
+      "sha256": "eec8a0cbdafdf6675b99ce7ef3e3a5044a7fedb9728bfac3c62bd4573aace9e3"
+    },
+    {
+      "path": "docs/identity/doublebottle/racha-sunrise-queue-approved.svg",
+      "bytes": 17077,
+      "sha256": "8c8c25206acf572728d92ed50c26580360bd6843d828433c90f0c8676639d8fa"
+    },
+    {
+      "path": "docs/identity/doublebottle/rafting-atv-approved-v2.svg",
+      "bytes": 38396,
+      "sha256": "ec6efcf3bad4e2b9c2716cf1add8eea94974a3b5a89a213b4b2f0df9e40d873d"
+    },
+    {
+      "path": "docs/identity/doublebottle/sea-fishing-queue-approved.svg",
+      "bytes": 19860,
+      "sha256": "018e6a0f434fe0a2df788b4be771e8a38f66a15068d9be484b7b68d138241cf2"
+    },
+    {
+      "path": "docs/identity/doublebottle/similan-diving-queue-approved.svg",
+      "bytes": 20508,
+      "sha256": "dc6a913797254c49879e3952aba346770deec3b8585cf14eaa511bea4728e5bb"
+    },
+    {
+      "path": "docs/identity/doublebottle/similan-early-approved-v2.svg",
+      "bytes": 16527,
+      "sha256": "005dde59bf694fb5d474e62ff99194878dc29caf6f7ed8714227bfbdbb12ff57"
+    },
+    {
+      "path": "docs/identity/doublebottle/similan-lazy-queue-approved.svg",
+      "bytes": 18320,
+      "sha256": "c760a1660e98e00c7a3dfa1062dc86f53ceee10defc3670764aa1eb2fe3eb227"
+    },
+    {
+      "path": "docs/identity/doublebottle/singapore-queue-approved.svg",
+      "bytes": 17275,
+      "sha256": "98c1e775c677ad0599f75be112c3526002e5dcc289d86217ece5790c9488ac66"
+    },
+    {
+      "path": "docs/identity/doublebottle/sunrise-phang-nga-queue-approved.svg",
+      "bytes": 15513,
+      "sha256": "f2c27e724f21e828cdf906e60d8a304bd404d20d05690734a955ae1e888cebc8"
+    },
+    {
+      "path": "docs/identity/elysiam-avatar-world-queue-approved.png",
+      "bytes": 321448,
+      "sha256": "28f0c2605791223fa4742252d4c5cf68cbdc991b9a5cd0de6a744a520e7d8ec7"
+    },
+    {
+      "path": "docs/identity/elysiam-avatar-world-queue-approved.svg",
+      "bytes": 36308,
+      "sha256": "491c51746d1e3ca7d275b09c23363c11f4ad0c28a38f18d7547777e3e7abc6d2"
+    },
+    {
+      "path": "docs/identity/elysiam-bangkok-queue-approved.png",
+      "bytes": 211714,
+      "sha256": "dd7f1223896d9f77dadedac2c63b01d3398329dc988d4e05b25bdb2f8bb1401e"
+    },
+    {
+      "path": "docs/identity/elysiam-bangkok-queue-approved.svg",
+      "bytes": 33611,
+      "sha256": "f8419d39b7836879c34311c8469f4e7034c2cceeb584d2d7d7a531751acb99a5"
+    },
+    {
+      "path": "docs/identity/elysiam-carnival-magic-queue-approved.png",
+      "bytes": 336500,
+      "sha256": "9146b1d2458db7020c517b739df1bc0619ebfcdded97daaa4b24ff96e9b31651"
+    },
+    {
+      "path": "docs/identity/elysiam-carnival-magic-queue-approved.svg",
+      "bytes": 40026,
+      "sha256": "c86128ad4d09e2bd2fa882976133668490bb10c18a6e68d4abbd1b141c720c83"
+    },
+    {
+      "path": "docs/identity/elysiam-cheow-lan-day-queue-approved.png",
+      "bytes": 242857,
+      "sha256": "8282d98671556e39b8f4461b73d01767ba7870654dff94e7a54f3b96c8c661ed"
+    },
+    {
+      "path": "docs/identity/elysiam-cheow-lan-day-queue-approved.svg",
+      "bytes": 18190,
+      "sha256": "5a1e5b90ade19d91581dd8114fb8d4056f6834fce1949890b1af89925c3fb450"
+    },
+    {
+      "path": "docs/identity/elysiam-coral-rawai-queue-approved.png",
+      "bytes": 235785,
+      "sha256": "9bda7dd6a33de09245b2651b86104277c16a347404609b5cc9a4d6aa86785e6c"
+    },
+    {
+      "path": "docs/identity/elysiam-coral-rawai-queue-approved.svg",
+      "bytes": 17726,
+      "sha256": "2815b14eddf34a525c458b02593b94fc7f99aa3104ece7a9296ae1c5fefb4e8d"
+    },
+    {
+      "path": "docs/identity/elysiam-cover-placeholder.png",
+      "bytes": 146754,
+      "sha256": "9d2a5ac65d76d792ca8aa5b8ec1715ecb2232c1c136ccfd26ddaeff24f8a19f8"
+    },
+    {
+      "path": "docs/identity/elysiam-cover-placeholder.svg",
+      "bytes": 11073,
+      "sha256": "b3e66ad400450860c5b033c8cbcb1309aba51de792f522fe7d90f11cbddcabe2"
+    },
+    {
+      "path": "docs/identity/elysiam-elephant-beach-mantra-spa.png",
+      "bytes": 281803,
+      "sha256": "1c3ba6f6c042c9a5735f946e9524d8a0d7e804c93fb024a3fb1fb153f3863623"
+    },
+    {
+      "path": "docs/identity/elysiam-elephant-beach-mantra-spa.svg",
+      "bytes": 18944,
+      "sha256": "c353a0c7a3395ebea951a060bcc108c9b2af7f427a0ce5b02d39e9b1543db32c"
+    },
+    {
+      "path": "docs/identity/elysiam-elephant-spa-option-b-approved.png",
+      "bytes": 246458,
+      "sha256": "d206abc20eb7e67137ea4aaccbb1fe1ff7c875b2e289ef5e25b9e7742400aa92"
+    },
+    {
+      "path": "docs/identity/elysiam-elephant-spa-option-b-approved.svg",
+      "bytes": 9144,
+      "sha256": "b4f9b5b2fe30ca45d08482c65e9f85df238a26b5bea2871b94ae437b8f7db4ed"
+    },
+    {
+      "path": "docs/identity/elysiam-elephant-spa-queue-approved.png",
+      "bytes": 274985,
+      "sha256": "84f20bddd67ac8a41ad2d2541f4a443831a05e04ffa97b4849ad42a4f7ac43ee"
+    },
+    {
+      "path": "docs/identity/elysiam-elephant-spa-queue-approved.svg",
+      "bytes": 18405,
+      "sha256": "161c157ee92ae1c276c838b17849569ec333d04e720fc8272028600443c6328c"
+    },
+    {
+      "path": "docs/identity/elysiam-eleven-islands-approved.png",
+      "bytes": 317881,
+      "sha256": "ad255eee3493f21022e8f351b9374a061b52193fb45034e6b2d710d0c96ba158"
+    },
+    {
+      "path": "docs/identity/elysiam-eleven-islands-approved.svg",
+      "bytes": 25800,
+      "sha256": "74c3bddb94c8bf9d8e69c66887ba829a0b9d4b2b1fc3f6ee149cf71bfc36089c"
+    },
+    {
+      "path": "docs/identity/elysiam-fantasea-queue-approved.png",
+      "bytes": 292634,
+      "sha256": "a100ff8d3ee18ef4d4e3cdf106cee02896e68e122c2ba83fc52c91248ec35b3c"
+    },
+    {
+      "path": "docs/identity/elysiam-fantasea-queue-approved.svg",
+      "bytes": 33955,
+      "sha256": "b78957a36c1028cf65478c30aabd83bfbf910b909f16237daf39adcd11827c10"
+    },
+    {
+      "path": "docs/identity/elysiam-five-pearls-queue-approved.png",
+      "bytes": 302644,
+      "sha256": "6fd1c6d5bf2dff19d8cee230a8b89943759b1d0b4f05e1abc1ab83fccf07a638"
+    },
+    {
+      "path": "docs/identity/elysiam-five-pearls-queue-approved.svg",
+      "bytes": 20472,
+      "sha256": "ca933ba0b7fcf643572178a9dafca9aaed3bab7477b378572b8884bf86c0acce"
+    },
+    {
+      "path": "docs/identity/elysiam-glowing-plankton-queue-approved.png",
+      "bytes": 261065,
+      "sha256": "331e278644d18e8305752e166ef17d13177e9756ca336a591a036a7df7628436"
+    },
+    {
+      "path": "docs/identity/elysiam-glowing-plankton-queue-approved.svg",
+      "bytes": 20312,
+      "sha256": "30550ac20723711e05ba627111290b2f37384218892b7810b33f3c60f2d23d58"
+    },
+    {
+      "path": "docs/identity/elysiam-james-bond-approved.png",
+      "bytes": 352783,
+      "sha256": "2f150e88adcae4b55ebc835636d069b69b1bda83bef8b912ca6f02eae9cd6065"
+    },
+    {
+      "path": "docs/identity/elysiam-james-bond-approved.svg",
+      "bytes": 19880,
+      "sha256": "44be21f8b9f6cdea39ee318e493413047944219e29734dab1bb5293f4f258eb6"
+    },
+    {
+      "path": "docs/identity/elysiam-james-bond-cave-queue-approved.png",
+      "bytes": 224101,
+      "sha256": "044ad6527469263945d9aec3755a70eeb23ed11e196c517efb3d7017d6431efa"
+    },
+    {
+      "path": "docs/identity/elysiam-james-bond-cave-queue-approved.svg",
+      "bytes": 17620,
+      "sha256": "0b075103ef153f29df23ab7dc93ed64a15ba87380431e6a2ab12fa852be49165"
+    },
+    {
+      "path": "docs/identity/elysiam-james-bond-yao-queue-approved.png",
+      "bytes": 264952,
+      "sha256": "c9d959c27d0341b61c855813135a7de033add8e728b10b20ea44f3569fce2e49"
+    },
+    {
+      "path": "docs/identity/elysiam-james-bond-yao-queue-approved.svg",
+      "bytes": 24484,
+      "sha256": "188cfa6ab74f0a9dfd79f15df855f41716483a93e537dd19d59cb079149e644b"
+    },
+    {
+      "path": "docs/identity/elysiam-jet-ski-north-queue-approved.png",
+      "bytes": 329927,
+      "sha256": "45b9e50b1bee126fb74e997dc1f5d65d3b4e7b6e0b6f8896e6506e045ae95d1a"
+    },
+    {
+      "path": "docs/identity/elysiam-jet-ski-north-queue-approved.svg",
+      "bytes": 23346,
+      "sha256": "fa8e76afa26493cb66fc9765c30ee1bc5fe5c3cb578e500e993a5b20231c10ee"
+    },
+    {
+      "path": "docs/identity/elysiam-jet-ski-south-approved-v2.png",
+      "bytes": 377851,
+      "sha256": "46cc84b2c5ccf94dd9e2d996181aca452c8e9da0ae071f9ea6053eee2b3392c6"
+    },
+    {
+      "path": "docs/identity/elysiam-jet-ski-south-approved-v2.svg",
+      "bytes": 22910,
+      "sha256": "fb3d1d2b6c4dcf20558eeadc719d24e274939a9fbdd441fc7cbfa35a73d204ec"
+    },
+    {
+      "path": "docs/identity/elysiam-jet-ski-south.png",
+      "bytes": 310740,
+      "sha256": "39ff8012e26de25efdcc2b02a702bd0be5cd5887d74ace9f8055c8fee0c57009"
+    },
+    {
+      "path": "docs/identity/elysiam-jet-ski-south.svg",
+      "bytes": 18392,
+      "sha256": "1e5bc5b5aeeae5957e871dbdcaf60008fa67d1035ba5838c752b5634488edbf0"
+    },
+    {
+      "path": "docs/identity/elysiam-khao-lak-safari-queue-approved.png",
+      "bytes": 298548,
+      "sha256": "51d77f5342283af151e82bf14b0d5e3295dfd86ddca0191b072378ca7786b48d"
+    },
+    {
+      "path": "docs/identity/elysiam-khao-lak-safari-queue-approved.svg",
+      "bytes": 17869,
+      "sha256": "7bf13a7283276399a84430b107e49d8abf4091003c18fdf54d21838faba30559"
+    },
+    {
+      "path": "docs/identity/elysiam-khao-sok-approved-v2.png",
+      "bytes": 337590,
+      "sha256": "ece722737da0a3d2ef8c5027e4028710c7c7d26d0d65bf52ccbaada3acb2b8db"
+    },
+    {
+      "path": "docs/identity/elysiam-khao-sok-approved-v2.svg",
+      "bytes": 22698,
+      "sha256": "13a85ca220d05aae9cd33ecedd9ce6c2d4e08af0a2ee25338bbcc3394872363e"
+    },
+    {
+      "path": "docs/identity/elysiam-khao-sok-cheow-lan.png",
+      "bytes": 370495,
+      "sha256": "785105e7cbdc4a6793188b3f8b31062982d0c415f4d7760a760e2fc8800a25b5"
+    },
+    {
+      "path": "docs/identity/elysiam-khao-sok-cheow-lan.svg",
+      "bytes": 24834,
+      "sha256": "9767f1d11ba169d47bd604d8ad2b6dab5a38d0d3b667c4f15a2f18e2bb70a93c"
+    },
+    {
+      "path": "docs/identity/elysiam-krabi-catamaran-queue-approved.png",
+      "bytes": 243876,
+      "sha256": "28260a4a1de05f24b9f02c3ff45af9d49eb210a1f2e715da030f797c72de564f"
+    },
+    {
+      "path": "docs/identity/elysiam-krabi-catamaran-queue-approved.svg",
+      "bytes": 15372,
+      "sha256": "29a4abc4badde743526e656e947f87b0c2df8fc17575fb7218c7717c215805a4"
+    },
+    {
+      "path": "docs/identity/elysiam-krabi-sunset-approved.png",
+      "bytes": 264530,
+      "sha256": "bcbb4a5b1583043d5fb7c13e98d9b796cede8cca1d595aaf3beb8aafffec310a"
+    },
+    {
+      "path": "docs/identity/elysiam-krabi-sunset-approved.svg",
+      "bytes": 18832,
+      "sha256": "f6f7f217b8e0ead83abcb60d854fec890335d6b1cb5f9698c57df83f376bb799"
+    },
+    {
+      "path": "docs/identity/elysiam-kuala-lumpur-queue-approved.png",
+      "bytes": 224291,
+      "sha256": "b7f214885fa3286bfa60dd21f0f31d3ed9d2d13dd4806bde242d6b286190c334"
+    },
+    {
+      "path": "docs/identity/elysiam-kuala-lumpur-queue-approved.svg",
+      "bytes": 19429,
+      "sha256": "704c66763d643e60734e4a22bc430d34e25465bf93cb65d0b12f6e2d7b8b0884"
+    },
+    {
+      "path": "docs/identity/elysiam-phang-nga-skywalk-queue-approved.png",
+      "bytes": 236690,
+      "sha256": "6c7ba416ed622e5cc7ad01332e2395a9c3255e36ee6904d404ecd30a4f7a2f7c"
+    },
+    {
+      "path": "docs/identity/elysiam-phang-nga-skywalk-queue-approved.svg",
+      "bytes": 19061,
+      "sha256": "71d4724e74f9f2a80f99d687b3a619d5dd2502d83ffb7a339919477e3cc1d497"
+    },
+    {
+      "path": "docs/identity/elysiam-phi-phi-approved.png",
+      "bytes": 478169,
+      "sha256": "510b03fca0daa88010913b6d593cc61dabd0a9f54bd9ba491effe1a6597e0d13"
+    },
+    {
+      "path": "docs/identity/elysiam-phi-phi-approved.svg",
+      "bytes": 16860,
+      "sha256": "7af6e5eccf21e0c54e986bc86fba07c9f3c58940f48899baee9e4bbaceea94c7"
+    },
+    {
+      "path": "docs/identity/elysiam-phi-phi-bamboo-queue-approved.png",
+      "bytes": 233736,
+      "sha256": "fd540a603c7fcef636743fc850f879f113aed0cadd23fe78804d8760170d9aff"
+    },
+    {
+      "path": "docs/identity/elysiam-phi-phi-bamboo-queue-approved.svg",
+      "bytes": 20481,
+      "sha256": "b6045544d7a2910c29935ec49a46940a842db5f18a6d8bc53b4ebb686124343c"
+    },
+    {
+      "path": "docs/identity/elysiam-phi-phi-fishing-approved.png",
+      "bytes": 249485,
+      "sha256": "a46badb535f88be661a734f3dc19a2895597a84ebacf18177232e623b5767cdc"
+    },
+    {
+      "path": "docs/identity/elysiam-phi-phi-fishing-approved.svg",
+      "bytes": 17888,
+      "sha256": "1eee4fef8ceacf3fbd3b67253ffde983cf400a7c2b77a8a621b1962a4af5c6a5"
+    },
+    {
+      "path": "docs/identity/elysiam-phi-phi-four-islands-queue-approved.png",
+      "bytes": 281686,
+      "sha256": "41b82692372fc2aae39c92c431eaa822d830d081154c07110e1f5739ad323f46"
+    },
+    {
+      "path": "docs/identity/elysiam-phi-phi-four-islands-queue-approved.svg",
+      "bytes": 24454,
+      "sha256": "54b531fdf3365acbf4d5ca0aa39d87e3fa20f55f98308208243da0ce470a520a"
+    },
+    {
+      "path": "docs/identity/elysiam-phi-phi-khai-maiton-queue-approved.png",
+      "bytes": 254491,
+      "sha256": "05e6388f7fdfac9259b6da70663c3dbf609353abb8effb6ef745d7c533964de7"
+    },
+    {
+      "path": "docs/identity/elysiam-phi-phi-khai-maiton-queue-approved.svg",
+      "bytes": 16446,
+      "sha256": "f546f10e99f5556ce4d68377e102d5113065df03058cc949ae8b5d703e8a01ce"
+    },
+    {
+      "path": "docs/identity/elysiam-phi-phi-khai-queue-approved.png",
+      "bytes": 215300,
+      "sha256": "488aa5408090049bb77229294670ada20aa1501575e6e33f234f826c2e6b70b7"
+    },
+    {
+      "path": "docs/identity/elysiam-phi-phi-khai-queue-approved.svg",
+      "bytes": 12646,
+      "sha256": "9547f9e540a4030cd8cf456ba8b5a48ba77d0ed3dd2b5166e1f548d9080607ec"
+    },
+    {
+      "path": "docs/identity/elysiam-phi-phi-lazy-queue-approved.png",
+      "bytes": 222589,
+      "sha256": "ac64295ca0e59f5cf868002755f66b0d79c9b8a8d4f8f991d765707e5e5790ae"
+    },
+    {
+      "path": "docs/identity/elysiam-phi-phi-lazy-queue-approved.svg",
+      "bytes": 16056,
+      "sha256": "8693938fe86ad96b962d6e38ed9396420e5fdac7be887e0b754cdd6d20436155"
+    },
+    {
+      "path": "docs/identity/elysiam-phi-phi-overnight-queue-approved.png",
+      "bytes": 300254,
+      "sha256": "0200d69bb9da9c1482dcf705fbdfa35b4ef87507001dc702983c8a0aa33fdbc8"
+    },
+    {
+      "path": "docs/identity/elysiam-phi-phi-overnight-queue-approved.svg",
+      "bytes": 25676,
+      "sha256": "81e23685947193b82495c937122d3d71b788ee7466dba449b5946185a0ec8cd3"
+    },
+    {
+      "path": "docs/identity/elysiam-phi-phi-racha-party-approved.png",
+      "bytes": 315050,
+      "sha256": "871229d299ad73e8324c551e7f6bf01cd331c546f2b8df7a89aa461aded24152"
+    },
+    {
+      "path": "docs/identity/elysiam-phi-phi-racha-party-approved.svg",
+      "bytes": 22043,
+      "sha256": "63975411c33dd50e2d2b1bb1b40f4b4f63dacf5244fe0d4480f53198694adc61"
+    },
+    {
+      "path": "docs/identity/elysiam-phi-phi-sunrise-approved-v2.png",
+      "bytes": 268648,
+      "sha256": "44c31c67e155486bfc2783297b85a94b28be512dd18cd22a622b03d25968ea44"
+    },
+    {
+      "path": "docs/identity/elysiam-phi-phi-sunrise-approved-v2.svg",
+      "bytes": 17472,
+      "sha256": "b4a55778d6a886d38ffd67308ebe2b50e217c82f643dc3c3c66c9cc287b3407d"
+    },
+    {
+      "path": "docs/identity/elysiam-phi-phi-sunset-queue-approved.png",
+      "bytes": 250378,
+      "sha256": "5f63311b984d21b98940a6b19c14e8d896b40bb98bf341e75590fb3d9ba885dc"
+    },
+    {
+      "path": "docs/identity/elysiam-phi-phi-sunset-queue-approved.svg",
+      "bytes": 19748,
+      "sha256": "c4be092cb5485dce2582c792075335a5ff31273e83e2dceadca21b10cb7156d9"
+    },
+    {
+      "path": "docs/identity/elysiam-phuket-city-queue-approved.png",
+      "bytes": 237832,
+      "sha256": "7d02f39bf821454dfd4624ea900560bb668c01d1d0f937fd3d8910696cc0984d"
+    },
+    {
+      "path": "docs/identity/elysiam-phuket-city-queue-approved.svg",
+      "bytes": 32566,
+      "sha256": "1b4b0ea75aaba3d2e837c524b2c47f54031fae321bb0cb1ed7594409324f578f"
+    },
+    {
+      "path": "docs/identity/elysiam-racha-coral-approved.png",
+      "bytes": 395440,
+      "sha256": "7856c294be2f5189772c3fa2ab6d689e4f72dbf68d3c3f931e47f8a2073a0a5d"
+    },
+    {
+      "path": "docs/identity/elysiam-racha-coral-approved.svg",
+      "bytes": 21169,
+      "sha256": "af8a46997df756035a584d30021a97eee4a9cac58db7a8b8ff75e00178f1deb2"
+    },
+    {
+      "path": "docs/identity/elysiam-racha-coral-maiton-queue-approved.png",
+      "bytes": 270829,
+      "sha256": "d91acb25a488623678bec513165975edebaba4658bb13ec5527ba9da2a221a9b"
+    },
+    {
+      "path": "docs/identity/elysiam-racha-coral-maiton-queue-approved.svg",
+      "bytes": 28205,
+      "sha256": "1ad9607166f23de9c25117403f3752b78e9b6dae89f1a3b1ab7562f371bb2324"
+    },
+    {
+      "path": "docs/identity/elysiam-racha-sunrise-queue-approved.png",
+      "bytes": 230106,
+      "sha256": "f803244641cb9750bf9448b3132ae5bbefa125615e88674f2c2aa34c10760fdc"
+    },
+    {
+      "path": "docs/identity/elysiam-racha-sunrise-queue-approved.svg",
+      "bytes": 18130,
+      "sha256": "6a364949a73fcca4ac365abab02b6c5d894ab5f5d43f764bbc3d96b0a8be6fe1"
+    },
+    {
+      "path": "docs/identity/elysiam-rafting-atv-approved-v2.png",
+      "bytes": 456092,
+      "sha256": "d58e322f0c9c918bebfcf858faec3e0b927b271d2bd471fc72017780eda2b113"
+    },
+    {
+      "path": "docs/identity/elysiam-rafting-atv-approved-v2.svg",
+      "bytes": 39450,
+      "sha256": "65e2c70fc9f3cca41abf8e768b5f4248d939888b1cfe9746d0e4757f56890124"
+    },
+    {
+      "path": "docs/identity/elysiam-rafting-atv.png",
+      "bytes": 342750,
+      "sha256": "582d7aaa017fb236d89483a1e0fb184bab4b34cfeb213fa145e009c03abb65da"
+    },
+    {
+      "path": "docs/identity/elysiam-rafting-atv.svg",
+      "bytes": 25184,
+      "sha256": "3da4a475cfee1705624f655fba6f45f6e20c629c289f0e5645608e0f74d11c2e"
+    },
+    {
+      "path": "docs/identity/elysiam-sea-fishing-queue-approved.png",
+      "bytes": 302081,
+      "sha256": "09d987065c286b6ad9ad6687db9029cbb6d1010d82ea49c869039c3e4856c944"
+    },
+    {
+      "path": "docs/identity/elysiam-sea-fishing-queue-approved.svg",
+      "bytes": 20913,
+      "sha256": "22950173e19678f56241cea9b051bfcaa52e776ba30b9d59e82ae3109fb918a9"
+    },
+    {
+      "path": "docs/identity/elysiam-similan-diving-queue-approved.png",
+      "bytes": 221953,
+      "sha256": "97b14e859a57d252d21ecd927c9fb997b0c2115407754359f06380e35303b4a3"
+    },
+    {
+      "path": "docs/identity/elysiam-similan-diving-queue-approved.svg",
+      "bytes": 21561,
+      "sha256": "dd203142413254734d596d3958ac67e7b9c228fb3714b4532fec1f4a49363d4d"
+    },
+    {
+      "path": "docs/identity/elysiam-similan-early.png",
+      "bytes": 287696,
+      "sha256": "9ec9a64bb57f087821445ce7dd2eff651b0944e79737caac7afc63e28807d1f1"
+    },
+    {
+      "path": "docs/identity/elysiam-similan-early.svg",
+      "bytes": 15967,
+      "sha256": "306fd45ca8ddde1a2d39ac4bcb17e3691978ad05a60c35f1a946652a57407a89"
+    },
+    {
+      "path": "docs/identity/elysiam-similan-lazy-queue-approved.png",
+      "bytes": 240029,
+      "sha256": "f177922407956fb05fae26f5c774add6ca2977760315b4257428be45f71fc292"
+    },
+    {
+      "path": "docs/identity/elysiam-similan-lazy-queue-approved.svg",
+      "bytes": 19371,
+      "sha256": "366a0f85bc0f88541c624739283c4439f4255bd51397c9f643420ff304e5b4c3"
+    },
+    {
+      "path": "docs/identity/elysiam-similans-approved-v2.png",
+      "bytes": 345639,
+      "sha256": "9b6bf7049322997a504acfa83ce015e330b0f9a43f55f59c2b8a970f5741e6f1"
+    },
+    {
+      "path": "docs/identity/elysiam-similans-approved-v2.svg",
+      "bytes": 17579,
+      "sha256": "db5b904b82fcafea80708bcfa6ece3d07c1ae77044da54933cb3a4f71fc21b5f"
+    },
+    {
+      "path": "docs/identity/elysiam-singapore-queue-approved.png",
+      "bytes": 355909,
+      "sha256": "f297cfd8d0f96cac99e5490e2a80ec76aa50cb1f558f12e4b02a4dc029340229"
+    },
+    {
+      "path": "docs/identity/elysiam-singapore-queue-approved.svg",
+      "bytes": 18328,
+      "sha256": "7cc567d36440f6eafdffcf76f8c1d91fa1f1fbbab92697565bc60ad247574b95"
+    },
+    {
+      "path": "docs/identity/elysiam-sunrise-phang-nga-queue-approved.png",
+      "bytes": 222312,
+      "sha256": "a35e7d7f9eeff35e5d45b620186c2fedf59a6b1a7086566ac102e7c7350701d7"
+    },
+    {
+      "path": "docs/identity/elysiam-sunrise-phang-nga-queue-approved.svg",
+      "bytes": 16566,
+      "sha256": "f3af1385dc4e931987d3cb0a93fddc4015654faaeb84c4454505e14cb0863f1d"
+    },
+    {
+      "path": "docs/qa/elysiam-desktop-1448.jpg",
+      "bytes": 181664,
+      "sha256": "171f292d621e852a60999adc1d36020f293979447a68435e8691ff9114f648e6"
+    },
+    {
+      "path": "docs/qa/elysiam-desktop-oct04.png",
+      "bytes": 207770,
+      "sha256": "93429be85448bc43c42c291191fe4bee15f9b567b92ebe965e5f5025b5b9aef7"
+    },
+    {
+      "path": "docs/qa/elysiam-mobile-map-oct04.png",
+      "bytes": 65141,
+      "sha256": "89d8273edcf2eacabbca5db8b6da9e2b0475f87bf90da32678cfa48d4fbc6838"
+    },
+    {
+      "path": "docs/qa/elysiam-mobile-map.jpg",
+      "bytes": 62206,
+      "sha256": "b7c6272fa46592e1afc43000952068b61edc945114908023fc2677d9028ffbcb"
+    },
+    {
+      "path": "docs/qa/elysiam-tablet-oct04.png",
+      "bytes": 114551,
+      "sha256": "e4e6b9e7fbb06a175b6ca41cf27ae7c58a65e1aeb51e40e5c422663e954d4ad9"
+    },
+    {
+      "path": "docs/thai-stamp-assets.json",
+      "bytes": 12197,
+      "sha256": "cbf017a11658d9831e0560f31446e32b692cd253143786f43b765092441441a4"
+    },
+    {
+      "path": "drizzle.config.ts",
+      "bytes": 148,
+      "sha256": "af081f7384aaeb0082cf422e29f139d137ca2f6a57c69b2c37b9fb1f8479867b"
+    },
+    {
+      "path": "drizzle/0000_curious_may_parker.sql",
+      "bytes": 9007,
+      "sha256": "b2e11a0db4e34c6a3c48c89f39c51819cecd6baf343e9d3c0e69267fff71e45d"
+    },
+    {
+      "path": "drizzle/0001_tan_stranger.sql",
+      "bytes": 274,
+      "sha256": "bd5fea7d4442f666b69677c33248fb666ff3956a675fbbc58789ef85f6f11148"
+    },
+    {
+      "path": "drizzle/0002_curved_demogoblin.sql",
+      "bytes": 652,
+      "sha256": "84e0c8739638e5c88f02c8a5824b5bdc84420246a16130fcdd6e10c461f553ec"
+    },
+    {
+      "path": "drizzle/0003_aromatic_multiple_man.sql",
+      "bytes": 176,
+      "sha256": "285562518a4b07a411da452598028523c72dcd8f4eed516e06149893d2e9cb85"
+    },
+    {
+      "path": "drizzle/0004_immutable_snapshots.sql",
+      "bytes": 777,
+      "sha256": "7e5498e52dbb91e4636298ef3f652b342dbad01b529860d51448a88cee068633"
+    },
+    {
+      "path": "drizzle/0005_daffy_james_howlett.sql",
+      "bytes": 57,
+      "sha256": "d85e7a8a48ad046e5d359a153410c7f71c88333f91b62eae7caadb7338bc7437"
+    },
+    {
+      "path": "drizzle/0006_catalog_content_editor.sql",
+      "bytes": 948,
+      "sha256": "d76a3768fb90dba28ad1e4f8475014a67e98397a1c80874afb418d7687014a41"
+    },
+    {
+      "path": "drizzle/0007_map_editor.sql",
+      "bytes": 264,
+      "sha256": "dbf2a53d9d1b4473864df3c9e9c15cb52f7cbac41fa564d0be560add3f1b7879"
+    },
+    {
+      "path": "drizzle/0008_catalog_creation_drafts.sql",
+      "bytes": 788,
+      "sha256": "984ceca47e34c5470aa7e5bf52aff488aa36f9afabf59ec22bcb2f91c21fe306"
+    },
+    {
+      "path": "drizzle/0009_catalog_localizations.sql",
+      "bytes": 404,
+      "sha256": "d373bc95b61650278babc0bb28b5d18269b807e648dde59389c28abc6d1b8a41"
+    },
+    {
+      "path": "drizzle/0010_variant_visibility.sql",
+      "bytes": 81,
+      "sha256": "9a0f53224056c4b2b9c2f4f2ebaae716fb2d3da91893813f5861bf13559c039f"
+    },
+    {
+      "path": "drizzle/0011_variant_names.sql",
+      "bytes": 65,
+      "sha256": "372f175aef1a85caabd397caa5575b90054903291c7c9208a86877fb21078a98"
+    },
+    {
+      "path": "drizzle/0012_variant_images.sql",
+      "bytes": 161,
+      "sha256": "665942a3e00826aad89f727488227fef02cbf425c853da857ad25d533f54c130"
+    },
+    {
+      "path": "drizzle/0013_release_variant_ownership.sql",
+      "bytes": 460,
+      "sha256": "789884382c99b792aa64ab020d4c59f4a0f4f6cac22f07375bc1ac1599f4bbee"
+    },
+    {
+      "path": "drizzle/meta/0000_snapshot.json",
+      "bytes": 42363,
+      "sha256": "0a2ac84abf8532333e906bc5e928e985f6e16e3ac35877ebabef3e738f9e2f4f"
+    },
+    {
+      "path": "drizzle/meta/0001_snapshot.json",
+      "bytes": 43824,
+      "sha256": "57b20cd1e1679e8fb99e591f499511335fb3ecd98dc9bd1fbd1666cf194bd430"
+    },
+    {
+      "path": "drizzle/meta/0002_snapshot.json",
+      "bytes": 47107,
+      "sha256": "b88458100d19104d1041611c2b79c1a7eb091bc8f18b9151cb0f25020cab3d2f"
+    },
+    {
+      "path": "drizzle/meta/0003_snapshot.json",
+      "bytes": 47150,
+      "sha256": "4f319aa5d43c45036933f02ac23864804083120a01f8041f77af38ebb1326cac"
+    },
+    {
+      "path": "drizzle/meta/0005_snapshot.json",
+      "bytes": 47335,
+      "sha256": "be535dd0b3cfb90b2ef2c71c6f9ce96bea504801f987fdeae19c14a5a2d2d0e6"
+    },
+    {
+      "path": "drizzle/meta/0006_snapshot.json",
+      "bytes": 51935,
+      "sha256": "57cea3fb92a5a416174b13befd6f159ac21b7d430ca9d1703a2660a0a7685c52"
+    },
+    {
+      "path": "drizzle/meta/0007_snapshot.json",
+      "bytes": 53519,
+      "sha256": "7d1fe840125a336af6d0a2e07ea435036d39dd214dd5caec9376b6bb5d3cd76c"
+    },
+    {
+      "path": "drizzle/meta/0008_snapshot.json",
+      "bytes": 56927,
+      "sha256": "d6bb03f613e59a52cd06bd22995f5f5ae4157f39f1243c812df02214865150ee"
+    },
+    {
+      "path": "drizzle/meta/_journal.json",
+      "bytes": 2111,
+      "sha256": "6a4a1a31fc41a1bd4ab49c3140a30bc7aac3b857f0c6dc97342a4f29ba50c6e0"
+    },
+    {
+      "path": "eslint.config.mjs",
+      "bytes": 846,
+      "sha256": "f22a254df7d934bbf9be499d3c969a13abb7f7f64c03f5967d0095cad81dfe06"
+    },
+    {
+      "path": "examples/d1/app/api/notes/route.ts",
+      "bytes": 1700,
+      "sha256": "a3d4a74fd53b7bf53e2df41f169d9d9d44a8b22aeb6d92f4e754956079af8909"
+    },
+    {
+      "path": "examples/d1/db/schema.ts",
+      "bytes": 370,
+      "sha256": "d89eabd95716ce404f5f7ca2a254220435be8ddce7c899d7ef461ff22ec80454"
+    },
+    {
+      "path": "hooks/use-bottle-discount.ts",
+      "bytes": 363,
+      "sha256": "e66117d9c9d190e12afb7cef2f1313599dd6e5647473dce4bb4c9c48cedd44f5"
+    },
+    {
+      "path": "hooks/use-editor-image-upload.ts",
+      "bytes": 1881,
+      "sha256": "deb36f63b20ca7d9bc70dbec0015c31865e94525f3dddd441ad04b26e2f7429c"
+    },
+    {
+      "path": "hooks/use-mobile.ts",
+      "bytes": 565,
+      "sha256": "ad0936f84f1df79d3697bfbff9c18f8ad58431c1cbaf2359c6a853b0fcc9f28b"
+    },
+    {
+      "path": "lib/connector-context.ts",
+      "bytes": 612,
+      "sha256": "bbddff68689cb0f6926fecd4b8b96f12f2054277c296e97b0df07d4ad5ece24e"
+    },
+    {
+      "path": "lib/connector-contract.mts",
+      "bytes": 5362,
+      "sha256": "e1a7b24a8793af34b595690d9b1300c897c7321c14f215cedf58ad95799d7c3e"
+    },
+    {
+      "path": "lib/connector-errors.mts",
+      "bytes": 2717,
+      "sha256": "a22edf13d6873ae832c4a2a0d579fc666c73ec996ef0722d39172649d38f0871"
+    },
+    {
+      "path": "lib/connector-preview.d.ts",
+      "bytes": 433,
+      "sha256": "abd69a94f7f61f1359063bb557574faae35e8ff5a028cc4c04b9ee248ef52642"
+    },
+    {
+      "path": "lib/connectors.ts",
+      "bytes": 416,
+      "sha256": "1c93d747e384c8e17e3e3dd5361b24412babf5eba2a11d2ae7a75f4e0924112c"
+    },
+    {
+      "path": "lib/i18n/catalog-copy-en.ts",
+      "bytes": 79630,
+      "sha256": "865cd60ab819d7af0f1cda5dc4e9e4711ef521e4988ef8abb0b65f4231dc6e6d"
+    },
+    {
+      "path": "lib/i18n/catalog-copy-th.ts",
+      "bytes": 122071,
+      "sha256": "0614b27adb2a48124b1adfa6e8dd1a149918842b00513e5fcc3d01e0637671e4"
+    },
+    {
+      "path": "lib/i18n/catalog-copy.ts",
+      "bytes": 282,
+      "sha256": "573be89dba469e6a064aa3868258926f11c5cbcafccb3fd075e6628f606b6677"
+    },
+    {
+      "path": "lib/i18n/catalog.ts",
+      "bytes": 2369,
+      "sha256": "e7b5fbfd2fa22516c5a63e5c9443cd151a4639828de7e2949fdc43395d6f40e6"
+    },
+    {
+      "path": "lib/i18n/context.tsx",
+      "bytes": 569,
+      "sha256": "9413f2213ecff923400d38fc347d19b41714a6465bdbd00b5afb682e80c3143a"
+    },
+    {
+      "path": "lib/i18n/core.ts",
+      "bytes": 1007,
+      "sha256": "0311e00f8c44657f834b0cd12588c15cab9d7d4d7d06a614b59623581350d7b0"
+    },
+    {
+      "path": "lib/i18n/pages-copy.ts",
+      "bytes": 26873,
+      "sha256": "53659a5c661b9a7ed3e71533cc9bbfc12ea8023198f3558fe275e7254cbc51bd"
+    },
+    {
+      "path": "lib/i18n/server.ts",
+      "bytes": 241,
+      "sha256": "75d44ebe4ae65d563f7a6e04a972fbe4d4c40c4d6e18240308f2a812b328f051"
+    },
+    {
+      "path": "lib/i18n/ui-copy.ts",
+      "bytes": 92087,
+      "sha256": "17b87a0002baa59354792aba16cd734139edae078286a07e843f2f4df74ec9c1"
+    },
+    {
+      "path": "lib/public/admin-service-sort.ts",
+      "bytes": 769,
+      "sha256": "c49b894885257cd248592a4f947682e096b4a52af643ee8e7c4a52ee657e4f54"
+    },
+    {
+      "path": "lib/public/approved-review-queue.ts",
+      "bytes": 9301,
+      "sha256": "b9573ecaa497edd8e78b513a25a68ffac9d915ac76e538573e2ce62a06905cf5"
+    },
+    {
+      "path": "lib/public/bottle-discount-state.ts",
+      "bytes": 2427,
+      "sha256": "dc237967baef0145f261d2cbd2a5f2b34edb1139a4fce465906dce13bf92f408"
+    },
+    {
+      "path": "lib/public/bottle-discount.ts",
+      "bytes": 2209,
+      "sha256": "ec37d34b3bf2bb28a119794371187dcf0a2836aefce6ac8ebc6c31485e6a1770"
+    },
+    {
+      "path": "lib/public/business-contacts.ts",
+      "bytes": 586,
+      "sha256": "bce60c4e26e1a656232685c7d8e54f704f2b4de8894a75d44ef953d95a3236be"
+    },
+    {
+      "path": "lib/public/card-child-prices.ts",
+      "bytes": 1719,
+      "sha256": "0f2158b0130cdece648c6011336fbe5e08444022d86b14586922f99235342a04"
+    },
+    {
+      "path": "lib/public/catalog-creation.ts",
+      "bytes": 3524,
+      "sha256": "b6530fd5e7640eb63a3236c65bd2dd02f2011b8d64c40be02ec0e665b06b01be"
+    },
+    {
+      "path": "lib/public/catalog-editor.ts",
+      "bytes": 2883,
+      "sha256": "1a832ca87a4c423ab06b9617fede47d2383311079b47c343fb3af55a6ff645cf"
+    },
+    {
+      "path": "lib/public/catalog-localization.ts",
+      "bytes": 1041,
+      "sha256": "a867826f5ecda17a673417381401a40806b798347bdc305f17133867feb7c139"
+    },
+    {
+      "path": "lib/public/catalog-navigation.ts",
+      "bytes": 2496,
+      "sha256": "67fb704f35599746b2bd53089c0fc2b6c5a1ddb02a0757b12efc2f7de30ebb04"
+    },
+    {
+      "path": "lib/public/catalog-presentation-safety.ts",
+      "bytes": 2428,
+      "sha256": "101ce1f6a4e76a59c8ced3feedf226bdaac2ddd94fff6dd5d47099bdd7748b4f"
+    },
+    {
+      "path": "lib/public/cheow-lan-map.ts",
+      "bytes": 2898,
+      "sha256": "ab379a7b2cab00018789a74d39fed2f6fd89b0d3864c666ffada10ff5f269e62"
+    },
+    {
+      "path": "lib/public/compact-tour.ts",
+      "bytes": 3303,
+      "sha256": "a23928c180015c702e782ceadd7435d69899fdb99a09d97a667b823931578638"
+    },
+    {
+      "path": "lib/public/editor-image-limits.ts",
+      "bytes": 313,
+      "sha256": "1e5fbef87d0e9df68836adf05af931255116dd30e720e8dfd825ecaf61169f2d"
+    },
+    {
+      "path": "lib/public/geo.ts",
+      "bytes": 687,
+      "sha256": "9a7dabfd1ad6b8f04926d870901f261d3b6412738cd99767dd543d76cce00429"
+    },
+    {
+      "path": "lib/public/inquiry-notifications.ts",
+      "bytes": 277,
+      "sha256": "d0a60d33a0856635fbb1be5d9cfa85f483577303383f6aa8bee69690dd87a0e1"
+    },
+    {
+      "path": "lib/public/language-ticket.ts",
+      "bytes": 400,
+      "sha256": "e1125cec1c3c57c561e3006368139171c35c8ba480b4a316f2c5fe0d88b1a4db"
+    },
+    {
+      "path": "lib/public/map-drag.ts",
+      "bytes": 1418,
+      "sha256": "a05938e625669def7596412b1c880e8a44c6a9c97eae7836a1244440dc23de0a"
+    },
+    {
+      "path": "lib/public/map-engine.ts",
+      "bytes": 7936,
+      "sha256": "43564c05e02571b6d750d9ff141adeca3b030de43ee4d8d70b9e79d9393c9e79"
+    },
+    {
+      "path": "lib/public/map-layout.ts",
+      "bytes": 8115,
+      "sha256": "7d49ded3c4aae205856df9ee7dcfc780ae91a2e2f4073637c426502579d3b2d0"
+    },
+    {
+      "path": "lib/public/media.ts",
+      "bytes": 15239,
+      "sha256": "89da93c3394372fa72220db1cb38ec407350e8b1bea23826c5fa68f0c204c67d"
+    },
+    {
+      "path": "lib/public/prepare-editor-image.ts",
+      "bytes": 6772,
+      "sha256": "1f4a4badfe3156c40520de079ea12648b51a2dec170fb212fd5e7a0fcfcc2606"
+    },
+    {
+      "path": "lib/public/pricing.ts",
+      "bytes": 4769,
+      "sha256": "8a9ca675e84241e1e6de9fcd105d90acd1fae043c268e20a7af1bfab8f9b3f22"
+    },
+    {
+      "path": "lib/public/programme-items.ts",
+      "bytes": 685,
+      "sha256": "b3087d44eefd09904edc9c29a922cf5213928066a83a1e22cf9a083727bf353d"
+    },
+    {
+      "path": "lib/public/selling-price-editor.ts",
+      "bytes": 1969,
+      "sha256": "db64c0b039aeec2365805eb0c96d3e0dfa720bf91c947d28c665a5bd02abf118"
+    },
+    {
+      "path": "lib/public/seo-policy.ts",
+      "bytes": 3701,
+      "sha256": "4aa643186fcafd547ed568c93335bdad33f76232ee21ca5f385d4a5c7e005f2b"
+    },
+    {
+      "path": "lib/public/tour-cover.ts",
+      "bytes": 5773,
+      "sha256": "e8c8aa1d13081e0fe5521462c280347a1f7a39ffc9a44feba34fcf0bbd4af737"
+    },
+    {
+      "path": "lib/public/types.ts",
+      "bytes": 4723,
+      "sha256": "0a41798d8bc3b31bddd2ac983a437cbf36f62d48abce7ba69038effd9c587a5a"
+    },
+    {
+      "path": "lib/public/variant-image.ts",
+      "bytes": 593,
+      "sha256": "be4a50a82ed425ec1822a6b5d0a5d0f8da88d53a8665ddab1da298ac3868c0d7"
+    },
+    {
+      "path": "lib/public/webmcp.ts",
+      "bytes": 1326,
+      "sha256": "f07d070d908b1d5e9815812a0a8e526d688fdc8c64a9a39ddb711362665f2a25"
+    },
+    {
+      "path": "lib/server/access-policy.ts",
+      "bytes": 251,
+      "sha256": "a580b988c9961f3b07b630f7705632304b5dac9e9f0e8812478f29962d44f849"
+    },
+    {
+      "path": "lib/server/admin-service-companies.ts",
+      "bytes": 1184,
+      "sha256": "410ec860bfa5740b773ca427071215f315beb76c5f5f03080a8f75b8a0f8cc41"
+    },
+    {
+      "path": "lib/server/approved-eight-import.ts",
+      "bytes": 10469,
+      "sha256": "6ffead01233a8f35a78b0bcf787fab92a2839fff0d34d4b9c809e7331e3c1919"
+    },
+    {
+      "path": "lib/server/backup.ts",
+      "bytes": 5193,
+      "sha256": "6046ceb552cc77e7b31080c7bfaa96e50ed7b07b52953fc0c86a5e803e5fe151"
+    },
+    {
+      "path": "lib/server/catalog-creation.ts",
+      "bytes": 12735,
+      "sha256": "3c6a486d8ab6362722239d22a11b2fd53d1413eff679ac66285492a7bca4c5a5"
+    },
+    {
+      "path": "lib/server/catalog-editor-auth.ts",
+      "bytes": 474,
+      "sha256": "d01b09f00b4bc54112c73406f50ba1bb729bc5ab11993012b0012d08e0ec20f0"
+    },
+    {
+      "path": "lib/server/catalog-editor-media.ts",
+      "bytes": 4227,
+      "sha256": "529f56852f02bddca61d28a1aa7d7b4e7a683595bc9400cdd10ba165f8cb6801"
+    },
+    {
+      "path": "lib/server/catalog-editor.ts",
+      "bytes": 13818,
+      "sha256": "faf8f67cd813e567112986c349c466c7bb831cf2062b89e770d26813a992430a"
+    },
+    {
+      "path": "lib/server/catalog-release-copy.ts",
+      "bytes": 831,
+      "sha256": "0d7aa78c92659c5470a80758ede0618f84c23622243d5fe439a9b40632016b1d"
+    },
+    {
+      "path": "lib/server/catalog.ts",
+      "bytes": 21329,
+      "sha256": "1d9c8388ff721dbefa3fcf45f529b7853d0eb9e68b4a414abc2c84ff4d3007ab"
+    },
+    {
+      "path": "lib/server/db.ts",
+      "bytes": 258,
+      "sha256": "78f2b06759a05b17b8ea731cc4ae87ee426d80231cb51ee9481e06c777aec3e6"
+    },
+    {
+      "path": "lib/server/http.ts",
+      "bytes": 2896,
+      "sha256": "c88e7cc08cfbb53a3c7c0c3bb3b0b7afa3521900ff68f616e8f91609018d8be9"
+    },
+    {
+      "path": "lib/server/import-schema.ts",
+      "bytes": 3186,
+      "sha256": "6f8ebecb7f1c1fb99037bcdf3154b95eb17bd9fd8aa3e9f7d0b536c56af8e8af"
+    },
+    {
+      "path": "lib/server/inquiries.ts",
+      "bytes": 9294,
+      "sha256": "fe5839207fca343b307043edb77b58c795253b3f530bc27a4c176da48a6a7399"
+    },
+    {
+      "path": "lib/server/khaosok-split-action.ts",
+      "bytes": 9598,
+      "sha256": "f9376626d1728e70cdb4bf4cd3c48959931392520bbc5bb21a6816cc80d4988c"
+    },
+    {
+      "path": "lib/server/khaosok-split-locales.ts",
+      "bytes": 4912,
+      "sha256": "5f3c1c37fce5ea1822de9e888960f99c826fdf24aabbeae4d6397b12292df5e8"
+    },
+    {
+      "path": "lib/server/khaosok-split-plan.ts",
+      "bytes": 3119,
+      "sha256": "f47ae0b90c64d3b2d79ac71825fae4ca52e44e4ee483445b3de32452260a5c5c"
+    },
+    {
+      "path": "lib/server/khaosok-split-readback.ts",
+      "bytes": 2265,
+      "sha256": "88450c2ca44e51a2aacabc561a2838bb768d0f65093bfd27f55829fd35fd242b"
+    },
+    {
+      "path": "lib/server/localization.ts",
+      "bytes": 2611,
+      "sha256": "95fbc47b7715d3f6e9d07ba006c4547e7e2a63021fac30adf95273709309b620"
+    },
+    {
+      "path": "lib/server/management.ts",
+      "bytes": 23351,
+      "sha256": "894adfb1a1fe4f3fab19edd3eb1d17f26511e0871bde905041ef49ea74c50487"
+    },
+    {
+      "path": "lib/server/map-editor.ts",
+      "bytes": 3999,
+      "sha256": "31d5cad79485fb3d243474a72893bda9a1b9ec06c784609b022d772e972c51f9"
+    },
+    {
+      "path": "lib/server/release-variant-ownership.ts",
+      "bytes": 1054,
+      "sha256": "26a55d9a4a07521cca5992a5a4a71f8d83f559876a4fce7c5599bf316fd4a98b"
+    },
+    {
+      "path": "lib/server/seo.ts",
+      "bytes": 1058,
+      "sha256": "6b640a8d2fc9b483c81cf61fa082447e00ce4f798b0d35a9fd044cf9f815a479"
+    },
+    {
+      "path": "lib/server/translation-source-hash.ts",
+      "bytes": 312,
+      "sha256": "1cecca51cfa92e7c81ee9abf8f10b8ec550e083e805ff7f88f8566122db9d35d"
+    },
+    {
+      "path": "lib/server/variant-owner-redirect.ts",
+      "bytes": 1530,
+      "sha256": "0a771fb1379bcf26038355cc028cfb9efa2994a4b886293e5aa6e20ef0243dbc"
+    },
+    {
+      "path": "lib/server/variant-visibility.ts",
+      "bytes": 1069,
+      "sha256": "b7fc233046554c72dced0cbb862ba0ab287f14ce9be1eb1f42ec9e711e1c9251"
+    },
+    {
+      "path": "lib/utils.ts",
+      "bytes": 177,
+      "sha256": "53f3d3d070f0a9082934da25b875f9499855c2b0693868dd28be8c23d8730f68"
+    },
+    {
+      "path": "next.config.ts",
+      "bytes": 133,
+      "sha256": "614bce25b089c3f19b1e17a6346c74b858034040154c6621e7d35303004767cc"
+    },
+    {
+      "path": "package.json",
+      "bytes": 2119,
+      "sha256": "9b44cc7deff247855ab042f13056b27db916feffdfcfa032df055a04def64105"
+    },
+    {
+      "path": "pnpm-lock.yaml",
+      "bytes": 345021,
+      "sha256": "095ba6f301ba3997da2c251dfc4b805c220624bdf0921d905eaceee0d1fb29c9"
+    },
+    {
+      "path": "pnpm-workspace.yaml",
+      "bytes": 736,
+      "sha256": "4a69dc93a75ff4a33f54c2853d5317c8e7374faab592f3472b5164257bff8066"
+    },
+    {
+      "path": "postcss.config.mjs",
+      "bytes": 94,
+      "sha256": "dfac7ac2d86d326a0e5adb024e7943c181393ed17a5fcb8f0315b24c7da6ddde"
+    },
+    {
+      "path": "public/VERCEL-MIT-NOTICE.txt",
+      "bytes": 1079,
+      "sha256": "ee765244e2d59f5234d474f62e0766fa0c8b99af967fdd4c0cb8dcb0c76ea224"
+    },
+    {
+      "path": "public/assets/language-flags.png",
+      "bytes": 665581,
+      "sha256": "7aa69e96928c92e013282011b02b84b0ad7bea05c71e33771a3fc338be954ed1"
+    },
+    {
+      "path": "public/brand/apple-touch-icon-v1.png",
+      "bytes": 22159,
+      "sha256": "1bd7b245f4cf8cdfdcd9eac79d8399dc0da0b4758b105dbd973ad36162bbb80f"
+    },
+    {
+      "path": "public/brand/double-bottle-mark-v1.png",
+      "bytes": 37961,
+      "sha256": "0fba500380cefc78f256d24857cd64572b1bd3b0ee45c65d05b7764bc989e0f7"
+    },
+    {
+      "path": "public/brand/double-bottle-selected-v1.png",
+      "bytes": 532499,
+      "sha256": "e595e3ae4f1baa401ea220ac5e4eeed5e875bde96ef07c019675567edf0fd3c7"
+    },
+    {
+      "path": "public/brand/favicon-32-v1.png",
+      "bytes": 1734,
+      "sha256": "6150118f26ee4504e4583b60d66def40d70097965f214ba33cf216f5df826d31"
+    },
+    {
+      "path": "public/brand/favicon-v1.ico",
+      "bytes": 10594,
+      "sha256": "fa17152b8bbe89e41d078c60399850151d1eb4537da0968c1a562e09eeec01f9"
+    },
+    {
+      "path": "public/favicon.svg",
+      "bytes": 253,
+      "sha256": "dd72d6952e99bf04b8618465c3202f92a6d0ea094c79ce44b7b5a8b6beb83e9f"
+    },
+    {
+      "path": "public/file.svg",
+      "bytes": 392,
+      "sha256": "1e0ae4d1a1ddfa36752988647b731e4abf150c414d069ec83c96fb0aaeff0307"
+    },
+    {
+      "path": "public/fonts/LICENSE.txt",
+      "bytes": 52517,
+      "sha256": "1315a62758a603a3e6e87a79b8389563789c59c1740b9db8bc2b20e2e2145458"
+    },
+    {
+      "path": "public/fonts/atlas-serif-bold.woff",
+      "bytes": 33964,
+      "sha256": "99390967f7674199a6a919a275747082d2e5e6b4972e559ecc4ed1846b2d82dc"
+    },
+    {
+      "path": "public/fonts/atlas-serif.woff",
+      "bytes": 33252,
+      "sha256": "e5b57573da205d10fa37a7c1728027c5aa605373cd75d92c2bf40bcf297d988b"
+    },
+    {
+      "path": "public/fonts/nimbus-sans-regular.woff",
+      "bytes": 23920,
+      "sha256": "2ab1836c8f906c5f7cdd612113f709c3a05c3e02a15077e8a290f98ac3ebe2bf"
+    },
+    {
+      "path": "public/fonts/reference/Prata-OFL.txt",
+      "bytes": 4476,
+      "sha256": "1e055d25bde41906cc2e1a08bc156e7776d5084e1640d75dbd0065a937b488e3"
+    },
+    {
+      "path": "public/fonts/reference/RobotoCondensed-Apache-2.0.txt",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "public/fonts/reference/SOURCES.txt",
+      "bytes": 1163,
+      "sha256": "407de200db8eba19b17e9fb2260d05a43a064879103052f95b88dfb94adca100"
+    },
+    {
+      "path": "public/fonts/reference/prata.woff",
+      "bytes": 47156,
+      "sha256": "fd14d79e06e39756729991cf2c12a9a44f3a19100257d72c2536cc0c0747f74c"
+    },
+    {
+      "path": "public/fonts/reference/roboto-condensed-medium.woff",
+      "bytes": 68160,
+      "sha256": "c17a7cb911052803f8b91b27c41b4f13e92842d128df3c8ddfa16560555fa5ff"
+    },
+    {
+      "path": "public/fonts/reference/roboto-condensed-regular.woff",
+      "bytes": 66624,
+      "sha256": "036d69c5a433faa032f6b5b924297ecdfffd7cac2f88a4887da05aafbc52c4f0"
+    },
+    {
+      "path": "public/globe.svg",
+      "bytes": 1036,
+      "sha256": "d051a8c47936990a9085693d307bb7cea1bc1b6d7ed956bcbaacf674f4ec96b9"
+    },
+    {
+      "path": "public/map/README.txt",
+      "bytes": 255,
+      "sha256": "2cc674128a3018ab9ff184b05f8278a6d724c2337c9f4564408d1bac1b235220"
+    },
+    {
+      "path": "public/map/andaman.geojson",
+      "bytes": 341146,
+      "sha256": "2ceb76e168ba4a3a24d92138b6625f2446de04061d94b190c5df1cf322be04ab"
+    },
+    {
+      "path": "public/media/atime-4pearl.jpg",
+      "bytes": 82448,
+      "sha256": "054c46e454a6ee95fcf8181aaedfe1f4c28b883e73d839c204ac24c511405a59"
+    },
+    {
+      "path": "public/media/atime-4pearl1.jpg",
+      "bytes": 82448,
+      "sha256": "054c46e454a6ee95fcf8181aaedfe1f4c28b883e73d839c204ac24c511405a59"
+    },
+    {
+      "path": "public/media/atime-cheo1d.jpg",
+      "bytes": 82448,
+      "sha256": "054c46e454a6ee95fcf8181aaedfe1f4c28b883e73d839c204ac24c511405a59"
+    },
+    {
+      "path": "public/media/atime-cheo1d1.jpg",
+      "bytes": 82448,
+      "sha256": "054c46e454a6ee95fcf8181aaedfe1f4c28b883e73d839c204ac24c511405a59"
+    },
+    {
+      "path": "public/media/atime-citytour.jpg",
+      "bytes": 82448,
+      "sha256": "054c46e454a6ee95fcf8181aaedfe1f4c28b883e73d839c204ac24c511405a59"
+    },
+    {
+      "path": "public/media/atime-citytour1.jpg",
+      "bytes": 82448,
+      "sha256": "054c46e454a6ee95fcf8181aaedfe1f4c28b883e73d839c204ac24c511405a59"
+    },
+    {
+      "path": "public/media/atime-khaolak.jpg",
+      "bytes": 82448,
+      "sha256": "054c46e454a6ee95fcf8181aaedfe1f4c28b883e73d839c204ac24c511405a59"
+    },
+    {
+      "path": "public/media/atime-khaolak1.jpg",
+      "bytes": 82448,
+      "sha256": "054c46e454a6ee95fcf8181aaedfe1f4c28b883e73d839c204ac24c511405a59"
+    },
+    {
+      "path": "public/media/atime-ohosky.jpg",
+      "bytes": 82448,
+      "sha256": "054c46e454a6ee95fcf8181aaedfe1f4c28b883e73d839c204ac24c511405a59"
+    },
+    {
+      "path": "public/media/atime-ohosky1.jpg",
+      "bytes": 82448,
+      "sha256": "054c46e454a6ee95fcf8181aaedfe1f4c28b883e73d839c204ac24c511405a59"
+    },
+    {
+      "path": "public/media/atime-ohovip.jpg",
+      "bytes": 82448,
+      "sha256": "054c46e454a6ee95fcf8181aaedfe1f4c28b883e73d839c204ac24c511405a59"
+    },
+    {
+      "path": "public/media/atime-ohovip1.jpg",
+      "bytes": 82448,
+      "sha256": "054c46e454a6ee95fcf8181aaedfe1f4c28b883e73d839c204ac24c511405a59"
+    },
+    {
+      "path": "public/media/atime-simila.jpg",
+      "bytes": 82448,
+      "sha256": "054c46e454a6ee95fcf8181aaedfe1f4c28b883e73d839c204ac24c511405a59"
+    },
+    {
+      "path": "public/media/atime-simila1.jpg",
+      "bytes": 82448,
+      "sha256": "054c46e454a6ee95fcf8181aaedfe1f4c28b883e73d839c204ac24c511405a59"
+    },
+    {
+      "path": "public/media/atime-ttoa.jpg",
+      "bytes": 82448,
+      "sha256": "054c46e454a6ee95fcf8181aaedfe1f4c28b883e73d839c204ac24c511405a59"
+    },
+    {
+      "path": "public/media/atime-ttoa1.jpg",
+      "bytes": 82448,
+      "sha256": "054c46e454a6ee95fcf8181aaedfe1f4c28b883e73d839c204ac24c511405a59"
+    },
+    {
+      "path": "public/media/cheow-lan-project-1600.webp",
+      "bytes": 361780,
+      "sha256": "c06c002981db438a14ad4d7c0c321051295bac24cf9ba01e4df7d9d2c366aabf"
+    },
+    {
+      "path": "public/media/cheow-lan-project-480.webp",
+      "bytes": 44190,
+      "sha256": "a5486643b310a9f68217e2cb40e80cc2e439a507e992e61156ad14744174ddc8"
+    },
+    {
+      "path": "public/media/cheow-lan-project-960.webp",
+      "bytes": 148156,
+      "sha256": "9c5cd7115185ec4e56a839d82d2e3e2c2c0fc41e2888fb11ccb495e30cf2cc5c"
+    },
+    {
+      "path": "public/media/cheow-lan-project.webp",
+      "bytes": 392856,
+      "sha256": "57c8ad75dd595c4bf2a523c25ea7688470e7bd85f99735d5d4de57befc5266ee"
+    },
+    {
+      "path": "public/media/cheow-lan.webp",
+      "bytes": 392856,
+      "sha256": "57c8ad75dd595c4bf2a523c25ea7688470e7bd85f99735d5d4de57befc5266ee"
+    },
+    {
+      "path": "public/media/covers/avatar-world-queue-approved-1600.webp",
+      "bytes": 117528,
+      "sha256": "4bccbb2f44c82474d75c512db4dc870e077cd16bf2a2cabeabe9d866761bcb4b"
+    },
+    {
+      "path": "public/media/covers/avatar-world-queue-approved-480.webp",
+      "bytes": 27594,
+      "sha256": "702315c620b5d25283f16abc1dac9403744597ae928be0ab26d098370a41fa4e"
+    },
+    {
+      "path": "public/media/covers/avatar-world-queue-approved-960.webp",
+      "bytes": 62796,
+      "sha256": "cec7d8c22c76b58aba4919c9446775346e9247eabe26522ab96c82e44b069efc"
+    },
+    {
+      "path": "public/media/covers/bangkok-queue-approved-1600.webp",
+      "bytes": 76788,
+      "sha256": "d5dc3c2ba21d32d8627a926dc54b440e206850f54b6a2cd4b4c31a3161c70149"
+    },
+    {
+      "path": "public/media/covers/bangkok-queue-approved-480.webp",
+      "bytes": 20410,
+      "sha256": "2dcf63642470838d6667f11f5c21576a624eb8bc278ac3c48e017b24f81ff137"
+    },
+    {
+      "path": "public/media/covers/bangkok-queue-approved-960.webp",
+      "bytes": 44750,
+      "sha256": "5e3a1b8f7461e9ec07c31a928a7f508f52c9a7521a581df6dce8359d36ef74c4"
+    },
+    {
+      "path": "public/media/covers/carnival-magic-queue-approved-1600.webp",
+      "bytes": 115946,
+      "sha256": "2c71c7f653f1d9607d09935c6dc4b8f090c50fcc473064e1a933deb343ec3dc5"
+    },
+    {
+      "path": "public/media/covers/carnival-magic-queue-approved-480.webp",
+      "bytes": 28154,
+      "sha256": "c8bba0ca3dbd79821347cef1f79988fe451eddcecfa6d83cb3b54711eb33e99f"
+    },
+    {
+      "path": "public/media/covers/carnival-magic-queue-approved-960.webp",
+      "bytes": 63552,
+      "sha256": "d17654db996c246e826f5f7395f70ea7178149b86f724d26bb42a43c5da90f0c"
+    },
+    {
+      "path": "public/media/covers/cheow-lan-day-queue-approved-1600.webp",
+      "bytes": 81926,
+      "sha256": "87a9b483f9b764406d194739efb4dc41d5a9e9055cf5682f44c35e76af15bf69"
+    },
+    {
+      "path": "public/media/covers/cheow-lan-day-queue-approved-480.webp",
+      "bytes": 22018,
+      "sha256": "b1f576682f5af51947414ca5830bde6d74bfd580a91be9a119017e71242fbe0b"
+    },
+    {
+      "path": "public/media/covers/cheow-lan-day-queue-approved-960.webp",
+      "bytes": 47662,
+      "sha256": "4b9e06b5087a47821ebf7db6768782c74605a506b793f156f5b8bd518a9d0e1f"
+    },
+    {
+      "path": "public/media/covers/coral-rawai-queue-approved-1600.webp",
+      "bytes": 84958,
+      "sha256": "52216bdb1cf456c769816d2117df0bbc8d14d584beea15304b1619b1228f5d5d"
+    },
+    {
+      "path": "public/media/covers/coral-rawai-queue-approved-480.webp",
+      "bytes": 22524,
+      "sha256": "ee82e2090bd0c462ae7c61fbe5504ec8b732fad5cd1a2a1b909322867c594cbe"
+    },
+    {
+      "path": "public/media/covers/coral-rawai-queue-approved-960.webp",
+      "bytes": 47920,
+      "sha256": "26b3765adc2cbaa383a0d94b7b8148eadaa97f107aa6c76db5004798c352e49a"
+    },
+    {
+      "path": "public/media/covers/elephant-spa-approved-1600.webp",
+      "bytes": 91114,
+      "sha256": "e731fda97ed675c6edb7e069bc4bac8ab4b3838cec8fc6d552e94b27d4cc8fe2"
+    },
+    {
+      "path": "public/media/covers/elephant-spa-approved-480.webp",
+      "bytes": 24946,
+      "sha256": "84b0d359f1b32d18e8d6c133d0644dc933a1f51f1dc063a9353e5ea5688ce0ec"
+    },
+    {
+      "path": "public/media/covers/elephant-spa-approved-960.webp",
+      "bytes": 54798,
+      "sha256": "256ea606a66a94c7812e8eeb439e3e5779db56f333eb71c343b3d4b03004dfe0"
+    },
+    {
+      "path": "public/media/covers/elephant-spa-option-b-approved-1600.webp",
+      "bytes": 94128,
+      "sha256": "ed6ac359ebc14a7376cf12a0fd022f9123be95b05faee7ddc4ab0c9fb2791f9d"
+    },
+    {
+      "path": "public/media/covers/elephant-spa-option-b-approved-480.webp",
+      "bytes": 23770,
+      "sha256": "79c765462e730a07481d7220ea5bd8a5fee9b069021d5ab96b2485c2a33421b8"
+    },
+    {
+      "path": "public/media/covers/elephant-spa-option-b-approved-960.webp",
+      "bytes": 54216,
+      "sha256": "286b4b76c34002f3ee82a116aa780e1ed8a26da9c1b4b2ec40a1633dba3aab3c"
+    },
+    {
+      "path": "public/media/covers/elephant-spa-queue-approved-1600.webp",
+      "bytes": 89524,
+      "sha256": "2fb571e13ff68c8a46dd95c8f8e34d70e91e13c6f0991fe3033a801bf595f947"
+    },
+    {
+      "path": "public/media/covers/elephant-spa-queue-approved-480.webp",
+      "bytes": 24492,
+      "sha256": "73f35732e4a457acbb5b00d2e9dae8af13067c05220f6ded4bb96b03a3bd57bb"
+    },
+    {
+      "path": "public/media/covers/elephant-spa-queue-approved-960.webp",
+      "bytes": 53726,
+      "sha256": "e6c0d259c26614f8235900512afcb2d7fa3600547ce2358818b3493f45ff29bd"
+    },
+    {
+      "path": "public/media/covers/eleven-islands-approved-1600.webp",
+      "bytes": 102278,
+      "sha256": "218f4c130bfed09f2575c82d21c1c391de6c5be9818b950e2d71b1f19f9baf9a"
+    },
+    {
+      "path": "public/media/covers/eleven-islands-approved-480.webp",
+      "bytes": 27534,
+      "sha256": "94f461ac6cb2530b71e594467b12d4900ec44596e9e074535b8fd0a2f1c13123"
+    },
+    {
+      "path": "public/media/covers/eleven-islands-approved-960.webp",
+      "bytes": 58638,
+      "sha256": "dad820dff19a957fd00e3d964208f99bdeb362187ff295b538b0b295034ab4d8"
+    },
+    {
+      "path": "public/media/covers/fantasea-queue-approved-1600.webp",
+      "bytes": 102910,
+      "sha256": "17365c23d94590a335367caf40ba440f2226bfad01fb1f00dd0c9e02e7829184"
+    },
+    {
+      "path": "public/media/covers/fantasea-queue-approved-480.webp",
+      "bytes": 27104,
+      "sha256": "c5e3acc70bc1a308f1f931baf0b6c11c302f381ff63c77f05c20c8d3f8a4bfca"
+    },
+    {
+      "path": "public/media/covers/fantasea-queue-approved-960.webp",
+      "bytes": 59480,
+      "sha256": "6f126268608fd23475bf7b58ef8e5e22d380db99973fabbfc695b117591041f4"
+    },
+    {
+      "path": "public/media/covers/five-pearls-queue-approved-1600.webp",
+      "bytes": 97518,
+      "sha256": "5772de3c56dc9e0801dfa85100d78fef6f74c9c848bf2a2bb87a31424120fe3c"
+    },
+    {
+      "path": "public/media/covers/five-pearls-queue-approved-480.webp",
+      "bytes": 25912,
+      "sha256": "d02c69d877a9b55c916504f9d27ccf7791b8554fbdce3927d1976675c5b7cc58"
+    },
+    {
+      "path": "public/media/covers/five-pearls-queue-approved-960.webp",
+      "bytes": 55500,
+      "sha256": "2ef3e358fd98b7161cea5b9be3c41e2c5635734c9000562d9647f4fe849b3b63"
+    },
+    {
+      "path": "public/media/covers/glowing-plankton-queue-approved-1600.webp",
+      "bytes": 92054,
+      "sha256": "0a0aa970847c5299137e48be8fcd59fb07d4bc54606b724d109227333ec9c867"
+    },
+    {
+      "path": "public/media/covers/glowing-plankton-queue-approved-480.webp",
+      "bytes": 24162,
+      "sha256": "fd09c35314bdf4b0dad0299af3a4b464b9e40a3657918f5f3206087fee1731e1"
+    },
+    {
+      "path": "public/media/covers/glowing-plankton-queue-approved-960.webp",
+      "bytes": 52360,
+      "sha256": "113c17c61f21af7d3d33e208b242c557b82758bbe4ed1cd43141282dfeabc53d"
+    },
+    {
+      "path": "public/media/covers/illustration-coming-soon-1600.webp",
+      "bytes": 54992,
+      "sha256": "2641dab239c039ca57a1ec69e5deaa1b6e171d21e40c65c53ef5166fd553a30b"
+    },
+    {
+      "path": "public/media/covers/illustration-coming-soon-480.webp",
+      "bytes": 16538,
+      "sha256": "522598d9bb9cb68493cc18660d0084bc6a80fad29df819e712dce59b099a9eea"
+    },
+    {
+      "path": "public/media/covers/illustration-coming-soon-960.webp",
+      "bytes": 32856,
+      "sha256": "04fb383f01b57f5588562a586e3970fcc3396e1ad4b8631b878b606147d15a3c"
+    },
+    {
+      "path": "public/media/covers/james-bond-catamaran-approved-1600.webp",
+      "bytes": 118316,
+      "sha256": "22390ca8821226684295515eef0750895b94c21714fd70a3e1b5953ccbcda41b"
+    },
+    {
+      "path": "public/media/covers/james-bond-catamaran-approved-480.webp",
+      "bytes": 30150,
+      "sha256": "1815ecbfdd965e8cbe840687e011366e1c61274a1ed389b883bb751664ee5887"
+    },
+    {
+      "path": "public/media/covers/james-bond-catamaran-approved-960.webp",
+      "bytes": 67164,
+      "sha256": "1efd94d7db20e693d59f727aa7dc4dcb02cc5a861d61ae1da75d2784196a3256"
+    },
+    {
+      "path": "public/media/covers/james-bond-cave-queue-approved-1600.webp",
+      "bytes": 80084,
+      "sha256": "efbfbed817473fbedb943ec1c7ee427583be84254644a9e77680cd7c26e87d37"
+    },
+    {
+      "path": "public/media/covers/james-bond-cave-queue-approved-480.webp",
+      "bytes": 21734,
+      "sha256": "0c275b6e74113bd304f8659747225ebbaa3887486ef0ffc9852cd7d1ab8f7d1d"
+    },
+    {
+      "path": "public/media/covers/james-bond-cave-queue-approved-960.webp",
+      "bytes": 46796,
+      "sha256": "2aab82a6459ed064e3c9a345d13a666232792632d3c37fc2adfdf290432fc052"
+    },
+    {
+      "path": "public/media/covers/james-bond-yao-queue-approved-1600.webp",
+      "bytes": 87372,
+      "sha256": "516b26b470bc94920701fb24fdcd74b92ba81cea540c98c3476826a1503f8018"
+    },
+    {
+      "path": "public/media/covers/james-bond-yao-queue-approved-480.webp",
+      "bytes": 23136,
+      "sha256": "796c47b3d4fcab5e1c763b6f4f27be69bd4b310f093651a544e547c3b511f6e8"
+    },
+    {
+      "path": "public/media/covers/james-bond-yao-queue-approved-960.webp",
+      "bytes": 51058,
+      "sha256": "cbe4fa6cc007b99ba2afa21242922d85424b24ee844fe1e55db87cbe81e34351"
+    },
+    {
+      "path": "public/media/covers/jet-ski-north-queue-approved-1600.webp",
+      "bytes": 111764,
+      "sha256": "3c5916d3b2325e2d386e4d670f21775a17c6d6ef91e3f5dab51edb29dafec283"
+    },
+    {
+      "path": "public/media/covers/jet-ski-north-queue-approved-480.webp",
+      "bytes": 28446,
+      "sha256": "8df9b6264d330cf50f62227dd07a696c3637ed437e8711e28262ead81b986138"
+    },
+    {
+      "path": "public/media/covers/jet-ski-north-queue-approved-960.webp",
+      "bytes": 62356,
+      "sha256": "2e61935e3c8f20fe915de4e043f64b4f34c07029f6ec6b760302cf7de78aaa38"
+    },
+    {
+      "path": "public/media/covers/jet-ski-south-approved-1600.webp",
+      "bytes": 106002,
+      "sha256": "1b5671c7eaa1388464a704f40ac24feb938014d438aeefc6f97d6c7ed1a7951c"
+    },
+    {
+      "path": "public/media/covers/jet-ski-south-approved-480.webp",
+      "bytes": 28068,
+      "sha256": "4af8c823950501b7589b50a50145fa04e402f49fbf22101c90874946e2b67400"
+    },
+    {
+      "path": "public/media/covers/jet-ski-south-approved-960.webp",
+      "bytes": 61790,
+      "sha256": "ae98f9ee2476422fb64b76b25483c9fbedf073766ac92f59bcf58f0b27cf51e3"
+    },
+    {
+      "path": "public/media/covers/jet-ski-south-approved-v2-1600.webp",
+      "bytes": 114910,
+      "sha256": "c49b06c9de63fcc1eeb2f87842bcc0f38c6d8912c1debb2e866b13c4979c3df6"
+    },
+    {
+      "path": "public/media/covers/jet-ski-south-approved-v2-480.webp",
+      "bytes": 29032,
+      "sha256": "0aab470086b6d2d7b8e3a41d55faa3811caf22be991e3e83fd642c1724e188fb"
+    },
+    {
+      "path": "public/media/covers/jet-ski-south-approved-v2-960.webp",
+      "bytes": 64978,
+      "sha256": "e28ceb8d7693e59bbb03dd63668b913ac4690e7da2c05a7e09aa45349e18ed17"
+    },
+    {
+      "path": "public/media/covers/khao-lak-safari-queue-approved-1600.webp",
+      "bytes": 100812,
+      "sha256": "89dc2e56476be7f01c3f5f466e751eb818056a630ebbf1adc9af49777b912eae"
+    },
+    {
+      "path": "public/media/covers/khao-lak-safari-queue-approved-480.webp",
+      "bytes": 24528,
+      "sha256": "722d5599a1dc0f71d1d1370c3ee47316c01f8b208b304285899a1724dc5958d4"
+    },
+    {
+      "path": "public/media/covers/khao-lak-safari-queue-approved-960.webp",
+      "bytes": 55826,
+      "sha256": "e4dc76391a6ae105fe4bdd2efb22bb598f977a4b2c982e58ddd541978fbb1622"
+    },
+    {
+      "path": "public/media/covers/khao-sok-approved-1600.webp",
+      "bytes": 118566,
+      "sha256": "c06c55c0197907c555cdb026ca622c33064ba347cfba5c5dcdf6a269690095ac"
+    },
+    {
+      "path": "public/media/covers/khao-sok-approved-480.webp",
+      "bytes": 31234,
+      "sha256": "de86ee4d6913cabc59b786bd811d0d9e369f3c93f20e5f1506b5b33143712acf"
+    },
+    {
+      "path": "public/media/covers/khao-sok-approved-960.webp",
+      "bytes": 69296,
+      "sha256": "7919dcb32406b822cf4322526491868e3e375a3ff9c0ef1dddc7a41671776b54"
+    },
+    {
+      "path": "public/media/covers/khao-sok-approved-v2-1600.webp",
+      "bytes": 93750,
+      "sha256": "1fdf18fd8f9f96cef7546976ca02d3c24e37bc5b7fa423caf846ecd6b89566da"
+    },
+    {
+      "path": "public/media/covers/khao-sok-approved-v2-480.webp",
+      "bytes": 25256,
+      "sha256": "9d394ee12af8bcea36699e7c8c92223bcab1cc09681a9e95dbacf35c0e37d5b6"
+    },
+    {
+      "path": "public/media/covers/khao-sok-approved-v2-960.webp",
+      "bytes": 54504,
+      "sha256": "436f9a6207361112296ee5837120fe76972ab0f229938614a1341291837e239a"
+    },
+    {
+      "path": "public/media/covers/krabi-catamaran-queue-approved-1600.webp",
+      "bytes": 80078,
+      "sha256": "a5e29bc4b4926d2c0dac990359521066cff1ae7d6dfe23708d75c9f1e140a092"
+    },
+    {
+      "path": "public/media/covers/krabi-catamaran-queue-approved-480.webp",
+      "bytes": 21876,
+      "sha256": "7cb594803bf8006be6b5f64ee510632ed02a09cfdd00d7eaf33be29dcf124195"
+    },
+    {
+      "path": "public/media/covers/krabi-catamaran-queue-approved-960.webp",
+      "bytes": 47072,
+      "sha256": "6c012df532f796dda5bf5ad197807b534c63b5f72c09e98b4605586c2ece1464"
+    },
+    {
+      "path": "public/media/covers/krabi-sunset-approved-1600.webp",
+      "bytes": 88226,
+      "sha256": "a377214442899ff6c6a0bc8cb4b1e8a4f42f631f156d57eab671eb23484b27db"
+    },
+    {
+      "path": "public/media/covers/krabi-sunset-approved-480.webp",
+      "bytes": 23790,
+      "sha256": "0bc6dacd0f078bd63357d0cd6a7d7cd6f07a753358b4f7d7d3a36a89186e9428"
+    },
+    {
+      "path": "public/media/covers/krabi-sunset-approved-960.webp",
+      "bytes": 50878,
+      "sha256": "9a0df34b3d100c3ed777fc12c97b486ea35fd64c6aa22f276e7d052452b2b68c"
+    },
+    {
+      "path": "public/media/covers/kuala-lumpur-queue-approved-1600.webp",
+      "bytes": 87668,
+      "sha256": "d0e1dc9632a813b197d803185ebdaf744f8cc695e82376ce8b5a602dab67c283"
+    },
+    {
+      "path": "public/media/covers/kuala-lumpur-queue-approved-480.webp",
+      "bytes": 25326,
+      "sha256": "007382443558c39968a4bc6b0e2924fa53d84cd444c414aaa45aea08d335373b"
+    },
+    {
+      "path": "public/media/covers/kuala-lumpur-queue-approved-960.webp",
+      "bytes": 52434,
+      "sha256": "0be40331c12fc69c2ea9f5012ae95228b02aaecd9fe063830e9f057b3f11c200"
+    },
+    {
+      "path": "public/media/covers/phang-nga-skywalk-queue-approved-1600.webp",
+      "bytes": 84222,
+      "sha256": "786ed9c22ae0146579ef028320d063058b369f19c57f02ee7040d20029d89d12"
+    },
+    {
+      "path": "public/media/covers/phang-nga-skywalk-queue-approved-480.webp",
+      "bytes": 22796,
+      "sha256": "0cca72b7b90a4ad7cdedcbcd4a17de35f0a0a5c397135f505114467680611c70"
+    },
+    {
+      "path": "public/media/covers/phang-nga-skywalk-queue-approved-960.webp",
+      "bytes": 49470,
+      "sha256": "a983ac11c60364200019d71d6561858ad44acbf7bde90dc5dd5b5d5bf715b133"
+    },
+    {
+      "path": "public/media/covers/phi-phi-bamboo-queue-approved-1600.webp",
+      "bytes": 86630,
+      "sha256": "0917561589aeb4d0abc079ca5529dce4ba176d31c1cec976d2c11c5b3e46075a"
+    },
+    {
+      "path": "public/media/covers/phi-phi-bamboo-queue-approved-480.webp",
+      "bytes": 23030,
+      "sha256": "52b5c155645e28717607e2408504553fa2467e6eedf215d46854b11dbb334ce5"
+    },
+    {
+      "path": "public/media/covers/phi-phi-bamboo-queue-approved-960.webp",
+      "bytes": 49688,
+      "sha256": "89952d968d08ad2895064b5a2034d23f80ea2df9a1b8eb0f5aacd0465307cf79"
+    },
+    {
+      "path": "public/media/covers/phi-phi-catamaran-approved-1600.webp",
+      "bytes": 141474,
+      "sha256": "42b56bd45cee3fa2d96fa13ab39dc18a98d5b07754a1ce94da2de336009779fd"
+    },
+    {
+      "path": "public/media/covers/phi-phi-catamaran-approved-480.webp",
+      "bytes": 33442,
+      "sha256": "f4c2ecd503d036edbbf5a6e729160de84805789d92da927d95994696bfecef95"
+    },
+    {
+      "path": "public/media/covers/phi-phi-catamaran-approved-960.webp",
+      "bytes": 76430,
+      "sha256": "0f502cbb3e1e561d83965ab3882c1d8f16bb1326fb178b9496638aa847951fee"
+    },
+    {
+      "path": "public/media/covers/phi-phi-fishing-approved-1600.webp",
+      "bytes": 89724,
+      "sha256": "3003dc9337c33d0da2c49d14d0b7001c787f036019e5b26e280d8cb2a46cce91"
+    },
+    {
+      "path": "public/media/covers/phi-phi-fishing-approved-480.webp",
+      "bytes": 23572,
+      "sha256": "3d2281be3e377f2ad94ef5f1419d5c31cba1540b4e2db744767e8bca775bab14"
+    },
+    {
+      "path": "public/media/covers/phi-phi-fishing-approved-960.webp",
+      "bytes": 51624,
+      "sha256": "95caea88c100fdfa26672cfb6dd2951c0ea4c4d3306c6fdbf82a95d37f13a93b"
+    },
+    {
+      "path": "public/media/covers/phi-phi-four-islands-queue-approved-1600.webp",
+      "bytes": 96152,
+      "sha256": "a6d9b971d78045fc7cd8e6d2e544097850f287ba0c0f1f8c4c9757ea595dfb30"
+    },
+    {
+      "path": "public/media/covers/phi-phi-four-islands-queue-approved-480.webp",
+      "bytes": 25334,
+      "sha256": "250a17de544580dd7cd4720b9a32364921167304ad6dfa91cde1df44dc975522"
+    },
+    {
+      "path": "public/media/covers/phi-phi-four-islands-queue-approved-960.webp",
+      "bytes": 54926,
+      "sha256": "f3bafcf7410f55ee997f9bbd69a13228ee81e2683ab25d892073af21123d7ab4"
+    },
+    {
+      "path": "public/media/covers/phi-phi-khai-maiton-queue-approved-1600.webp",
+      "bytes": 85190,
+      "sha256": "dbae9a029ef7ef66d3766836216d501a0094e805fbda5316ef4a13c7c4e85685"
+    },
+    {
+      "path": "public/media/covers/phi-phi-khai-maiton-queue-approved-480.webp",
+      "bytes": 22870,
+      "sha256": "6a3587eb4cc6508c7c3369472b1ffee311ad256e25f747d348a4503cd8db0cd0"
+    },
+    {
+      "path": "public/media/covers/phi-phi-khai-maiton-queue-approved-960.webp",
+      "bytes": 49474,
+      "sha256": "2de4b6165040745167172097521a34b1d00af314a5f10fd7320a0867f2f22d02"
+    },
+    {
+      "path": "public/media/covers/phi-phi-khai-queue-approved-1600.webp",
+      "bytes": 74184,
+      "sha256": "9f634f1d3df13478b0ac159de0a12b03b7536931fdf559eebb9b5c18b6f3cf2c"
+    },
+    {
+      "path": "public/media/covers/phi-phi-khai-queue-approved-480.webp",
+      "bytes": 19940,
+      "sha256": "7ea1af17bf5010344ad59ff3b7f15fb9f6058367eeca4884b0a597e2e075e9d5"
+    },
+    {
+      "path": "public/media/covers/phi-phi-khai-queue-approved-960.webp",
+      "bytes": 42986,
+      "sha256": "57a918b27646bc38d3cb31fcd1e669072dc2b47e5590affdeef36ce1d99b44d6"
+    },
+    {
+      "path": "public/media/covers/phi-phi-lazy-queue-approved-1600.webp",
+      "bytes": 80716,
+      "sha256": "31416beee432f15ece2457afc522176bc0a12e951488b6ed1bea0814be7940ca"
+    },
+    {
+      "path": "public/media/covers/phi-phi-lazy-queue-approved-480.webp",
+      "bytes": 22070,
+      "sha256": "22c2f8f5d1263ff1d5b82b1d37a2f5899f5eeebecd1a8d489bcd81236d2810fd"
+    },
+    {
+      "path": "public/media/covers/phi-phi-lazy-queue-approved-960.webp",
+      "bytes": 47528,
+      "sha256": "2aede3c08935c260eae6948cf59388c72c681371092a902cfffe207360b66fdc"
+    },
+    {
+      "path": "public/media/covers/phi-phi-overnight-queue-approved-1600.webp",
+      "bytes": 99924,
+      "sha256": "e813d3e717148de752c469d49bcc894cf74347554ee8e1799cef9bd305edf6a9"
+    },
+    {
+      "path": "public/media/covers/phi-phi-overnight-queue-approved-480.webp",
+      "bytes": 25290,
+      "sha256": "b58243daef6647fc5cb186c652000e59097c1853ddafafefe17da974ea5f04aa"
+    },
+    {
+      "path": "public/media/covers/phi-phi-overnight-queue-approved-960.webp",
+      "bytes": 56988,
+      "sha256": "1ebe3b0754a6e64f92c96e326177e55ce5e527c106979f5ba17ddbe9d8dd6cf7"
+    },
+    {
+      "path": "public/media/covers/phi-phi-racha-party-approved-1600.webp",
+      "bytes": 121046,
+      "sha256": "364c2269989391169bded2fa7a47033e8ca15b7711d5f358d28328d9376133b6"
+    },
+    {
+      "path": "public/media/covers/phi-phi-racha-party-approved-480.webp",
+      "bytes": 30326,
+      "sha256": "6032109e3a8d52a7623345df4d2d7ecb9593a0b7176655b73ba84e010513afe1"
+    },
+    {
+      "path": "public/media/covers/phi-phi-racha-party-approved-960.webp",
+      "bytes": 66758,
+      "sha256": "88650e3686b7309e90d3ea1e1bd818c5761d71ef219c24add98a684289bbd5ff"
+    },
+    {
+      "path": "public/media/covers/phi-phi-sunrise-approved-v2-1600.webp",
+      "bytes": 88866,
+      "sha256": "ac90af4a37bebdc0d4470c9241f76c75c65141c9141b315e994b748ea914f961"
+    },
+    {
+      "path": "public/media/covers/phi-phi-sunrise-approved-v2-480.webp",
+      "bytes": 23190,
+      "sha256": "27ddfc4aae76072640d7c8ced07d3113b6d69b3b217957cf7e4be15cd0091ccf"
+    },
+    {
+      "path": "public/media/covers/phi-phi-sunrise-approved-v2-960.webp",
+      "bytes": 50434,
+      "sha256": "a9c229fb644e9f5dee4746aeb607322e2f5f9c33bffc0ff3c66bbb4428dff463"
+    },
+    {
+      "path": "public/media/covers/phi-phi-sunset-queue-approved-1600.webp",
+      "bytes": 92358,
+      "sha256": "1d580c67d0077de76ed092bc66e5ab57bdc2a2b8b75e9ae7b31fd8a8caa03cc8"
+    },
+    {
+      "path": "public/media/covers/phi-phi-sunset-queue-approved-480.webp",
+      "bytes": 23382,
+      "sha256": "0706b502a89bb6d97c8429b616cd661477ffcbd33435596b6cdcdd3bc347b5bf"
+    },
+    {
+      "path": "public/media/covers/phi-phi-sunset-queue-approved-960.webp",
+      "bytes": 52374,
+      "sha256": "fd90106c194100600358527f553058325e0612df4559eba72daf4e69df84a756"
+    },
+    {
+      "path": "public/media/covers/phuket-city-queue-approved-1600.webp",
+      "bytes": 88262,
+      "sha256": "3e9be1ffd0e36e4248f4c69e2de2d2d88d86a41dcdf50fdbbc75afb9faa8cc44"
+    },
+    {
+      "path": "public/media/covers/phuket-city-queue-approved-480.webp",
+      "bytes": 25316,
+      "sha256": "bb005705ea169d855704e80d4041ca1879cb7427228cd13563cb4789fb462457"
+    },
+    {
+      "path": "public/media/covers/phuket-city-queue-approved-960.webp",
+      "bytes": 53030,
+      "sha256": "906b2a49db456a030bafc57aa6cc1d4965105e22bb1c635d75e811bf6e9fbaab"
+    },
+    {
+      "path": "public/media/covers/racha-coral-approved-1600.webp",
+      "bytes": 118002,
+      "sha256": "4322c5cb2e0f499511c725ac6124e53a40f7c1d25f2c7c94f56a0443a2104ce5"
+    },
+    {
+      "path": "public/media/covers/racha-coral-approved-480.webp",
+      "bytes": 30034,
+      "sha256": "d01b44d99dc8e1f8186244b2a414cd57cfa5ea2df6919cb7091f5628dc2e13d5"
+    },
+    {
+      "path": "public/media/covers/racha-coral-approved-960.webp",
+      "bytes": 66416,
+      "sha256": "b69a13e36f571f5577cba4e8ab9bacc089b259f5d1f7b0f3c1a796538dbdec49"
+    },
+    {
+      "path": "public/media/covers/racha-coral-maiton-queue-approved-1600.webp",
+      "bytes": 93632,
+      "sha256": "77c5894c210c048f33f4431ffb9d07de3454e58d2c22364a8d68bb9604dbf716"
+    },
+    {
+      "path": "public/media/covers/racha-coral-maiton-queue-approved-480.webp",
+      "bytes": 24368,
+      "sha256": "736314e59601afe5843b6415681a97a248a8b8795b20ac5744bff1169b63ed14"
+    },
+    {
+      "path": "public/media/covers/racha-coral-maiton-queue-approved-960.webp",
+      "bytes": 53388,
+      "sha256": "127a7d412e91aa0c428beeabf372bf65cca335c13e9b719c4da158d78be7c96d"
+    },
+    {
+      "path": "public/media/covers/racha-sunrise-queue-approved-1600.webp",
+      "bytes": 82542,
+      "sha256": "3fd42d2c9023fcd424161596fd3bf264271ba212c142d4ac9b2822f13f8c9ece"
+    },
+    {
+      "path": "public/media/covers/racha-sunrise-queue-approved-480.webp",
+      "bytes": 21786,
+      "sha256": "50dbca9d0eb38d20c2de7c8ed4819985b8b610c7474315448b715965f27da9b7"
+    },
+    {
+      "path": "public/media/covers/racha-sunrise-queue-approved-960.webp",
+      "bytes": 47158,
+      "sha256": "dee7b35c2337d6c85c42f1917f5edb960dbf7196c0b83d2f9a4cf5976ae22a1c"
+    },
+    {
+      "path": "public/media/covers/rafting-atv-approved-1600.webp",
+      "bytes": 106428,
+      "sha256": "9f0c9a387d1a0e41413fc6890f273271f2bc24729e75a4debf9c69327b0a50fe"
+    },
+    {
+      "path": "public/media/covers/rafting-atv-approved-480.webp",
+      "bytes": 27982,
+      "sha256": "6a6dfb252240e3412feb5d278bde7b42bd99eb7feaec534d13e4fe09dd9fd4b8"
+    },
+    {
+      "path": "public/media/covers/rafting-atv-approved-960.webp",
+      "bytes": 61790,
+      "sha256": "0e08906d8e9c3ac606e8ec327cf9f1f042fcec13bec93ac9706a0920631f256c"
+    },
+    {
+      "path": "public/media/covers/rafting-atv-approved-v2-1600.webp",
+      "bytes": 137690,
+      "sha256": "75c6ff6a7dfd6ff4fc13d8a28c3c55094115d7843d17d79366fdd1616bf8a8aa"
+    },
+    {
+      "path": "public/media/covers/rafting-atv-approved-v2-480.webp",
+      "bytes": 34488,
+      "sha256": "f31925fb5194812a9b76abf8e8612c4ca09d48e9c46405fe2f1f4620b6dce4ec"
+    },
+    {
+      "path": "public/media/covers/rafting-atv-approved-v2-960.webp",
+      "bytes": 77612,
+      "sha256": "792cfb773c982fd2a96c2c964fbccf0ea3881ef1f31673506d9dedb14d441e37"
+    },
+    {
+      "path": "public/media/covers/sea-fishing-queue-approved-1600.webp",
+      "bytes": 107728,
+      "sha256": "4e7cfb7f1363fde965f4c00702b5296590d43e460ea0bdd477f33fcecfe7b805"
+    },
+    {
+      "path": "public/media/covers/sea-fishing-queue-approved-480.webp",
+      "bytes": 27254,
+      "sha256": "9385bcf06cb5cf8580eb73045d16161a10811e939738a48010dc02709eb2e4a8"
+    },
+    {
+      "path": "public/media/covers/sea-fishing-queue-approved-960.webp",
+      "bytes": 60222,
+      "sha256": "ee5a388324d4a6d9dd18c919ad49fd5cfa6e645782b52cbd1a4292031d77381e"
+    },
+    {
+      "path": "public/media/covers/similan-diving-queue-approved-1600.webp",
+      "bytes": 86208,
+      "sha256": "f3e0864825c8e4a8ff143789655acc1fa077a37bf8cb2397a07c9b45064e2cc3"
+    },
+    {
+      "path": "public/media/covers/similan-diving-queue-approved-480.webp",
+      "bytes": 23184,
+      "sha256": "0260af18d9671ec7c90c9b7ceb944c5ab3733f32c3aab5b5ce0d6120a09ef2f5"
+    },
+    {
+      "path": "public/media/covers/similan-diving-queue-approved-960.webp",
+      "bytes": 50106,
+      "sha256": "e2ed2f1f21b4c5fc4a9a03dfe34dcf8a7164c3cfff187e6a87e4a9f736659449"
+    },
+    {
+      "path": "public/media/covers/similan-early-approved-1600.webp",
+      "bytes": 101058,
+      "sha256": "cd98b27e4579e31d16c9124dd7a73e6408f11a6356535d33537219006f667680"
+    },
+    {
+      "path": "public/media/covers/similan-early-approved-480.webp",
+      "bytes": 26422,
+      "sha256": "6df7cfb471fa6c029c96ea9733596116bf9b2433db67bd9b92d2647f162e6e8c"
+    },
+    {
+      "path": "public/media/covers/similan-early-approved-960.webp",
+      "bytes": 58396,
+      "sha256": "f08f866e076dfa39b0ad1cdc2e80a39b5d36207693f6586a0eb8a10d357a08f0"
+    },
+    {
+      "path": "public/media/covers/similan-early-approved-v2-1600.webp",
+      "bytes": 101310,
+      "sha256": "31d72c3c410c0e13a7fc670e75ac8dacf253c8ea91883df38e5745700d470b92"
+    },
+    {
+      "path": "public/media/covers/similan-early-approved-v2-480.webp",
+      "bytes": 25956,
+      "sha256": "7975f4a59fbff27dd3f304a92d8b49f516d604fe71ab6cc25b70e13a79ec4adb"
+    },
+    {
+      "path": "public/media/covers/similan-early-approved-v2-960.webp",
+      "bytes": 57700,
+      "sha256": "cf38cc2dc65002bc3765d39910c0534b2314ec630d2f74912b741710d9b1f2ab"
+    },
+    {
+      "path": "public/media/covers/similan-lazy-queue-approved-1600.webp",
+      "bytes": 89314,
+      "sha256": "b050b96adac08cd227d38a5ef1767833efa5e97f92927a96f37ce5163d08cbc9"
+    },
+    {
+      "path": "public/media/covers/similan-lazy-queue-approved-480.webp",
+      "bytes": 23668,
+      "sha256": "3bba302f1a1dbd1e7bfa7f4cfa6f705fb795f95129a09c509fcaabe3c901de6f"
+    },
+    {
+      "path": "public/media/covers/similan-lazy-queue-approved-960.webp",
+      "bytes": 52416,
+      "sha256": "32a9fe697d8b2915dc6f47986425267823fba3f0e627ea00396e89ad794c1107"
+    },
+    {
+      "path": "public/media/covers/singapore-queue-approved-1600.webp",
+      "bytes": 127436,
+      "sha256": "c1d5dd20aa816d2a578bd565ddd0921cecd49073be0a30e64cb86986b775781b"
+    },
+    {
+      "path": "public/media/covers/singapore-queue-approved-480.webp",
+      "bytes": 29274,
+      "sha256": "fb0f55e1af54fea94aafc4d685edea94e92ffa5bcc9978d220897e80e7ea89f1"
+    },
+    {
+      "path": "public/media/covers/singapore-queue-approved-960.webp",
+      "bytes": 68650,
+      "sha256": "e0cf8b5d068948e2f29834fb5a8fafb6b3e0792c4a778037a79b4b064b09620a"
+    },
+    {
+      "path": "public/media/covers/sunrise-phang-nga-queue-approved-1600.webp",
+      "bytes": 81674,
+      "sha256": "da6d5a06ec0761c78055bad7877e9fca3410b748b0d726f1da4e5bac038e61f8"
+    },
+    {
+      "path": "public/media/covers/sunrise-phang-nga-queue-approved-480.webp",
+      "bytes": 22406,
+      "sha256": "e593fa74f8a5199890762077134fea89f024d3e157d3515ea6d3f105134f3511"
+    },
+    {
+      "path": "public/media/covers/sunrise-phang-nga-queue-approved-960.webp",
+      "bytes": 47908,
+      "sha256": "654dddd8e8f8b1eadecaeab8cbf7abb589bccc6cf803ee56fef7d73d71eb2c01"
+    },
+    {
+      "path": "public/media/jet-ski-south-project-480.webp",
+      "bytes": 29214,
+      "sha256": "130bd2d6df13d23fd3783bacc04dd12d5c64b2e41ca4e60fea771688af9c6476"
+    },
+    {
+      "path": "public/media/jet-ski-south-project-960.webp",
+      "bytes": 86602,
+      "sha256": "6e6a98bf782284b26e1c99272753d93a58ca76949ecba5c111b69f8ac2ef13cd"
+    },
+    {
+      "path": "public/media/jet-ski-south-project.webp",
+      "bytes": 103914,
+      "sha256": "854960ef1797f903557d3d2d6a0f6925b920aec6cafebac596a417657c76dff9"
+    },
+    {
+      "path": "public/media/maya-bay-project-480.webp",
+      "bytes": 46866,
+      "sha256": "4cbea7e4327fa0e011c5a625306eb679036ae81ed30dd5785f4b36081a9e8d0b"
+    },
+    {
+      "path": "public/media/maya-bay-project-960.webp",
+      "bytes": 182464,
+      "sha256": "37246348d519369c920977aa7625211d4edb19b9afec714e7ac38813f123e9ee"
+    },
+    {
+      "path": "public/media/maya-bay-project.webp",
+      "bytes": 358152,
+      "sha256": "ffd13292f20ab185da8d796305d062495ba39cc6f7cf79a6fe53c4b71795f4ce"
+    },
+    {
+      "path": "public/media/phang-nga-project-1600.webp",
+      "bytes": 325720,
+      "sha256": "eccf1ce7838a17ecca045f40779b7cd4f4bdfdbcd43298556d235064a3240627"
+    },
+    {
+      "path": "public/media/phang-nga-project-480.webp",
+      "bytes": 33404,
+      "sha256": "98488a968ea69c0709a149a5c2ec02535145f55724375aecb135b9ffad073ad7"
+    },
+    {
+      "path": "public/media/phang-nga-project-960.webp",
+      "bytes": 121492,
+      "sha256": "bfb35e8664d1cb18697dd140360256f262aa97d3b039d431a43b88cffaafe531"
+    },
+    {
+      "path": "public/media/phang-nga-project.webp",
+      "bytes": 347982,
+      "sha256": "e08c7a8d4aac67788136acb1d8d8b71fc30eea030f078e5ad9c88bdacaf8528b"
+    },
+    {
+      "path": "public/media/phang-nga.webp",
+      "bytes": 347982,
+      "sha256": "e08c7a8d4aac67788136acb1d8d8b71fc30eea030f078e5ad9c88bdacaf8528b"
+    },
+    {
+      "path": "public/media/phi-phi.webp",
+      "bytes": 358152,
+      "sha256": "ffd13292f20ab185da8d796305d062495ba39cc6f7cf79a6fe53c4b71795f4ce"
+    },
+    {
+      "path": "public/media/racha-project-1600.webp",
+      "bytes": 148084,
+      "sha256": "81c2440842c16ceef652443359321192cd89aa8d4ec18502ec16a73fb9f72e2d"
+    },
+    {
+      "path": "public/media/racha-project-480.webp",
+      "bytes": 17478,
+      "sha256": "61c9fdef40bb1f1e704f0853107432dcc55b53bb76fcff11216e12b595ef43cf"
+    },
+    {
+      "path": "public/media/racha-project-960.webp",
+      "bytes": 61500,
+      "sha256": "c280ac83167a4ec0485c80f328f7cc225d7d8e10ccf60853fa808ca2ab72a807"
+    },
+    {
+      "path": "public/media/racha-project.webp",
+      "bytes": 163956,
+      "sha256": "e68fe77f329f12767ded6a9f4ef213fe8ee823af1a0b7378a5bee64d3daa8be8"
+    },
+    {
+      "path": "public/media/racha.webp",
+      "bytes": 163956,
+      "sha256": "e68fe77f329f12767ded6a9f4ef213fe8ee823af1a0b7378a5bee64d3daa8be8"
+    },
+    {
+      "path": "public/media/reference/airport-plane-cutout.png",
+      "bytes": 1024374,
+      "sha256": "365a00e721ed92d64e4569552951b7795e53bee0085c99e7ad459369d34559a3"
+    },
+    {
+      "path": "public/media/reference/airport-plane.svg",
+      "bytes": 273,
+      "sha256": "5f837e84763b12a07b911f16eb1b93dd723df4e4de5b789ccefb64f65448f48c"
+    },
+    {
+      "path": "public/media/reference/andaman-clean-plate.webp",
+      "bytes": 328556,
+      "sha256": "28017adf8cbda9ca3616253e1abcc5f864ba673c62d4e9093346a71338b5b4a5"
+    },
+    {
+      "path": "public/media/reference/andaman-user-map.png",
+      "bytes": 2507803,
+      "sha256": "7ca6d8929c8f9eac90fb45a878b7ebc41fabc4e545f2ecbe310177f3991475df"
+    },
+    {
+      "path": "public/media/reference/big-buddha-cutout.png",
+      "bytes": 1370035,
+      "sha256": "6e21151c5c07a52a3d9fb90287e22cc676d8163de1128aba0088950e49e83b4d"
+    },
+    {
+      "path": "public/media/reference/cheow-lan-minibus-small.png",
+      "bytes": 64908,
+      "sha256": "23ae7e6faf8dbdbcb190ba20c228eacabe12b4aa232c1b16f39b14fd32441f28"
+    },
+    {
+      "path": "public/media/reference/cheow-lan-user-map.png",
+      "bytes": 3967793,
+      "sha256": "fe31fce446d37235f60d4848cb45f9bf5d77e5c36b1b7bc5942e3ce4fa5b70c7"
+    },
+    {
+      "path": "public/media/reference/cheow-lan-user-minibus.png",
+      "bytes": 2016959,
+      "sha256": "9b2c0a6431b867f4da9b6d185d3e2230e1a87456d510e58c310181570c8473a9"
+    },
+    {
+      "path": "public/media/reference/diving-user-boat.png",
+      "bytes": 1653739,
+      "sha256": "90b31a79ce83f16d6c963bb6d9cbbe4fd642ede77b994bedfbc23ad8937c71da"
+    },
+    {
+      "path": "public/media/reference/diving-user-boat.webp",
+      "bytes": 42314,
+      "sha256": "95c0f3112e7b49e757310b52c9d930cf9bcf0295f6044b6e3eedc5fa879bffae"
+    },
+    {
+      "path": "public/media/reference/doublebottle-map-bottle.webp",
+      "bytes": 9614,
+      "sha256": "ebe12b0b1dc3a6ad41f4faf8c9851d568a4721ac77f936af000136e1d41fcd62"
+    },
+    {
+      "path": "public/media/reference/doublebottle-mobile-bottle.webp",
+      "bytes": 202356,
+      "sha256": "b6a5cbc18b26f59679fdd86a50c04f60310565d9febeb23ffb53e498e95dc602"
+    },
+    {
+      "path": "public/media/reference/illustrated-land.png",
+      "bytes": 3664863,
+      "sha256": "32dc4a4e18512def7821d2ce3211330e2855e07184f6f01615cb44cc839d7b83"
+    },
+    {
+      "path": "public/media/reference/illustrated-sea.png",
+      "bytes": 2476357,
+      "sha256": "676c399d6fce93158b309c62af9b4c81adf7b5cef4ecac9a5c0c3748919e535b"
+    },
+    {
+      "path": "public/media/reference/map-landmark-placeholder.svg",
+      "bytes": 359,
+      "sha256": "863b4792fa7a4581c21a09040cb398cdbb01647904a4bf2c5a7c630c390ae6d8"
+    },
+    {
+      "path": "public/media/reference/national-parks-user-logo.png",
+      "bytes": 1844990,
+      "sha256": "437e94b89dc7ae5d7dc3347376d5f3ff5e54fb38ee5dd7ccc932d3dbf098448e"
+    },
+    {
+      "path": "public/media/reference/phi-phi-longtail.webp",
+      "bytes": 110732,
+      "sha256": "d33fdf80222359c4dae6d44d5910fdf73c6f3ef488ad2efd734d3f6a0d9c1b07"
+    },
+    {
+      "path": "public/media/reference/phi-phi-park-logo.webp",
+      "bytes": 516188,
+      "sha256": "59534598bf79da324c3aacf304a8381e8ff31a1608f696d812ca5c5292f0ac59"
+    },
+    {
+      "path": "public/media/reference/phi-phi-user-detail.png",
+      "bytes": 2045529,
+      "sha256": "1b6b68e6070a246d38a4b7b0a90406292a047d4e24ae7d4c2c05e2b593a89d59"
+    },
+    {
+      "path": "public/media/reference/phuket-airport-beach-original.png",
+      "bytes": 1811832,
+      "sha256": "f3032a13ac7c6228ad90d05c2046d7d5d046ead09b54c5ed7bd192c61536caa9"
+    },
+    {
+      "path": "public/media/reference/phuket-airport-user-logo.png",
+      "bytes": 2652143,
+      "sha256": "ac5b7fd3f5046d71c5ca33c11b2f02fea855c3f45dec4b1a0bc858b7a6020273"
+    },
+    {
+      "path": "public/media/reference/pirate-user-boat.png",
+      "bytes": 2360061,
+      "sha256": "6a24470ca21b6c979cab2452891691a23977f55116ed2472e88e8c06f0ca6009"
+    },
+    {
+      "path": "public/media/reference/pirate-user-boat.webp",
+      "bytes": 55878,
+      "sha256": "614a7e42915e478af0baea45dfb54404ee1cff4eb31810e91b72eb1f7b4c7ff7"
+    },
+    {
+      "path": "public/media/reference/tat-badge-user-reference.png",
+      "bytes": 132063,
+      "sha256": "1f14a75a9856be6dadbe7968619b1b5997fa1d44e5c32230c1aca40bddba2de4"
+    },
+    {
+      "path": "public/media/reference/thailand-park-logo.webp",
+      "bytes": 463610,
+      "sha256": "cd665ab1d528626826d179b36c2bca837c48eb3f4c028c7f0fe325549a13a73e"
+    },
+    {
+      "path": "public/media/reference/tour-arrival-chest.png",
+      "bytes": 1962126,
+      "sha256": "585e40f9c74755f4e831b6eb9aab3f215e67e2707f337307cd44e0574de9ca61"
+    },
+    {
+      "path": "public/media/reference/yona-user-icon.webp",
+      "bytes": 61118,
+      "sha256": "16e9860d1bfaa9ec0d796c40d3b69193b991cdb272ae88f3b08645e5c1761691"
+    },
+    {
+      "path": "public/media/thai-stamps/stamp-01.webp",
+      "bytes": 29228,
+      "sha256": "9059c93bea0bf5013586aaa37ccccd4bcc97f3ed420c8a8a5264b59256843924"
+    },
+    {
+      "path": "public/media/thai-stamps/stamp-02.webp",
+      "bytes": 28158,
+      "sha256": "c8fdaefd42974927ad33bf8f4e17f326bf3e03737d63c4f0eb2e839917f4f8a6"
+    },
+    {
+      "path": "public/media/thai-stamps/stamp-03.webp",
+      "bytes": 32428,
+      "sha256": "b6925e3b304a7afb23fffe07f9dd89cd6d4e7e382b35c23236cc1140056407a8"
+    },
+    {
+      "path": "public/media/thai-stamps/stamp-04.webp",
+      "bytes": 24108,
+      "sha256": "f9af3d02cd383ede84a8c6eeb2c74101563f4f140716e2976f26937732b66cbc"
+    },
+    {
+      "path": "public/media/thai-stamps/stamp-05.webp",
+      "bytes": 15244,
+      "sha256": "cfe35ba42ae55919ccc879ac4579605570c4d5749616191abc90ac15eef1b083"
+    },
+    {
+      "path": "public/media/thai-stamps/stamp-06.webp",
+      "bytes": 25146,
+      "sha256": "da14c2383b28f3b8746cb6b36f28ca36fe22d05773cd1e185da262676f4dadb3"
+    },
+    {
+      "path": "public/media/thai-stamps/stamp-07.webp",
+      "bytes": 23032,
+      "sha256": "a27a5ec5694d72a3d6884f480878c1113491361c8a4da4cdaed90f8c63fbecd5"
+    },
+    {
+      "path": "public/media/thai-stamps/stamp-08.webp",
+      "bytes": 20158,
+      "sha256": "fd1020dce55ac438bb4df561923578b7d5ad4ba7cf9711419302847fe6fb7817"
+    },
+    {
+      "path": "public/media/thai-stamps/stamp-09.webp",
+      "bytes": 32370,
+      "sha256": "3bca91a0aea712258d46d205b3e25014a5e96391ec48274396e3469da0161a29"
+    },
+    {
+      "path": "public/media/thai-stamps/stamp-10.webp",
+      "bytes": 23282,
+      "sha256": "9e0b90bff3feac25bd66eac5be867203b16a9ab95c2a7bfa3051bca4e1c0fc06"
+    },
+    {
+      "path": "public/media/thai-stamps/stamp-11.webp",
+      "bytes": 19370,
+      "sha256": "215b0d2fa239ec1a94fbe7229cf5aa1026e5fa3c9b4a3d6f0f9c4c8d802939aa"
+    },
+    {
+      "path": "public/media/thai-stamps/stamp-12.webp",
+      "bytes": 19146,
+      "sha256": "2623fba7e0563e273f5896772f418edd51aefa76a366cca1d3973ea0b78cd45b"
+    },
+    {
+      "path": "public/media/thai-stamps/stamp-13.webp",
+      "bytes": 42182,
+      "sha256": "94ee4c1621fefee96478aad91ad61e1f9b7c90d5b38dfdc439541f6b90bc3332"
+    },
+    {
+      "path": "public/media/thai-stamps/stamp-14.webp",
+      "bytes": 32806,
+      "sha256": "2c6747cb6efbea4d18097f7f86c5e07d2754642262d07aa16db99517b039a26d"
+    },
+    {
+      "path": "public/media/thai-stamps/stamp-15.webp",
+      "bytes": 17280,
+      "sha256": "635316989e20c6d961a677e1caa01b0a76091effdcc863c707bc926c07d42892"
+    },
+    {
+      "path": "public/media/thai-stamps/stamp-16.webp",
+      "bytes": 30948,
+      "sha256": "2962261c6883b6dfae7741e85e3ff027d9ff2c106822cbf4e0d7bcbce6f836a9"
+    },
+    {
+      "path": "public/media/thai-stamps/stamp-17.webp",
+      "bytes": 17912,
+      "sha256": "8b609604fd845f3a7ac462d1177c906eb430607cd2094a36603349b5cb61b2e3"
+    },
+    {
+      "path": "public/media/thai-stamps/stamp-18.webp",
+      "bytes": 31850,
+      "sha256": "60b342ebc8f0b6f574a27918f93b6060c36b68cfe5bc1ac1b46432316bf9a394"
+    },
+    {
+      "path": "public/media/thai-stamps/stamp-19.webp",
+      "bytes": 24666,
+      "sha256": "775ecaf01e51ff81ed1392bba15608bbb6dca84fc1eedf0524aa823fb33ff9bb"
+    },
+    {
+      "path": "public/media/thai-stamps/stamp-20.webp",
+      "bytes": 30336,
+      "sha256": "bc8c988a468ceb576d4d8a1252ed9d412e5ac50a1f8977c6c1c396906829d09e"
+    },
+    {
+      "path": "public/window.svg",
+      "bytes": 386,
+      "sha256": "decf1cf7bb22b5c99c4857cfcd5718ce5465c4454166317589c83fc73df74b66"
+    },
+    {
+      "path": "scripts/admin-api.mjs",
+      "bytes": 1607,
+      "sha256": "34ea5050886f0836cdbe6b1dc56941cdebeb92fd9813585a2d270a6ba28c21a9"
+    },
+    {
+      "path": "scripts/backup-local.ts",
+      "bytes": 492,
+      "sha256": "9cd9478b0f5005e9cb8031974bee8236192b5ba3217e2c1669f0adac28507fc1"
+    },
+    {
+      "path": "scripts/build-verified.sh",
+      "bytes": 661,
+      "sha256": "2ae5329ac860076070c9217a43106a15cb5ecf907a0f7baeb9ef903f76b53c68"
+    },
+    {
+      "path": "scripts/connector-preview/connector-preview-session.mjs",
+      "bytes": 6842,
+      "sha256": "45d5d0511a5b9689278b59570223017cdd3c4129431c6745e710c26323cac45c"
+    },
+    {
+      "path": "scripts/connector-preview/host-binding.mjs",
+      "bytes": 7793,
+      "sha256": "9e44ab6864133a5c82f834a5904ebb7d6104cb783c24efba3c0fe1a161182cea"
+    },
+    {
+      "path": "scripts/connector-preview/protocol.mjs",
+      "bytes": 1781,
+      "sha256": "111e062ebf08d3f180130f5bc3dcb3c1414c1d7be3c032c9d675a61c0c7513a8"
+    },
+    {
+      "path": "scripts/execution-profile.mjs",
+      "bytes": 624,
+      "sha256": "2e71116f4d2b70cff8bb70436f8dd5c709ec7ff62893424530f404e0193d3630"
+    },
+    {
+      "path": "scripts/install-ci.mjs",
+      "bytes": 1685,
+      "sha256": "4a5a92d60a08d0ba54effd8373da2da06284312c55b767287c68a0bec7200da7"
+    },
+    {
+      "path": "scripts/install-ci.sh",
+      "bytes": 6783,
+      "sha256": "10d8764a61be50351dc3496e13588270de7956f0aa5f1189c49cabb2d89fe5c0"
+    },
+    {
+      "path": "scripts/install-pnpm.sh",
+      "bytes": 9015,
+      "sha256": "a684c02c2b493dfbf262a66252a5cd36f81ca995a4024761728662ae63aa40c0"
+    },
+    {
+      "path": "scripts/normalize-catalog.py",
+      "bytes": 15994,
+      "sha256": "8ec7524f2b21997458b1c40abcdac4a96482692f5c4d21b8e9998e143796a357"
+    },
+    {
+      "path": "scripts/npm-install.mjs",
+      "bytes": 7025,
+      "sha256": "9715c6a32d1d4a0289ef6376a0e819c3b6a6416b8a9877733d9fb4339ce626b6"
+    },
+    {
+      "path": "scripts/pnpm-install.mjs",
+      "bytes": 10633,
+      "sha256": "a83164e344c1947053def83b546be8115deaa827314bbaead7afe6b6451c5cdf"
+    },
+    {
+      "path": "scripts/prepare-reviewed-import.ts",
+      "bytes": 1936,
+      "sha256": "fab574507a27a92dbdea479f5dd2d6e00edf831e2b31d7baadfbcd25e790eb6f"
+    },
+    {
+      "path": "scripts/publish-local.ts",
+      "bytes": 755,
+      "sha256": "78e783899d0fbae580d4a905c1f01e38ae3997017abcb5be510a5b9ee1515124"
+    },
+    {
+      "path": "scripts/render-demo-brochures.mjs",
+      "bytes": 1302,
+      "sha256": "94e305263345c6ae9293dba97a2ebd6b0298d3a328f8822785008c6903993a43"
+    },
+    {
+      "path": "scripts/restore-backup.ts",
+      "bytes": 1275,
+      "sha256": "d0c8e0570c60f3d318fa99b44473e03b10676e27ac7998b0522f4e392c4e3cd6"
+    },
+    {
+      "path": "scripts/run-framework.mjs",
+      "bytes": 993,
+      "sha256": "9bf9f41a29314cabe0238b8e9c540ec3f7b5a6adafc7c8fb6c3940722d061dca"
+    },
+    {
+      "path": "scripts/seed-local.ts",
+      "bytes": 1467,
+      "sha256": "d44513baf8a2001847a7a3d3b1c33dd4cf844953b654bafd639f338c6fd36302"
+    },
+    {
+      "path": "scripts/sites-env.mjs",
+      "bytes": 906,
+      "sha256": "5de99d6806b01f0ee0b941af3684d75dcf1afbbcff22cb95bfa2e584c5dafa88"
+    },
+    {
+      "path": "scripts/sites-env.sh",
+      "bytes": 1530,
+      "sha256": "df86ebfc27d2f00860036658e933ac0ddd7b5f6879aa5d51218f0863c7e1fb60"
+    },
+    {
+      "path": "scripts/subset-public-nimbus.py",
+      "bytes": 2878,
+      "sha256": "3b2316f2fa65b85e28e2ab287213bd3a3adba8fee7ca4a6063bde823eaa0f7f5"
+    },
+    {
+      "path": "scripts/test-bottle-discount-state.mjs",
+      "bytes": 5459,
+      "sha256": "48247de1f4075e8abad321a35b45623d13eacbcb3a4fce0816f750ff49d51393"
+    },
+    {
+      "path": "scripts/test-catalog-localization.cjs",
+      "bytes": 12752,
+      "sha256": "26f4df8d745b5e205d15d7a3068aa4936a0ccbd970b67b8877b713e45f882cea"
+    },
+    {
+      "path": "scripts/ts-loader.mjs",
+      "bytes": 222,
+      "sha256": "0a349a22b463af89ddd6747788c4302e5bc0fc7e17f9afa16be2d90e8d9d1567"
+    },
+    {
+      "path": "scripts/verify-catalog-localization-export.cjs",
+      "bytes": 4223,
+      "sha256": "e1c4eb163f789f2eddccb8d4a22a2aa4e51fbf78571dbc5b6f68a81b6798f2ba"
+    },
+    {
+      "path": "tests/acceptance.test.ts",
+      "bytes": 21322,
+      "sha256": "e2d96b96613a149b7ec8efb5c096a5ce7102716cb94b0138a2b8a6c3b2fccbd2"
+    },
+    {
+      "path": "tests/airport-marker.test.ts",
+      "bytes": 3029,
+      "sha256": "fad41df50d0ebcda88b464a047b3571c230c52a6527751812d15ec7786af9d73"
+    },
+    {
+      "path": "tests/airport-original-beach.test.ts",
+      "bytes": 1924,
+      "sha256": "8ef4661c2dab1d14cfa2cb2d468923e41b8ab2e25274a558cc8681521a3f2d97"
+    },
+    {
+      "path": "tests/airport-transparent-cutout.test.ts",
+      "bytes": 1052,
+      "sha256": "a4441ebd2e63af2ed28e7009a15c15d46ed7a8d82b97c8cca21b62dbd1588b5b"
+    },
+    {
+      "path": "tests/approved-eight-import.test.ts",
+      "bytes": 6259,
+      "sha256": "fe8df349e8533bce7c1ff6f6443cd199c445abfe624962d5b36579ad15c22889"
+    },
+    {
+      "path": "tests/approved-tour-cover.test.ts",
+      "bytes": 10801,
+      "sha256": "ae403df2f640c132f3ffb84df4fa0b8ab28b0775dd8f4e915ba673f5a2c611b6"
+    },
+    {
+      "path": "tests/archived-moved-variant.test.mjs",
+      "bytes": 2263,
+      "sha256": "528e3d8f115c0b1c432fe6ff8e4a645e4ad6fa419b3c586508d0ddcb2968a9f0"
+    },
+    {
+      "path": "tests/bottle-discount.test.ts",
+      "bytes": 2961,
+      "sha256": "a073b3015d2af369038acd08554c76e2c0a663be47836bf656ce91d2152f861c"
+    },
+    {
+      "path": "tests/card-presentation-fixture.ts",
+      "bytes": 4652,
+      "sha256": "6de0aced634256651a155a62b6f8f6a8f6f878fd43b9f9f3797e915e26c8d7ff"
+    },
+    {
+      "path": "tests/catalog-creation.test.ts",
+      "bytes": 15282,
+      "sha256": "6cb6e999bdc4fe92b20fcf44d67668a78d3b41e1bd25507341516fd1390a0064"
+    },
+    {
+      "path": "tests/catalog-editor.test.ts",
+      "bytes": 12143,
+      "sha256": "d10842f7c6bcd81ae3f46bae3e2238f234ed727ac207727b24e34113c8278e06"
+    },
+    {
+      "path": "tests/catalog-presentation-safety.test.ts",
+      "bytes": 3187,
+      "sha256": "9ebbd24dee196fdeb8f340794a1abff781acd574c5bf2e76635e851e877d0df9"
+    },
+    {
+      "path": "tests/catalog-visibility.test.ts",
+      "bytes": 12980,
+      "sha256": "fe58eab42ef5dc5293ef264ac1a9f4b511550a1d3af9fff172d092b4a10b4b91"
+    },
+    {
+      "path": "tests/child-card-prices.test.ts",
+      "bytes": 7773,
+      "sha256": "a76fc6d46a19b58f18974630c09fa9858c6129f8074e69ef8b59dd9c4c4d00b3"
+    },
+    {
+      "path": "tests/comic-tour-presentation.test.ts",
+      "bytes": 1600,
+      "sha256": "ddfcdcc56ab53d6a5a80366c70b8abda92ff3f759a0ab6af2d8032bfb397b63e"
+    },
+    {
+      "path": "tests/compact-card-presentation.test.ts",
+      "bytes": 4277,
+      "sha256": "b376b92a9cf3d06bf3099976005767e5a11a1d1d7ebfec63f1e5ecc00888ceb8"
+    },
+    {
+      "path": "tests/compact-tour.test.ts",
+      "bytes": 5684,
+      "sha256": "0ef20eb0df0e2f6ac6c18c9e88a12c8a65e779b0f3ed5a9faab04d4525f31615"
+    },
+    {
+      "path": "tests/components-i18n.cjs",
+      "bytes": 5615,
+      "sha256": "c2f077aeef5b310d3b8b9efe1ec11f423d49c33c5a24d85495cf8ec25e138cf7"
+    },
+    {
+      "path": "tests/contact-modal.cjs",
+      "bytes": 3083,
+      "sha256": "df5bdea69c35a368370d37cef573583708f35d1a5187064bf582335c894e4fb0"
+    },
+    {
+      "path": "tests/d1-adapter.ts",
+      "bytes": 1136,
+      "sha256": "215590e075fffc3037b76bf67b6e3bfc8b89799c56bcf2e1132e9da0111c3fd3"
+    },
+    {
+      "path": "tests/daily-workspace.test.mjs",
+      "bytes": 2292,
+      "sha256": "00e8159670b8810d8422021ff77228b5a36dcc679d6c707a610c7e989d94455d"
+    },
+    {
+      "path": "tests/demo-brochures.test.mjs",
+      "bytes": 2164,
+      "sha256": "6b7a5d100809b99301cf99b1beca0b327deea193aedbf2ee965420e8c6654f1e"
+    },
+    {
+      "path": "tests/detail-duplicate-removal.test.ts",
+      "bytes": 5456,
+      "sha256": "1a82f2c0524e387e2d8edfc78a2d3fafa383af9f29267bb44e6a1889598ad29b"
+    },
+    {
+      "path": "tests/editor-image-browser.html",
+      "bytes": 5045,
+      "sha256": "7a67bb50a3d2544f4db4f0ff17b86e07f8064c331bf4b22ebac754a01282dfe0"
+    },
+    {
+      "path": "tests/editor-image-browser.mjs",
+      "bytes": 1710,
+      "sha256": "40a776386d5d1e5c9605e29cb09b0c62ab532f7bf6cfe30e53b4c5729388f74a"
+    },
+    {
+      "path": "tests/editor-image.test.ts",
+      "bytes": 9834,
+      "sha256": "217b98525a6d9bdde5af67ff59ecc27639adea5562359c6e5f956844934b8d92"
+    },
+    {
+      "path": "tests/editorial-style.test.ts",
+      "bytes": 2987,
+      "sha256": "335a00412b9977641592ab58aa8dc1a4269f8243ae1076bc9a69194c1d928791"
+    },
+    {
+      "path": "tests/exact-art-directory.test.ts",
+      "bytes": 2901,
+      "sha256": "8c2a48f964007a5b1ad00b4645c307ce75563b8590bdd07e418cada479c0c66b"
+    },
+    {
+      "path": "tests/fishing-tour.test.ts",
+      "bytes": 2164,
+      "sha256": "f99c6cec063c4f793846ccea259f12d642f6bd7b217956c11cdc82a5ccac8abb"
+    },
+    {
+      "path": "tests/fixtures/public-catalog-generation3.json",
+      "bytes": 218168,
+      "sha256": "e6099d6b84477c108f7dd29ab43c899762a0ce41025a54d163140be1360c2d6c"
+    },
+    {
+      "path": "tests/fixtures/public-review-safety/jet-ski-south.json",
+      "bytes": 5336,
+      "sha256": "aba6d76b1e3766f583a8997cad5e904f7976ce0a7a8fba17de5f55caa8e0b507"
+    },
+    {
+      "path": "tests/fixtures/public-review-safety/khao-sok.json",
+      "bytes": 5436,
+      "sha256": "5c9656b3c9a81a29ff34c72065a9c2ccf438b3b949c31b48097a9f486348edcc"
+    },
+    {
+      "path": "tests/fixtures/public-review-safety/phi-phi-overnight.json",
+      "bytes": 3635,
+      "sha256": "ce92432943d39ee54159079b22446a9a316179c0aa3b494d867ec10f2cfff10f"
+    },
+    {
+      "path": "tests/fixtures/sanitized-import-packet.json",
+      "bytes": 6478,
+      "sha256": "d8c27017895b5e45ab02b27be5ed4a7bcfa31edb0f2fd391c5ed490b1c761df8"
+    },
+    {
+      "path": "tests/fixtures/vip-localized-content.json",
+      "bytes": 979,
+      "sha256": "a1aff04dee79483d73d5ee035027fa537c2884504eb6761b6bfffe265bd96613"
+    },
+    {
+      "path": "tests/hero-cleanup.test.ts",
+      "bytes": 1770,
+      "sha256": "47dd248268f1852c7120bdaa4060338e760f5bbd04e7795308be0efbe29072ba"
+    },
+    {
+      "path": "tests/home-catalog-consolidation.test.ts",
+      "bytes": 15148,
+      "sha256": "de45506110d3d8ab5bc860e8fa30eb3417d0df6f993239b5213afc170d62a067"
+    },
+    {
+      "path": "tests/home-comic-draft.test.ts",
+      "bytes": 3726,
+      "sha256": "abdedfff41d2ed56afb520b6f4e58844f1aa2dc82da4dbc9fe78c1a842127b22"
+    },
+    {
+      "path": "tests/home-routes.test.ts",
+      "bytes": 4359,
+      "sha256": "033f218f27f99e95867c57a0da913e6bd7234ab698cce5aca09d8b9cc569fcb9"
+    },
+    {
+      "path": "tests/i18n-admin.test.ts",
+      "bytes": 2568,
+      "sha256": "289079de7a880da5a00bb98239f4f880fc5f3a170752062ef86011613568bfab"
+    },
+    {
+      "path": "tests/i18n-catalog.test.ts",
+      "bytes": 3456,
+      "sha256": "afe618a97bafeb101cda449b9ce04c27d0da740a5ab58d28c03989cb95dfdc1d"
+    },
+    {
+      "path": "tests/i18n.test.ts",
+      "bytes": 3994,
+      "sha256": "32a7ddf50b08700a4992f1878d4422a17df17bfce3b0ea28c4151c3d3c4429d5"
+    },
+    {
+      "path": "tests/image-guidance.test.mjs",
+      "bytes": 3320,
+      "sha256": "337ef5735f81ab0dc84fb28ae1dc1b956759955d76a832a1d1332d3e20726859"
+    },
+    {
+      "path": "tests/inquiry-contacts.test.ts",
+      "bytes": 1800,
+      "sha256": "90ecd624daccdc2bc875bd9695db112a9a6e25a08ca8d1d06501ad93b2762c5c"
+    },
+    {
+      "path": "tests/khaosok-split-action.test.mjs",
+      "bytes": 10505,
+      "sha256": "f097e860b20059f8eaccb10b885ce0ef114f8fd99651e116877789c44cf1bb1b"
+    },
+    {
+      "path": "tests/khaosok-split-locales.test.mjs",
+      "bytes": 5729,
+      "sha256": "7301426cc7e9b7e67cac3bfe53b4d8cc4d64f613d6b7f822dab0cb0be359b6e1"
+    },
+    {
+      "path": "tests/khaosok-split-plan.test.mjs",
+      "bytes": 2339,
+      "sha256": "b9cf5dbb4ecaf276d8d0f519c836359fdc7dc423898a64345abfe967dff2d3b7"
+    },
+    {
+      "path": "tests/khaosok-split-ui-auth.test.mjs",
+      "bytes": 1054,
+      "sha256": "953336fad2194ee9c7f03ee41843b011c289388dc98c49bc1a2077a5850db259"
+    },
+    {
+      "path": "tests/landmark-list.test.ts",
+      "bytes": 3208,
+      "sha256": "4264e5e0e818976634401b71b90dd68592587570ed5e83bf78c7a1f2ca52c0b6"
+    },
+    {
+      "path": "tests/language-control.test.ts",
+      "bytes": 3214,
+      "sha256": "aab2211534f288fbaf52f95d8c3d3156c52ca1d03967457c628edc12c1ab54d6"
+    },
+    {
+      "path": "tests/map-boat-control.test.mjs",
+      "bytes": 2623,
+      "sha256": "0dd94fa759870414ec11baf752e45cdf1fd404f718ac8d5d1f2c5db5e608a81b"
+    },
+    {
+      "path": "tests/map-drag.test.ts",
+      "bytes": 2016,
+      "sha256": "48e63e6fbf5478dc13d21da5dde709d66c0ca8e4fd7fc4bfa3c2ec75b2528cf4"
+    },
+    {
+      "path": "tests/map-editor.test.ts",
+      "bytes": 3771,
+      "sha256": "64a3155200d5d8615445f15c42a5d6825556cbcaa8b2b442ba60217d47751aff"
+    },
+    {
+      "path": "tests/map-engine.test.ts",
+      "bytes": 15767,
+      "sha256": "5d090889f54874ef23902ee9007a6bc0e91d8fae84576de5c5c640f65a58c8db"
+    },
+    {
+      "path": "tests/map-poi.test.ts",
+      "bytes": 6680,
+      "sha256": "a5b3160805b7e40bdc914abd12da117b099b1c64596768b10b500bdf77e993b7"
+    },
+    {
+      "path": "tests/map-press.test.ts",
+      "bytes": 3916,
+      "sha256": "11329dd7f450844b3363c46aa891623f611b490569f1959c58c8ae2960f0db3b"
+    },
+    {
+      "path": "tests/map-shortcut-label.test.mjs",
+      "bytes": 3477,
+      "sha256": "01251f5969e626cb0906e13d682c58d5a258273f3038af8f833c0d8a4a4ecabb"
+    },
+    {
+      "path": "tests/map-size-persistence.test.mjs",
+      "bytes": 3678,
+      "sha256": "85f88e2d538619a7e160fefce37ac3fd98c9b0361b460d13fdef635749fd3d2f"
+    },
+    {
+      "path": "tests/party-tour.test.ts",
+      "bytes": 2620,
+      "sha256": "118ce12f1fd137959d020da461c1aa7c475f12a77d1ba9142fa4e49cc3270d2a"
+    },
+    {
+      "path": "tests/price-option-pointer-focus.test.ts",
+      "bytes": 1870,
+      "sha256": "e7a7a39e07c6e60aa8d78809851200e3ab0498c3b66a15d1b8833e747392c85d"
+    },
+    {
+      "path": "tests/price-options.test.ts",
+      "bytes": 6782,
+      "sha256": "56e4b7839fb37b3a60093d7921fb834aeb8cd9315a23c5cca38dd9cc3ddd132c"
+    },
+    {
+      "path": "tests/programme-editor.test.ts",
+      "bytes": 7483,
+      "sha256": "3de5ffaa3796ab38a332dceb426750f4ad2ae3ae4b72953139ee753d31f5c84b"
+    },
+    {
+      "path": "tests/reference-card-style.test.ts",
+      "bytes": 3062,
+      "sha256": "18bd3a8bff9951c19db356a3702cd9cd2d6eaa6c1782e0348ea3f49e52ab644a"
+    },
+    {
+      "path": "tests/reference-feed-catalogue.test.ts",
+      "bytes": 1781,
+      "sha256": "ef7514c2fe8f0b2267a099317f374eb213e7249264875c2d01e4097644832f83"
+    },
+    {
+      "path": "tests/reference-feed.test.ts",
+      "bytes": 14011,
+      "sha256": "24c1bd815759fa123eaa0a45622a7ef9fb9d33358d1a5e33b646f460e7e3a47d"
+    },
+    {
+      "path": "tests/reference-map.test.ts",
+      "bytes": 3572,
+      "sha256": "c31d62ab0aa07d41a68db3600ee14473d56d55c88f81bc95ada821cd81020e71"
+    },
+    {
+      "path": "tests/reference-navigation.test.ts",
+      "bytes": 14523,
+      "sha256": "5dbd2861026a5bd3e08ed2defabad0a529f5a57d3a4eaeb1cf3f52844501b077"
+    },
+    {
+      "path": "tests/release-ownership.test.py",
+      "bytes": 5763,
+      "sha256": "43d463b323fcb44c043bdec239b1e39e446fbdb05983e32121f890bf35c47da1"
+    },
+    {
+      "path": "tests/resolve-typescript.mjs",
+      "bytes": 223,
+      "sha256": "5baf57358d261bf9bd2dc6b2dabbdcae95968e4452e402ab1bac60373ef8079c"
+    },
+    {
+      "path": "tests/review-queue.test.ts",
+      "bytes": 2741,
+      "sha256": "f4aa516bf3eb5b6343a767a317842426407e92c3d176b6daa1e30870efdb3b4b"
+    },
+    {
+      "path": "tests/sanitized-candidate.test.ts",
+      "bytes": 9771,
+      "sha256": "33b4fa0650a82f61d41cb7763690bc22f373eb24d55154bf9e773a1239e1d421"
+    },
+    {
+      "path": "tests/selling-price-editor.test.mjs",
+      "bytes": 1470,
+      "sha256": "6b736157dd8de6a06a62efb5ad0fd7aaacf92ef345b1757a9fc2169853f59fdf"
+    },
+    {
+      "path": "tests/seo-foundation.test.ts",
+      "bytes": 25551,
+      "sha256": "ffb3c75affad44d2dfe0bcfafaea79d6738e84e61f2ad3bd3ae53fe93f50b5c4"
+    },
+    {
+      "path": "tests/simple-catalog-search.test.ts",
+      "bytes": 3843,
+      "sha256": "1040c31bfa078c6a9b45b2a120581bdc913e068877ee915009760a8600e1e48e"
+    },
+    {
+      "path": "tests/single-price-option.test.ts",
+      "bytes": 4487,
+      "sha256": "5a2fa0639583169b1455f4aca0a4e76c4343fdd13c356022954d818d01becd3a"
+    },
+    {
+      "path": "tests/small-bus-asset.test.mjs",
+      "bytes": 1372,
+      "sha256": "50bc30efa8eddd88a9f6d39a7866be93491b948856857ad5bad5b0761aa7f062"
+    },
+    {
+      "path": "tests/sunrise-tour.test.ts",
+      "bytes": 2169,
+      "sha256": "881d906a307a72176b73b345a329460c25498a134bf5b48d5a42214cc27953cd"
+    },
+    {
+      "path": "tests/supplemental-art-anchors.test.ts",
+      "bytes": 2644,
+      "sha256": "133a41d76636d57554cddbe6ee720371340b26aba762e15dc47eac829fa4dd0c"
+    },
+    {
+      "path": "tests/supplier-sort.test.ts",
+      "bytes": 4526,
+      "sha256": "6d6c828230424b5e312d530006d9c8e228fc5380cae9c757dd3c7c6c0cca9503"
+    },
+    {
+      "path": "tests/translation-batch.test.ts",
+      "bytes": 3115,
+      "sha256": "5ce606396335c5ff13296727535d7c3f650a2ff93c2ed9c16b22152adf4c5c9b"
+    },
+    {
+      "path": "tests/translation-confirmation.test.ts",
+      "bytes": 2140,
+      "sha256": "f9bfc357efd55cb77d783fd0ffb4ecc3398f71ad670fb582a860ab55d7fc5759"
+    },
+    {
+      "path": "tests/variant-owner-redirect.test.mjs",
+      "bytes": 2554,
+      "sha256": "79e93262eab24b1bc127994a93485f4a328784764c2d7ba0dffb6d62e27fead1"
+    },
+    {
+      "path": "tests/visibility-route-loader.mjs",
+      "bytes": 837,
+      "sha256": "1e2536f809b446029e708c0821ad3f824382f7090e38ea3202986383a8e0e188"
+    },
+    {
+      "path": "tsconfig.json",
+      "bytes": 800,
+      "sha256": "7199c6e4e400921e8049729840165a39f1476fa97901bed00239e7697bfe8da4"
+    },
+    {
+      "path": "vendor/shadcn-tailwind-4.13.0.LICENSE.md",
+      "bytes": 1063,
+      "sha256": "1564074e13439397221ffd522e2e504d56561994a23d371aa5e3ad43e4f5423f"
+    },
+    {
+      "path": "vendor/shadcn-tailwind-4.13.0.css",
+      "bytes": 16041,
+      "sha256": "bc7d83425702955b4cb67cb14ede9d603f9d912376d57a2d81d661094d2a782a"
+    },
+    {
+      "path": "vendor/urw-base35/NimbusRoman-Bold.otf",
+      "bytes": 100984,
+      "sha256": "e0ad81923bc6d85d5426f796217c87963ca1ae3c65e22c87a25b6c6353de299e"
+    },
+    {
+      "path": "vendor/urw-base35/NimbusRoman-Regular.otf",
+      "bytes": 98200,
+      "sha256": "fd41669443616a7ae890c42e53a58f47fa24a940fd1e367acaff665cf5b6e9d8"
+    },
+    {
+      "path": "vendor/urw-base35/NimbusSans-Regular.otf",
+      "bytes": 82264,
+      "sha256": "7c25be4d78155523080ab85b10277150657ff7dabbcad7037bdd536c9b6d0d08"
+    },
+    {
+      "path": "vendor/urw-base35/README.md",
+      "bytes": 1360,
+      "sha256": "8c46cde879714b56cb4518336ede0ff0d89fdc92db125724df32de71f0ee9406"
+    },
+    {
+      "path": "vendor/urw-base35/SOURCES.json",
+      "bytes": 1736,
+      "sha256": "295035ed89984b3f6be126571cb9cc565a2d1dfb06988f5b247bef26fd9eb991"
+    },
+    {
+      "path": "vite.config.ts",
+      "bytes": 3115,
+      "sha256": "6f6d890794fbe23f3e35cceb327f49d5977432a5aaf715e040a6408932da395b"
+    }
+  ]
+}

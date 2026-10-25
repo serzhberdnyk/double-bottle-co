@@ -1,0 +1,252 @@
+{
+  "status": "Requested public-export asset corrections complete; final independent review pending. Not a deployment or publication approval.",
+  "parent_candidate_commit": "97831dffe21e3161aa92487bcfcefcc4e7f7f866",
+  "decisions": [
+    {
+      "group": "Roboto Condensed Version 3.008",
+      "decision": "Apache-2.0 notice replaces incorrect OFL sidecar; both WOFF bytes unchanged",
+      "notice": "public/fonts/reference/RobotoCondensed-Apache-2.0.txt",
+      "source": "https://github.com/googlefonts/roboto-3-classic/blob/v3.008/LICENSE.txt",
+      "source_blob_sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64"
+    },
+    {
+      "group": "Nimbus subsets",
+      "decision": "Three exact OTF inputs, source mapping and standalone reproducible recipe included; original full AGPL text/font exception and all WOFF bytes unchanged",
+      "mapping": "vendor/urw-base35/SOURCES.json",
+      "recipe": "scripts/subset-public-nimbus.py",
+      "license": "public/fonts/LICENSE.txt"
+    },
+    {
+      "group": "Vercel template SVGs",
+      "paths": [
+        "public/file.svg",
+        "public/globe.svg",
+        "public/window.svg"
+      ],
+      "decision": "MIT notice included, matched to official Next.js notice and installed package. SVGs match official template payloads except local terminal newline. SVG bytes unchanged.",
+      "notice": "public/VERCEL-MIT-NOTICE.txt",
+      "source_blob_sha": "5948ee9bd0de5064423688a2967ab3111c2658ed"
+    },
+    {
+      "group": "Operator brochure JPEGs",
+      "paths": [
+        "public/media/atime-4pearl.jpg",
+        "public/media/atime-4pearl1.jpg",
+        "public/media/atime-cheo1d.jpg",
+        "public/media/atime-cheo1d1.jpg",
+        "public/media/atime-citytour.jpg",
+        "public/media/atime-citytour1.jpg",
+        "public/media/atime-khaolak.jpg",
+        "public/media/atime-khaolak1.jpg",
+        "public/media/atime-ohosky.jpg",
+        "public/media/atime-ohosky1.jpg",
+        "public/media/atime-ohovip.jpg",
+        "public/media/atime-ohovip1.jpg",
+        "public/media/atime-simila.jpg",
+        "public/media/atime-simila1.jpg",
+        "public/media/atime-ttoa.jpg",
+        "public/media/atime-ttoa1.jpg"
+      ],
+      "decision": "Original operator JPEGs excluded by replacing bytes at all sixteen existing paths with original code-generated clearly marked DEMO placeholders. No operator artwork or design used. URLs and structural stems preserved.",
+      "authorization": "Owner-authorized public-copy-only replacement and narrow truthful-label patch; no live or original archive changes.",
+      "source": "assets-source/demo-brochure-placeholder.svg",
+      "renderer": "scripts/render-demo-brochures.mjs",
+      "replacement_sha256": "054c46e454a6ee95fcf8181aaedfe1f4c28b883e73d839c204ac24c511405a59",
+      "replacement_bytes_each": 82448,
+      "visual_and_decode_review": "All 16 decode as 1000x1400 JPEG, no EXIF, identical pixels, clearly marked DEMO and not an offer.",
+      "original_bytes_scan": "Zero original brochure SHA256 matches among every planned public file, regardless of filename.",
+      "runtime_patch": {
+        "app/components/ApprovedBrochures.tsx": "Only label strings for RU/EN/TH changed to DEMO samples.",
+        "lib/server/approved-eight-import.ts": "Only new-product imageAlt and media license/attribution/sourceUrl literals changed. IDs, slugs, guards, rates, SQL and control flow unchanged."
+      }
+    },
+    {
+      "group": "User-supplied Cheow-Lan PNGs",
+      "paths": [
+        "public/media/reference/cheow-lan-user-map.png",
+        "public/media/reference/cheow-lan-user-minibus.png",
+        "public/media/reference/cheow-lan-minibus-small.png"
+      ],
+      "decision": "Retain unchanged. Provenance established by owner/reviewer instruction; no new Library identifiers or private material added."
+    },
+    {
+      "group": "CC photographs, OSM, Prata and own illustrations",
+      "decision": "Retain unchanged with existing attribution/license notices and owner/reviewer provenance. No new blanket license assigned to project code."
+    }
+  ],
+  "checks": {
+    "application_files_compared": 287,
+    "application_files_byte_identical": 285,
+    "application_files_changed": [
+      "app/components/ApprovedBrochures.tsx",
+      "lib/server/approved-eight-import.ts"
+    ],
+    "changed_application_scope": "Only ApprovedBrochures labels in RU/EN/TH; importer imageAlt literal, media license, attribution and sourceUrl literals. Exact replacement assertion passed.",
+    "ids_slugs_rates_guards_sql_importer_control_flow_unchanged": true,
+    "package_and_lock_unchanged": true,
+    "full_agpl_font_exception_unchanged": true,
+    "all_retained_woff_bytes_identical": true,
+    "woff_file_count": 6,
+    "user_cheowlan_pngs_unchanged": [
+      "public/media/reference/cheow-lan-user-map.png",
+      "public/media/reference/cheow-lan-user-minibus.png",
+      "public/media/reference/cheow-lan-minibus-small.png"
+    ],
+    "brochure_count": 16,
+    "all_brochures_decode_and_demo": true,
+    "old_brochure_hash_collisions": 0,
+    "nimbus_3_of_3_byte_reproducible": true,
+    "font_recipe_environment": {
+      "python": "3.12.14",
+      "fontTools": "4.61.1"
+    },
+    "final_build": "PASS; Linux bounded-worker build, exit 0",
+    "typescript": "PASS",
+    "synthetic_contract_tests": {
+      "pass": 11,
+      "fail": 0
+    },
+    "brochure_component_tests": {
+      "pass": 4,
+      "fail": 0
+    },
+    "localization_tests": {
+      "pass": 12,
+      "fail": 0
+    },
+    "release_ownership_tests": {
+      "pass": 8,
+      "fail": 0
+    },
+    "focused_lint": "PASS for changed component, new renderer and new/extended tests",
+    "importer_lint": {
+      "baseline_existing_errors": 1,
+      "baseline_existing_warnings": 1,
+      "new_findings": 0,
+      "identical_diagnostics": true,
+      "changed_literal_lines_new_findings": 0
+    },
+    "full_historical_suite": "NOT RUN on this final export; prior commit results retained as historical evidence only",
+    "new_runtime_dangling_references": 0
+  },
+  "official_byte_checks": [
+    {
+      "path": "public/fonts/reference/RobotoCondensed-Apache-2.0.txt",
+      "url": "https://github.com/googlefonts/roboto-3-classic/blob/v3.008/LICENSE.txt",
+      "github_blob_sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+      "local_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "git_blob_matches": true
+    },
+    {
+      "path": "public/VERCEL-MIT-NOTICE.txt",
+      "url": "https://github.com/vercel/next.js/blob/canary/license.md",
+      "github_blob_sha": "5948ee9bd0de5064423688a2967ab3111c2658ed",
+      "local_sha256": "ee765244e2d59f5234d474f62e0766fa0c8b99af967fdd4c0cb8dcb0c76ea224",
+      "git_blob_matches": true
+    },
+    {
+      "path": "public/file.svg",
+      "url": "https://github.com/vercel/next.js/blob/canary/packages/create-next-app/templates/app/ts/public/file.svg",
+      "github_blob_sha": "004145cddf3f9db91b57b9cb596683c8eb420862",
+      "local_sha256": "1e0ae4d1a1ddfa36752988647b731e4abf150c414d069ec83c96fb0aaeff0307",
+      "exact_bytes_match": false,
+      "only_terminal_newline_diff": true
+    },
+    {
+      "path": "public/globe.svg",
+      "url": "https://github.com/vercel/next.js/blob/canary/packages/create-next-app/templates/app/ts/public/globe.svg",
+      "github_blob_sha": "567f17b0d7c7fb662c16d4357dd74830caf2dccb",
+      "local_sha256": "d051a8c47936990a9085693d307bb7cea1bc1b6d7ed956bcbaacf674f4ec96b9",
+      "exact_bytes_match": false,
+      "only_terminal_newline_diff": true
+    },
+    {
+      "path": "public/window.svg",
+      "url": "https://github.com/vercel/next.js/blob/canary/packages/create-next-app/templates/app/ts/public/window.svg",
+      "github_blob_sha": "b2b2a44f6ebc70c450043c05a002e7a93ba5d651",
+      "local_sha256": "decf1cf7bb22b5c99c4857cfcd5718ce5465c4454166317589c83fc73df74b66",
+      "exact_bytes_match": false,
+      "only_terminal_newline_diff": true
+    }
+  ],
+  "font_versions": [
+    {
+      "path": "public/fonts/reference/prata.woff",
+      "sha256": "fd14d79e06e39756729991cf2c12a9a44f3a19100257d72c2536cc0c0747f74c",
+      "metadata": {
+        "1": [
+          "Prata"
+        ],
+        "5": [
+          "Version 2.000"
+        ],
+        "14": [
+          "http://scripts.sil.org/OFL"
+        ]
+      }
+    },
+    {
+      "path": "public/fonts/reference/roboto-condensed-regular.woff",
+      "sha256": "036d69c5a433faa032f6b5b924297ecdfffd7cac2f88a4887da05aafbc52c4f0",
+      "metadata": {
+        "1": [
+          "Roboto Condensed"
+        ],
+        "5": [
+          "Version 3.008; 2023"
+        ],
+        "14": [
+          "http://www.apache.org/licenses/LICENSE-2.0"
+        ]
+      }
+    },
+    {
+      "path": "public/fonts/reference/roboto-condensed-medium.woff",
+      "sha256": "c17a7cb911052803f8b91b27c41b4f13e92842d128df3c8ddfa16560555fa5ff",
+      "metadata": {
+        "1": [
+          "Roboto Condensed Medium"
+        ],
+        "5": [
+          "Version 3.008; 2023"
+        ],
+        "14": [
+          "http://www.apache.org/licenses/LICENSE-2.0"
+        ]
+      }
+    }
+  ],
+  "nimbus_reproduction": {
+    "fonts": [
+      {
+        "source": "vendor/urw-base35/NimbusSans-Regular.otf",
+        "output": "public/fonts/nimbus-sans-regular.woff",
+        "source_sha256": "7c25be4d78155523080ab85b10277150657ff7dabbcad7037bdd536c9b6d0d08",
+        "output_sha256": "2ab1836c8f906c5f7cdd612113f709c3a05c3e02a15077e8a290f98ac3ebe2bf",
+        "distributed_sha256": "2ab1836c8f906c5f7cdd612113f709c3a05c3e02a15077e8a290f98ac3ebe2bf",
+        "byte_identical": true
+      },
+      {
+        "source": "vendor/urw-base35/NimbusRoman-Regular.otf",
+        "output": "public/fonts/atlas-serif.woff",
+        "source_sha256": "fd41669443616a7ae890c42e53a58f47fa24a940fd1e367acaff665cf5b6e9d8",
+        "output_sha256": "e5b57573da205d10fa37a7c1728027c5aa605373cd75d92c2bf40bcf297d988b",
+        "distributed_sha256": "e5b57573da205d10fa37a7c1728027c5aa605373cd75d92c2bf40bcf297d988b",
+        "byte_identical": true
+      },
+      {
+        "source": "vendor/urw-base35/NimbusRoman-Bold.otf",
+        "output": "public/fonts/atlas-serif-bold.woff",
+        "source_sha256": "e0ad81923bc6d85d5426f796217c87963ca1ae3c65e22c87a25b6c6353de299e",
+        "output_sha256": "99390967f7674199a6a919a275747082d2e5e6b4972e559ecc4ed1846b2d82dc",
+        "distributed_sha256": "99390967f7674199a6a919a275747082d2e5e6b4972e559ecc4ed1846b2d82dc",
+        "byte_identical": true
+      }
+    ],
+    "all_byte_identical": true,
+    "environment": {
+      "python": "3.12.14",
+      "fontTools": "4.61.1"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+'use client';
+import {useState} from 'react';
+export function KhaosokSplitPanel(){
+ const [preview,setPreview]=useState<any>(null),[request,setRequest]=useState(''),[stage,setStage]=useState<any>(null),[readback,setReadback]=useState<any>(null),[confirm,setConfirm]=useState(false),[busy,setBusy]=useState(false),[message,setMessage]=useState('');
+ async function api(url:string,body?:unknown){const r=await fetch(url,body===undefined?undefined:{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)});const d=await r.json() as any;if(!r.ok)throw Error(d.error||'Не удалось выполнить действие');return d;}
+ async function run(action:()=>Promise<void>){setBusy(true);setMessage('');try{await action();}catch(e){setMessage((e as Error).message);}finally{setBusy(false);}}
+ function download(){const url=URL.createObjectURL(new Blob([JSON.stringify(preview)],{type:'application/json'}));const a=document.createElement('a');a.href=url;a.download='standard-vip-preview.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}
+ return <section className="admin-section" aria-label="Разделение Standard и VIP"><h2>Разделение Standard / VIP</h2><p>Разделяет программы, сохраняя цены, историю и скрытые варианты. Сначала проверьте актуальные данные, затем подготовьте запрос и черновик.</p>
+ <button disabled={busy} onClick={()=>run(async()=>{setPreview(await api('/api/admin/khaosok-split'));setStage(null);setReadback(null);setConfirm(false);})}>Проверить Standard/VIP</button>
+ {preview&&<><p>Generation: {preview.state.generation}. Вариантов: {preview.variantRows.length}. Цен: {preview.rateRows.length}.</p><button disabled={busy} onClick={download}>Скачать preview JSON</button>
+ <label>Проверенный request JSON<textarea rows={5} value={request} disabled={busy||!!stage} onChange={e=>{setRequest(e.target.value);setReadback(null);setConfirm(false);}}/></label>
+ <label>Загрузить request JSON<input type="file" accept="application/json,.json" disabled={busy||!!stage} onChange={e=>{const file=e.target.files?.[0];if(file)void run(async()=>{if(file.size>50000)throw Error('Запрос слишком большой');setRequest(await file.text());});e.target.value='';}}/></label>
+ <button disabled={busy||!request||!!stage} onClick={()=>run(async()=>{const body=JSON.parse(request);if(body.expectedEvidenceDigest!==preview.evidenceDigest)throw Error('Preview устарел или запрос не соответствует preview');setStage(await api('/api/admin/khaosok-split',body));setConfirm(false);})}>Создать черновик разделения</button></>}
+ {stage&&<><p>Черновик: {stage.releaseId}. Каталог ещё не изменён.</p><button disabled={busy} onClick={()=>run(async()=>{setReadback(await api('/api/admin/khaosok-split?draft='+encodeURIComponent(stage.releaseId)));setConfirm(false);})}>Проверить сохранённый черновик</button></>}
+ {readback&&<><p>Проверено: владельцы, цены, видимость и ревизии сохранены.</p><pre>{JSON.stringify(readback,null,2)}</pre><label><input type="checkbox" checked={confirm} disabled={busy} onChange={e=>setConfirm(e.target.checked)}/>Подтверждаю публикацию проверенного разделения без изменения цен</label><button disabled={busy||!confirm} onClick={()=>run(async()=>{const result=await api('/api/admin',{action:'publish',releaseId:readback.releaseId,generation:readback.expectedGeneration});setMessage('Разделение опубликовано. Generation: '+result.generation);setStage(null);setReadback(null);setPreview(null);setConfirm(false);})}>Опубликовать разделение Standard/VIP</button></>}
+ <p role="status">{message}</p></section>;
+}

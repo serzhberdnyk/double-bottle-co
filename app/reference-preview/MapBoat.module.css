@@ -1,0 +1,8 @@
+.trigger {position:absolute;z-index:5;transform:translate(-50%,-50%);display:grid;place-items:center;width:72px;height:56px;min-width:44px;min-height:44px;box-sizing:border-box;padding:0;border:0;border-radius:8px;background:transparent;color:#153552;cursor:pointer;pointer-events:auto;touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+.trigger picture {display:block;pointer-events:none}
+.trigger .artwork {display:block;width:64px;height:auto;max-width:none;object-fit:contain;pointer-events:none;user-select:none;filter:drop-shadow(0 2px 1px #062c3770);transform-origin:50% 60%}
+.label {position:absolute;top:100%;left:50%;transform:translateX(-50%);padding:4px 7px;border:1px solid #153552;background:#fff2d3;box-shadow:1px 1px 0 #153552;font:12px/1.2 ReferenceUI,Arial,sans-serif;white-space:nowrap;opacity:0;visibility:hidden;pointer-events:none}
+.trigger:hover,.trigger:focus-visible {z-index:7}
+.trigger:focus-visible {outline:3px solid #ffca48!important;outline-offset:2px}
+.trigger:focus-visible .label {opacity:1;visibility:visible}
+@media(hover:hover) and (pointer:fine) {.trigger:hover .label {opacity:1;visibility:visible}}

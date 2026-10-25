@@ -1,0 +1,568 @@
+{
+  "source_commit": "72f3aa5e4a4716d40c4023746f15d7b5481ef55f",
+  "file_count": 850,
+  "forbidden_paths": [],
+  "unplanned_source_mismatches": [],
+  "findings": [
+    {
+      "path": ".dev.vars.example",
+      "line": 1,
+      "rule": "email"
+    },
+    {
+      "path": ".env.example",
+      "line": 1,
+      "rule": "email"
+    },
+    {
+      "path": "build/sites-vite-plugin.ts",
+      "line": 9,
+      "rule": "email"
+    },
+    {
+      "path": "public/fonts/LICENSE.txt",
+      "line": 23,
+      "rule": "email"
+    },
+    {
+      "path": "public/fonts/LICENSE.txt",
+      "line": 24,
+      "rule": "email"
+    },
+    {
+      "path": "public/fonts/LICENSE.txt",
+      "line": 25,
+      "rule": "email"
+    },
+    {
+      "path": "public/fonts/LICENSE.txt",
+      "line": 26,
+      "rule": "email"
+    },
+    {
+      "path": "public/fonts/LICENSE.txt",
+      "line": 27,
+      "rule": "email"
+    },
+    {
+      "path": "public/fonts/LICENSE.txt",
+      "line": 28,
+      "rule": "email"
+    },
+    {
+      "path": "public/fonts/LICENSE.txt",
+      "line": 29,
+      "rule": "email"
+    },
+    {
+      "path": "public/fonts/LICENSE.txt",
+      "line": 30,
+      "rule": "email"
+    },
+    {
+      "path": "public/fonts/LICENSE.txt",
+      "line": 31,
+      "rule": "email"
+    },
+    {
+      "path": "public/fonts/LICENSE.txt",
+      "line": 32,
+      "rule": "email"
+    },
+    {
+      "path": "public/fonts/LICENSE.txt",
+      "line": 33,
+      "rule": "email"
+    },
+    {
+      "path": "public/fonts/LICENSE.txt",
+      "line": 34,
+      "rule": "email"
+    },
+    {
+      "path": "public/fonts/LICENSE.txt",
+      "line": 35,
+      "rule": "email"
+    },
+    {
+      "path": "public/fonts/LICENSE.txt",
+      "line": 36,
+      "rule": "email"
+    },
+    {
+      "path": "public/fonts/LICENSE.txt",
+      "line": 37,
+      "rule": "email"
+    },
+    {
+      "path": "public/fonts/LICENSE.txt",
+      "line": 38,
+      "rule": "email"
+    },
+    {
+      "path": "tests/acceptance.test.ts",
+      "line": 14,
+      "rule": "email"
+    },
+    {
+      "path": "tests/acceptance.test.ts",
+      "line": 78,
+      "rule": "email"
+    },
+    {
+      "path": "tests/approved-eight-import.test.ts",
+      "line": 30,
+      "rule": "email"
+    },
+    {
+      "path": "tests/approved-eight-import.test.ts",
+      "line": 32,
+      "rule": "email"
+    },
+    {
+      "path": "tests/catalog-creation.test.ts",
+      "line": 109,
+      "rule": "email"
+    },
+    {
+      "path": "tests/catalog-creation.test.ts",
+      "line": 111,
+      "rule": "email"
+    },
+    {
+      "path": "tests/catalog-creation.test.ts",
+      "line": 115,
+      "rule": "email"
+    },
+    {
+      "path": "tests/catalog-editor.test.ts",
+      "line": 19,
+      "rule": "email"
+    },
+    {
+      "path": "tests/catalog-editor.test.ts",
+      "line": 20,
+      "rule": "email"
+    },
+    {
+      "path": "tests/catalog-editor.test.ts",
+      "line": 21,
+      "rule": "email"
+    },
+    {
+      "path": "tests/catalog-editor.test.ts",
+      "line": 22,
+      "rule": "email"
+    },
+    {
+      "path": "tests/catalog-editor.test.ts",
+      "line": 23,
+      "rule": "email"
+    },
+    {
+      "path": "tests/catalog-visibility.test.ts",
+      "line": 97,
+      "rule": "email"
+    },
+    {
+      "path": "tests/catalog-visibility.test.ts",
+      "line": 100,
+      "rule": "email"
+    },
+    {
+      "path": "tests/catalog-visibility.test.ts",
+      "line": 108,
+      "rule": "email"
+    },
+    {
+      "path": "tests/i18n-admin.test.ts",
+      "line": 3,
+      "rule": "email"
+    },
+    {
+      "path": "tests/i18n-admin.test.ts",
+      "line": 4,
+      "rule": "email"
+    },
+    {
+      "path": "tests/khaosok-split-ui-auth.test.mjs",
+      "line": 4,
+      "rule": "email"
+    },
+    {
+      "path": "tests/khaosok-split-ui-auth.test.mjs",
+      "line": 6,
+      "rule": "email"
+    },
+    {
+      "path": "tests/khaosok-split-ui-auth.test.mjs",
+      "line": 10,
+      "rule": "email"
+    },
+    {
+      "path": "tests/price-options.test.ts",
+      "line": 55,
+      "rule": "email"
+    },
+    {
+      "path": "tests/seo-foundation.test.ts",
+      "line": 37,
+      "rule": "credential_url"
+    }
+  ],
+  "findings_review": {
+    "high_confidence_key_token_matches": 0,
+    "email": "Placeholder example envs, Sites local synthetic fixture, test addresses and public third-party font attribution. Independent reviewer should confirm classification.",
+    "credential_url": "tests/seo-foundation.test.ts line37 explicitly tests rejection of literal https://user:password@host; not a deployed credential",
+    "public_source_content": "Public UI copy, translations and built-in identifiers remain source code. D1 records and private supplier snapshots are not included."
+  },
+  "metadata": [
+    {
+      "path": "docs/identity/elysiam-avatar-world-queue-approved.png",
+      "type": "tEXt",
+      "bytes": 25,
+      "redistribution_review": "Required; original metadata preserved, raw metadata not printed"
+    },
+    {
+      "path": "docs/identity/elysiam-bangkok-queue-approved.png",
+      "type": "tEXt",
+      "bytes": 25,
+      "redistribution_review": "Required; original metadata preserved, raw metadata not printed"
+    },
+    {
+      "path": "docs/identity/elysiam-carnival-magic-queue-approved.png",
+      "type": "tEXt",
+      "bytes": 25,
+      "redistribution_review": "Required; original metadata preserved, raw metadata not printed"
+    },
+    {
+      "path": "docs/identity/elysiam-cheow-lan-day-queue-approved.png",
+      "type": "tEXt",
+      "bytes": 25,
+      "redistribution_review": "Required; original metadata preserved, raw metadata not printed"
+    },
+    {
+      "path": "docs/identity/elysiam-coral-rawai-queue-approved.png",
+      "type": "tEXt",
+      "bytes": 25,
+      "redistribution_review": "Required; original metadata preserved, raw metadata not printed"
+    },
+    {
+      "path": "docs/identity/elysiam-cover-placeholder.png",
+      "type": "tEXt",
+      "bytes": 25,
+      "redistribution_review": "Required; original metadata preserved, raw metadata not printed"
+    },
+    {
+      "path": "docs/identity/elysiam-elephant-beach-mantra-spa.png",
+      "type": "tEXt",
+      "bytes": 25,
+      "redistribution_review": "Required; original metadata preserved, raw metadata not printed"
+    },
+    {
+      "path": "docs/identity/elysiam-elephant-spa-option-b-approved.png",
+      "type": "tEXt",
+      "bytes": 25,
+      "redistribution_review": "Required; original metadata preserved, raw metadata not printed"
+    },
+    {
+      "path": "docs/identity/elysiam-elephant-spa-queue-approved.png",
+      "type": "tEXt",
+      "bytes": 25,
+      "redistribution_review": "Required; original metadata preserved, raw metadata not printed"
+    },
+    {
+      "path": "docs/identity/elysiam-eleven-islands-approved.png",
+      "type": "tEXt",
+      "bytes": 25,
+      "redistribution_review": "Required; original metadata preserved, raw metadata not printed"
+    },
+    {
+      "path": "docs/identity/elysiam-fantasea-queue-approved.png",
+      "type": "tEXt",
+      "bytes": 25,
+      "redistribution_review": "Required; original metadata preserved, raw metadata not printed"
+    },
+    {
+      "path": "docs/identity/elysiam-five-pearls-queue-approved.png",
+      "type": "tEXt",
+      "bytes": 25,
+      "redistribution_review": "Required; original metadata preserved, raw metadata not printed"
+    },
+    {
+      "path": "docs/identity/elysiam-glowing-plankton-queue-approved.png",
+      "type": "tEXt",
+      "bytes": 25,
+      "redistribution_review": "Required; original metadata preserved, raw metadata not printed"
+    },
+    {
+      "path": "docs/identity/elysiam-james-bond-approved.png",
+      "type": "tEXt",
+      "bytes": 25,
+      "redistribution_review": "Required; original metadata preserved, raw metadata not printed"
+    },
+    {
+      "path": "docs/identity/elysiam-james-bond-cave-queue-approved.png",
+      "type": "tEXt",
+      "bytes": 25,
+      "redistribution_review": "Required; original metadata preserved, raw metadata not printed"
+    },
+    {
+      "path": "docs/identity/elysiam-james-bond-yao-queue-approved.png",
+      "type": "tEXt",
+      "bytes": 25,
+      "redistribution_review": "Required; original metadata preserved, raw metadata not printed"
+    },
+    {
+      "path": "docs/identity/elysiam-jet-ski-north-queue-approved.png",
+      "type": "tEXt",
+      "bytes": 25,
+      "redistribution_review": "Required; original metadata preserved, raw metadata not printed"
+    },
+    {
+      "path": "docs/identity/elysiam-jet-ski-south-approved-v2.png",
+      "type": "tEXt",
+      "bytes": 25,
+      "redistribution_review": "Required; original metadata preserved, raw metadata not printed"
+    },
+    {
+      "path": "docs/identity/elysiam-jet-ski-south.png",
+      "type": "tEXt",
+      "bytes": 25,
+      "redistribution_review": "Required; original metadata preserved, raw metadata not printed"
+    },
+    {
+      "path": "docs/identity/elysiam-khao-lak-safari-queue-approved.png",
+      "type": "tEXt",
+      "bytes": 25,
+      "redistribution_review": "Required; original metadata preserved, raw metadata not printed"
+    },
+    {
+      "path": "docs/identity/elysiam-khao-sok-approved-v2.png",
+      "type": "tEXt",
+      "bytes": 25,
+      "redistribution_review": "Required; original metadata preserved, raw metadata not printed"
+    },
+    {
+      "path": "docs/identity/elysiam-khao-sok-cheow-lan.png",
+      "type": "tEXt",
+      "bytes": 25,
+      "redistribution_review": "Required; original metadata preserved, raw metadata not printed"
+    },
+    {
+      "path": "docs/identity/elysiam-krabi-catamaran-queue-approved.png",
+      "type": "tEXt",
+      "bytes": 25,
+      "redistribution_review": "Required; original metadata preserved, raw metadata not printed"
+    },
+    {
+      "path": "docs/identity/elysiam-krabi-sunset-approved.png",
+      "type": "tEXt",
+      "bytes": 25,
+      "redistribution_review": "Required; original metadata preserved, raw metadata not printed"
+    },
+    {
+      "path": "docs/identity/elysiam-kuala-lumpur-queue-approved.png",
+      "type": "tEXt",
+      "bytes": 25,
+      "redistribution_review": "Required; original metadata preserved, raw metadata not printed"
+    },
+    {
+      "path": "docs/identity/elysiam-phang-nga-skywalk-queue-approved.png",
+      "type": "tEXt",
+      "bytes": 25,
+      "redistribution_review": "Required; original metadata preserved, raw metadata not printed"
+    },
+    {
+      "path": "docs/identity/elysiam-phi-phi-approved.png",
+      "type": "tEXt",
+      "bytes": 25,
+      "redistribution_review": "Required; original metadata preserved, raw metadata not printed"
+    },
+    {
+      "path": "docs/identity/elysiam-phi-phi-bamboo-queue-approved.png",
+      "type": "tEXt",
+      "bytes": 25,
+      "redistribution_review": "Required; original metadata preserved, raw metadata not printed"
+    },
+    {
+      "path": "docs/identity/elysiam-phi-phi-fishing-approved.png",
+      "type": "tEXt",
+      "bytes": 25,
+      "redistribution_review": "Required; original metadata preserved, raw metadata not printed"
+    },
+    {
+      "path": "docs/identity/elysiam-phi-phi-four-islands-queue-approved.png",
+      "type": "tEXt",
+      "bytes": 25,
+      "redistribution_review": "Required; original metadata preserved, raw metadata not printed"
+    },
+    {
+      "path": "docs/identity/elysiam-phi-phi-khai-maiton-queue-approved.png",
+      "type": "tEXt",
+      "bytes": 25,
+      "redistribution_review": "Required; original metadata preserved, raw metadata not printed"
+    },
+    {
+      "path": "docs/identity/elysiam-phi-phi-khai-queue-approved.png",
+      "type": "tEXt",
+      "bytes": 25,
+      "redistribution_review": "Required; original metadata preserved, raw metadata not printed"
+    },
+    {
+      "path": "docs/identity/elysiam-phi-phi-lazy-queue-approved.png",
+      "type": "tEXt",
+      "bytes": 25,
+      "redistribution_review": "Required; original metadata preserved, raw metadata not printed"
+    },
+    {
+      "path": "docs/identity/elysiam-phi-phi-overnight-queue-approved.png",
+      "type": "tEXt",
+      "bytes": 25,
+      "redistribution_review": "Required; original metadata preserved, raw metadata not printed"
+    },
+    {
+      "path": "docs/identity/elysiam-phi-phi-racha-party-approved.png",
+      "type": "tEXt",
+      "bytes": 25,
+      "redistribution_review": "Required; original metadata preserved, raw metadata not printed"
+    },
+    {
+      "path": "docs/identity/elysiam-phi-phi-sunrise-approved-v2.png",
+      "type": "tEXt",
+      "bytes": 25,
+      "redistribution_review": "Required; original metadata preserved, raw metadata not printed"
+    },
+    {
+      "path": "docs/identity/elysiam-phi-phi-sunset-queue-approved.png",
+      "type": "tEXt",
+      "bytes": 25,
+      "redistribution_review": "Required; original metadata preserved, raw metadata not printed"
+    },
+    {
+      "path": "docs/identity/elysiam-phuket-city-queue-approved.png",
+      "type": "tEXt",
+      "bytes": 25,
+      "redistribution_review": "Required; original metadata preserved, raw metadata not printed"
+    },
+    {
+      "path": "docs/identity/elysiam-racha-coral-approved.png",
+      "type": "tEXt",
+      "bytes": 25,
+      "redistribution_review": "Required; original metadata preserved, raw metadata not printed"
+    },
+    {
+      "path": "docs/identity/elysiam-racha-coral-maiton-queue-approved.png",
+      "type": "tEXt",
+      "bytes": 25,
+      "redistribution_review": "Required; original metadata preserved, raw metadata not printed"
+    },
+    {
+      "path": "docs/identity/elysiam-racha-sunrise-queue-approved.png",
+      "type": "tEXt",
+      "bytes": 25,
+      "redistribution_review": "Required; original metadata preserved, raw metadata not printed"
+    },
+    {
+      "path": "docs/identity/elysiam-rafting-atv-approved-v2.png",
+      "type": "tEXt",
+      "bytes": 25,
+      "redistribution_review": "Required; original metadata preserved, raw metadata not printed"
+    },
+    {
+      "path": "docs/identity/elysiam-rafting-atv.png",
+      "type": "tEXt",
+      "bytes": 25,
+      "redistribution_review": "Required; original metadata preserved, raw metadata not printed"
+    },
+    {
+      "path": "docs/identity/elysiam-sea-fishing-queue-approved.png",
+      "type": "tEXt",
+      "bytes": 25,
+      "redistribution_review": "Required; original metadata preserved, raw metadata not printed"
+    },
+    {
+      "path": "docs/identity/elysiam-similan-diving-queue-approved.png",
+      "type": "tEXt",
+      "bytes": 25,
+      "redistribution_review": "Required; original metadata preserved, raw metadata not printed"
+    },
+    {
+      "path": "docs/identity/elysiam-similan-early.png",
+      "type": "tEXt",
+      "bytes": 25,
+      "redistribution_review": "Required; original metadata preserved, raw metadata not printed"
+    },
+    {
+      "path": "docs/identity/elysiam-similan-lazy-queue-approved.png",
+      "type": "tEXt",
+      "bytes": 25,
+      "redistribution_review": "Required; original metadata preserved, raw metadata not printed"
+    },
+    {
+      "path": "docs/identity/elysiam-similans-approved-v2.png",
+      "type": "tEXt",
+      "bytes": 25,
+      "redistribution_review": "Required; original metadata preserved, raw metadata not printed"
+    },
+    {
+      "path": "docs/identity/elysiam-singapore-queue-approved.png",
+      "type": "tEXt",
+      "bytes": 25,
+      "redistribution_review": "Required; original metadata preserved, raw metadata not printed"
+    },
+    {
+      "path": "docs/identity/elysiam-sunrise-phang-nga-queue-approved.png",
+      "type": "tEXt",
+      "bytes": 25,
+      "redistribution_review": "Required; original metadata preserved, raw metadata not printed"
+    }
+  ],
+  "scan_limits": "Pattern-based scan cannot prove absence of all secrets; PNG metadata checked, other binary formats are not a full forensic metadata audit. Original binary content and rights require independent review. No D1 or external services accessed.",
+  "existing_source_verification": {
+    "source_commit": "72f3aa5e4a4716d40c4023746f15d7b5481ef55f",
+    "focused_tests": 2,
+    "typecheck": "PASS",
+    "cloud_build": "PASS",
+    "deployment": "Sites105 succeeded 2026-10-25T03:53:05.511152Z"
+  },
+  "public_promotion": "Final independent review pending. No public upload, push or deployment performed. No blanket project OSS license assigned.",
+  "additional_review": {
+    "private_screenshot_excluded": "docs/qa/elysiam-form-success.jpg",
+    "png_software_marker_groups": [
+      {
+        "keyword": "Software",
+        "category": "software_marker",
+        "value_bytes": 16,
+        "value_sha256": "5ecb94062b007e846cfab7c6a74e06cdbd58bf93621d65d20a9ca37d1327424b",
+        "count": 50
+      }
+    ],
+    "cabx_pngs": 5,
+    "cabx_classification": "Standard generation/signing provenance with public issuer metadata; bounded inspection only.",
+    "baseline_findings_reviewed": 41,
+    "new_test_addresses": "Reserved example.invalid domain only. No external requests sent.",
+    "no_claim_of_complete_secret_absence": true
+  },
+  "license_followup": "Versioned notices and corresponding font sources/recipe added; sixteen operator images replaced with original DEMO placeholders. Narrow truthful label/alt/media metadata patch only; guards and importer flow unchanged. See ASSET-DECISIONS.json.",
+  "prior_candidate_verification": {
+    "build": "PASS in supported Linux",
+    "typecheck": "PASS",
+    "synthetic_tests": "10 PASS",
+    "localization_tests": "12 PASS",
+    "python_ownership_tests": "8 PASS",
+    "full_historical_tests": "314 executed, 227 PASS, 87 FAIL. See PUBLIC-CANDIDATE-VALIDATION.json.",
+    "commit": "97831dffe21e3161aa92487bcfcefcc4e7f7f866",
+    "historical_only": true
+  },
+  "fresh_verification": {
+    "build": "PASS",
+    "typecheck": "PASS",
+    "synthetic_tests": "11 PASS",
+    "brochure_component_tests": "4 PASS",
+    "localization_tests": "12 PASS",
+    "python_ownership_tests": "8 PASS",
+    "focused_lint": "PASS for changed component, renderer and tests; importer diagnostics unchanged (one existing error, one warning)",
+    "full_historical_tests": "NOT RUN for this final export; prior 314/227/87 is historical only."
+  }
+}

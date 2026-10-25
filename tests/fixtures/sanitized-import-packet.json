@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 1,
+  "complete": true,
+  "source": "Synthetic independent validation only",
+  "checkedAt": "2026-01-01",
+  "products": [
+    {
+      "id": "p_e340acb314a559f4b49a6e22",
+      "slug": "synthetic-existing-1",
+      "title": "Synthetic existing 1",
+      "description": "Synthetic description",
+      "category": "sea",
+      "image": null,
+      "imageAlt": "",
+      "status": "on_request",
+      "featuredRank": 0,
+      "publicationStatus": "published",
+      "variants": [
+        {
+          "id": "v_71922332029552a0bbe613cf",
+          "revisionId": "",
+          "name": "Synthetic variant",
+          "description": "Synthetic description",
+          "duration": "1 day",
+          "days": 1,
+          "transport": "Synthetic transport",
+          "format": "Synthetic group",
+          "status": "on_request",
+          "stops": [],
+          "itinerary": [
+            "Synthetic itinerary"
+          ],
+          "includes": [],
+          "extras": [],
+          "conditions": [],
+          "earliestDate": null,
+          "rates": [
+            {
+              "id": "v_71922332029552a0bbe613cf_adult",
+              "amountMinor": 10000,
+              "currency": "THB",
+              "unit": "person",
+              "audience": "adult",
+              "validFrom": "2026-01-01",
+              "validUntil": null,
+              "conditions": "Synthetic rate",
+              "supplements": []
+            }
+          ]
+        },
+        {
+          "id": "v_00d8c531ec5b54d09dcbad0e",
+          "revisionId": "",
+          "name": "Synthetic variant",
+          "description": "Synthetic description",
+          "duration": "1 day",
+          "days": 1,
+          "transport": "Synthetic transport",
+          "format": "Synthetic group",
+          "status": "on_request",
+          "stops": [],
+          "itinerary": [
+            "Synthetic itinerary"
+          ],
+          "includes": [],
+          "extras": [],
+          "conditions": [],
+          "earliestDate": null,
+          "rates": [
+            {
+              "id": "v_00d8c531ec5b54d09dcbad0e_adult",
+              "amountMinor": 10000,
+              "currency": "THB",
+              "unit": "person",
+              "audience": "adult",
+              "validFrom": "2026-01-01",
+              "validUntil": null,
+              "conditions": "Synthetic rate",
+              "supplements": []
+            }
+          ]
+        }
+      ],
+      "provenance": {
+        "sourceId": "synthetic-source-1",
+        "source": "Synthetic source",
+        "checkedAt": "2026-01-01",
+        "hash": "dae67da4e16569a875626fbcd81c26b389173bf687059bf27cdd67e8e1dc5081"
+      },
+      "supplier": {
+        "id": "supplier_ea45eb0bd2095e91abc386cf",
+        "name": "Synthetic supplier",
+        "offerId": "synthetic-offer-1",
+        "raw": {
+          "synthetic": true
+        }
+      }
+    },
+    {
+      "id": "p_1cdc3b7fc1625ada979ad010",
+      "slug": "synthetic-existing-2",
+      "title": "Synthetic existing 2",
+      "description": "Synthetic description",
+      "category": "sea",
+      "image": null,
+      "imageAlt": "",
+      "status": "on_request",
+      "featuredRank": 1,
+      "publicationStatus": "published",
+      "variants": [
+        {
+          "id": "v_2e6aed6250e85a4f9ec6d3c6",
+          "revisionId": "",
+          "name": "Synthetic variant",
+          "description": "Synthetic description",
+          "duration": "1 day",
+          "days": 1,
+          "transport": "Synthetic transport",
+          "format": "Synthetic group",
+          "status": "on_request",
+          "stops": [],
+          "itinerary": [
+            "Synthetic itinerary"
+          ],
+          "includes": [],
+          "extras": [],
+          "conditions": [],
+          "earliestDate": null,
+          "rates": [
+            {
+              "id": "v_2e6aed6250e85a4f9ec6d3c6_adult",
+              "amountMinor": 10000,
+              "currency": "THB",
+              "unit": "person",
+              "audience": "adult",
+              "validFrom": "2026-01-01",
+              "validUntil": null,
+              "conditions": "Synthetic rate",
+              "supplements": []
+            }
+          ]
+        }
+      ],
+      "provenance": {
+        "sourceId": "synthetic-source-2",
+        "source": "Synthetic source",
+        "checkedAt": "2026-01-01",
+        "hash": "8a83d94d44b74afe4f81305048bf6e5b3f5f5ba22a2947652fdcf5b83290fc8c"
+      },
+      "supplier": {
+        "id": "supplier_ea45eb0bd2095e91abc386cf",
+        "name": "Synthetic supplier",
+        "offerId": "synthetic-offer-2",
+        "raw": {
+          "synthetic": true
+        }
+      }
+    },
+    {
+      "id": "p_dd70e1051d36596481a18438",
+      "slug": "synthetic-existing-3",
+      "title": "Synthetic existing 3",
+      "description": "Synthetic description",
+      "category": "sea",
+      "image": null,
+      "imageAlt": "",
+      "status": "on_request",
+      "featuredRank": 2,
+      "publicationStatus": "published",
+      "variants": [
+        {
+          "id": "v_8b58f2a25672504db4722f01",
+          "revisionId": "",
+          "name": "Synthetic variant",
+          "description": "Synthetic description",
+          "duration": "1 day",
+          "days": 1,
+          "transport": "Synthetic transport",
+          "format": "Synthetic group",
+          "status": "on_request",
+          "stops": [],
+          "itinerary": [
+            "Synthetic itinerary"
+          ],
+          "includes": [],
+          "extras": [],
+          "conditions": [],
+          "earliestDate": null,
+          "rates": [
+            {
+              "id": "v_8b58f2a25672504db4722f01_adult",
+              "amountMinor": 10000,
+              "currency": "THB",
+              "unit": "person",
+              "audience": "adult",
+              "validFrom": "2026-01-01",
+              "validUntil": null,
+              "conditions": "Synthetic rate",
+              "supplements": []
+            }
+          ]
+        }
+      ],
+      "provenance": {
+        "sourceId": "synthetic-source-3",
+        "source": "Synthetic source",
+        "checkedAt": "2026-01-01",
+        "hash": "aa2f4fa70b74a4b8851e3247959596141665da2a6bb16b4d52db4fc81653a707"
+      },
+      "supplier": {
+        "id": "supplier_ea45eb0bd2095e91abc386cf",
+        "name": "Synthetic supplier",
+        "offerId": "synthetic-offer-3",
+        "raw": {
+          "synthetic": true
+        }
+      }
+    }
+  ],
+  "destinations": [],
+  "media": []
+}

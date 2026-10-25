@@ -1,0 +1,21 @@
+Reference typography provenance and license mapping
+
+Prata 400: prata.woff, embedded Version 2.000.
+License: SIL Open Font License 1.1, reproduced in Prata-OFL.txt.
+Upstream: https://github.com/google/fonts/tree/main/ofl/prata
+
+Roboto Condensed 400/500: roboto-condensed-regular.woff and
+roboto-condensed-medium.woff, both embedded Version 3.008; 2023.
+The embedded license URL is http://www.apache.org/licenses/LICENSE-2.0.
+License: Apache License 2.0, reproduced without modification in
+RobotoCondensed-Apache-2.0.txt from the version-matching upstream tag:
+https://github.com/googlefonts/roboto-3-classic/blob/v3.008/LICENSE.txt
+Upstream license Git blob: 261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64.
+The earlier RobotoCondensed-OFL.txt and joint OFL assertion were incorrect for
+these versioned binaries and have been removed. The font bytes and embedded
+copyright notices are unchanged.
+
+Historical acquisition note: downloaded via Google Fonts CSS API on 2026-10-07
+and losslessly packaged as WOFF. The license correction does not claim a new
+download or alter the files. Both families retain Cyrillic and Latin coverage.
+No synthetic weights were introduced.

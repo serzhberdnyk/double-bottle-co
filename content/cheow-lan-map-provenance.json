@@ -1,0 +1,26 @@
+[
+  {
+    "path": "/media/reference/cheow-lan-user-map.png",
+    "sourceType": "user-supplied conversation attachment",
+    "originalFilename": "CheoLan lake.png",
+    "dimensions": [
+      1692,
+      930
+    ],
+    "sha256": "fe31fce446d37235f60d4848cb45f9bf5d77e5c36b1b7bc5942e3ce4fa5b70c7",
+    "modifications": "None; original bytes retained. Display sizing only.",
+    "use": "Full illustrated map on its separate location page"
+  },
+  {
+    "path": "/media/reference/cheow-lan-user-minibus.png",
+    "sourceType": "user-supplied conversation attachment",
+    "originalFilename": "ChatGPT Image 1 Oct 2026, 12_13_59.png",
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "sha256": "9b2c0a6431b867f4da9b6d185d3e2230e1a87456d510e58c310181570c8473a9",
+    "modifications": "No raster modifications; CSS displays only the upper view of the supplied transparent three-view sheet.",
+    "use": "Selected minibus shortcut; only the large upper view is displayed with CSS sprite clipping"
+  }
+]

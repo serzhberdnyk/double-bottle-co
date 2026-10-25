@@ -1,0 +1,352 @@
+{
+  "source_commit": "72f3aa5e4a4716d40c4023746f15d7b5481ef55f",
+  "source_version": "Double Bottle v0.8.1 / Sites105",
+  "export_kind": "Single source snapshot with no Git history, deployment identity or runtime data",
+  "excluded": [
+    {
+      "path": "README.md",
+      "reason": "Historical operational documentation replaced with export README"
+    },
+    {
+      "path": "docs/ACCEPTANCE.md",
+      "reason": "Historical operational documentation replaced with export README"
+    },
+    {
+      "path": "docs/COMPACT-TOUR-DETAIL.md",
+      "reason": "Historical operational documentation replaced with export README"
+    },
+    {
+      "path": "docs/PALM-INTERACTION-REFERENCE.md",
+      "reason": "Historical operational documentation replaced with export README"
+    },
+    {
+      "path": "docs/PRICE-OPTIONS.md",
+      "reason": "Historical operational documentation replaced with export README"
+    },
+    {
+      "path": "docs/REFERENCE-PREVIEW.md",
+      "reason": "Historical operational documentation replaced with export README"
+    },
+    {
+      "path": "docs/REFERENCE_MAP.md",
+      "reason": "Historical operational documentation replaced with export README"
+    },
+    {
+      "path": "docs/SEO-FOUNDATION.md",
+      "reason": "Historical operational documentation replaced with export README"
+    },
+    {
+      "path": "docs/hosted-verification.json",
+      "reason": "Historical operational documentation replaced with export README"
+    },
+    {
+      "path": "docs/identity/APPROVED-VISUAL-DIRECTION.md",
+      "reason": "Historical operational documentation replaced with export README"
+    },
+    {
+      "path": "docs/identity/READY-COVER-QUEUE.md",
+      "reason": "Historical operational documentation replaced with export README"
+    },
+    {
+      "path": "docs/identity/cover-manifest.json",
+      "reason": "Historical operational documentation replaced with export README"
+    },
+    {
+      "path": "docs/identity/doublebottle/manifest.json",
+      "reason": "Historical operational documentation replaced with export README"
+    },
+    {
+      "path": "docs/identity/review-queue-publication-20261012.json",
+      "reason": "Historical operational documentation replaced with export README"
+    },
+    {
+      "path": "docs/map-calibration/PHUKET-ART-ANCHORS.md",
+      "reason": "Historical operational documentation replaced with export README"
+    },
+    {
+      "path": "docs/map-calibration/phuket-poi-controls.json",
+      "reason": "Historical operational documentation replaced with export README"
+    },
+    {
+      "path": "private-import/initial-catalog.json",
+      "reason": "Private source/catalog/supplier snapshot"
+    },
+    {
+      "path": "private-import/master-2026-10-04-snapshot.json",
+      "reason": "Private source/catalog/supplier snapshot"
+    },
+    {
+      "path": "private-import/project-media.json",
+      "reason": "Private source/catalog/supplier snapshot"
+    },
+    {
+      "path": "private-import/reviewed-catalog-2026-10-04.json",
+      "reason": "Private source/catalog/supplier snapshot"
+    },
+    {
+      "path": "private-import/reviewed-changes-2026-10-04.json",
+      "reason": "Private source/catalog/supplier snapshot"
+    },
+    {
+      "path": "docs/qa/elysiam-form-success.jpg",
+      "reason": "Operational screenshot with enquiry reference of unverified synthetic provenance. Revised snapshot only; original unchanged."
+    }
+  ],
+  "transformed": [
+    {
+      "path": ".openai/hosting.json",
+      "source_sha256": "c1edfcef84c3e5010937988e29f60d4ed3b25e04db95f7e38a99490e0838fe7a",
+      "candidate_sha256": "7476941f14b52aedd00b7e706e628173992ad473f282399eccfbd244f8b97637",
+      "bytes": 53,
+      "reason": "Live Site identity removed; not bound to any production Site"
+    },
+    {
+      "path": "content/approved-eight/copy.json",
+      "source_sha256": "96b1ba2a9bfd2f38287162b510b4391bc119a990ac58329246d1c02e43db68d3",
+      "candidate_sha256": "b09b970b993fd7e07e7613cf2d7ef0ba67f9cc2f1769161e97d130de4f01fae1",
+      "bytes": 27,
+      "reason": "Production translation snapshot replaced by empty local dictionaries"
+    },
+    {
+      "path": "content/approved-eight/programs.json",
+      "source_sha256": "47268695c7f69a6e1ef365b8eb6efb1c679e545282d746d9bcc20c65aa6fba5a",
+      "candidate_sha256": "4473ac5958d1814fc17e5b498e47923073b3dead1f8a75cc2bd834ff9470e50b",
+      "bytes": 13215,
+      "reason": "Real catalog/fixture contents replaced by deterministic synthetic values; not production data"
+    },
+    {
+      "path": "content/catalog-backfill-gen76.json",
+      "source_sha256": "c07f1b3cc6f8b4e5c43dff70bbe7d322a52d8be689b8acf61cb811cd06856ebb",
+      "candidate_sha256": "b09b970b993fd7e07e7613cf2d7ef0ba67f9cc2f1769161e97d130de4f01fae1",
+      "bytes": 27,
+      "reason": "Production translation snapshot replaced by empty local dictionaries"
+    },
+    {
+      "path": "tests/fixtures/public-catalog-generation3.json",
+      "source_sha256": "cc2b864ed095306926e4074f9d6ed3134f79f800a9e1edee287c08bc8ce8f90b",
+      "candidate_sha256": "e6099d6b84477c108f7dd29ab43c899762a0ce41025a54d163140be1360c2d6c",
+      "bytes": 218168,
+      "reason": "Real catalog/fixture contents replaced by deterministic synthetic values; not production data"
+    },
+    {
+      "path": "tests/fixtures/public-review-safety/jet-ski-south.json",
+      "source_sha256": "a168b0986b76a365528e1ba73cea58d6138a0eeb0d21665e20fb747790731328",
+      "candidate_sha256": "aba6d76b1e3766f583a8997cad5e904f7976ce0a7a8fba17de5f55caa8e0b507",
+      "bytes": 5336,
+      "reason": "Real catalog/fixture contents replaced by deterministic synthetic values; not production data"
+    },
+    {
+      "path": "tests/fixtures/public-review-safety/khao-sok.json",
+      "source_sha256": "c9cbaabc031ee2586a1c8d03cdbc2e14d40e5609667c57c0be7e13c8433a377c",
+      "candidate_sha256": "5c9656b3c9a81a29ff34c72065a9c2ccf438b3b949c31b48097a9f486348edcc",
+      "bytes": 5436,
+      "reason": "Real catalog/fixture contents replaced by deterministic synthetic values; not production data"
+    },
+    {
+      "path": "tests/fixtures/public-review-safety/phi-phi-overnight.json",
+      "source_sha256": "7a62338d1cb9a5e45a7f416cd3235e634ea50e93086a941dfb543d4252916a8a",
+      "candidate_sha256": "ce92432943d39ee54159079b22446a9a316179c0aa3b494d867ec10f2cfff10f",
+      "bytes": 3635,
+      "reason": "Real catalog/fixture contents replaced by deterministic synthetic values; not production data"
+    },
+    {
+      "path": "tests/fixtures/vip-localized-content.json",
+      "source_sha256": "369e6045905c4ba07a58b07bd801121f9d1de9e173f7e72040f7851980634a6e",
+      "candidate_sha256": "a1aff04dee79483d73d5ee035027fa537c2884504eb6761b6bfffe265bd96613",
+      "bytes": 979,
+      "reason": "Real catalog/fixture contents replaced by deterministic synthetic values; not production data"
+    }
+  ],
+  "original_assets_preserved": false,
+  "license": "No new OSS license assigned",
+  "fresh_build": "PASS for this final export in supported Linux with cleared environment and bounded workers/heap. No deployment.",
+  "line_endings": "Unmodified retained files exported as exact Git blobs; working-tree CRLF conversion is not included",
+  "asset_retention": "All prior image binaries retained unchanged except the sixteen explicitly listed operator JPEG replacements. Original input ZIP and original source directory unchanged. One enquiry-reference QA screenshot remains excluded.",
+  "sanitization_patch": {
+    "parent_manifest_sha256": "0edefde2361b939c3ffbf5f8fb6bb0f8bce32177ded54119cba8b74dc8d81fc4",
+    "parent_archive_sha256": "eb026faeb6ecaa138773887aabe55663d7a27debcb564389904908065e566951",
+    "runtime_code_unchanged": true,
+    "package_and_lock_unchanged": true,
+    "schema_unchanged": true,
+    "public_assets_unchanged": true,
+    "contract_repairs": [
+      "content/approved-eight/programs.json",
+      "tests/fixtures/public-catalog-generation3.json",
+      "tests/fixtures/public-review-safety/jet-ski-south.json",
+      "tests/fixtures/public-review-safety/khao-sok.json",
+      "tests/fixtures/public-review-safety/phi-phi-overnight.json",
+      "tests/fixtures/vip-localized-content.json"
+    ],
+    "added_files": [
+      "PUBLIC-CANDIDATE-VALIDATION.json",
+      "tests/fixtures/sanitized-import-packet.json",
+      "tests/sanitized-candidate.test.ts"
+    ],
+    "report_updates": [
+      "README.md",
+      "SOURCE-PROVENANCE.json",
+      "SECURITY-REVIEW.json",
+      "ASSET-REVIEW.json",
+      "EXPORT-MANIFEST.json"
+    ],
+    "validation_report": "PUBLIC-CANDIDATE-VALIDATION.json",
+    "scope_note": "This section describes the earlier fixture-only correction, not the subsequent license/demo patch."
+  },
+  "license_correction": {
+    "parent_candidate_commit": "97831dffe21e3161aa92487bcfcefcc4e7f7f866",
+    "application_runtime_code_unchanged": false,
+    "font_and_image_binary_bytes_unchanged": false,
+    "new_corresponding_sources": [
+      {
+        "source": "vendor/urw-base35/NimbusSans-Regular.otf",
+        "output": "public/fonts/nimbus-sans-regular.woff",
+        "source_sha256": "7c25be4d78155523080ab85b10277150657ff7dabbcad7037bdd536c9b6d0d08",
+        "output_sha256": "2ab1836c8f906c5f7cdd612113f709c3a05c3e02a15077e8a290f98ac3ebe2bf",
+        "distributed_sha256": "2ab1836c8f906c5f7cdd612113f709c3a05c3e02a15077e8a290f98ac3ebe2bf",
+        "byte_identical": true
+      },
+      {
+        "source": "vendor/urw-base35/NimbusRoman-Regular.otf",
+        "output": "public/fonts/atlas-serif.woff",
+        "source_sha256": "fd41669443616a7ae890c42e53a58f47fa24a940fd1e367acaff665cf5b6e9d8",
+        "output_sha256": "e5b57573da205d10fa37a7c1728027c5aa605373cd75d92c2bf40bcf297d988b",
+        "distributed_sha256": "e5b57573da205d10fa37a7c1728027c5aa605373cd75d92c2bf40bcf297d988b",
+        "byte_identical": true
+      },
+      {
+        "source": "vendor/urw-base35/NimbusRoman-Bold.otf",
+        "output": "public/fonts/atlas-serif-bold.woff",
+        "source_sha256": "e0ad81923bc6d85d5426f796217c87963ca1ae3c65e22c87a25b6c6353de299e",
+        "output_sha256": "99390967f7674199a6a919a275747082d2e5e6b4972e559ecc4ed1846b2d82dc",
+        "distributed_sha256": "99390967f7674199a6a919a275747082d2e5e6b4972e559ecc4ed1846b2d82dc",
+        "byte_identical": true
+      }
+    ],
+    "notices": [
+      {
+        "path": "public/fonts/reference/RobotoCondensed-Apache-2.0.txt",
+        "url": "https://github.com/googlefonts/roboto-3-classic/blob/v3.008/LICENSE.txt",
+        "github_blob_sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+        "local_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+        "git_blob_matches": true
+      },
+      {
+        "path": "public/VERCEL-MIT-NOTICE.txt",
+        "url": "https://github.com/vercel/next.js/blob/canary/license.md",
+        "github_blob_sha": "5948ee9bd0de5064423688a2967ab3111c2658ed",
+        "local_sha256": "ee765244e2d59f5234d474f62e0766fa0c8b99af967fdd4c0cb8dcb0c76ea224",
+        "git_blob_matches": true
+      }
+    ],
+    "brochures": "All sixteen original JPEGs replaced with clearly marked original DEMO content at identical paths; no original brochure hash remains anywhere among planned public files.",
+    "asset_decisions": "ASSET-DECISIONS.json",
+    "all_distributed_woff_bytes_unchanged": true,
+    "non_brochure_retained_image_bytes_unchanged": true,
+    "runtime_patch": {
+      "app/components/ApprovedBrochures.tsx": "Only label strings for RU/EN/TH changed to DEMO samples.",
+      "lib/server/approved-eight-import.ts": "Only new-product imageAlt and media license/attribution/sourceUrl literals changed. IDs, slugs, guards, rates, SQL and control flow unchanged."
+    },
+    "validation_environment": {
+      "python": "3.12.14",
+      "fontTools": "4.61.1"
+    }
+  },
+  "public_export_demo_replacements": [
+    {
+      "path": "public/media/atime-4pearl.jpg",
+      "sha256": "054c46e454a6ee95fcf8181aaedfe1f4c28b883e73d839c204ac24c511405a59",
+      "bytes": 82448,
+      "reason": "Original operator artwork omitted; original code-generated clearly marked DEMO public-export placeholder at preserved URL."
+    },
+    {
+      "path": "public/media/atime-4pearl1.jpg",
+      "sha256": "054c46e454a6ee95fcf8181aaedfe1f4c28b883e73d839c204ac24c511405a59",
+      "bytes": 82448,
+      "reason": "Original operator artwork omitted; original code-generated clearly marked DEMO public-export placeholder at preserved URL."
+    },
+    {
+      "path": "public/media/atime-cheo1d.jpg",
+      "sha256": "054c46e454a6ee95fcf8181aaedfe1f4c28b883e73d839c204ac24c511405a59",
+      "bytes": 82448,
+      "reason": "Original operator artwork omitted; original code-generated clearly marked DEMO public-export placeholder at preserved URL."
+    },
+    {
+      "path": "public/media/atime-cheo1d1.jpg",
+      "sha256": "054c46e454a6ee95fcf8181aaedfe1f4c28b883e73d839c204ac24c511405a59",
+      "bytes": 82448,
+      "reason": "Original operator artwork omitted; original code-generated clearly marked DEMO public-export placeholder at preserved URL."
+    },
+    {
+      "path": "public/media/atime-citytour.jpg",
+      "sha256": "054c46e454a6ee95fcf8181aaedfe1f4c28b883e73d839c204ac24c511405a59",
+      "bytes": 82448,
+      "reason": "Original operator artwork omitted; original code-generated clearly marked DEMO public-export placeholder at preserved URL."
+    },
+    {
+      "path": "public/media/atime-citytour1.jpg",
+      "sha256": "054c46e454a6ee95fcf8181aaedfe1f4c28b883e73d839c204ac24c511405a59",
+      "bytes": 82448,
+      "reason": "Original operator artwork omitted; original code-generated clearly marked DEMO public-export placeholder at preserved URL."
+    },
+    {
+      "path": "public/media/atime-khaolak.jpg",
+      "sha256": "054c46e454a6ee95fcf8181aaedfe1f4c28b883e73d839c204ac24c511405a59",
+      "bytes": 82448,
+      "reason": "Original operator artwork omitted; original code-generated clearly marked DEMO public-export placeholder at preserved URL."
+    },
+    {
+      "path": "public/media/atime-khaolak1.jpg",
+      "sha256": "054c46e454a6ee95fcf8181aaedfe1f4c28b883e73d839c204ac24c511405a59",
+      "bytes": 82448,
+      "reason": "Original operator artwork omitted; original code-generated clearly marked DEMO public-export placeholder at preserved URL."
+    },
+    {
+      "path": "public/media/atime-ohosky.jpg",
+      "sha256": "054c46e454a6ee95fcf8181aaedfe1f4c28b883e73d839c204ac24c511405a59",
+      "bytes": 82448,
+      "reason": "Original operator artwork omitted; original code-generated clearly marked DEMO public-export placeholder at preserved URL."
+    },
+    {
+      "path": "public/media/atime-ohosky1.jpg",
+      "sha256": "054c46e454a6ee95fcf8181aaedfe1f4c28b883e73d839c204ac24c511405a59",
+      "bytes": 82448,
+      "reason": "Original operator artwork omitted; original code-generated clearly marked DEMO public-export placeholder at preserved URL."
+    },
+    {
+      "path": "public/media/atime-ohovip.jpg",
+      "sha256": "054c46e454a6ee95fcf8181aaedfe1f4c28b883e73d839c204ac24c511405a59",
+      "bytes": 82448,
+      "reason": "Original operator artwork omitted; original code-generated clearly marked DEMO public-export placeholder at preserved URL."
+    },
+    {
+      "path": "public/media/atime-ohovip1.jpg",
+      "sha256": "054c46e454a6ee95fcf8181aaedfe1f4c28b883e73d839c204ac24c511405a59",
+      "bytes": 82448,
+      "reason": "Original operator artwork omitted; original code-generated clearly marked DEMO public-export placeholder at preserved URL."
+    },
+    {
+      "path": "public/media/atime-simila.jpg",
+      "sha256": "054c46e454a6ee95fcf8181aaedfe1f4c28b883e73d839c204ac24c511405a59",
+      "bytes": 82448,
+      "reason": "Original operator artwork omitted; original code-generated clearly marked DEMO public-export placeholder at preserved URL."
+    },
+    {
+      "path": "public/media/atime-simila1.jpg",
+      "sha256": "054c46e454a6ee95fcf8181aaedfe1f4c28b883e73d839c204ac24c511405a59",
+      "bytes": 82448,
+      "reason": "Original operator artwork omitted; original code-generated clearly marked DEMO public-export placeholder at preserved URL."
+    },
+    {
+      "path": "public/media/atime-ttoa.jpg",
+      "sha256": "054c46e454a6ee95fcf8181aaedfe1f4c28b883e73d839c204ac24c511405a59",
+      "bytes": 82448,
+      "reason": "Original operator artwork omitted; original code-generated clearly marked DEMO public-export placeholder at preserved URL."
+    },
+    {
+      "path": "public/media/atime-ttoa1.jpg",
+      "sha256": "054c46e454a6ee95fcf8181aaedfe1f4c28b883e73d839c204ac24c511405a59",
+      "bytes": 82448,
+      "reason": "Original operator artwork omitted; original code-generated clearly marked DEMO public-export placeholder at preserved URL."
+    }
+  ]
+}

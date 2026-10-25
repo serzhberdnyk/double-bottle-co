@@ -1,0 +1,1 @@
+export function canManageIdentity(email:string|null|undefined,userId:string|null|undefined,allowlist:string|undefined){return !!userId&&!!email&&(allowlist||'').toLowerCase().split(',').map(x=>x.trim()).filter(Boolean).includes(email.toLowerCase());}

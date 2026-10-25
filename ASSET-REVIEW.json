@@ -1,0 +1,2488 @@
+{
+  "status": "Requested asset corrections complete. Exact group decisions in ASSET-DECISIONS.json; final independent review pending.",
+  "assets": [
+    {
+      "path": "assets-source/demo-brochure-placeholder.svg",
+      "sha256": "12e22fe8e50bd6e118fed519d8733c7afff3d6b6524696d1f22dd503ef43d80b",
+      "evidence": "Original code-native source for simple DEMO placeholders, no operator asset input.",
+      "public_redistribution": "Included as owner-authorized public-export synthetic artwork."
+    },
+    {
+      "path": "docs/identity/doublebottle/avatar-world-queue-approved.svg",
+      "sha256": "e353c4b3859ead9033918ab5b12fd81f4d480cb1647005d535818d8a0c5ec6c3",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/doublebottle/bangkok-queue-approved.svg",
+      "sha256": "e02652ad0b7df8352a789b3cc4f0760c92f826303c62e9b4808b124a1318ad09",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/doublebottle/carnival-magic-queue-approved.svg",
+      "sha256": "e54780bb8abcfe54d8951ec443c97279920ae2e30f60c66b955cb6cc2b402159",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/doublebottle/cheow-lan-day-queue-approved.svg",
+      "sha256": "27161036f14981409f4e6e49604fbffe6a2427ff19318163713d5ea6d9968b77",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/doublebottle/coral-rawai-queue-approved.svg",
+      "sha256": "0f369439d0534533c65fd4d148a5d683ace09cf7e7126ef56fbca7549a29561e",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/doublebottle/elephant-spa-option-b-approved.svg",
+      "sha256": "2ec1a7637631d60148cc5b9deed6738e124532f137d5369c4db32cc2701aeb0b",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/doublebottle/eleven-islands-approved.svg",
+      "sha256": "d14597d11959a93abbf47f2e7b20db55687abd2d701b44db3d3b0143699c7a06",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/doublebottle/fantasea-queue-approved.svg",
+      "sha256": "ebb8533341224605ce9d5cd93091ed63e1f944c5c8c0ed3854bb2938ab666952",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/doublebottle/five-pearls-queue-approved.svg",
+      "sha256": "5604d6448158e999b61c08b85e47cb3bc5bf2522907a3955293f467f30847ce3",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/doublebottle/glowing-plankton-queue-approved.svg",
+      "sha256": "e671b8dec46a6169657266fdd6d6e08901eb43b1fe95e5cacac0ea22bd3aa3f6",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/doublebottle/illustration-coming-soon.svg",
+      "sha256": "7ec7c5882fe01750e1d0d2c99c30bc1dc1a8bb3b6fbc6a69b0eee9f15da26551",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/doublebottle/james-bond-catamaran-approved.svg",
+      "sha256": "d5e51b86b6aa24ad48db9c70a7da06276cefd6cdc05f223cf56ef7ef201ada91",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/doublebottle/james-bond-cave-queue-approved.svg",
+      "sha256": "6c90c0d786856cdc6d51fde61a5b76a8d750c5a36259967611fa710349232035",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/doublebottle/james-bond-yao-queue-approved.svg",
+      "sha256": "d5dc1511b0563b81846e518c092872fb120edf79e7240eaf233c6f608d273e8d",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/doublebottle/jet-ski-north-queue-approved.svg",
+      "sha256": "41bb3f5842e28b7315271b5b47aac5441cc37400d870e9632b7acdfa7f6dbf55",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/doublebottle/jet-ski-south-approved-v2.svg",
+      "sha256": "0a90961a66f2744db368f1fbcf8f59dfd1df62257c2d009512c5447458afe6d2",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/doublebottle/khao-lak-safari-queue-approved.svg",
+      "sha256": "c5c7f64f9233cbef4131261e126e0b42802f6b8d39d2a5e16eee04d18b799e2a",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/doublebottle/khao-sok-approved-v2.svg",
+      "sha256": "2a0b391e349edb27e380f4dc33560657a68f7e006c17311ba6dca223deec36c8",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/doublebottle/krabi-catamaran-queue-approved.svg",
+      "sha256": "48d605821bcba82c77b8cf88a529141fd1ed61072c60a4c293dd31ed19e117b5",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/doublebottle/krabi-sunset-approved.svg",
+      "sha256": "1ec5fa47ec1a99bea7055ff27a4a5fb77bc324a3ca0005295387774d01fcafdf",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/doublebottle/kuala-lumpur-queue-approved.svg",
+      "sha256": "e7b7d205dfd0939aa88934e60e40e3e46a53180767893ab139648aa0de5d5e5e",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/doublebottle/phang-nga-skywalk-queue-approved.svg",
+      "sha256": "ad58b4f70afcb82b71825031048ee2e715c8cbaa4f4389862852eb345affaf5a",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/doublebottle/phi-phi-bamboo-queue-approved.svg",
+      "sha256": "6535180b05027b9ae8e37a995d96c6e977aa739cabad79124f99f1f76455405b",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/doublebottle/phi-phi-catamaran-approved.svg",
+      "sha256": "85cff97350720d0e9ffccad74df2aa79227f623cf17f09a8ce5100c3f4d5375e",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/doublebottle/phi-phi-fishing-approved.svg",
+      "sha256": "339105f6d7307a33d4c0061bde4565d76feffb08b35ccee9bab3431959965f8e",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/doublebottle/phi-phi-four-islands-queue-approved.svg",
+      "sha256": "f3fae64b6af578182ea438a644da4987ea825d7d59b711c81eafd3a2b9d0f646",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/doublebottle/phi-phi-khai-maiton-queue-approved.svg",
+      "sha256": "2337b487d034c58feb04703c55c1680e8a0b3665d0363ef6ced11cc45c53f87b",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/doublebottle/phi-phi-khai-queue-approved.svg",
+      "sha256": "a664bf0bca3f66a41efe61c529dec4e0187c6eac21b1947be4e06842634e898b",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/doublebottle/phi-phi-lazy-queue-approved.svg",
+      "sha256": "852f8cbf74054f30705c9be1d6940fb2564426a19cb064ae49391c6ea77e6dd8",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/doublebottle/phi-phi-overnight-queue-approved.svg",
+      "sha256": "377545321c2938f81a81c711ef82b9eb0573e6c04f0df7c613d4fc6a2f91f6b6",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/doublebottle/phi-phi-racha-party-approved.svg",
+      "sha256": "f94fef5cd969a35ad4c340d8b5671bf7dd273e1ef0165b2ad4f7a5db56785abf",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/doublebottle/phi-phi-sunrise-approved-v2.svg",
+      "sha256": "fb66dad7f356a13942a02fd53964a6874a6f728b73f38cd767556ac3cf0fd112",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/doublebottle/phi-phi-sunset-queue-approved.svg",
+      "sha256": "4a17d6f9afd249016d85a0f72929c33afc9e3237c44f855ed72a549458c95516",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/doublebottle/phuket-city-queue-approved.svg",
+      "sha256": "76e8a91d8f489bf4994a00cef6b217fee8da40fbd9ec33d1bb7e4dda069da937",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/doublebottle/racha-coral-approved.svg",
+      "sha256": "9a3d39a5f7b4d3aba3e8effc18f92138f4fa35cea545b6f2971c90196deacebe",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/doublebottle/racha-coral-maiton-queue-approved.svg",
+      "sha256": "eec8a0cbdafdf6675b99ce7ef3e3a5044a7fedb9728bfac3c62bd4573aace9e3",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/doublebottle/racha-sunrise-queue-approved.svg",
+      "sha256": "8c8c25206acf572728d92ed50c26580360bd6843d828433c90f0c8676639d8fa",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/doublebottle/rafting-atv-approved-v2.svg",
+      "sha256": "ec6efcf3bad4e2b9c2716cf1add8eea94974a3b5a89a213b4b2f0df9e40d873d",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/doublebottle/sea-fishing-queue-approved.svg",
+      "sha256": "018e6a0f434fe0a2df788b4be771e8a38f66a15068d9be484b7b68d138241cf2",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/doublebottle/similan-diving-queue-approved.svg",
+      "sha256": "dc6a913797254c49879e3952aba346770deec3b8585cf14eaa511bea4728e5bb",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/doublebottle/similan-early-approved-v2.svg",
+      "sha256": "005dde59bf694fb5d474e62ff99194878dc29caf6f7ed8714227bfbdbb12ff57",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/doublebottle/similan-lazy-queue-approved.svg",
+      "sha256": "c760a1660e98e00c7a3dfa1062dc86f53ceee10defc3670764aa1eb2fe3eb227",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/doublebottle/singapore-queue-approved.svg",
+      "sha256": "98c1e775c677ad0599f75be112c3526002e5dcc289d86217ece5790c9488ac66",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/doublebottle/sunrise-phang-nga-queue-approved.svg",
+      "sha256": "f2c27e724f21e828cdf906e60d8a304bd404d20d05690734a955ae1e888cebc8",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-avatar-world-queue-approved.png",
+      "sha256": "28f0c2605791223fa4742252d4c5cf68cbdc991b9a5cd0de6a744a520e7d8ec7",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-avatar-world-queue-approved.svg",
+      "sha256": "491c51746d1e3ca7d275b09c23363c11f4ad0c28a38f18d7547777e3e7abc6d2",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-bangkok-queue-approved.png",
+      "sha256": "dd7f1223896d9f77dadedac2c63b01d3398329dc988d4e05b25bdb2f8bb1401e",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-bangkok-queue-approved.svg",
+      "sha256": "f8419d39b7836879c34311c8469f4e7034c2cceeb584d2d7d7a531751acb99a5",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-carnival-magic-queue-approved.png",
+      "sha256": "9146b1d2458db7020c517b739df1bc0619ebfcdded97daaa4b24ff96e9b31651",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-carnival-magic-queue-approved.svg",
+      "sha256": "c86128ad4d09e2bd2fa882976133668490bb10c18a6e68d4abbd1b141c720c83",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-cheow-lan-day-queue-approved.png",
+      "sha256": "8282d98671556e39b8f4461b73d01767ba7870654dff94e7a54f3b96c8c661ed",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-cheow-lan-day-queue-approved.svg",
+      "sha256": "5a1e5b90ade19d91581dd8114fb8d4056f6834fce1949890b1af89925c3fb450",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-coral-rawai-queue-approved.png",
+      "sha256": "9bda7dd6a33de09245b2651b86104277c16a347404609b5cc9a4d6aa86785e6c",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-coral-rawai-queue-approved.svg",
+      "sha256": "2815b14eddf34a525c458b02593b94fc7f99aa3104ece7a9296ae1c5fefb4e8d",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-cover-placeholder.png",
+      "sha256": "9d2a5ac65d76d792ca8aa5b8ec1715ecb2232c1c136ccfd26ddaeff24f8a19f8",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-cover-placeholder.svg",
+      "sha256": "b3e66ad400450860c5b033c8cbcb1309aba51de792f522fe7d90f11cbddcabe2",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-elephant-beach-mantra-spa.png",
+      "sha256": "1c3ba6f6c042c9a5735f946e9524d8a0d7e804c93fb024a3fb1fb153f3863623",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-elephant-beach-mantra-spa.svg",
+      "sha256": "c353a0c7a3395ebea951a060bcc108c9b2af7f427a0ce5b02d39e9b1543db32c",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-elephant-spa-option-b-approved.png",
+      "sha256": "d206abc20eb7e67137ea4aaccbb1fe1ff7c875b2e289ef5e25b9e7742400aa92",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-elephant-spa-option-b-approved.svg",
+      "sha256": "b4f9b5b2fe30ca45d08482c65e9f85df238a26b5bea2871b94ae437b8f7db4ed",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-elephant-spa-queue-approved.png",
+      "sha256": "84f20bddd67ac8a41ad2d2541f4a443831a05e04ffa97b4849ad42a4f7ac43ee",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-elephant-spa-queue-approved.svg",
+      "sha256": "161c157ee92ae1c276c838b17849569ec333d04e720fc8272028600443c6328c",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-eleven-islands-approved.png",
+      "sha256": "ad255eee3493f21022e8f351b9374a061b52193fb45034e6b2d710d0c96ba158",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-eleven-islands-approved.svg",
+      "sha256": "74c3bddb94c8bf9d8e69c66887ba829a0b9d4b2b1fc3f6ee149cf71bfc36089c",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-fantasea-queue-approved.png",
+      "sha256": "a100ff8d3ee18ef4d4e3cdf106cee02896e68e122c2ba83fc52c91248ec35b3c",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-fantasea-queue-approved.svg",
+      "sha256": "b78957a36c1028cf65478c30aabd83bfbf910b909f16237daf39adcd11827c10",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-five-pearls-queue-approved.png",
+      "sha256": "6fd1c6d5bf2dff19d8cee230a8b89943759b1d0b4f05e1abc1ab83fccf07a638",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-five-pearls-queue-approved.svg",
+      "sha256": "ca933ba0b7fcf643572178a9dafca9aaed3bab7477b378572b8884bf86c0acce",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-glowing-plankton-queue-approved.png",
+      "sha256": "331e278644d18e8305752e166ef17d13177e9756ca336a591a036a7df7628436",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-glowing-plankton-queue-approved.svg",
+      "sha256": "30550ac20723711e05ba627111290b2f37384218892b7810b33f3c60f2d23d58",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-james-bond-approved.png",
+      "sha256": "2f150e88adcae4b55ebc835636d069b69b1bda83bef8b912ca6f02eae9cd6065",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-james-bond-approved.svg",
+      "sha256": "44be21f8b9f6cdea39ee318e493413047944219e29734dab1bb5293f4f258eb6",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-james-bond-cave-queue-approved.png",
+      "sha256": "044ad6527469263945d9aec3755a70eeb23ed11e196c517efb3d7017d6431efa",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-james-bond-cave-queue-approved.svg",
+      "sha256": "0b075103ef153f29df23ab7dc93ed64a15ba87380431e6a2ab12fa852be49165",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-james-bond-yao-queue-approved.png",
+      "sha256": "c9d959c27d0341b61c855813135a7de033add8e728b10b20ea44f3569fce2e49",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-james-bond-yao-queue-approved.svg",
+      "sha256": "188cfa6ab74f0a9dfd79f15df855f41716483a93e537dd19d59cb079149e644b",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-jet-ski-north-queue-approved.png",
+      "sha256": "45b9e50b1bee126fb74e997dc1f5d65d3b4e7b6e0b6f8896e6506e045ae95d1a",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-jet-ski-north-queue-approved.svg",
+      "sha256": "fa8e76afa26493cb66fc9765c30ee1bc5fe5c3cb578e500e993a5b20231c10ee",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-jet-ski-south-approved-v2.png",
+      "sha256": "46cc84b2c5ccf94dd9e2d996181aca452c8e9da0ae071f9ea6053eee2b3392c6",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-jet-ski-south-approved-v2.svg",
+      "sha256": "fb3d1d2b6c4dcf20558eeadc719d24e274939a9fbdd441fc7cbfa35a73d204ec",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-jet-ski-south.png",
+      "sha256": "39ff8012e26de25efdcc2b02a702bd0be5cd5887d74ace9f8055c8fee0c57009",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-jet-ski-south.svg",
+      "sha256": "1e5bc5b5aeeae5957e871dbdcaf60008fa67d1035ba5838c752b5634488edbf0",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-khao-lak-safari-queue-approved.png",
+      "sha256": "51d77f5342283af151e82bf14b0d5e3295dfd86ddca0191b072378ca7786b48d",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-khao-lak-safari-queue-approved.svg",
+      "sha256": "7bf13a7283276399a84430b107e49d8abf4091003c18fdf54d21838faba30559",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-khao-sok-approved-v2.png",
+      "sha256": "ece722737da0a3d2ef8c5027e4028710c7c7d26d0d65bf52ccbaada3acb2b8db",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-khao-sok-approved-v2.svg",
+      "sha256": "13a85ca220d05aae9cd33ecedd9ce6c2d4e08af0a2ee25338bbcc3394872363e",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-khao-sok-cheow-lan.png",
+      "sha256": "785105e7cbdc4a6793188b3f8b31062982d0c415f4d7760a760e2fc8800a25b5",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-khao-sok-cheow-lan.svg",
+      "sha256": "9767f1d11ba169d47bd604d8ad2b6dab5a38d0d3b667c4f15a2f18e2bb70a93c",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-krabi-catamaran-queue-approved.png",
+      "sha256": "28260a4a1de05f24b9f02c3ff45af9d49eb210a1f2e715da030f797c72de564f",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-krabi-catamaran-queue-approved.svg",
+      "sha256": "29a4abc4badde743526e656e947f87b0c2df8fc17575fb7218c7717c215805a4",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-krabi-sunset-approved.png",
+      "sha256": "bcbb4a5b1583043d5fb7c13e98d9b796cede8cca1d595aaf3beb8aafffec310a",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-krabi-sunset-approved.svg",
+      "sha256": "f6f7f217b8e0ead83abcb60d854fec890335d6b1cb5f9698c57df83f376bb799",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-kuala-lumpur-queue-approved.png",
+      "sha256": "b7f214885fa3286bfa60dd21f0f31d3ed9d2d13dd4806bde242d6b286190c334",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-kuala-lumpur-queue-approved.svg",
+      "sha256": "704c66763d643e60734e4a22bc430d34e25465bf93cb65d0b12f6e2d7b8b0884",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-phang-nga-skywalk-queue-approved.png",
+      "sha256": "6c7ba416ed622e5cc7ad01332e2395a9c3255e36ee6904d404ecd30a4f7a2f7c",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-phang-nga-skywalk-queue-approved.svg",
+      "sha256": "71d4724e74f9f2a80f99d687b3a619d5dd2502d83ffb7a339919477e3cc1d497",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-phi-phi-approved.png",
+      "sha256": "510b03fca0daa88010913b6d593cc61dabd0a9f54bd9ba491effe1a6597e0d13",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-phi-phi-approved.svg",
+      "sha256": "7af6e5eccf21e0c54e986bc86fba07c9f3c58940f48899baee9e4bbaceea94c7",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-phi-phi-bamboo-queue-approved.png",
+      "sha256": "fd540a603c7fcef636743fc850f879f113aed0cadd23fe78804d8760170d9aff",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-phi-phi-bamboo-queue-approved.svg",
+      "sha256": "b6045544d7a2910c29935ec49a46940a842db5f18a6d8bc53b4ebb686124343c",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-phi-phi-fishing-approved.png",
+      "sha256": "a46badb535f88be661a734f3dc19a2895597a84ebacf18177232e623b5767cdc",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-phi-phi-fishing-approved.svg",
+      "sha256": "1eee4fef8ceacf3fbd3b67253ffde983cf400a7c2b77a8a621b1962a4af5c6a5",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-phi-phi-four-islands-queue-approved.png",
+      "sha256": "41b82692372fc2aae39c92c431eaa822d830d081154c07110e1f5739ad323f46",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-phi-phi-four-islands-queue-approved.svg",
+      "sha256": "54b531fdf3365acbf4d5ca0aa39d87e3fa20f55f98308208243da0ce470a520a",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-phi-phi-khai-maiton-queue-approved.png",
+      "sha256": "05e6388f7fdfac9259b6da70663c3dbf609353abb8effb6ef745d7c533964de7",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-phi-phi-khai-maiton-queue-approved.svg",
+      "sha256": "f546f10e99f5556ce4d68377e102d5113065df03058cc949ae8b5d703e8a01ce",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-phi-phi-khai-queue-approved.png",
+      "sha256": "488aa5408090049bb77229294670ada20aa1501575e6e33f234f826c2e6b70b7",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-phi-phi-khai-queue-approved.svg",
+      "sha256": "9547f9e540a4030cd8cf456ba8b5a48ba77d0ed3dd2b5166e1f548d9080607ec",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-phi-phi-lazy-queue-approved.png",
+      "sha256": "ac64295ca0e59f5cf868002755f66b0d79c9b8a8d4f8f991d765707e5e5790ae",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-phi-phi-lazy-queue-approved.svg",
+      "sha256": "8693938fe86ad96b962d6e38ed9396420e5fdac7be887e0b754cdd6d20436155",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-phi-phi-overnight-queue-approved.png",
+      "sha256": "0200d69bb9da9c1482dcf705fbdfa35b4ef87507001dc702983c8a0aa33fdbc8",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-phi-phi-overnight-queue-approved.svg",
+      "sha256": "81e23685947193b82495c937122d3d71b788ee7466dba449b5946185a0ec8cd3",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-phi-phi-racha-party-approved.png",
+      "sha256": "871229d299ad73e8324c551e7f6bf01cd331c546f2b8df7a89aa461aded24152",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-phi-phi-racha-party-approved.svg",
+      "sha256": "63975411c33dd50e2d2b1bb1b40f4b4f63dacf5244fe0d4480f53198694adc61",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-phi-phi-sunrise-approved-v2.png",
+      "sha256": "44c31c67e155486bfc2783297b85a94b28be512dd18cd22a622b03d25968ea44",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-phi-phi-sunrise-approved-v2.svg",
+      "sha256": "b4a55778d6a886d38ffd67308ebe2b50e217c82f643dc3c3c66c9cc287b3407d",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-phi-phi-sunset-queue-approved.png",
+      "sha256": "5f63311b984d21b98940a6b19c14e8d896b40bb98bf341e75590fb3d9ba885dc",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-phi-phi-sunset-queue-approved.svg",
+      "sha256": "c4be092cb5485dce2582c792075335a5ff31273e83e2dceadca21b10cb7156d9",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-phuket-city-queue-approved.png",
+      "sha256": "7d02f39bf821454dfd4624ea900560bb668c01d1d0f937fd3d8910696cc0984d",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-phuket-city-queue-approved.svg",
+      "sha256": "1b4b0ea75aaba3d2e837c524b2c47f54031fae321bb0cb1ed7594409324f578f",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-racha-coral-approved.png",
+      "sha256": "7856c294be2f5189772c3fa2ab6d689e4f72dbf68d3c3f931e47f8a2073a0a5d",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-racha-coral-approved.svg",
+      "sha256": "af8a46997df756035a584d30021a97eee4a9cac58db7a8b8ff75e00178f1deb2",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-racha-coral-maiton-queue-approved.png",
+      "sha256": "d91acb25a488623678bec513165975edebaba4658bb13ec5527ba9da2a221a9b",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-racha-coral-maiton-queue-approved.svg",
+      "sha256": "1ad9607166f23de9c25117403f3752b78e9b6dae89f1a3b1ab7562f371bb2324",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-racha-sunrise-queue-approved.png",
+      "sha256": "f803244641cb9750bf9448b3132ae5bbefa125615e88674f2c2aa34c10760fdc",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-racha-sunrise-queue-approved.svg",
+      "sha256": "6a364949a73fcca4ac365abab02b6c5d894ab5f5d43f764bbc3d96b0a8be6fe1",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-rafting-atv-approved-v2.png",
+      "sha256": "d58e322f0c9c918bebfcf858faec3e0b927b271d2bd471fc72017780eda2b113",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-rafting-atv-approved-v2.svg",
+      "sha256": "65e2c70fc9f3cca41abf8e768b5f4248d939888b1cfe9746d0e4757f56890124",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-rafting-atv.png",
+      "sha256": "582d7aaa017fb236d89483a1e0fb184bab4b34cfeb213fa145e009c03abb65da",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-rafting-atv.svg",
+      "sha256": "3da4a475cfee1705624f655fba6f45f6e20c629c289f0e5645608e0f74d11c2e",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-sea-fishing-queue-approved.png",
+      "sha256": "09d987065c286b6ad9ad6687db9029cbb6d1010d82ea49c869039c3e4856c944",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-sea-fishing-queue-approved.svg",
+      "sha256": "22950173e19678f56241cea9b051bfcaa52e776ba30b9d59e82ae3109fb918a9",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-similan-diving-queue-approved.png",
+      "sha256": "97b14e859a57d252d21ecd927c9fb997b0c2115407754359f06380e35303b4a3",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-similan-diving-queue-approved.svg",
+      "sha256": "dd203142413254734d596d3958ac67e7b9c228fb3714b4532fec1f4a49363d4d",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-similan-early.png",
+      "sha256": "9ec9a64bb57f087821445ce7dd2eff651b0944e79737caac7afc63e28807d1f1",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-similan-early.svg",
+      "sha256": "306fd45ca8ddde1a2d39ac4bcb17e3691978ad05a60c35f1a946652a57407a89",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-similan-lazy-queue-approved.png",
+      "sha256": "f177922407956fb05fae26f5c774add6ca2977760315b4257428be45f71fc292",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-similan-lazy-queue-approved.svg",
+      "sha256": "366a0f85bc0f88541c624739283c4439f4255bd51397c9f643420ff304e5b4c3",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-similans-approved-v2.png",
+      "sha256": "9b6bf7049322997a504acfa83ce015e330b0f9a43f55f59c2b8a970f5741e6f1",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-similans-approved-v2.svg",
+      "sha256": "db5b904b82fcafea80708bcfa6ece3d07c1ae77044da54933cb3a4f71fc21b5f",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-singapore-queue-approved.png",
+      "sha256": "f297cfd8d0f96cac99e5490e2a80ec76aa50cb1f558f12e4b02a4dc029340229",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-singapore-queue-approved.svg",
+      "sha256": "7cc567d36440f6eafdffcf76f8c1d91fa1f1fbbab92697565bc60ad247574b95",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-sunrise-phang-nga-queue-approved.png",
+      "sha256": "a35e7d7f9eeff35e5d45b620186c2fedf59a6b1a7086566ac102e7c7350701d7",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/identity/elysiam-sunrise-phang-nga-queue-approved.svg",
+      "sha256": "f3af1385dc4e931987d3cb0a93fddc4015654faaeb84c4454505e14cb0863f1d",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "docs/qa/elysiam-desktop-1448.jpg",
+      "sha256": "171f292d621e852a60999adc1d36020f293979447a68435e8691ff9114f648e6",
+      "evidence": "Remaining screenshots depict project map/catalog UI and passed bounded visual review; enquiry-reference screenshot excluded separately.",
+      "public_redistribution": "Retain as project documentation under owner/reviewer instruction; no claim of separate broad third-party license."
+    },
+    {
+      "path": "docs/qa/elysiam-desktop-oct04.png",
+      "sha256": "93429be85448bc43c42c291191fe4bee15f9b567b92ebe965e5f5025b5b9aef7",
+      "evidence": "Remaining screenshots depict project map/catalog UI and passed bounded visual review; enquiry-reference screenshot excluded separately.",
+      "public_redistribution": "Retain as project documentation under owner/reviewer instruction; no claim of separate broad third-party license."
+    },
+    {
+      "path": "docs/qa/elysiam-mobile-map-oct04.png",
+      "sha256": "89d8273edcf2eacabbca5db8b6da9e2b0475f87bf90da32678cfa48d4fbc6838",
+      "evidence": "Remaining screenshots depict project map/catalog UI and passed bounded visual review; enquiry-reference screenshot excluded separately.",
+      "public_redistribution": "Retain as project documentation under owner/reviewer instruction; no claim of separate broad third-party license."
+    },
+    {
+      "path": "docs/qa/elysiam-mobile-map.jpg",
+      "sha256": "b7c6272fa46592e1afc43000952068b61edc945114908023fc2677d9028ffbcb",
+      "evidence": "Remaining screenshots depict project map/catalog UI and passed bounded visual review; enquiry-reference screenshot excluded separately.",
+      "public_redistribution": "Retain as project documentation under owner/reviewer instruction; no claim of separate broad third-party license."
+    },
+    {
+      "path": "docs/qa/elysiam-tablet-oct04.png",
+      "sha256": "e4e6b9e7fbb06a175b6ca41cf27ae7c58a65e1aeb51e40e5c422663e954d4ad9",
+      "evidence": "Remaining screenshots depict project map/catalog UI and passed bounded visual review; enquiry-reference screenshot excluded separately.",
+      "public_redistribution": "Retain as project documentation under owner/reviewer instruction; no claim of separate broad third-party license."
+    },
+    {
+      "path": "public/VERCEL-MIT-NOTICE.txt",
+      "sha256": "ee765244e2d59f5234d474f62e0766fa0c8b99af967fdd4c0cb8dcb0c76ea224",
+      "evidence": "See ASSET-DECISIONS.json and exact source/notice mapping.",
+      "public_redistribution": "Bundled source or license notice; retain applicable terms."
+    },
+    {
+      "path": "public/assets/language-flags.png",
+      "sha256": "7aa69e96928c92e013282011b02b84b0ad7bea05c71e33771a3fc338be954ed1",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/brand/apple-touch-icon-v1.png",
+      "sha256": "1bd7b245f4cf8cdfdcd9eac79d8399dc0da0b4758b105dbd973ad36162bbb80f",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/brand/double-bottle-mark-v1.png",
+      "sha256": "0fba500380cefc78f256d24857cd64572b1bd3b0ee45c65d05b7764bc989e0f7",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/brand/double-bottle-selected-v1.png",
+      "sha256": "e595e3ae4f1baa401ea220ac5e4eeed5e875bde96ef07c019675567edf0fd3c7",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/brand/favicon-32-v1.png",
+      "sha256": "6150118f26ee4504e4583b60d66def40d70097965f214ba33cf216f5df826d31",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/brand/favicon-v1.ico",
+      "sha256": "fa17152b8bbe89e41d078c60399850151d1eb4537da0968c1a562e09eeec01f9",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/favicon.svg",
+      "sha256": "dd72d6952e99bf04b8618465c3202f92a6d0ea094c79ce44b7b5a8b6beb83e9f",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/file.svg",
+      "sha256": "1e0ae4d1a1ddfa36752988647b731e4abf150c414d069ec83c96fb0aaeff0307",
+      "evidence": "Official Vercel create-next-app SVG match except terminal newline; Vercel MIT notice included.",
+      "public_redistribution": "MIT notice included; existing bytes unchanged."
+    },
+    {
+      "path": "public/fonts/LICENSE.txt",
+      "sha256": "1315a62758a603a3e6e87a79b8389563789c59c1740b9db8bc2b20e2e2145458",
+      "evidence": "Bundled font notice/source mapping reviewed; see ASSET-DECISIONS.json and public/fonts/reference/SOURCES.txt.",
+      "public_redistribution": "Retain applicable font copyright, license and exception text; not a project-wide license."
+    },
+    {
+      "path": "public/fonts/atlas-serif-bold.woff",
+      "sha256": "99390967f7674199a6a919a275747082d2e5e6b4972e559ecc4ed1846b2d82dc",
+      "evidence": "Exact bundled OTF source and standalone recipe reproduce WOFF byte-for-byte; full AGPL/font exception retained.",
+      "public_redistribution": "Corresponding font sources, license and recipe included; see ASSET-DECISIONS.json."
+    },
+    {
+      "path": "public/fonts/atlas-serif.woff",
+      "sha256": "e5b57573da205d10fa37a7c1728027c5aa605373cd75d92c2bf40bcf297d988b",
+      "evidence": "Exact bundled OTF source and standalone recipe reproduce WOFF byte-for-byte; full AGPL/font exception retained.",
+      "public_redistribution": "Corresponding font sources, license and recipe included; see ASSET-DECISIONS.json."
+    },
+    {
+      "path": "public/fonts/nimbus-sans-regular.woff",
+      "sha256": "2ab1836c8f906c5f7cdd612113f709c3a05c3e02a15077e8a290f98ac3ebe2bf",
+      "evidence": "Exact bundled OTF source and standalone recipe reproduce WOFF byte-for-byte; full AGPL/font exception retained.",
+      "public_redistribution": "Corresponding font sources, license and recipe included; see ASSET-DECISIONS.json."
+    },
+    {
+      "path": "public/fonts/reference/Prata-OFL.txt",
+      "sha256": "1e055d25bde41906cc2e1a08bc156e7776d5084e1640d75dbd0065a937b488e3",
+      "evidence": "Bundled font notice/source mapping reviewed; see ASSET-DECISIONS.json and public/fonts/reference/SOURCES.txt.",
+      "public_redistribution": "Retain applicable font copyright, license and exception text; not a project-wide license."
+    },
+    {
+      "path": "public/fonts/reference/RobotoCondensed-Apache-2.0.txt",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "evidence": "See ASSET-DECISIONS.json and exact source/notice mapping.",
+      "public_redistribution": "Bundled source or license notice; retain applicable terms."
+    },
+    {
+      "path": "public/fonts/reference/SOURCES.txt",
+      "sha256": "407de200db8eba19b17e9fb2260d05a43a064879103052f95b88dfb94adca100",
+      "evidence": "Bundled font notice/source mapping reviewed; see ASSET-DECISIONS.json and public/fonts/reference/SOURCES.txt.",
+      "public_redistribution": "Retain applicable font copyright, license and exception text; not a project-wide license."
+    },
+    {
+      "path": "public/fonts/reference/prata.woff",
+      "sha256": "fd14d79e06e39756729991cf2c12a9a44f3a19100257d72c2536cc0c0747f74c",
+      "evidence": "See bundled font LICENSE.txt; per-file coverage requires review",
+      "public_redistribution": "Unresolved unless matching documented license explicitly covers this file; site-use approval is not a blanket OSS grant"
+    },
+    {
+      "path": "public/fonts/reference/roboto-condensed-medium.woff",
+      "sha256": "c17a7cb911052803f8b91b27c41b4f13e92842d128df3c8ddfa16560555fa5ff",
+      "evidence": "Embedded Version 3.008; 2023 and Apache-2.0 URL; official matching-tag license now included.",
+      "public_redistribution": "Apache-2.0 notice included, binaries unchanged; see ASSET-DECISIONS.json."
+    },
+    {
+      "path": "public/fonts/reference/roboto-condensed-regular.woff",
+      "sha256": "036d69c5a433faa032f6b5b924297ecdfffd7cac2f88a4887da05aafbc52c4f0",
+      "evidence": "Embedded Version 3.008; 2023 and Apache-2.0 URL; official matching-tag license now included.",
+      "public_redistribution": "Apache-2.0 notice included, binaries unchanged; see ASSET-DECISIONS.json."
+    },
+    {
+      "path": "public/globe.svg",
+      "sha256": "d051a8c47936990a9085693d307bb7cea1bc1b6d7ed956bcbaacf674f4ec96b9",
+      "evidence": "Official Vercel create-next-app SVG match except terminal newline; Vercel MIT notice included.",
+      "public_redistribution": "MIT notice included; existing bytes unchanged."
+    },
+    {
+      "path": "public/map/README.txt",
+      "sha256": "2cc674128a3018ab9ff184b05f8278a6d724c2337c9f4564408d1bac1b235220",
+      "evidence": "OpenStreetMap attribution and ODbL notice retained in public/map/README.txt.",
+      "public_redistribution": "Retain with existing OSM/ODbL attribution and terms."
+    },
+    {
+      "path": "public/map/andaman.geojson",
+      "sha256": "2ceb76e168ba4a3a24d92138b6625f2446de04061d94b190c5df1cf322be04ab",
+      "evidence": "OpenStreetMap attribution and ODbL notice retained in public/map/README.txt.",
+      "public_redistribution": "Retain with existing OSM/ODbL attribution and terms."
+    },
+    {
+      "path": "public/media/atime-4pearl.jpg",
+      "sha256": "054c46e454a6ee95fcf8181aaedfe1f4c28b883e73d839c204ac24c511405a59",
+      "evidence": "Original operator image replaced at unchanged path with original simple SVG-generated DEMO JPEG; all 16 decoded and visually checked through identical pixels.",
+      "public_redistribution": "Synthetic export placeholder contains no operator artwork; not an original A-Time brochure.",
+      "category": "synthetic_demo_placeholder"
+    },
+    {
+      "path": "public/media/atime-4pearl1.jpg",
+      "sha256": "054c46e454a6ee95fcf8181aaedfe1f4c28b883e73d839c204ac24c511405a59",
+      "evidence": "Original operator image replaced at unchanged path with original simple SVG-generated DEMO JPEG; all 16 decoded and visually checked through identical pixels.",
+      "public_redistribution": "Synthetic export placeholder contains no operator artwork; not an original A-Time brochure.",
+      "category": "synthetic_demo_placeholder"
+    },
+    {
+      "path": "public/media/atime-cheo1d.jpg",
+      "sha256": "054c46e454a6ee95fcf8181aaedfe1f4c28b883e73d839c204ac24c511405a59",
+      "evidence": "Original operator image replaced at unchanged path with original simple SVG-generated DEMO JPEG; all 16 decoded and visually checked through identical pixels.",
+      "public_redistribution": "Synthetic export placeholder contains no operator artwork; not an original A-Time brochure.",
+      "category": "synthetic_demo_placeholder"
+    },
+    {
+      "path": "public/media/atime-cheo1d1.jpg",
+      "sha256": "054c46e454a6ee95fcf8181aaedfe1f4c28b883e73d839c204ac24c511405a59",
+      "evidence": "Original operator image replaced at unchanged path with original simple SVG-generated DEMO JPEG; all 16 decoded and visually checked through identical pixels.",
+      "public_redistribution": "Synthetic export placeholder contains no operator artwork; not an original A-Time brochure.",
+      "category": "synthetic_demo_placeholder"
+    },
+    {
+      "path": "public/media/atime-citytour.jpg",
+      "sha256": "054c46e454a6ee95fcf8181aaedfe1f4c28b883e73d839c204ac24c511405a59",
+      "evidence": "Original operator image replaced at unchanged path with original simple SVG-generated DEMO JPEG; all 16 decoded and visually checked through identical pixels.",
+      "public_redistribution": "Synthetic export placeholder contains no operator artwork; not an original A-Time brochure.",
+      "category": "synthetic_demo_placeholder"
+    },
+    {
+      "path": "public/media/atime-citytour1.jpg",
+      "sha256": "054c46e454a6ee95fcf8181aaedfe1f4c28b883e73d839c204ac24c511405a59",
+      "evidence": "Original operator image replaced at unchanged path with original simple SVG-generated DEMO JPEG; all 16 decoded and visually checked through identical pixels.",
+      "public_redistribution": "Synthetic export placeholder contains no operator artwork; not an original A-Time brochure.",
+      "category": "synthetic_demo_placeholder"
+    },
+    {
+      "path": "public/media/atime-khaolak.jpg",
+      "sha256": "054c46e454a6ee95fcf8181aaedfe1f4c28b883e73d839c204ac24c511405a59",
+      "evidence": "Original operator image replaced at unchanged path with original simple SVG-generated DEMO JPEG; all 16 decoded and visually checked through identical pixels.",
+      "public_redistribution": "Synthetic export placeholder contains no operator artwork; not an original A-Time brochure.",
+      "category": "synthetic_demo_placeholder"
+    },
+    {
+      "path": "public/media/atime-khaolak1.jpg",
+      "sha256": "054c46e454a6ee95fcf8181aaedfe1f4c28b883e73d839c204ac24c511405a59",
+      "evidence": "Original operator image replaced at unchanged path with original simple SVG-generated DEMO JPEG; all 16 decoded and visually checked through identical pixels.",
+      "public_redistribution": "Synthetic export placeholder contains no operator artwork; not an original A-Time brochure.",
+      "category": "synthetic_demo_placeholder"
+    },
+    {
+      "path": "public/media/atime-ohosky.jpg",
+      "sha256": "054c46e454a6ee95fcf8181aaedfe1f4c28b883e73d839c204ac24c511405a59",
+      "evidence": "Original operator image replaced at unchanged path with original simple SVG-generated DEMO JPEG; all 16 decoded and visually checked through identical pixels.",
+      "public_redistribution": "Synthetic export placeholder contains no operator artwork; not an original A-Time brochure.",
+      "category": "synthetic_demo_placeholder"
+    },
+    {
+      "path": "public/media/atime-ohosky1.jpg",
+      "sha256": "054c46e454a6ee95fcf8181aaedfe1f4c28b883e73d839c204ac24c511405a59",
+      "evidence": "Original operator image replaced at unchanged path with original simple SVG-generated DEMO JPEG; all 16 decoded and visually checked through identical pixels.",
+      "public_redistribution": "Synthetic export placeholder contains no operator artwork; not an original A-Time brochure.",
+      "category": "synthetic_demo_placeholder"
+    },
+    {
+      "path": "public/media/atime-ohovip.jpg",
+      "sha256": "054c46e454a6ee95fcf8181aaedfe1f4c28b883e73d839c204ac24c511405a59",
+      "evidence": "Original operator image replaced at unchanged path with original simple SVG-generated DEMO JPEG; all 16 decoded and visually checked through identical pixels.",
+      "public_redistribution": "Synthetic export placeholder contains no operator artwork; not an original A-Time brochure.",
+      "category": "synthetic_demo_placeholder"
+    },
+    {
+      "path": "public/media/atime-ohovip1.jpg",
+      "sha256": "054c46e454a6ee95fcf8181aaedfe1f4c28b883e73d839c204ac24c511405a59",
+      "evidence": "Original operator image replaced at unchanged path with original simple SVG-generated DEMO JPEG; all 16 decoded and visually checked through identical pixels.",
+      "public_redistribution": "Synthetic export placeholder contains no operator artwork; not an original A-Time brochure.",
+      "category": "synthetic_demo_placeholder"
+    },
+    {
+      "path": "public/media/atime-simila.jpg",
+      "sha256": "054c46e454a6ee95fcf8181aaedfe1f4c28b883e73d839c204ac24c511405a59",
+      "evidence": "Original operator image replaced at unchanged path with original simple SVG-generated DEMO JPEG; all 16 decoded and visually checked through identical pixels.",
+      "public_redistribution": "Synthetic export placeholder contains no operator artwork; not an original A-Time brochure.",
+      "category": "synthetic_demo_placeholder"
+    },
+    {
+      "path": "public/media/atime-simila1.jpg",
+      "sha256": "054c46e454a6ee95fcf8181aaedfe1f4c28b883e73d839c204ac24c511405a59",
+      "evidence": "Original operator image replaced at unchanged path with original simple SVG-generated DEMO JPEG; all 16 decoded and visually checked through identical pixels.",
+      "public_redistribution": "Synthetic export placeholder contains no operator artwork; not an original A-Time brochure.",
+      "category": "synthetic_demo_placeholder"
+    },
+    {
+      "path": "public/media/atime-ttoa.jpg",
+      "sha256": "054c46e454a6ee95fcf8181aaedfe1f4c28b883e73d839c204ac24c511405a59",
+      "evidence": "Original operator image replaced at unchanged path with original simple SVG-generated DEMO JPEG; all 16 decoded and visually checked through identical pixels.",
+      "public_redistribution": "Synthetic export placeholder contains no operator artwork; not an original A-Time brochure.",
+      "category": "synthetic_demo_placeholder"
+    },
+    {
+      "path": "public/media/atime-ttoa1.jpg",
+      "sha256": "054c46e454a6ee95fcf8181aaedfe1f4c28b883e73d839c204ac24c511405a59",
+      "evidence": "Original operator image replaced at unchanged path with original simple SVG-generated DEMO JPEG; all 16 decoded and visually checked through identical pixels.",
+      "public_redistribution": "Synthetic export placeholder contains no operator artwork; not an original A-Time brochure.",
+      "category": "synthetic_demo_placeholder"
+    },
+    {
+      "path": "public/media/cheow-lan-project-1600.webp",
+      "sha256": "c06c002981db438a14ad4d7c0c321051295bac24cf9ba01e4df7d9d2c366aabf",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/cheow-lan-project-480.webp",
+      "sha256": "a5486643b310a9f68217e2cb40e80cc2e439a507e992e61156ad14744174ddc8",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/cheow-lan-project-960.webp",
+      "sha256": "9c5cd7115185ec4e56a839d82d2e3e2c2c0fc41e2888fb11ccb495e30cf2cc5c",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/cheow-lan-project.webp",
+      "sha256": "57c8ad75dd595c4bf2a523c25ea7688470e7bd85f99735d5d4de57befc5266ee",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/cheow-lan.webp",
+      "sha256": "57c8ad75dd595c4bf2a523c25ea7688470e7bd85f99735d5d4de57befc5266ee",
+      "evidence": "Matching CC attribution/source/license recorded in content/media-credits.json; image bytes and notices retained.",
+      "public_redistribution": "Retain with the matching CC terms and attribution; see content/media-credits.json."
+    },
+    {
+      "path": "public/media/covers/avatar-world-queue-approved-1600.webp",
+      "sha256": "4bccbb2f44c82474d75c512db4dc870e077cd16bf2a2cabeabe9d866761bcb4b",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/avatar-world-queue-approved-480.webp",
+      "sha256": "702315c620b5d25283f16abc1dac9403744597ae928be0ab26d098370a41fa4e",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/avatar-world-queue-approved-960.webp",
+      "sha256": "cec7d8c22c76b58aba4919c9446775346e9247eabe26522ab96c82e44b069efc",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/bangkok-queue-approved-1600.webp",
+      "sha256": "d5dc3c2ba21d32d8627a926dc54b440e206850f54b6a2cd4b4c31a3161c70149",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/bangkok-queue-approved-480.webp",
+      "sha256": "2dcf63642470838d6667f11f5c21576a624eb8bc278ac3c48e017b24f81ff137",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/bangkok-queue-approved-960.webp",
+      "sha256": "5e3a1b8f7461e9ec07c31a928a7f508f52c9a7521a581df6dce8359d36ef74c4",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/carnival-magic-queue-approved-1600.webp",
+      "sha256": "2c71c7f653f1d9607d09935c6dc4b8f090c50fcc473064e1a933deb343ec3dc5",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/carnival-magic-queue-approved-480.webp",
+      "sha256": "c8bba0ca3dbd79821347cef1f79988fe451eddcecfa6d83cb3b54711eb33e99f",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/carnival-magic-queue-approved-960.webp",
+      "sha256": "d17654db996c246e826f5f7395f70ea7178149b86f724d26bb42a43c5da90f0c",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/cheow-lan-day-queue-approved-1600.webp",
+      "sha256": "87a9b483f9b764406d194739efb4dc41d5a9e9055cf5682f44c35e76af15bf69",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/cheow-lan-day-queue-approved-480.webp",
+      "sha256": "b1f576682f5af51947414ca5830bde6d74bfd580a91be9a119017e71242fbe0b",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/cheow-lan-day-queue-approved-960.webp",
+      "sha256": "4b9e06b5087a47821ebf7db6768782c74605a506b793f156f5b8bd518a9d0e1f",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/coral-rawai-queue-approved-1600.webp",
+      "sha256": "52216bdb1cf456c769816d2117df0bbc8d14d584beea15304b1619b1228f5d5d",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/coral-rawai-queue-approved-480.webp",
+      "sha256": "ee82e2090bd0c462ae7c61fbe5504ec8b732fad5cd1a2a1b909322867c594cbe",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/coral-rawai-queue-approved-960.webp",
+      "sha256": "26b3765adc2cbaa383a0d94b7b8148eadaa97f107aa6c76db5004798c352e49a",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/elephant-spa-approved-1600.webp",
+      "sha256": "e731fda97ed675c6edb7e069bc4bac8ab4b3838cec8fc6d552e94b27d4cc8fe2",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/elephant-spa-approved-480.webp",
+      "sha256": "84b0d359f1b32d18e8d6c133d0644dc933a1f51f1dc063a9353e5ea5688ce0ec",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/elephant-spa-approved-960.webp",
+      "sha256": "256ea606a66a94c7812e8eeb439e3e5779db56f333eb71c343b3d4b03004dfe0",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/elephant-spa-option-b-approved-1600.webp",
+      "sha256": "ed6ac359ebc14a7376cf12a0fd022f9123be95b05faee7ddc4ab0c9fb2791f9d",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/elephant-spa-option-b-approved-480.webp",
+      "sha256": "79c765462e730a07481d7220ea5bd8a5fee9b069021d5ab96b2485c2a33421b8",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/elephant-spa-option-b-approved-960.webp",
+      "sha256": "286b4b76c34002f3ee82a116aa780e1ed8a26da9c1b4b2ec40a1633dba3aab3c",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/elephant-spa-queue-approved-1600.webp",
+      "sha256": "2fb571e13ff68c8a46dd95c8f8e34d70e91e13c6f0991fe3033a801bf595f947",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/elephant-spa-queue-approved-480.webp",
+      "sha256": "73f35732e4a457acbb5b00d2e9dae8af13067c05220f6ded4bb96b03a3bd57bb",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/elephant-spa-queue-approved-960.webp",
+      "sha256": "e6c0d259c26614f8235900512afcb2d7fa3600547ce2358818b3493f45ff29bd",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/eleven-islands-approved-1600.webp",
+      "sha256": "218f4c130bfed09f2575c82d21c1c391de6c5be9818b950e2d71b1f19f9baf9a",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/eleven-islands-approved-480.webp",
+      "sha256": "94f461ac6cb2530b71e594467b12d4900ec44596e9e074535b8fd0a2f1c13123",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/eleven-islands-approved-960.webp",
+      "sha256": "dad820dff19a957fd00e3d964208f99bdeb362187ff295b538b0b295034ab4d8",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/fantasea-queue-approved-1600.webp",
+      "sha256": "17365c23d94590a335367caf40ba440f2226bfad01fb1f00dd0c9e02e7829184",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/fantasea-queue-approved-480.webp",
+      "sha256": "c5e3acc70bc1a308f1f931baf0b6c11c302f381ff63c77f05c20c8d3f8a4bfca",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/fantasea-queue-approved-960.webp",
+      "sha256": "6f126268608fd23475bf7b58ef8e5e22d380db99973fabbfc695b117591041f4",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/five-pearls-queue-approved-1600.webp",
+      "sha256": "5772de3c56dc9e0801dfa85100d78fef6f74c9c848bf2a2bb87a31424120fe3c",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/five-pearls-queue-approved-480.webp",
+      "sha256": "d02c69d877a9b55c916504f9d27ccf7791b8554fbdce3927d1976675c5b7cc58",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/five-pearls-queue-approved-960.webp",
+      "sha256": "2ef3e358fd98b7161cea5b9be3c41e2c5635734c9000562d9647f4fe849b3b63",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/glowing-plankton-queue-approved-1600.webp",
+      "sha256": "0a0aa970847c5299137e48be8fcd59fb07d4bc54606b724d109227333ec9c867",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/glowing-plankton-queue-approved-480.webp",
+      "sha256": "fd09c35314bdf4b0dad0299af3a4b464b9e40a3657918f5f3206087fee1731e1",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/glowing-plankton-queue-approved-960.webp",
+      "sha256": "113c17c61f21af7d3d33e208b242c557b82758bbe4ed1cd43141282dfeabc53d",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/illustration-coming-soon-1600.webp",
+      "sha256": "2641dab239c039ca57a1ec69e5deaa1b6e171d21e40c65c53ef5166fd553a30b",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/illustration-coming-soon-480.webp",
+      "sha256": "522598d9bb9cb68493cc18660d0084bc6a80fad29df819e712dce59b099a9eea",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/illustration-coming-soon-960.webp",
+      "sha256": "04fb383f01b57f5588562a586e3970fcc3396e1ad4b8631b878b606147d15a3c",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/james-bond-catamaran-approved-1600.webp",
+      "sha256": "22390ca8821226684295515eef0750895b94c21714fd70a3e1b5953ccbcda41b",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/james-bond-catamaran-approved-480.webp",
+      "sha256": "1815ecbfdd965e8cbe840687e011366e1c61274a1ed389b883bb751664ee5887",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/james-bond-catamaran-approved-960.webp",
+      "sha256": "1efd94d7db20e693d59f727aa7dc4dcb02cc5a861d61ae1da75d2784196a3256",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/james-bond-cave-queue-approved-1600.webp",
+      "sha256": "efbfbed817473fbedb943ec1c7ee427583be84254644a9e77680cd7c26e87d37",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/james-bond-cave-queue-approved-480.webp",
+      "sha256": "0c275b6e74113bd304f8659747225ebbaa3887486ef0ffc9852cd7d1ab8f7d1d",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/james-bond-cave-queue-approved-960.webp",
+      "sha256": "2aab82a6459ed064e3c9a345d13a666232792632d3c37fc2adfdf290432fc052",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/james-bond-yao-queue-approved-1600.webp",
+      "sha256": "516b26b470bc94920701fb24fdcd74b92ba81cea540c98c3476826a1503f8018",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/james-bond-yao-queue-approved-480.webp",
+      "sha256": "796c47b3d4fcab5e1c763b6f4f27be69bd4b310f093651a544e547c3b511f6e8",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/james-bond-yao-queue-approved-960.webp",
+      "sha256": "cbe4fa6cc007b99ba2afa21242922d85424b24ee844fe1e55db87cbe81e34351",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/jet-ski-north-queue-approved-1600.webp",
+      "sha256": "3c5916d3b2325e2d386e4d670f21775a17c6d6ef91e3f5dab51edb29dafec283",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/jet-ski-north-queue-approved-480.webp",
+      "sha256": "8df9b6264d330cf50f62227dd07a696c3637ed437e8711e28262ead81b986138",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/jet-ski-north-queue-approved-960.webp",
+      "sha256": "2e61935e3c8f20fe915de4e043f64b4f34c07029f6ec6b760302cf7de78aaa38",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/jet-ski-south-approved-1600.webp",
+      "sha256": "1b5671c7eaa1388464a704f40ac24feb938014d438aeefc6f97d6c7ed1a7951c",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/jet-ski-south-approved-480.webp",
+      "sha256": "4af8c823950501b7589b50a50145fa04e402f49fbf22101c90874946e2b67400",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/jet-ski-south-approved-960.webp",
+      "sha256": "ae98f9ee2476422fb64b76b25483c9fbedf073766ac92f59bcf58f0b27cf51e3",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/jet-ski-south-approved-v2-1600.webp",
+      "sha256": "c49b06c9de63fcc1eeb2f87842bcc0f38c6d8912c1debb2e866b13c4979c3df6",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/jet-ski-south-approved-v2-480.webp",
+      "sha256": "0aab470086b6d2d7b8e3a41d55faa3811caf22be991e3e83fd642c1724e188fb",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/jet-ski-south-approved-v2-960.webp",
+      "sha256": "e28ceb8d7693e59bbb03dd63668b913ac4690e7da2c05a7e09aa45349e18ed17",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/khao-lak-safari-queue-approved-1600.webp",
+      "sha256": "89dc2e56476be7f01c3f5f466e751eb818056a630ebbf1adc9af49777b912eae",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/khao-lak-safari-queue-approved-480.webp",
+      "sha256": "722d5599a1dc0f71d1d1370c3ee47316c01f8b208b304285899a1724dc5958d4",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/khao-lak-safari-queue-approved-960.webp",
+      "sha256": "e4dc76391a6ae105fe4bdd2efb22bb598f977a4b2c982e58ddd541978fbb1622",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/khao-sok-approved-1600.webp",
+      "sha256": "c06c55c0197907c555cdb026ca622c33064ba347cfba5c5dcdf6a269690095ac",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/khao-sok-approved-480.webp",
+      "sha256": "de86ee4d6913cabc59b786bd811d0d9e369f3c93f20e5f1506b5b33143712acf",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/khao-sok-approved-960.webp",
+      "sha256": "7919dcb32406b822cf4322526491868e3e375a3ff9c0ef1dddc7a41671776b54",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/khao-sok-approved-v2-1600.webp",
+      "sha256": "1fdf18fd8f9f96cef7546976ca02d3c24e37bc5b7fa423caf846ecd6b89566da",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/khao-sok-approved-v2-480.webp",
+      "sha256": "9d394ee12af8bcea36699e7c8c92223bcab1cc09681a9e95dbacf35c0e37d5b6",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/khao-sok-approved-v2-960.webp",
+      "sha256": "436f9a6207361112296ee5837120fe76972ab0f229938614a1341291837e239a",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/krabi-catamaran-queue-approved-1600.webp",
+      "sha256": "a5e29bc4b4926d2c0dac990359521066cff1ae7d6dfe23708d75c9f1e140a092",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/krabi-catamaran-queue-approved-480.webp",
+      "sha256": "7cb594803bf8006be6b5f64ee510632ed02a09cfdd00d7eaf33be29dcf124195",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/krabi-catamaran-queue-approved-960.webp",
+      "sha256": "6c012df532f796dda5bf5ad197807b534c63b5f72c09e98b4605586c2ece1464",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/krabi-sunset-approved-1600.webp",
+      "sha256": "a377214442899ff6c6a0bc8cb4b1e8a4f42f631f156d57eab671eb23484b27db",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/krabi-sunset-approved-480.webp",
+      "sha256": "0bc6dacd0f078bd63357d0cd6a7d7cd6f07a753358b4f7d7d3a36a89186e9428",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/krabi-sunset-approved-960.webp",
+      "sha256": "9a0df34b3d100c3ed777fc12c97b486ea35fd64c6aa22f276e7d052452b2b68c",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/kuala-lumpur-queue-approved-1600.webp",
+      "sha256": "d0e1dc9632a813b197d803185ebdaf744f8cc695e82376ce8b5a602dab67c283",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/kuala-lumpur-queue-approved-480.webp",
+      "sha256": "007382443558c39968a4bc6b0e2924fa53d84cd444c414aaa45aea08d335373b",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/kuala-lumpur-queue-approved-960.webp",
+      "sha256": "0be40331c12fc69c2ea9f5012ae95228b02aaecd9fe063830e9f057b3f11c200",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/phang-nga-skywalk-queue-approved-1600.webp",
+      "sha256": "786ed9c22ae0146579ef028320d063058b369f19c57f02ee7040d20029d89d12",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/phang-nga-skywalk-queue-approved-480.webp",
+      "sha256": "0cca72b7b90a4ad7cdedcbcd4a17de35f0a0a5c397135f505114467680611c70",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/phang-nga-skywalk-queue-approved-960.webp",
+      "sha256": "a983ac11c60364200019d71d6561858ad44acbf7bde90dc5dd5b5d5bf715b133",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/phi-phi-bamboo-queue-approved-1600.webp",
+      "sha256": "0917561589aeb4d0abc079ca5529dce4ba176d31c1cec976d2c11c5b3e46075a",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/phi-phi-bamboo-queue-approved-480.webp",
+      "sha256": "52b5c155645e28717607e2408504553fa2467e6eedf215d46854b11dbb334ce5",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/phi-phi-bamboo-queue-approved-960.webp",
+      "sha256": "89952d968d08ad2895064b5a2034d23f80ea2df9a1b8eb0f5aacd0465307cf79",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/phi-phi-catamaran-approved-1600.webp",
+      "sha256": "42b56bd45cee3fa2d96fa13ab39dc18a98d5b07754a1ce94da2de336009779fd",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/phi-phi-catamaran-approved-480.webp",
+      "sha256": "f4c2ecd503d036edbbf5a6e729160de84805789d92da927d95994696bfecef95",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/phi-phi-catamaran-approved-960.webp",
+      "sha256": "0f502cbb3e1e561d83965ab3882c1d8f16bb1326fb178b9496638aa847951fee",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/phi-phi-fishing-approved-1600.webp",
+      "sha256": "3003dc9337c33d0da2c49d14d0b7001c787f036019e5b26e280d8cb2a46cce91",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/phi-phi-fishing-approved-480.webp",
+      "sha256": "3d2281be3e377f2ad94ef5f1419d5c31cba1540b4e2db744767e8bca775bab14",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/phi-phi-fishing-approved-960.webp",
+      "sha256": "95caea88c100fdfa26672cfb6dd2951c0ea4c4d3306c6fdbf82a95d37f13a93b",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/phi-phi-four-islands-queue-approved-1600.webp",
+      "sha256": "a6d9b971d78045fc7cd8e6d2e544097850f287ba0c0f1f8c4c9757ea595dfb30",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/phi-phi-four-islands-queue-approved-480.webp",
+      "sha256": "250a17de544580dd7cd4720b9a32364921167304ad6dfa91cde1df44dc975522",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/phi-phi-four-islands-queue-approved-960.webp",
+      "sha256": "f3bafcf7410f55ee997f9bbd69a13228ee81e2683ab25d892073af21123d7ab4",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/phi-phi-khai-maiton-queue-approved-1600.webp",
+      "sha256": "dbae9a029ef7ef66d3766836216d501a0094e805fbda5316ef4a13c7c4e85685",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/phi-phi-khai-maiton-queue-approved-480.webp",
+      "sha256": "6a3587eb4cc6508c7c3369472b1ffee311ad256e25f747d348a4503cd8db0cd0",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/phi-phi-khai-maiton-queue-approved-960.webp",
+      "sha256": "2de4b6165040745167172097521a34b1d00af314a5f10fd7320a0867f2f22d02",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/phi-phi-khai-queue-approved-1600.webp",
+      "sha256": "9f634f1d3df13478b0ac159de0a12b03b7536931fdf559eebb9b5c18b6f3cf2c",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/phi-phi-khai-queue-approved-480.webp",
+      "sha256": "7ea1af17bf5010344ad59ff3b7f15fb9f6058367eeca4884b0a597e2e075e9d5",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/phi-phi-khai-queue-approved-960.webp",
+      "sha256": "57a918b27646bc38d3cb31fcd1e669072dc2b47e5590affdeef36ce1d99b44d6",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/phi-phi-lazy-queue-approved-1600.webp",
+      "sha256": "31416beee432f15ece2457afc522176bc0a12e951488b6ed1bea0814be7940ca",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/phi-phi-lazy-queue-approved-480.webp",
+      "sha256": "22c2f8f5d1263ff1d5b82b1d37a2f5899f5eeebecd1a8d489bcd81236d2810fd",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/phi-phi-lazy-queue-approved-960.webp",
+      "sha256": "2aede3c08935c260eae6948cf59388c72c681371092a902cfffe207360b66fdc",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/phi-phi-overnight-queue-approved-1600.webp",
+      "sha256": "e813d3e717148de752c469d49bcc894cf74347554ee8e1799cef9bd305edf6a9",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/phi-phi-overnight-queue-approved-480.webp",
+      "sha256": "b58243daef6647fc5cb186c652000e59097c1853ddafafefe17da974ea5f04aa",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/phi-phi-overnight-queue-approved-960.webp",
+      "sha256": "1ebe3b0754a6e64f92c96e326177e55ce5e527c106979f5ba17ddbe9d8dd6cf7",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/phi-phi-racha-party-approved-1600.webp",
+      "sha256": "364c2269989391169bded2fa7a47033e8ca15b7711d5f358d28328d9376133b6",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/phi-phi-racha-party-approved-480.webp",
+      "sha256": "6032109e3a8d52a7623345df4d2d7ecb9593a0b7176655b73ba84e010513afe1",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/phi-phi-racha-party-approved-960.webp",
+      "sha256": "88650e3686b7309e90d3ea1e1bd818c5761d71ef219c24add98a684289bbd5ff",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/phi-phi-sunrise-approved-v2-1600.webp",
+      "sha256": "ac90af4a37bebdc0d4470c9241f76c75c65141c9141b315e994b748ea914f961",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/phi-phi-sunrise-approved-v2-480.webp",
+      "sha256": "27ddfc4aae76072640d7c8ced07d3113b6d69b3b217957cf7e4be15cd0091ccf",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/phi-phi-sunrise-approved-v2-960.webp",
+      "sha256": "a9c229fb644e9f5dee4746aeb607322e2f5f9c33bffc0ff3c66bbb4428dff463",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/phi-phi-sunset-queue-approved-1600.webp",
+      "sha256": "1d580c67d0077de76ed092bc66e5ab57bdc2a2b8b75e9ae7b31fd8a8caa03cc8",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/phi-phi-sunset-queue-approved-480.webp",
+      "sha256": "0706b502a89bb6d97c8429b616cd661477ffcbd33435596b6cdcdd3bc347b5bf",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/phi-phi-sunset-queue-approved-960.webp",
+      "sha256": "fd90106c194100600358527f553058325e0612df4559eba72daf4e69df84a756",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/phuket-city-queue-approved-1600.webp",
+      "sha256": "3e9be1ffd0e36e4248f4c69e2de2d2d88d86a41dcdf50fdbbc75afb9faa8cc44",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/phuket-city-queue-approved-480.webp",
+      "sha256": "bb005705ea169d855704e80d4041ca1879cb7427228cd13563cb4789fb462457",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/phuket-city-queue-approved-960.webp",
+      "sha256": "906b2a49db456a030bafc57aa6cc1d4965105e22bb1c635d75e811bf6e9fbaab",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/racha-coral-approved-1600.webp",
+      "sha256": "4322c5cb2e0f499511c725ac6124e53a40f7c1d25f2c7c94f56a0443a2104ce5",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/racha-coral-approved-480.webp",
+      "sha256": "d01b44d99dc8e1f8186244b2a414cd57cfa5ea2df6919cb7091f5628dc2e13d5",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/racha-coral-approved-960.webp",
+      "sha256": "b69a13e36f571f5577cba4e8ab9bacc089b259f5d1f7b0f3c1a796538dbdec49",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/racha-coral-maiton-queue-approved-1600.webp",
+      "sha256": "77c5894c210c048f33f4431ffb9d07de3454e58d2c22364a8d68bb9604dbf716",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/racha-coral-maiton-queue-approved-480.webp",
+      "sha256": "736314e59601afe5843b6415681a97a248a8b8795b20ac5744bff1169b63ed14",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/racha-coral-maiton-queue-approved-960.webp",
+      "sha256": "127a7d412e91aa0c428beeabf372bf65cca335c13e9b719c4da158d78be7c96d",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/racha-sunrise-queue-approved-1600.webp",
+      "sha256": "3fd42d2c9023fcd424161596fd3bf264271ba212c142d4ac9b2822f13f8c9ece",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/racha-sunrise-queue-approved-480.webp",
+      "sha256": "50dbca9d0eb38d20c2de7c8ed4819985b8b610c7474315448b715965f27da9b7",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/racha-sunrise-queue-approved-960.webp",
+      "sha256": "dee7b35c2337d6c85c42f1917f5edb960dbf7196c0b83d2f9a4cf5976ae22a1c",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/rafting-atv-approved-1600.webp",
+      "sha256": "9f0c9a387d1a0e41413fc6890f273271f2bc24729e75a4debf9c69327b0a50fe",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/rafting-atv-approved-480.webp",
+      "sha256": "6a6dfb252240e3412feb5d278bde7b42bd99eb7feaec534d13e4fe09dd9fd4b8",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/rafting-atv-approved-960.webp",
+      "sha256": "0e08906d8e9c3ac606e8ec327cf9f1f042fcec13bec93ac9706a0920631f256c",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/rafting-atv-approved-v2-1600.webp",
+      "sha256": "75c6ff6a7dfd6ff4fc13d8a28c3c55094115d7843d17d79366fdd1616bf8a8aa",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/rafting-atv-approved-v2-480.webp",
+      "sha256": "f31925fb5194812a9b76abf8e8612c4ca09d48e9c46405fe2f1f4620b6dce4ec",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/rafting-atv-approved-v2-960.webp",
+      "sha256": "792cfb773c982fd2a96c2c964fbccf0ea3881ef1f31673506d9dedb14d441e37",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/sea-fishing-queue-approved-1600.webp",
+      "sha256": "4e7cfb7f1363fde965f4c00702b5296590d43e460ea0bdd477f33fcecfe7b805",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/sea-fishing-queue-approved-480.webp",
+      "sha256": "9385bcf06cb5cf8580eb73045d16161a10811e939738a48010dc02709eb2e4a8",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/sea-fishing-queue-approved-960.webp",
+      "sha256": "ee5a388324d4a6d9dd18c919ad49fd5cfa6e645782b52cbd1a4292031d77381e",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/similan-diving-queue-approved-1600.webp",
+      "sha256": "f3e0864825c8e4a8ff143789655acc1fa077a37bf8cb2397a07c9b45064e2cc3",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/similan-diving-queue-approved-480.webp",
+      "sha256": "0260af18d9671ec7c90c9b7ceb944c5ab3733f32c3aab5b5ce0d6120a09ef2f5",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/similan-diving-queue-approved-960.webp",
+      "sha256": "e2ed2f1f21b4c5fc4a9a03dfe34dcf8a7164c3cfff187e6a87e4a9f736659449",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/similan-early-approved-1600.webp",
+      "sha256": "cd98b27e4579e31d16c9124dd7a73e6408f11a6356535d33537219006f667680",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/similan-early-approved-480.webp",
+      "sha256": "6df7cfb471fa6c029c96ea9733596116bf9b2433db67bd9b92d2647f162e6e8c",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/similan-early-approved-960.webp",
+      "sha256": "f08f866e076dfa39b0ad1cdc2e80a39b5d36207693f6586a0eb8a10d357a08f0",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/similan-early-approved-v2-1600.webp",
+      "sha256": "31d72c3c410c0e13a7fc670e75ac8dacf253c8ea91883df38e5745700d470b92",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/similan-early-approved-v2-480.webp",
+      "sha256": "7975f4a59fbff27dd3f304a92d8b49f516d604fe71ab6cc25b70e13a79ec4adb",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/similan-early-approved-v2-960.webp",
+      "sha256": "cf38cc2dc65002bc3765d39910c0534b2314ec630d2f74912b741710d9b1f2ab",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/similan-lazy-queue-approved-1600.webp",
+      "sha256": "b050b96adac08cd227d38a5ef1767833efa5e97f92927a96f37ce5163d08cbc9",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/similan-lazy-queue-approved-480.webp",
+      "sha256": "3bba302f1a1dbd1e7bfa7f4cfa6f705fb795f95129a09c509fcaabe3c901de6f",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/similan-lazy-queue-approved-960.webp",
+      "sha256": "32a9fe697d8b2915dc6f47986425267823fba3f0e627ea00396e89ad794c1107",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/singapore-queue-approved-1600.webp",
+      "sha256": "c1d5dd20aa816d2a578bd565ddd0921cecd49073be0a30e64cb86986b775781b",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/singapore-queue-approved-480.webp",
+      "sha256": "fb0f55e1af54fea94aafc4d685edea94e92ffa5bcc9978d220897e80e7ea89f1",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/singapore-queue-approved-960.webp",
+      "sha256": "e0cf8b5d068948e2f29834fb5a8fafb6b3e0792c4a778037a79b4b064b09620a",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/sunrise-phang-nga-queue-approved-1600.webp",
+      "sha256": "da6d5a06ec0761c78055bad7877e9fca3410b748b0d726f1da4e5bac038e61f8",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/sunrise-phang-nga-queue-approved-480.webp",
+      "sha256": "e593fa74f8a5199890762077134fea89f024d3e157d3515ea6d3f105134f3511",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/covers/sunrise-phang-nga-queue-approved-960.webp",
+      "sha256": "654dddd8e8f8b1eadecaeab8cbf7abb589bccc6cf803ee56fef7d73d71eb2c01",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/jet-ski-south-project-480.webp",
+      "sha256": "130bd2d6df13d23fd3783bacc04dd12d5c64b2e41ca4e60fea771688af9c6476",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/jet-ski-south-project-960.webp",
+      "sha256": "6e6a98bf782284b26e1c99272753d93a58ca76949ecba5c111b69f8ac2ef13cd",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/jet-ski-south-project.webp",
+      "sha256": "854960ef1797f903557d3d2d6a0f6925b920aec6cafebac596a417657c76dff9",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/maya-bay-project-480.webp",
+      "sha256": "4cbea7e4327fa0e011c5a625306eb679036ae81ed30dd5785f4b36081a9e8d0b",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/maya-bay-project-960.webp",
+      "sha256": "37246348d519369c920977aa7625211d4edb19b9afec714e7ac38813f123e9ee",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/maya-bay-project.webp",
+      "sha256": "ffd13292f20ab185da8d796305d062495ba39cc6f7cf79a6fe53c4b71795f4ce",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/phang-nga-project-1600.webp",
+      "sha256": "eccf1ce7838a17ecca045f40779b7cd4f4bdfdbcd43298556d235064a3240627",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/phang-nga-project-480.webp",
+      "sha256": "98488a968ea69c0709a149a5c2ec02535145f55724375aecb135b9ffad073ad7",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/phang-nga-project-960.webp",
+      "sha256": "bfb35e8664d1cb18697dd140360256f262aa97d3b039d431a43b88cffaafe531",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/phang-nga-project.webp",
+      "sha256": "e08c7a8d4aac67788136acb1d8d8b71fc30eea030f078e5ad9c88bdacaf8528b",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/phang-nga.webp",
+      "sha256": "e08c7a8d4aac67788136acb1d8d8b71fc30eea030f078e5ad9c88bdacaf8528b",
+      "evidence": "Matching CC attribution/source/license recorded in content/media-credits.json; image bytes and notices retained.",
+      "public_redistribution": "Retain with the matching CC terms and attribution; see content/media-credits.json."
+    },
+    {
+      "path": "public/media/phi-phi.webp",
+      "sha256": "ffd13292f20ab185da8d796305d062495ba39cc6f7cf79a6fe53c4b71795f4ce",
+      "evidence": "Matching CC attribution/source/license recorded in content/media-credits.json; image bytes and notices retained.",
+      "public_redistribution": "Retain with the matching CC terms and attribution; see content/media-credits.json."
+    },
+    {
+      "path": "public/media/racha-project-1600.webp",
+      "sha256": "81c2440842c16ceef652443359321192cd89aa8d4ec18502ec16a73fb9f72e2d",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/racha-project-480.webp",
+      "sha256": "61c9fdef40bb1f1e704f0853107432dcc55b53bb76fcff11216e12b595ef43cf",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/racha-project-960.webp",
+      "sha256": "c280ac83167a4ec0485c80f328f7cc225d7d8e10ccf60853fa808ca2ab72a807",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/racha-project.webp",
+      "sha256": "e68fe77f329f12767ded6a9f4ef213fe8ee823af1a0b7378a5bee64d3daa8be8",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/racha.webp",
+      "sha256": "e68fe77f329f12767ded6a9f4ef213fe8ee823af1a0b7378a5bee64d3daa8be8",
+      "evidence": "Matching CC attribution/source/license recorded in content/media-credits.json; image bytes and notices retained.",
+      "public_redistribution": "Retain with the matching CC terms and attribution; see content/media-credits.json."
+    },
+    {
+      "path": "public/media/reference/airport-plane-cutout.png",
+      "sha256": "365a00e721ed92d64e4569552951b7795e53bee0085c99e7ad459369d34559a3",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/reference/airport-plane.svg",
+      "sha256": "5f837e84763b12a07b911f16eb1b93dd723df4e4de5b789ccefb64f65448f48c",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/reference/andaman-clean-plate.webp",
+      "sha256": "28017adf8cbda9ca3616253e1abcc5f864ba673c62d4e9093346a71338b5b4a5",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/reference/andaman-user-map.png",
+      "sha256": "7ca6d8929c8f9eac90fb45a878b7ebc41fabc4e545f2ecbe310177f3991475df",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/reference/big-buddha-cutout.png",
+      "sha256": "6e21151c5c07a52a3d9fb90287e22cc676d8163de1128aba0088950e49e83b4d",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/reference/cheow-lan-minibus-small.png",
+      "sha256": "23ae7e6faf8dbdbcb190ba20c228eacabe12b4aa232c1b16f39b14fd32441f28",
+      "evidence": "Owner/reviewer confirmed provenance; retained unchanged.",
+      "public_redistribution": "Retained per explicit owner/reviewer instruction; no blanket unrelated license inferred."
+    },
+    {
+      "path": "public/media/reference/cheow-lan-user-map.png",
+      "sha256": "fe31fce446d37235f60d4848cb45f9bf5d77e5c36b1b7bc5942e3ce4fa5b70c7",
+      "evidence": "Owner/reviewer confirmed provenance; retained unchanged.",
+      "public_redistribution": "Retained per explicit owner/reviewer instruction; no blanket unrelated license inferred."
+    },
+    {
+      "path": "public/media/reference/cheow-lan-user-minibus.png",
+      "sha256": "9b2c0a6431b867f4da9b6d185d3e2230e1a87456d510e58c310181570c8473a9",
+      "evidence": "Owner/reviewer confirmed provenance; retained unchanged.",
+      "public_redistribution": "Retained per explicit owner/reviewer instruction; no blanket unrelated license inferred."
+    },
+    {
+      "path": "public/media/reference/diving-user-boat.png",
+      "sha256": "90b31a79ce83f16d6c963bb6d9cbbe4fd642ede77b994bedfbc23ad8937c71da",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/reference/diving-user-boat.webp",
+      "sha256": "95c0f3112e7b49e757310b52c9d930cf9bcf0295f6044b6e3eedc5fa879bffae",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/reference/doublebottle-map-bottle.webp",
+      "sha256": "ebe12b0b1dc3a6ad41f4faf8c9851d568a4721ac77f936af000136e1d41fcd62",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/reference/doublebottle-mobile-bottle.webp",
+      "sha256": "b6a5cbc18b26f59679fdd86a50c04f60310565d9febeb23ffb53e498e95dc602",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/reference/illustrated-land.png",
+      "sha256": "32dc4a4e18512def7821d2ce3211330e2855e07184f6f01615cb44cc839d7b83",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/reference/illustrated-sea.png",
+      "sha256": "676c399d6fce93158b309c62af9b4c81adf7b5cef4ecac9a5c0c3748919e535b",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/reference/map-landmark-placeholder.svg",
+      "sha256": "863b4792fa7a4581c21a09040cb398cdbb01647904a4bf2c5a7c630c390ae6d8",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/reference/national-parks-user-logo.png",
+      "sha256": "437e94b89dc7ae5d7dc3347376d5f3ff5e54fb38ee5dd7ccc932d3dbf098448e",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/reference/phi-phi-longtail.webp",
+      "sha256": "d33fdf80222359c4dae6d44d5910fdf73c6f3ef488ad2efd734d3f6a0d9c1b07",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/reference/phi-phi-park-logo.webp",
+      "sha256": "59534598bf79da324c3aacf304a8381e8ff31a1608f696d812ca5c5292f0ac59",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/reference/phi-phi-user-detail.png",
+      "sha256": "1b6b68e6070a246d38a4b7b0a90406292a047d4e24ae7d4c2c05e2b593a89d59",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/reference/phuket-airport-beach-original.png",
+      "sha256": "f3032a13ac7c6228ad90d05c2046d7d5d046ead09b54c5ed7bd192c61536caa9",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/reference/phuket-airport-user-logo.png",
+      "sha256": "ac5b7fd3f5046d71c5ca33c11b2f02fea855c3f45dec4b1a0bc858b7a6020273",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/reference/pirate-user-boat.png",
+      "sha256": "6a24470ca21b6c979cab2452891691a23977f55116ed2472e88e8c06f0ca6009",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/reference/pirate-user-boat.webp",
+      "sha256": "614a7e42915e478af0baea45dfb54404ee1cff4eb31810e91b72eb1f7b4c7ff7",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/reference/tat-badge-user-reference.png",
+      "sha256": "1f14a75a9856be6dadbe7968619b1b5997fa1d44e5c32230c1aca40bddba2de4",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/reference/thailand-park-logo.webp",
+      "sha256": "cd665ab1d528626826d179b36c2bca837c48eb3f4c028c7f0fe325549a13a73e",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/reference/tour-arrival-chest.png",
+      "sha256": "585e40f9c74755f4e831b6eb9aab3f215e67e2707f337307cd44e0574de9ca61",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/reference/yona-user-icon.webp",
+      "sha256": "16e9860d1bfaa9ec0d796c40d3b69193b991cdb272ae88f3b08645e5c1761691",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/thai-stamps/stamp-01.webp",
+      "sha256": "9059c93bea0bf5013586aaa37ccccd4bcc97f3ed420c8a8a5264b59256843924",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/thai-stamps/stamp-02.webp",
+      "sha256": "c8fdaefd42974927ad33bf8f4e17f326bf3e03737d63c4f0eb2e839917f4f8a6",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/thai-stamps/stamp-03.webp",
+      "sha256": "b6925e3b304a7afb23fffe07f9dd89cd6d4e7e382b35c23236cc1140056407a8",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/thai-stamps/stamp-04.webp",
+      "sha256": "f9af3d02cd383ede84a8c6eeb2c74101563f4f140716e2976f26937732b66cbc",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/thai-stamps/stamp-05.webp",
+      "sha256": "cfe35ba42ae55919ccc879ac4579605570c4d5749616191abc90ac15eef1b083",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/thai-stamps/stamp-06.webp",
+      "sha256": "da14c2383b28f3b8746cb6b36f28ca36fe22d05773cd1e185da262676f4dadb3",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/thai-stamps/stamp-07.webp",
+      "sha256": "a27a5ec5694d72a3d6884f480878c1113491361c8a4da4cdaed90f8c63fbecd5",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/thai-stamps/stamp-08.webp",
+      "sha256": "fd1020dce55ac438bb4df561923578b7d5ad4ba7cf9711419302847fe6fb7817",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/thai-stamps/stamp-09.webp",
+      "sha256": "3bca91a0aea712258d46d205b3e25014a5e96391ec48274396e3469da0161a29",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/thai-stamps/stamp-10.webp",
+      "sha256": "9e0b90bff3feac25bd66eac5be867203b16a9ab95c2a7bfa3051bca4e1c0fc06",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/thai-stamps/stamp-11.webp",
+      "sha256": "215b0d2fa239ec1a94fbe7229cf5aa1026e5fa3c9b4a3d6f0f9c4c8d802939aa",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/thai-stamps/stamp-12.webp",
+      "sha256": "2623fba7e0563e273f5896772f418edd51aefa76a366cca1d3973ea0b78cd45b",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/thai-stamps/stamp-13.webp",
+      "sha256": "94ee4c1621fefee96478aad91ad61e1f9b7c90d5b38dfdc439541f6b90bc3332",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/thai-stamps/stamp-14.webp",
+      "sha256": "2c6747cb6efbea4d18097f7f86c5e07d2754642262d07aa16db99517b039a26d",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/thai-stamps/stamp-15.webp",
+      "sha256": "635316989e20c6d961a677e1caa01b0a76091effdcc863c707bc926c07d42892",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/thai-stamps/stamp-16.webp",
+      "sha256": "2962261c6883b6dfae7741e85e3ff027d9ff2c106822cbf4e0d7bcbce6f836a9",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/thai-stamps/stamp-17.webp",
+      "sha256": "8b609604fd845f3a7ac462d1177c906eb430607cd2094a36603349b5cb61b2e3",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/thai-stamps/stamp-18.webp",
+      "sha256": "60b342ebc8f0b6f574a27918f93b6060c36b68cfe5bc1ac1b46432316bf9a394",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/thai-stamps/stamp-19.webp",
+      "sha256": "775ecaf01e51ff81ed1392bba15608bbb6dca84fc1eedf0524aa823fb33ff9bb",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/media/thai-stamps/stamp-20.webp",
+      "sha256": "bc8c988a468ceb576d4d8a1252ed9d412e5ac50a1f8977c6c1c396906829d09e",
+      "evidence": "Retained project illustration/brand/cover group per established owner/reviewer provenance and bundled provenance records.",
+      "public_redistribution": "Retain per explicit owner/reviewer public-copy instruction; no unrelated third-party rights inferred."
+    },
+    {
+      "path": "public/window.svg",
+      "sha256": "decf1cf7bb22b5c99c4857cfcd5718ce5465c4454166317589c83fc73df74b66",
+      "evidence": "Official Vercel create-next-app SVG match except terminal newline; Vercel MIT notice included.",
+      "public_redistribution": "MIT notice included; existing bytes unchanged."
+    },
+    {
+      "path": "vendor/urw-base35/NimbusRoman-Bold.otf",
+      "sha256": "e0ad81923bc6d85d5426f796217c87963ca1ae3c65e22c87a25b6c6353de299e",
+      "evidence": "See ASSET-DECISIONS.json and exact source/notice mapping.",
+      "public_redistribution": "Bundled source or license notice; retain applicable terms."
+    },
+    {
+      "path": "vendor/urw-base35/NimbusRoman-Regular.otf",
+      "sha256": "fd41669443616a7ae890c42e53a58f47fa24a940fd1e367acaff665cf5b6e9d8",
+      "evidence": "See ASSET-DECISIONS.json and exact source/notice mapping.",
+      "public_redistribution": "Bundled source or license notice; retain applicable terms."
+    },
+    {
+      "path": "vendor/urw-base35/NimbusSans-Regular.otf",
+      "sha256": "7c25be4d78155523080ab85b10277150657ff7dabbcad7037bdd536c9b6d0d08",
+      "evidence": "See ASSET-DECISIONS.json and exact source/notice mapping.",
+      "public_redistribution": "Bundled source or license notice; retain applicable terms."
+    }
+  ],
+  "review_note": "Retained project art and user assets follow owner/reviewer provenance, not an inferred blanket site-use license. Original operator brochures are not distributed. This is a bounded provenance review, not a forensic rights audit of every pixel."
+}

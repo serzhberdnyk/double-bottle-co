@@ -1,0 +1,157 @@
+.trigger {
+  box-sizing:border-box;
+  min-width:44px;
+  min-height:44px;
+  padding:0;
+  color:#133f45;
+  font-family:ReferenceUI,Arial,sans-serif;
+  cursor:pointer;
+  touch-action:manipulation;
+  pointer-events:auto;
+  -webkit-tap-highlight-color:transparent;
+}
+
+/* The 56 × 64 native target stays the same size at every responsive width. */
+.artTrigger {
+  position:absolute;
+  width:56px;
+  height:64px;
+  transform:translate(-50%,calc(-100% + 10px));
+  border:0;
+  border-radius:0;
+  background:transparent;
+  overflow:visible;
+  z-index:1;
+}
+
+.illustration {
+  display:block;
+  max-width:none;
+  flex-shrink:0;
+  object-fit:contain;
+  pointer-events:none;
+  user-select:none;
+}
+
+.artTrigger .illustration {
+  position:absolute;
+  left:50%;
+  bottom:10px;
+  transform:translateX(-50%);
+  transform-origin:50% 100%;
+  filter:drop-shadow(0 2px 1.2px #062c37ad);
+  transition:transform .24s cubic-bezier(.2,.8,.2,1),filter .24s ease;
+}
+
+
+.artLabel {
+  position:absolute;
+  top:calc(100% + 3px);
+  left:50%;
+  transform:translateX(-50%);
+  padding:4px 8px;
+  border:1px solid #cad6c8;
+  border-radius:3px;
+  background:#fffdf2;
+  color:#123f44;
+  font-size:11px;
+  line-height:1.2;
+  font-weight:400;
+  white-space:nowrap;
+  box-shadow:0 1px 4px #083c4633;
+  opacity:0;
+  visibility:hidden;
+  pointer-events:none;
+  transition:opacity .15s ease;
+}
+
+.artTrigger:hover,.artTrigger:focus-visible,.artTrigger[data-state="open"] {z-index:2}
+.artTrigger:hover .illustration,.artTrigger:focus-visible .illustration,.artTrigger[data-state="open"] .illustration {
+  transform:translate(-50%,-3px) scale(1.12);
+  filter:drop-shadow(0 4px 1.6px #062c37b3);
+}
+.artTrigger:active .illustration {transform:translate(-50%,0) scale(.96);transition-duration:.1s}
+.artTrigger:hover .artLabel,.artTrigger:focus-visible .artLabel,.artTrigger[data-state="open"] .artLabel {opacity:1;visibility:visible}
+.artTrigger:focus-visible {outline:none!important}
+.artTrigger:focus-visible .artLabel {text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:3px;border-color:#123f44;box-shadow:0 1px 3px #083c4655}
+
+.listTrigger {
+  display:flex;
+  align-items:center;
+  gap:12px;
+  width:100%;
+  min-height:64px;
+  padding:10px 14px;
+  border:1px solid #b9c4b7;
+  border-radius:5px;
+  background:#f8f6eb;
+  text-align:left;
+  transition:background-color .15s ease,border-color .15s ease;
+}
+
+.listLabel {display:flex;flex-direction:column;gap:3px;min-width:0;font-size:14px;line-height:1.3}
+.listLabel small {color:#56706b;font-size:11px;line-height:1.3}
+.listTrigger:hover,.listTrigger[data-state="open"] {background:#e9eede;border-color:#69847a}
+.listTrigger:active {background:#dde6d4}
+.listTrigger:focus-visible {outline:3px solid #194c50;outline-offset:3px}
+
+.card {
+  box-sizing:border-box;
+  position:relative;
+  z-index:100;
+  width:288px;
+  max-width:min(calc(100vw - 24px),var(--radix-popover-content-available-width,288px));
+  max-height:min(540px,var(--radix-popover-content-available-height,calc(100dvh - 24px)));
+  overflow-y:auto;
+  overscroll-behavior:contain;
+  padding:18px;
+  border:1px solid #c8ccad;
+  border-top:3px solid #194c50;
+  border-radius:4px;
+  background:#faf8ed;
+  color:#173f44;
+  box-shadow:0 12px 30px #073c4640;
+  font-family:ReferenceUI,Arial,sans-serif;
+  text-align:left;
+}
+
+.close {
+  position:absolute;
+  top:0;
+  right:0;
+  display:grid;
+  place-items:center;
+  width:44px;
+  height:44px;
+  border:0;
+  border-radius:3px;
+  background:transparent;
+  color:#466c68;
+  cursor:pointer;
+  touch-action:manipulation;
+}
+
+.close:hover {background:#e4eadb}
+.close:focus-visible,.link:focus-visible {outline:3px solid #194c50;outline-offset:2px}
+.cardHeader {display:flex;align-items:center;gap:10px;padding-right:24px;padding-bottom:14px;border-bottom:1px solid #d9dfcd}
+.cardHeader .cardArtwork {width:36px;height:36px;flex-shrink:0;object-fit:contain}
+.cardHeader h3 {margin:0;font:400 22px/1.05 ReferenceDisplay,Georgia,serif}
+.cardHeader span {display:block;margin-top:5px;color:#56736e;font-size:10px;line-height:1.3}
+.cardBody p {margin:13px 0 0;font-size:14px;line-height:1.45}
+.cardBody .notice {padding:10px;border-left:3px solid #b6bd97;background:#e9eddf;font-size:13px}
+.cardBody .caution {font-size:12px;color:#566c6d}
+.link {display:flex;align-items:center;min-height:44px;margin-top:9px;color:#194c50;font-size:13px;line-height:1.3;text-decoration:underline;text-underline-offset:3px}
+
+.arrow {fill:#faf8ed}
+
+@media(prefers-reduced-motion:reduce) {
+  .trigger,.illustration,.artLabel,.card {transition:none!important;animation:none!important}
+  .artTrigger:hover .illustration,.artTrigger:focus-visible .illustration,.artTrigger[data-state="open"] .illustration,.artTrigger:active .illustration {transform:translateX(-50%)!important;filter:drop-shadow(0 2px 1.2px #062c37ad)}
+}
+
+
+/* The requested plane cutout is wide; align its unchanged full alpha canvas with the source-image base. */
+.artTrigger[data-poi-kind="airport"] .illustration {object-position:center bottom}
+.artTrigger[data-poi-id="yona-boarding"] .artLabel {display:none}
+
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px;margin:12px 0}.gallery img{width:100%;height:160px;object-fit:contain;background:#f2ecd9;border:1px solid #b8c8c5}.cardBody p{white-space:pre-line}

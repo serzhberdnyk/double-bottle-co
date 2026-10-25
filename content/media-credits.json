@@ -1,0 +1,42 @@
+[
+  {
+    "id": "media_phi-phi",
+    "path": "/media/phi-phi.webp",
+    "license": "CC BY 4.0",
+    "attribution": "© Vyacheslav Argenberg / Wikimedia Commons / CC BY 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Maya_Bay,_Koh_Phi_Phi,_Krabi,_Thailand.jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "modifications": "Уменьшение размера, WebP; кадрирование при отображении.",
+    "title": "Phi Phi"
+  },
+  {
+    "id": "media_phang-nga",
+    "path": "/media/phang-nga.webp",
+    "license": "CC BY 4.0",
+    "attribution": "© Vyacheslav Argenberg / Wikimedia Commons / CC BY 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Phang_Nga_Bay,_Karst_islands,_Thailand.jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "modifications": "Уменьшение размера, WebP; кадрирование при отображении.",
+    "title": "Phang Nga Bay"
+  },
+  {
+    "id": "media_racha",
+    "path": "/media/racha.webp",
+    "license": "CC BY-SA 4.0",
+    "attribution": "ELPHUKET (Elyor Sherkulov) / Wikimedia Commons / CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Racha_Yai_Island.jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "modifications": "Уменьшение размера, WebP; кадрирование при отображении.",
+    "title": "Racha Yai"
+  },
+  {
+    "id": "media_cheow-lan",
+    "path": "/media/cheow-lan.webp",
+    "license": "CC BY-SA 2.5 CA",
+    "attribution": "The Cosmonaut / Wikimedia Commons / CC BY-SA 2.5 CA",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cheow_Lan_Lake_shoreline.jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/ca/",
+    "modifications": "Уменьшение размера, WebP; кадрирование при отображении.",
+    "title": "Cheow Lan Lake"
+  }
+]
