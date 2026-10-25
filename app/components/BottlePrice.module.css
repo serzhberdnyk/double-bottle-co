@@ -2,3 +2,10 @@
 .prices del {font-size:.72em;font-weight:400;color:#59697a;text-decoration-thickness:1px;white-space:nowrap}
 .prices>span {display:inline!important;white-space:nowrap;font-size:inherit!important;color:inherit!important;margin:0!important}
 .prices .badge {display:inline-block!important;margin:0!important;padding:2px 4px;background:#ffca48;color:#153552!important;font:600 11px/1.1 Arial,sans-serif!important;white-space:nowrap}
+
+/* Only the opt-in catalogue layout changes; detail/booking prices stay inline. */
+.cardPrices {display:grid;grid-template-columns:minmax(0,1fr);gap:3px;min-width:0;font:inherit;color:inherit;line-height:inherit}
+.cardPrices .current {display:block;min-width:0;overflow-wrap:anywhere;font:inherit;color:inherit}
+.cardPrices .savings {display:flex;align-items:baseline;flex-wrap:wrap;gap:3px 8px;min-width:0;font:inherit;color:inherit}
+.cardPrices del {font-size:.72em;font-weight:400;color:#59697a;text-decoration-thickness:1px;overflow-wrap:anywhere}
+.cardPrices .badge {display:inline-block!important;margin:0!important;padding:2px 4px;background:#ffca48;color:#153552!important;font:600 11px/1.1 Arial,sans-serif!important;white-space:nowrap}

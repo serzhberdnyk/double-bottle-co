@@ -1,5 +1,9 @@
 'use client';
 import {ApprovedBrochures} from './ApprovedBrochures';
+import {PublishedTourRoutes} from './PublishedRouteMap';
+import {mapRouteCopy} from './map-route-copy';
+import {routesForTour} from '@/lib/public/map-route-display';
+import type {MapRoute} from '@/lib/public/map-layout';
 import {useI18n} from '@/lib/i18n/context';
 
 
@@ -16,6 +20,7 @@ import styles from './CompactTourDetail.module.css';
 
 export interface CompactTourDetailProps {
   tour: Tour;
+  mapRoutes?: MapRoute[];
   variant: Variant;
   price: ReactNode;
   childPrices?: ReactNode;
@@ -30,9 +35,11 @@ export interface CompactTourDetailProps {
 /** Presentation only: published content and availability come from the public model. */
 export function CompactTourDetail({
   tour, variant, price, childPrices, variantSelector, inquiryDialog,
-  onRequest, onFavorite, saved, favoriteError,
+  onRequest, onFavorite, saved, favoriteError, mapRoutes=[],
 }: CompactTourDetailProps) {
- const {t:tr,href:localHref}=useI18n();
+ const {locale,t:tr,href:localHref}=useI18n();
+ const linkedRoutes=routesForTour(mapRoutes,tour.id);
+ const mapCopy=mapRouteCopy[locale];
 
   const model = compactTourModel(tour, variant);
   const cover = approvedTourCover(variantImageTour(tour,variant));
@@ -81,15 +88,16 @@ export function CompactTourDetail({
               fallback={<div className={styles.photoFallback} role="img" aria-label={tr("Фотография пока недоступна")}>Double Bottle Co’</div>}
             />
             <figcaption className={styles.photoMap}>
-              <details className={styles.regionalMap}>
-                <summary><span>{tr("Регион поездки на карте")}</span><Plus size={18} strokeWidth={1.5} aria-hidden="true" /></summary>
-                <p>{tr("Схематичный обзор региона. Расположение мест показано условно; это не маршрут поездки.")}</p>
+              <details className={styles.regionalMap} open={linkedRoutes.length>0?true:undefined}>
+                <summary><span>{linkedRoutes.length?mapCopy.tourMap:mapCopy.region}</span><Plus size={18} strokeWidth={1.5} aria-hidden="true" /></summary>
+                {linkedRoutes.length?<PublishedTourRoutes routes={linkedRoutes}/>:<>
+                <p>{mapCopy.regionNotice}</p>
                 <figure>
-                  {/* Keep the supplied regional artwork intact, without route overlays. */}
+                  {/* Unassigned tours keep the existing honest regional overview. */}
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="/media/reference/andaman-user-map.png" alt={tr("Схематичная карта Андаманского региона для общего знакомства с местностью")} loading="lazy" decoding="async" />
-                  <figcaption>{tr("Региональный ориентир")}</figcaption>
-                </figure>
+                  <img src="/media/reference/andaman-user-map.png" alt={mapCopy.regionAlt} loading="lazy" decoding="async" />
+                  <figcaption>{mapCopy.regionCaption}</figcaption>
+                </figure></>}
               </details>
             </figcaption>
           </figure>

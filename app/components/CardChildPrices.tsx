@@ -9,5 +9,5 @@ export function CardChildPrices({variants,adult,today,compact=false}:{variants:V
  const {t,locale}=useI18n();
  const child=cardChildPrices(variants,adult,today);
  if(child.status==='not_applicable')return null;
- return <div className={compact?`${styles.children} ${styles.compact}`:styles.children} data-card-child-prices>{child.status==='unknown'?<p>{t('Детская цена уточняется')}</p>:child.prices.map(({price,ageConfirmation},i)=><p key={price.rate?.id||i}><span className={styles.amount}><BottlePrice price={price}/></span>{' '}<span>{localizedPriceUnit(price.unit,locale)}</span>{ageConfirmation&&<small>{t('Возрастные условия уточняются')}</small>}</p>)}</div>;
+ return <div className={compact?`${styles.children} ${styles.compact}`:styles.children} data-card-child-prices>{child.status==='unknown'?<p>{t('Детская цена уточняется')}</p>:child.prices.map(({price,ageConfirmation},i)=><p key={price.rate?.id||i}><span className={styles.amount}><BottlePrice price={price} layout={compact?'card':'inline'}/></span>{' '}<span className={styles.unit}>{localizedPriceUnit(price.unit,locale)}</span>{ageConfirmation&&<small>{t('Возрастные условия уточняются')}</small>}</p>)}</div>;
 }

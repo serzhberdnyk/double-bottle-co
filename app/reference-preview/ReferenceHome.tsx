@@ -19,6 +19,7 @@ import {BrandMark} from '../components/BrandMark';
 import {referenceCopy as copy} from './reference-copy';
 import {useReferenceCatalog} from './useReferenceCatalog';
 import {SupplementalArtPOIs} from './SupplementalArtPOIs';
+import {CustomMapRouteList} from './CustomMapContent';
 import {MapBottle} from './MapBottle';
 import {ThaiStamp} from './ThaiStamp';
 import {HeroMapPreview} from './HeroMapPreview';
@@ -37,7 +38,7 @@ function CatalogPrice({variant,variants}: {variant: Variant;variants:Variant[]})
   const [today, setToday] = useState(todayInThailand());
   useEffect(() => { const timer = setInterval(() => setToday(todayInThailand()), 30000); return () => clearInterval(timer); }, []);
   const price = priceLabel(variant.rates, today);
-  return <div className={styles.price}><div className={styles.adultPrice}><strong><BottlePrice price={price}/></strong><small>{localizedPriceUnit(price.unit,locale)}</small></div><CardChildPrices variants={variants} adult={price} today={today} compact/>{variants.some(v=>v.rates.some(r=>r.id===price.rate?.id)&&v.conditions.includes('Цена из буклета. Срок действия не указан.'))&&<small className={styles.priceNote}>{tr('Цена из буклета. Срок действия не указан.')}</small>}</div>;
+  return <div className={styles.price} data-price-state={price.rate?'known':'request'}><div className={styles.adultPrice}><strong><BottlePrice price={price} layout="card"/></strong><small>{localizedPriceUnit(price.unit,locale)}</small></div><CardChildPrices variants={variants} adult={price} today={today} compact/>{variants.some(v=>v.rates.some(r=>r.id===price.rate?.id)&&v.conditions.includes('Цена из буклета. Срок действия не указан.'))&&<small className={styles.priceNote}>{tr('Цена из буклета. Срок действия не указан.')}</small>}</div>;
 }
 
 function ReferenceCard({tour, saved, onFavorite, busy, revealed}: {tour: Tour; saved: boolean; onFavorite: (id: string) => void; busy: boolean; revealed:boolean}) {
@@ -143,6 +144,7 @@ export function ReferenceHome({data:initial,initialQuery,onlyFavorites=false,sea
           <dl className={styles.stats}><div><dt>{initial?.count ?? '—'}</dt><dd>{data ? tr(programWord(data.count)) : tr("каталог")}</dd></div><div><dt>{initial?.destinations.length ?? '—'}</dt><dd>{tr("направлений")}</dd></div><div><dt>{tr("Таиланд")}</dt><dd>{tr("настоящие впечатления")}</dd></div></dl>
         </div>
       </section>
+      <CustomMapRouteList/>
       <section id="selected" className={styles.selection} aria-labelledby="selection-heading">
         <h2 id="selection-heading" className={styles.visuallyHidden}>{selectionTitle || tr("Экскурсии")}</h2>
         <HomeCatalogFilters data={data||initial} query={filters} onlyFavorites={onlyFavorites} focusSearch={searchOpen} onChange={updateFilters} onReset={resetFilters}/>

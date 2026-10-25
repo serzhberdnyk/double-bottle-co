@@ -10,7 +10,7 @@ const presentation=css.slice(css.indexOf('/* Palm card rhythm'));
 test('Every price state is immediately grouped with its title, before preserved metadata',()=>{
   for(const item of Object.values(cardCases)){
     const html=renderCard(item);
-    assert.match(html,/<div class="cardSummary"><h3>[^<]+<\/h3><div class="price"><strong>/);
+    assert.match(html,/<div class="cardSummary"><h3>[^<]+<\/h3><div class="price" data-price-state="(?:known|request)"><div class="adultPrice"><strong>/);
     assert(html.indexOf('class="cardSummary"')<html.indexOf('class="cardMeta"'));
     assert(html.includes('Острова и море'));
     assert(html.includes('1 день'));
@@ -55,16 +55,22 @@ test('Availability and favorite behavior remain present and distinct from card n
   assert(home.includes('onClick={() => onFavorite(tour.id)}'));
 });
 
-test('Layout has no footer spacer or fixed card height; wrapping stays safe at every breakpoint',()=>{
+test('Shared row tracks align amounts without cropping titles or stretching every loaded row',()=>{
   assert(!css.includes('.cardBottom'));
   assert(!css.includes('.cardArrow'));
-  assert(presentation.includes('.cardLink {display:block;min-width:0;height:auto;'));
-  assert(presentation.includes('align-items:start;gap:26px 18px'));
-  assert(presentation.includes('.cardSummary {display:grid;grid-template-columns:minmax(0,1fr);gap:8px;min-width:0}'));
-  assert(presentation.includes('.cardContent {min-width:0;padding-top:12px;overflow-wrap:anywhere}'));
-  assert(presentation.includes('.price {min-width:0;overflow-wrap:anywhere}'));
+  assert(presentation.includes('grid-auto-rows:auto'));
+  assert(!presentation.includes('grid-auto-rows:1fr'));
+  assert(presentation.includes('@supports (grid-template-rows:subgrid)'));
+  assert(presentation.includes('.card {display:grid;grid-row:span 6;grid-template-rows:subgrid;row-gap:0}'));
+  assert(presentation.includes('.cardContent {display:grid;grid-row:2/span 5;grid-template-rows:subgrid;row-gap:0}'));
+  assert(presentation.includes('.cardSummary {grid-row:2/span 2;grid-template-rows:subgrid;row-gap:0}'));
+  assert(presentation.includes('.cardSummary .price {grid-row:2}'));
+  assert(presentation.includes('.cardMeta {grid-row:4}'));
+  assert(presentation.includes('min-height:2lh'));
+  assert(presentation.includes('.page:lang(th) .card h3{min-height:3em;min-height:2lh}'));
+  assert(presentation.includes('.price[data-price-state="request"] .adultPrice {grid-column:1/-1}'));
+  assert(presentation.includes('align-items:start;align-self:start'));
   assert(presentation.includes('.cardMeta>span>span {min-width:0;overflow-wrap:anywhere}'));
-  assert(presentation.includes('min-height:0;margin-top:10px'));
   assert(presentation.includes('@media(max-width:1050px) {.cards {grid-template-columns:repeat(2,minmax(0,1fr))}'));
   assert(presentation.includes('.cards {grid-template-columns:1fr;gap:24px}'));
   assert(!/\.(?:cardLink|cardSummary|cardContent|price)[^{]*\{[^}]*(?:white-space:nowrap|text-overflow:ellipsis|line-clamp|margin-top:auto)/.test(presentation));

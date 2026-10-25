@@ -3,6 +3,7 @@ import type {Locale} from './core';
 /** Public UI copy. Keys are original Russian source strings; no commercial facts are changed. */
 const entries: ReadonlyArray<readonly [string, string, string]> = [
   ["Напишите нам", "Contact us", "ติดต่อเรา"],
+  ["Связаться с нами", "Contact us", "ติดต่อเรา"],
   ["Выберите удобный способ связи.", "Choose how you’d like to get in touch.", "เลือกช่องทางติดต่อที่สะดวกสำหรับคุณ"],
   [
     "Больше, чем путешествия",

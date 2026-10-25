@@ -16,8 +16,17 @@ export const mapSizePresets=['small','medium','large'] as const;
 export type MapSizePreset=typeof mapSizePresets[number];
 export type MapPlacement={id:MapObjectId;x:number;y:number;image:string;title?:string;description?:string;photos?:string[];sizePreset?:MapSizePreset;sizePx?:number|null};
 export type MapLayout=MapPlacement[];
-export type MapRoutePoint={x:number;y:number};
-export type MapRoute={id:string;title:string;points:MapRoutePoint[];color:'sea'|'land';style:'solid'|'dashed'};
+export const mapPointColors={cream:'#fff2d3',sea:'#4bd4f1',land:'#c5e877',gold:'#ffca48',coral:'#ff9d8a',violet:'#cfb6ff'} as const;
+export type MapPointColor=keyof typeof mapPointColors;
+export type MapRoutePoint={x:number;y:number;label?:string;color?:MapPointColor};
+export type MapTourChoice={id:string;slug:string;title:string};
+export type MapRoute={id:string;title:string;points:MapRoutePoint[];color:'sea'|'land';style:'solid'|'dashed';closed?:boolean;tourId?:string|null;
+ /** Public read model only: never accepted in saved editor input. */
+ tour?:MapTourChoice};
+export function canCloseMapRoute(points:MapRoutePoint[]){return new Set(points.map(point=>`${point.x},${point.y}`)).size>=3;}
+/** Closure is a rendering edge, never an extra stored stop. */
+export function mapRouteLinePoints(route:MapRoute){const points=route.closed&&canCloseMapRoute(route.points)?[...route.points,route.points[0]]:route.points;return points.map(point=>`${point.x*12.8},${point.y*10.83}`).join(' ');}
+export function mapRoutePointLabel(point:MapRoutePoint,index:number){return point.label||`Точка ${index+1}`;}
 export type MapDocument={version:2;placements:MapLayout;routes:MapRoute[]};
 export const smallBusImage='/media/reference/cheow-lan-minibus-small.png';
 /** Keep stored image identities intact, using the approved compact rendering
@@ -68,14 +77,16 @@ export const legacyMapLayoutSchema=z.array(z.object(placementShape).strict()).le
  if(new Set(items.map(item=>item.id)).size!==legacyMapObjects.length||items.some(item=>!legacyMapObjects.some(original=>original.id===item.id)))ctx.addIssue({code:'custom',message:'INVALID_MAP_OBJECTS'});
  for(const item of items){const original=mapObjects.find(object=>object.id===item.id);if(original&&item.image!==original.image&&!item.image.startsWith('/api/catalog-media/'))ctx.addIssue({code:'custom',message:'INVALID_MAP_IMAGE'});}
 });
-const point=z.object({x:z.number().finite().min(0).max(100),y:z.number().finite().min(0).max(100)}).strict();
+const point=z.object({x:z.number().finite().min(0).max(100),y:z.number().finite().min(0).max(100),label:z.string().trim().max(120).optional(),color:z.enum(['cream','sea','land','gold','coral','violet']).optional()}).strict();
 export const mapRouteSchema=z.object({
  id,
  title:z.string().trim().min(1).max(120),
  points:z.array(point).min(2).max(100).refine(points=>points.some(p=>p.x!==points[0].x||p.y!==points[0].y),'MAP_ROUTE_NEEDS_DISTINCT_POINTS'),
  color:z.enum(['sea','land']),
  style:z.enum(['solid','dashed']),
-}).strict();
+ closed:z.boolean().optional(),
+ tourId:z.string().min(1).max(100).regex(/^[a-zA-Z0-9_-]+$/).nullable().optional(),
+}).strict().superRefine((route,ctx)=>{if(route.closed&&!canCloseMapRoute(route.points))ctx.addIssue({code:'custom',message:'MAP_CLOSED_ROUTE_NEEDS_THREE_DISTINCT_POINTS'});});
 export const mapDocumentSchema=z.object({version:z.literal(2),placements:mapLayoutSchema,routes:z.array(mapRouteSchema).max(50)}).strict().superRefine((document,ctx)=>{
  if(new Set(document.routes.map(route=>route.id)).size!==document.routes.length)ctx.addIssue({code:'custom',message:'DUPLICATE_MAP_ROUTES'});
 });
@@ -95,9 +106,20 @@ export function legacyMapLayout(document:MapDocument):MapLayout{
 
 /** Old open v2 clients may omit newly introduced built-ins and size fields.
  * Preserve those values; an explicit null resets size to its native/preset value. */
-export function mergeMapDocument(input:unknown,current:MapDocument):MapDocument{
+export function mergeMapDocument(input:unknown,current:MapDocument,{preserveRouteMetadata=true}:{preserveRouteMetadata?:boolean}={}):MapDocument{
  const incoming=mapDocumentSchema.parse(input),previous=new Map(current.placements.map(item=>[item.id,item]));
  const placements=incoming.placements.map(item=>Object.hasOwn(item,'sizePx')?item:{...item,...(previous.get(item.id)?.sizePx!==undefined?{sizePx:previous.get(item.id)!.sizePx}:{})});
  if(!placements.some(item=>item.id===busMapObject.id))placements.splice(Math.max(0,current.placements.findIndex(item=>item.id===busMapObject.id)),0,previous.get(busMapObject.id)||{id:busMapObject.id,x:busMapObject.x,y:busMapObject.y,image:busMapObject.image});
- return mapDocumentSchema.parse({...incoming,placements});
+ // Older editors know geometry only. Match unchanged/reordered points by their
+ // location; only a same-length edit may fall back to the original point index.
+ const previousRoutes=new Map(current.routes.map(route=>[route.id,route]));
+ const routes=preserveRouteMetadata?incoming.routes.map(route=>{
+  const before=previousRoutes.get(route.id);if(!before)return route;
+  const points=route.points.map((point,index)=>{
+   const old=before.points.find(item=>item.x===point.x&&item.y===point.y)||(before.points.length===route.points.length?before.points[index]:undefined);
+   return {...point,...(!Object.hasOwn(point,'label')&&old?.label!==undefined?{label:old.label}:{}),...(!Object.hasOwn(point,'color')&&old?.color!==undefined?{color:old.color}:{})};
+  });
+  return {...route,points,...(!Object.hasOwn(route,'closed')&&before.closed!==undefined?{closed:before.closed&&canCloseMapRoute(points)}:{}),...(!Object.hasOwn(route,'tourId')&&before.tourId!==undefined?{tourId:before.tourId}:{})};
+ }):incoming.routes;
+ return mapDocumentSchema.parse({...incoming,placements,routes});
 }

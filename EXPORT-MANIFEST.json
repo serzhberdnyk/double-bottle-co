@@ -1,7 +1,7 @@
 {
-  "source_commit": "72f3aa5e4a4716d40c4023746f15d7b5481ef55f",
-  "parent_candidate_commit": "97831dffe21e3161aa92487bcfcefcc4e7f7f866",
-  "parent_manifest_sha256": "16afdd7b8bb5dfd19fdd34bb70184f02f87a3bfc542836e69cdbd4ee4045c164",
+  "source_commit": "2d521dc872a5535061fe370712e5063da196c21f",
+  "parent_candidate_commit": "556927cb5d1df075e492b6d9c5aee15967d4e3cc",
+  "parent_manifest_sha256": "28619e87e9e2f19caac54a526304c65843978cd16187e254a6336c7279bc5eb8",
   "files": [
     {
       "path": ".dev.vars.example",
@@ -39,14 +39,19 @@
       "sha256": "0a72b808302992a9f7ce853184c470ae6e3590990459b12bc5ac4341ed6de3c0"
     },
     {
+      "path": "CHANGELOG.md",
+      "bytes": 2960,
+      "sha256": "5be9709c2254ac4239fe30659f57c912fea819f31920784d34d54e731659452e"
+    },
+    {
       "path": "PUBLIC-CANDIDATE-VALIDATION.json",
       "bytes": 58910,
       "sha256": "45c3af67767145ce71917f232a4d1d6fb114168004c47b25a10d5ce91260b98a"
     },
     {
       "path": "README.md",
-      "bytes": 8286,
-      "sha256": "c962b0ae80d3c5d5f2dc9727abf808e19dc2eabb07b07ae0ca92a9a4a7b86146"
+      "bytes": 10118,
+      "sha256": "07a7b991ab5d19ff625ec492fd9a06e7f841c6b9e9a9dc3a2b3471c73e19ca93"
     },
     {
       "path": "SECURITY-REVIEW.json",
@@ -140,13 +145,13 @@
     },
     {
       "path": "app/admin/map-panel.module.css",
-      "bytes": 3156,
-      "sha256": "a59eee967b7b11aae9c7b2b8b176ce18e40b6c9898ac055a072b18f19e618bed"
+      "bytes": 3473,
+      "sha256": "3c15c72aa91f22bd5a30de839328dbab31697847ca30220eaa77dea3af44c727"
     },
     {
       "path": "app/admin/map-panel.tsx",
-      "bytes": 25457,
-      "sha256": "462b980529256742f1a893ef4e388f5b2b5e57c6a678395487f8f553cec5a2b0"
+      "bytes": 26450,
+      "sha256": "30a548ec153b2a0e80a93cc75bdf734d2b4cfe8d64a4438aca44922fa446959d"
     },
     {
       "path": "app/admin/operations.tsx",
@@ -215,8 +220,8 @@
     },
     {
       "path": "app/api/admin/map/route.ts",
-      "bytes": 1978,
-      "sha256": "64e66c37b7208f724d6ec5c04abc821947c2f60ed520937ee34f5b1defe73a00"
+      "bytes": 2774,
+      "sha256": "fe492ad76759bd02ddf822d555b6b9fe834bf32d180476f3c2bc52e939a1eb40"
     },
     {
       "path": "app/api/admin/route.ts",
@@ -295,13 +300,13 @@
     },
     {
       "path": "app/components/BottlePrice.module.css",
-      "bytes": 638,
-      "sha256": "b4fb5fee33eddb833009c5dd4e19d145ae3ffb5ba0855a8f4e22454d3c9ecb19"
+      "bytes": 1385,
+      "sha256": "479a5da5abe604ee455c4e0828062b300e8ac1c0521392c99450535a2a7eb86d"
     },
     {
       "path": "app/components/BottlePrice.tsx",
-      "bytes": 1015,
-      "sha256": "857b548e457ef25dbc71ba0953c4e5180387ba206ad102159f89419a4f1d569b"
+      "bytes": 1782,
+      "sha256": "839760700efd41a9a2e670abb4803cdb00044760b8f69a47ac1a895cc611c303"
     },
     {
       "path": "app/components/BrandMark.tsx",
@@ -310,18 +315,18 @@
     },
     {
       "path": "app/components/CardChildPrices.module.css",
-      "bytes": 748,
-      "sha256": "76bdb44280138a8301d8af4c8a6f60aa9d09c9a511f5de07e11ee555361bfa8c"
+      "bytes": 793,
+      "sha256": "863a0fc8e8dedca94d0f7a3917c135037e3dc48485eed7b034b62ef555a07fa1"
     },
     {
       "path": "app/components/CardChildPrices.tsx",
-      "bytes": 1124,
-      "sha256": "3e8cb6286df581cb62d320a160b3dee8d51439828c89f952346885e0dc462dc7"
+      "bytes": 1181,
+      "sha256": "6107c3a15ae8115f70a5d5e07ea8dcb249fd52e50b8899e59700dfdd05a2fdee"
     },
     {
       "path": "app/components/CatalogUI.tsx",
-      "bytes": 32694,
-      "sha256": "36685e68cd71ba0e750148382116d0aecdd6e7680a1590e655a2323ebeef6e8e"
+      "bytes": 33051,
+      "sha256": "cb3d6fc3b1d120adc6b10784400632c8aa76428b2cb49fad86a3bfe7a9895e4f"
     },
     {
       "path": "app/components/CompactTourDetail.module.css",
@@ -330,8 +335,8 @@
     },
     {
       "path": "app/components/CompactTourDetail.tsx",
-      "bytes": 8984,
-      "sha256": "f6779b730a7081cb1c11c53fce754f6810817ad984fe11b44131b0242e90edd2"
+      "bytes": 9173,
+      "sha256": "4f89b96a70ca971202bad10d9d090c2767d449ce755a075605a1ffb1bb6d8c5b"
     },
     {
       "path": "app/components/Comparison.tsx",
@@ -399,6 +404,16 @@
       "sha256": "d13fde086d898603ccdbc1098317f876d98b1752e10e1d7ce1ef3c0663832b2b"
     },
     {
+      "path": "app/components/PublishedRouteMap.module.css",
+      "bytes": 2396,
+      "sha256": "11a8ca75acd4634325effc6de432284c52c8a45144f4a5413523b9ca7e91f2a9"
+    },
+    {
+      "path": "app/components/PublishedRouteMap.tsx",
+      "bytes": 3208,
+      "sha256": "08a2c49266736afa88177de30a364cb70d5b2ddae215fcbed0b503a4172ce5be"
+    },
+    {
       "path": "app/components/SiteChrome.tsx",
       "bytes": 2914,
       "sha256": "34d6f8a68587a1f6483a46fa364f29c9d9dc4cb3f837d9a53d8718809a211086"
@@ -432,6 +447,11 @@
       "path": "app/components/localized-price.ts",
       "bytes": 1242,
       "sha256": "adc95992cca9046c3dd4ed9866bab6de4ea84acb08669e18b177e699635c400f"
+    },
+    {
+      "path": "app/components/map-route-copy.ts",
+      "bytes": 2858,
+      "sha256": "b41b5424de697755995eb239bbb8e088e82dac9648a07ae4c8b73aafd1e1262c"
     },
     {
       "path": "app/credits/page.tsx",
@@ -500,8 +520,8 @@
     },
     {
       "path": "app/reference-preview/CustomMapContent.tsx",
-      "bytes": 1779,
-      "sha256": "4aedcde097f473d45c748e01f34b3022edb5a1680dc56cc4ea56bb9723ad1c62"
+      "bytes": 1982,
+      "sha256": "8153ae53ece6603300acc2153e4edf0a5fa871df21987a5446d243a4f53063fd"
     },
     {
       "path": "app/reference-preview/DestinationDirectory.tsx",
@@ -580,8 +600,8 @@
     },
     {
       "path": "app/reference-preview/ReferenceHome.tsx",
-      "bytes": 16490,
-      "sha256": "fe76d2df7ed47de9df6bad6bc5cb9d0dd778647ee1d0d1767f5940ab8d774b39"
+      "bytes": 16635,
+      "sha256": "e02699c25a9751c5afda439e4338d28cc9795ac6aeb23e54a7d2858c6a2ad19a"
     },
     {
       "path": "app/reference-preview/SupplementalArtPOIs.tsx",
@@ -645,8 +665,8 @@
     },
     {
       "path": "app/reference-preview/reference-copy.ts",
-      "bytes": 1046,
-      "sha256": "cb140100a30137b27e0d8639b8bce49e83521d030af0cd5c19bdc24c71735c36"
+      "bytes": 1043,
+      "sha256": "6c040485a0d5383943e70f0d6d32603346deabe08cd55dd7f43ffc5562db67a1"
     },
     {
       "path": "app/reference-preview/reference-feed.ts",
@@ -670,8 +690,8 @@
     },
     {
       "path": "app/reference-preview/reference.module.css",
-      "bytes": 62263,
-      "sha256": "08aa40c432bcd80a400bfef5a47362ea655ec9e6771b19419c683f88d18e2148"
+      "bytes": 63321,
+      "sha256": "8cf4bb15cbd292d6c9b48152100821bb87eb0e19a8b9f0899df3bcbe48f3e9b9"
     },
     {
       "path": "app/reference-preview/supplementary-pois.ts",
@@ -695,8 +715,8 @@
     },
     {
       "path": "app/tour/[slug]/page.tsx",
-      "bytes": 2059,
-      "sha256": "22dd9672c7ad2750aa066c6e55604347f41b5812f22029204d6d96854424bc08"
+      "bytes": 2456,
+      "sha256": "278fd072f95acf70a82c9a0caf2aec90f286262b7a2de68b9c762a8d7d00fedf"
     },
     {
       "path": "assets-source/demo-brochure-placeholder.svg",
@@ -2055,8 +2075,8 @@
     },
     {
       "path": "lib/i18n/ui-copy.ts",
-      "bytes": 92087,
-      "sha256": "17b87a0002baa59354792aba16cd734139edae078286a07e843f2f4df74ec9c1"
+      "bytes": 92170,
+      "sha256": "43a12e9c6938a3e19e3b362d9457ef1bdb4f4dec31a879e2081675784d79bd12"
     },
     {
       "path": "lib/public/admin-service-sort.ts",
@@ -2155,8 +2175,13 @@
     },
     {
       "path": "lib/public/map-layout.ts",
-      "bytes": 8115,
-      "sha256": "7d49ded3c4aae205856df9ee7dcfc780ae91a2e2f4073637c426502579d3b2d0"
+      "bytes": 10544,
+      "sha256": "886279f7bde50925a0928a6cd8ae6370f431d53f02c920581c1f1f5d9221b63f"
+    },
+    {
+      "path": "lib/public/map-route-display.ts",
+      "bytes": 257,
+      "sha256": "04e85c1db95d3e382c720896ffb965e220d5913fdde3dca7870e7d17ed66c5a4"
     },
     {
       "path": "lib/public/media.ts",
@@ -2310,8 +2335,8 @@
     },
     {
       "path": "lib/server/map-editor.ts",
-      "bytes": 3999,
-      "sha256": "31d5cad79485fb3d243474a72893bda9a1b9ec06c784609b022d772e972c51f9"
+      "bytes": 8878,
+      "sha256": "0c36966b04cb131dba1c8f75f9687ddf8bf949b26f96999b26fc9206b3e5bd43"
     },
     {
       "path": "lib/server/release-variant-ownership.ts",
@@ -3809,6 +3834,11 @@
       "sha256": "a4441ebd2e63af2ed28e7009a15c15d46ed7a8d82b97c8cca21b62dbd1588b5b"
     },
     {
+      "path": "tests/aligned-card-pricing.test.ts",
+      "bytes": 8040,
+      "sha256": "0a2bbb433b39f97521f801ec25b357b77fa8c0956eb0268c3f66422b5b08e175"
+    },
+    {
       "path": "tests/approved-eight-import.test.ts",
       "bytes": 6259,
       "sha256": "fe8df349e8533bce7c1ff6f6443cd199c445abfe624962d5b36579ad15c22889"
@@ -3830,8 +3860,8 @@
     },
     {
       "path": "tests/card-presentation-fixture.ts",
-      "bytes": 4652,
-      "sha256": "6de0aced634256651a155a62b6f8f6a8f6f878fd43b9f9f3797e915e26c8d7ff"
+      "bytes": 5181,
+      "sha256": "2416fbf1729dc622ffc4b319ef1caff7328b30aad3a02238c73c94bdc166f50b"
     },
     {
       "path": "tests/catalog-creation.test.ts",
@@ -3865,8 +3895,8 @@
     },
     {
       "path": "tests/compact-card-presentation.test.ts",
-      "bytes": 4277,
-      "sha256": "b376b92a9cf3d06bf3099976005767e5a11a1d1d7ebfec63f1e5ecc00888ceb8"
+      "bytes": 4778,
+      "sha256": "b1734eb74b0521affa0919e119b8a13c298921801d7e5c02006f6ed76a38e86c"
     },
     {
       "path": "tests/compact-tour.test.ts",
@@ -4049,6 +4079,16 @@
       "sha256": "48e63e6fbf5478dc13d21da5dde709d66c0ca8e4fd7fc4bfa3c2ec75b2528cf4"
     },
     {
+      "path": "tests/map-editor-enhancements.test.ts",
+      "bytes": 12840,
+      "sha256": "24ec2a4e2a3f3d96a5a431a115b46d440055817924c3ec180999f90e2aa6e6a7"
+    },
+    {
+      "path": "tests/map-editor-loading.test.mjs",
+      "bytes": 10006,
+      "sha256": "37a1cb57373a8a4f37bbfde254102111c8c5ba50f87399a2c9017a4b11e21092"
+    },
+    {
       "path": "tests/map-editor.test.ts",
       "bytes": 3771,
       "sha256": "64a3155200d5d8615445f15c42a5d6825556cbcaa8b2b442ba60217d47751aff"
@@ -4099,9 +4139,19 @@
       "sha256": "3de5ffaa3796ab38a332dceb426750f4ad2ae3ae4b72953139ee753d31f5c84b"
     },
     {
+      "path": "tests/published-map-routes.test.mjs",
+      "bytes": 11631,
+      "sha256": "3eedbf8db60d14a4ead9003a5f9e06fe4dc552632ff9194fb4cc7849e4b08296"
+    },
+    {
       "path": "tests/reference-card-style.test.ts",
       "bytes": 3062,
       "sha256": "18bd3a8bff9951c19db356a3702cd9cd2d6eaa6c1782e0348ea3f49e52ab644a"
+    },
+    {
+      "path": "tests/reference-contact-action.test.ts",
+      "bytes": 885,
+      "sha256": "19b46b1d965e3f9fd6754fcb3e8d84f03e7dc4d969907371f5fcb63412fbbe88"
     },
     {
       "path": "tests/reference-feed-catalogue.test.ts",
@@ -4248,5 +4298,8 @@
       "bytes": 3115,
       "sha256": "6f6d890794fbe23f3e35cceb327f49d5977432a5aaf715e040a6408932da395b"
     }
-  ]
+  ],
+  "public_source_version": "0.8.2",
+  "parent_public_commit": "78db1725e9c39f456edc032dab1dfb7d5b8e1957",
+  "code_patch_sha256": "8e4b9c1f534d2d0faf1d546d0998feba834c969e775eba00ad5fe3a35507ef8f"
 }

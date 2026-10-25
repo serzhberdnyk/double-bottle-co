@@ -5,27 +5,31 @@ import ts from 'typescript';
 import {Clock, Heart, Users} from 'lucide-react';
 import {categoryNames, priceLabel, type Rate, type Tour} from '../lib/public/types';
 import {displayRates} from '../lib/public/pricing';
-import {bottlePriceText} from '../lib/public/bottle-discount';
+import {bottleAmount} from '../lib/public/bottle-discount';
+import {cardChildPrices} from '../lib/public/card-child-prices';
+import {localizedPriceText,localizedPriceUnit} from '../app/components/localized-price';
+import {translateUi} from '../lib/i18n/ui-copy';
+import type {Locale} from '../lib/i18n/core';
 
-// Exercise the actual local card functions without loading the full map, router or browser.
-// Only CSS module names, the image wrapper and the clock date are substituted for SSR.
-const home=readFileSync('app/reference-preview/ReferenceHome.tsx','utf8');
-const source=ts.createSourceFile('ReferenceHome.tsx',home,ts.ScriptTarget.Latest,true,ts.ScriptKind.TSX);
-const functions=source.statements.filter(node=>ts.isFunctionDeclaration(node)&&['CatalogPrice','ReferenceCard'].includes(node.name?.text||''));
-if(functions.length!==2)throw new Error('Expected the production card and price functions');
-const code=ts.transpileModule(functions.map(node=>node.getText(source)).join('\n'),{compilerOptions:{jsx:ts.JsxEmit.React,target:ts.ScriptTarget.ES2022}}).outputText;
+// Render the production card/price functions, not a reimplemented fixture UI.
+// Substitute only browser context, CSS-module names, artwork and a stable date.
+function extract(path:string,names:string[]){
+ const source=ts.createSourceFile(path,readFileSync(path,'utf8'),ts.ScriptTarget.Latest,true,ts.ScriptKind.TSX);
+ const functions=source.statements.filter(node=>ts.isFunctionDeclaration(node)&&names.includes(node.name?.text||''));
+ if(functions.length!==names.length)throw new Error('Expected production functions: '+names.join(', '));
+ return ts.transpileModule(functions.map(node=>node.getText(source).replace('export function','function')).join('\n'),{compilerOptions:{jsx:ts.JsxEmit.React,target:ts.ScriptTarget.ES2022}}).outputText;
+}
 const styles=new Proxy({}, {get:(_target,key)=>String(key)});
-const priceSource=ts.createSourceFile('BottlePrice.tsx',readFileSync('app/components/BottlePrice.tsx','utf8'),ts.ScriptTarget.Latest,true,ts.ScriptKind.TSX);
-const priceFunction=priceSource.statements.find(node=>ts.isFunctionDeclaration(node)&&node.name?.text==='BottlePrice')!;
-const priceCode=ts.transpileModule(priceFunction.getText(priceSource).replace('export function','function'),{compilerOptions:{jsx:ts.JsxEmit.React,target:ts.ScriptTarget.ES2022}}).outputText;
-const BottlePrice=new Function('React','useBottleDiscount','bottlePriceText','styles',priceCode+'\nreturn BottlePrice;')(React,()=>false,bottlePriceText,styles);
-const Card=new Function('React','useState','useEffect','todayInThailand','priceLabel','displayRates','categoryNames','styles','TourImage','Clock','Heart','Users','BottlePrice',code+'\nreturn ReferenceCard;')(
-  React,React.useState,React.useEffect,()=> '2026-10-12',priceLabel,displayRates,categoryNames,styles,
-  ({src,alt,fallback}:{src?:string;alt:string;fallback:React.ReactNode})=>src?React.createElement('img',{src,alt}):fallback,Clock,Heart,Users,BottlePrice,
-) as React.ComponentType<{tour:Tour;saved:boolean;busy:boolean;revealed:boolean;onFavorite:(id:string)=>void}>;
-
-export function renderCard(tour:Tour, saved=false, busy=false){
-  return renderToStaticMarkup(React.createElement(Card,{tour,saved,busy,revealed:false,onFavorite:()=>{}}));
+export function renderCard(tour:Tour,saved=false,busy=false,options:{locale?:Locale;discount?:boolean}={}){
+ const locale=options.locale||'ru';
+ const useI18n=()=>({locale,t:(text:string)=>translateUi(text,locale),href:(href:string)=>locale==='ru'?href:'/'+locale+href});
+ const BottlePrice=new Function('React','useI18n','useBottleDiscount','localizedPriceText','bottleAmount','styles',extract('app/components/BottlePrice.tsx',['BottlePrice'])+'\nreturn BottlePrice;')(React,useI18n,()=>!!options.discount,localizedPriceText,bottleAmount,styles);
+ const CardChildPrices=new Function('React','useI18n','cardChildPrices','BottlePrice','localizedPriceUnit','styles',extract('app/components/CardChildPrices.tsx',['CardChildPrices'])+'\nreturn CardChildPrices;')(React,useI18n,cardChildPrices,BottlePrice,localizedPriceUnit,styles);
+ const Card=new Function('React','useState','useEffect','todayInThailand','useI18n','priceLabel','displayRates','categoryNames','styles','TourImage','Clock','Heart','Users','BottlePrice','localizedPriceUnit','CardChildPrices',extract('app/reference-preview/ReferenceHome.tsx',['CatalogPrice','ReferenceCard'])+'\nreturn ReferenceCard;')(
+  React,React.useState,React.useEffect,()=> '2026-10-12',useI18n,priceLabel,displayRates,categoryNames,styles,
+  ({src,alt,fallback}:{src?:string;alt:string;fallback:React.ReactNode})=>src?React.createElement('img',{src,alt}):fallback,Clock,Heart,Users,BottlePrice,localizedPriceUnit,CardChildPrices,
+ ) as React.ComponentType<{tour:Tour;saved:boolean;busy:boolean;revealed:boolean;onFavorite:(id:string)=>void}>;
+ return renderToStaticMarkup(React.createElement(Card,{tour,saved,busy,revealed:false,onFavorite:()=>{}}));
 }
 const rate=(overrides:Partial<Rate>={}):Rate=>({id:'fixture-rate',amountMinor:260000,currency:'THB',unit:'за взрослого',audience:'adult',validFrom:'2026-01-01',validUntil:null,conditions:'',supplements:[],...overrides});
 const tour=(id:string,title:string,rates:Rate[],format='Групповая'):Tour=>({

@@ -1,8 +1,10 @@
-# Double Bottle public source review candidate
+# Double Bottle public source v0.8.2
 
-Application source: `72f3aa5e4a4716d40c4023746f15d7b5481ef55f`, logical Double Bottle v0.8.1 / Sites105. Previous reviewed candidate: `97831dffe21e3161aa92487bcfcefcc4e7f7f866`.
+This v0.8.2 public-source update applies the reviewed 28-file card, map and contact-button patch to public commit `78db1725e9c39f456edc032dab1dfb7d5b8e1957`. It corresponds to the application changes released as Sites106. See [CHANGELOG.md](CHANGELOG.md).
 
-This is a sanitized, synthetic public-source review snapshot, not a production backup, published release or live Site. Original project history is not included. Final independent review is pending. No upload, GitHub push or deployment was performed. No blanket project OSS license is assigned.
+This is sanitized public source, not a production backup or deployable copy of the live Site. The reviewed v0.8.1 export was published in this repository; v0.8.2 retains its synthetic data, empty exported translation maps, DEMO brochures, bundled license notices and privacy exclusions. No production media, catalog rows or private project history are imported by this update. No blanket project OSS license is assigned.
+
+The original v0.8.1 audit reports (`PUBLIC-CANDIDATE-VALIDATION.json`, `SOURCE-PROVENANCE.json`, `ASSET-DECISIONS.json` and `ASSET-REVIEW.json`) remain historical review records. Their prepublication status and earlier test results are not the status or test results of v0.8.2. `EXPORT-MANIFEST.json` describes the current distributed files.
 
 ## Supported local setup
 
@@ -26,14 +28,22 @@ All sixteen `public/media/atime-*.jpg` paths now contain original, simple, clear
 
 `assets-source/demo-brochure-placeholder.svg` is the new code-native artwork. `node scripts/render-demo-brochures.mjs` renders it to the existing sixteen filenames using the pinned Next/sharp dependency. The renderer reads no operator image. It writes only those sixteen public-copy files.
 
-The only application-code changes are:
+The v0.8.1 export-specific brochure sanitization changes are:
 
 * `app/components/ApprovedBrochures.tsx`: RU/EN/TH display labels explicitly identify DEMO samples. Existing product mappings and all sixteen links are unchanged.
 * `lib/server/approved-eight-import.ts`: the new-product `imageAlt` literal identifies a DEMO synthetic sample; new media `license`, `attribution` and `sourceUrl` identify synthetic export placeholders, not original A-Time brochures.
 
-No IDs, structural stems, slugs, guards, rates, SQL, importer control flow or other application behavior was changed. Historical supplier/provenance strings remain code identifiers and do not establish rights to omitted artwork. The original archive, original candidate and live Site were not changed.
+Those brochure substitutions did not change IDs, structural stems, slugs, guards, rates, SQL or importer control flow. The v0.8.2 code changes are listed separately in the changelog. Historical supplier/provenance strings remain code identifiers and do not establish rights to omitted artwork. The original export archive and original candidate were not changed.
 
 ## Validation
+
+### v0.8.2 public-source update
+
+Repeated on the final patched Linux public-source copy with the unchanged pinned dependencies: production build PASS, TypeScript PASS, 62 focused card/map/contact tests PASS, 12 localization tests PASS, 4 DEMO component tests PASS and 11 synthetic export/import tests PASS. The latter export-only suite must run from a clean source archive without `.git`; running it directly inside a Git checkout intentionally fails its archive-content assertion. No test or security guard was disabled.
+
+All 28 patch preimages and postimages matched the reviewed package exactly. All media, data fixtures, font binaries, license notices, package/lock files and other code outside the patch remain unchanged. Changed-source lint reports the same 5 existing CatalogUI errors and 10 warnings as the reviewed patch, with zero new diagnostics. This is not a clean full-repository lint result. The full historical suite and browser/pixel QA were NOT rerun for v0.8.2.
+
+### Historical v0.8.1 export validation
 
 On Linux with installed dependencies:
 
@@ -52,7 +62,7 @@ The final license/DEMO correction passed Linux production build, TypeScript, 11 
 
 The full historical Node suite was NOT rerun on this final export. On previous candidate commit `97831dffe21e3161aa92487bcfcefcc4e7f7f866` it had 314 tests, 227 passed and 87 failed. Those are historical results, not results for the final commit. The 87 failures comprised 30 excluded private-fixture cases, 3 excluded historical-document cases, 4 dataset-specific golden assertions, 14 outdated SQL fixtures, 15 stale UI mocks and 21 historical assertions needing separate review. No guards or tests were disabled to conceal failures. See `PUBLIC-CANDIDATE-VALIDATION.json`.
 
-No live database, provider credentials, remote deployment, browser validation, GitHub write or access change was performed.
+That historical export validation performed no live database access, credential use, remote deployment, browser validation, GitHub write or access change. The v0.8.2 synchronization updates public GitHub source only; it does not deploy this synthetic copy to a Site or touch a live database.
 
 ## Privacy, retained assets and licenses
 
@@ -68,4 +78,4 @@ The three Nimbus source OTFs and exact source/output mapping are bundled in `ven
 
 Fifty PNG text metadata chunks are identical software markers. Five PNG C2PA chunks contain generation and signing provenance; these are not automatically secrets. Pattern checks and this bounded review are not a complete forensic audit of all binary formats.
 
-`SOURCE-PROVENANCE.json` records exclusions and transformations. `EXPORT-MANIFEST.json` lists every distributed file except itself. The snapshot excludes node_modules, build outputs, local state, raw audit logs and original Git history. Any local root review commit is newly created from this exact file set and contains no prior project history.
+`SOURCE-PROVENANCE.json` records the original export exclusions and transformations. `EXPORT-MANIFEST.json` lists every currently distributed file except itself. The source export excludes node_modules, build outputs, local state, raw audit logs and private project history. This repository preserves its existing clean public history when adding the v0.8.2 commit.
