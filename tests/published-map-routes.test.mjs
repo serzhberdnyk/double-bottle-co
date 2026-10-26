@@ -77,6 +77,17 @@ test('empty route map remains absent and old points use readable default colour 
  assert.match(render(PublishedRouteLegend,{routes:[routes[1]]}),/Точка 1/);
 });
 
+test('selected program displays existing place artwork and standalone point icons with its line and named colour markers',()=>{
+ const load=loader(),{defaultMapDocument,resolveMapRoute,setMapRoutePointPlace}=load('lib/public/map-layout.ts');
+ const route=structuredClone(routes[0]);route.points[0]=setMapRoutePointPlace(route.points[0],'big-buddha',defaultMapDocument.placements);route.points[1].icon='/media/reference/airport-plane-cutout.png';
+ const resolved=resolveMapRoute(route,defaultMapDocument.placements),{CompactTourDetail}=load('app/components/CompactTourDetail.tsx');
+ const html=render(CompactTourDetail,{...detailProps,mapRoutes:[resolved]});
+ assert(html.includes('src="/media/reference/big-buddha-cutout.png"'));assert(html.includes('src="/media/reference/airport-plane-cutout.png"'));
+ assert(html.includes('<polyline'));assert(html.includes('Boarding'));assert(html.includes('Lagoon'));assert(html.includes('background-color:#ff9d8a'));assert.equal((html.match(/data-route-point=/g)||[]).length,2);
+ const other=render(CompactTourDetail,{...detailProps,variant:{...variant,id:'v2'},mapRoutes:[resolved]});
+ assert(!other.includes('big-buddha-cutout.png'));assert(!other.includes('airport-plane-cutout.png'));assert(!other.includes('data-tour-route-map'));
+});
+
 test('editor-supplied labels are escaped as text, never interpreted as markup or a URL',()=>{
  const evil={...routes[0],title:'<script>route</script>',points:[{x:20,y:30,label:'<img src=x onerror=alert(1)>'},{x:21,y:31}]};
  const {PublishedTourRoutes}=loader()('app/components/PublishedRouteMap.tsx');
@@ -105,16 +116,37 @@ test('real tour detail displays only its attached routes while preserving progra
   assert(html.includes('data-tour-route-map'));assert(html.includes('Ocean route'));assert(html.includes('Boarding'));
   assert(!html.includes('Other route'));assert(!html.includes('Unassigned route'));
   assert(html.includes('Original programme'));assert(html.includes('unchanged price'));
+  assert(!html.includes('GPS'));assert(!html.includes('Расположение на иллюстрации'));
   assert(html.includes(({ru:'Маршрут экскурсии на карте',en:'Tour route on the map',th:'เส้นทางทัวร์บนแผนที่'})[locale]));
  }
 });
 
-test('real tour detail without a linked route retains the honest unmodified regional overview',()=>{
+test('real tour detail without a linked route hides the map without a regional substitute',()=>{
+ for(const locale of ['ru','en','th']){
+  const load=loader(locale),{CompactTourDetail}=load('app/components/CompactTourDetail.tsx'),{mapRouteCopy}=load('app/components/map-route-copy.ts');
+  const html=render(CompactTourDetail,{...detailProps,mapRoutes:routes.slice(1)});
+  assert(!html.includes('data-tour-route-map'));assert(!html.includes('data-editor-map-routes'));
+  assert(!html.includes(mapRouteCopy[locale].tourMap));assert(!html.includes('<details'));
+  assert(!html.includes('andaman-user-map.png'));assert(!html.includes('Региональный ориентир'));
+  assert(html.includes('Original programme'));assert(html.includes('unchanged price'));
+ }
+});
+
+test('program pages omit destination-link tiles while retaining itinerary, prices and attached map geometry',()=>{
  const {CompactTourDetail}=loader()('app/components/CompactTourDetail.tsx');
- const html=render(CompactTourDetail,{...detailProps,mapRoutes:routes.slice(1)});
- assert(!html.includes('data-tour-route-map'));assert(!html.includes('data-editor-map-routes'));
- assert(html.includes('Регион поездки на карте'));assert(html.includes('это не маршрут поездки'));
- assert(html.includes('andaman-user-map.png'));
+ const stops=[{destinationId:'racha-yai',sequence:0,name:'Рача Яй',visitType:'landing',required:true,note:'',lat:7.6,lng:98.3},{destinationId:'coral',sequence:1,name:'Корал',visitType:'landing',required:true,note:'',lat:7.7,lng:98.4}];
+ const selected={...variant,stops},programTour={...tour,id:'p_40cbe5f22267527c94bc5a8b',slug:'phi-phi-sunrise',variants:[selected]};
+ const route={...routes[0],tourId:programTour.id},props={...detailProps,tour:programTour,variant:selected,mapRoutes:[route]},before=JSON.stringify(props);
+ const html=render(CompactTourDetail,props);
+ assert(!html.includes('stop-tags'));assert(!html.includes('?destination='));
+ assert(html.includes('Original programme'));assert(html.includes('unchanged price'));
+ assert(html.includes('data-tour-route-map'));assert(html.includes('<polyline'));assert(html.includes('Boarding'));assert(html.includes('href="/#selected"'));
+ assert.equal(JSON.stringify(props),before);assert.equal(selected.stops.length,2);
+ const ui=readFileSync('app/components/CatalogUI.tsx','utf8'),detail=ui.slice(ui.indexOf('export function TourPage'));
+ assert(!detail.includes('stop-tags'));assert(detail.includes('v.itinerary.map'));assert(detail.includes('linkedRoutes.length>0&&<PublishedTourRoutes'));
+ // The shared catalogue still lists actual TourCards and retains its destination filter.
+ const catalog=ui.slice(ui.indexOf('export function CatalogExperience'),ui.indexOf('export function TourPage'));
+ assert(catalog.includes('<TourCard'));assert(catalog.includes('filters.destination'));assert(catalog.includes('data.items.map'));
 });
 
 test('general map excludes custom routes even with route-bearing context, preserving custom landmarks',()=>{
@@ -141,6 +173,10 @@ test('stable program IDs select only that variant; legacy tour-only links are ne
  const selectedVIP=render(CompactTourDetail,{...detailProps,variant:{...variant,id:'v2',name:'VIP'},mapRoutes:all});
  assert(standard.includes('Ocean route'));assert(!standard.includes('VIP route'));assert(!standard.includes('Legacy route'));
  assert(selectedVIP.includes('VIP route'));assert(!selectedVIP.includes('Ocean route'));assert(!selectedVIP.includes('Legacy route'));
+ const empty=render(CompactTourDetail,{...detailProps,variant:{...variant,id:'v3',name:'No route'},mapRoutes:all});
+ assert(!empty.includes('<details'));assert(!empty.includes('<polyline'));assert(!empty.includes('andaman-user-map.png'));
+ assert(!empty.includes('Ocean route'));assert(!empty.includes('VIP route'));assert(!empty.includes('Legacy route'));
+ const back=render(CompactTourDetail,{...detailProps,mapRoutes:all});assert.equal(back,standard);
  assert.equal(JSON.stringify(all),before);
 });
 

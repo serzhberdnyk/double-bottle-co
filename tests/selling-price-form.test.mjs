@@ -1,0 +1,20 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import * as React from 'react';
+import {renderToStaticMarkup} from 'react-dom/server';
+import ts from 'typescript';
+const source=ts.createSourceFile('selling-price-fields.tsx',readFileSync('app/admin/selling-price-fields.tsx','utf8'),ts.ScriptTarget.Latest,true,ts.ScriptKind.TSX);
+const fn=source.statements.find(n=>ts.isFunctionDeclaration(n));
+const compiled=ts.transpileModule(fn.getText(source).replace('export function','function'),{compilerOptions:{jsx:ts.JsxEmit.React,target:ts.ScriptTarget.ES2022}}).outputText;
+const Fields=new Function('React',compiled+';return SellingPriceFields;')(React);
+test('new selling price form collects price and conditions without validity controls',()=>{
+ let edit={id:'v',rates:[]},changed;
+ const props={variant:{id:'v',name:'Программа',rates:[],priceOptions:[{key:'standard',label:'Стандарт'}]},edit,amounts:{},disabled:false,onAmount:()=>{},onChange:next=>{changed=next;}};
+ const tree=Fields(props),add=tree.props.children.find(child=>child?.type==='button');
+ add.props.onClick();
+ assert.equal(changed.newRates.length,1);assert(!('validFrom' in changed.newRates[0]));assert(!('validUntil' in changed.newRates[0]));
+ const html=renderToStaticMarkup(React.createElement(Fields,{...props,edit:changed}));
+ for(const label of ['Для кого','Вариант цены','Сумма, THB','Единица и возрастные условия','Условия'])assert(html.includes(label));
+ assert(!html.includes('type="date"'));assert(!html.includes('Действует с'));assert(!html.includes('Действует до'));
+});

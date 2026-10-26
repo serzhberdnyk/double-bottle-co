@@ -62,12 +62,11 @@ test('Dialog reuse retains the portal boundary and never stops pointer or click 
   assert(css.includes('overflow-y:auto'));
 });
 
-test('Optional placement uncertainty is part of the art card accessible description only',()=>{
-  assert(source.includes("props.placement==='art'&&props.placementNotice"));
+test('Public map cards omit placement commentary while retaining descriptions and safety cautions',()=>{
+  assert(!source.includes('tr(props.placementNotice)'));
   assert(source.includes('aria-describedby={descriptionId}'));
-  const description=source.slice(source.indexOf('<div className={styles.cardBody} id={descriptionId}>'),source.indexOf('{item.link&&'));
-  assert(description.includes('{props.placementNotice}'));
-  assert(source.includes("placement:'list';anchor?:never;placementNotice?:never"));
+  assert(source.includes('item.descriptions.map'));
+  assert(source.includes('tr(item.notice)'));assert(source.includes('tr(item.caution)'));
 });
 
 test('Silhouette artwork keeps a constant target and uses interaction-only motion from its base',()=>{

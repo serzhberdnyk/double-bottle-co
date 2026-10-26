@@ -19,6 +19,14 @@ export function catalogHref(query:CatalogQuery,context:CatalogLinkContext={}) {
   if(context.search)params.set('search','1');
   return path+(params.size?'?'+params.toString():'')+(!destinationPath&&context.anchor!==false?'#selected':'');
 }
+
+/** Return to this catalogue selection, dropping program/price-option and unrelated page state. */
+export function brandCatalogHref(search:string) {
+  const params=new URLSearchParams(search);
+  return catalogHref(catalogQueryFromSearch(Object.fromEntries(params)),{
+    favorites:params.get('favorites')==='1',search:params.get('search')==='1',
+  });
+}
 export function indexableCatalogSearch(search:CatalogSearch,{destinationPage=false}:{destinationPage?:boolean}={}) {
   const allowed=destinationPage?['page']:['page','category'];
   if(Object.keys(search).some(key=>!allowed.includes(key)))return false;

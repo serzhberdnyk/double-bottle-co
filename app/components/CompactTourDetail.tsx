@@ -9,10 +9,9 @@ import {useI18n} from '@/lib/i18n/context';
 
 import type {ReactNode} from 'react';
 import {ArrowRight, Check, Heart, Plus} from 'lucide-react';
-import {isApprovedReviewTour} from '@/lib/public/approved-review-queue';
 import {compactTourModel} from '@/lib/public/compact-tour';
 import {approvedTourCover} from '@/lib/public/tour-cover';
-import {categoryNames, visitNames, type Tour, type Variant} from '@/lib/public/types';
+import {categoryNames, type Tour, type Variant} from '@/lib/public/types';
 import {Header, Footer} from './SiteChrome';
 import {VariantTourImage} from './VariantTourImage';
 import {variantImageTour} from '@/lib/public/variant-image';
@@ -87,19 +86,12 @@ export function CompactTourDetail({
               arrival
               fallback={<div className={styles.photoFallback} role="img" aria-label={tr("Фотография пока недоступна")}>Double Bottle Co’</div>}
             />
-            <figcaption className={styles.photoMap}>
-              <details className={styles.regionalMap} open={linkedRoutes.length>0?true:undefined}>
-                <summary><span>{linkedRoutes.length?mapCopy.tourMap:mapCopy.region}</span><Plus size={18} strokeWidth={1.5} aria-hidden="true" /></summary>
-                {linkedRoutes.length?<PublishedTourRoutes routes={linkedRoutes}/>:<>
-                <p>{mapCopy.regionNotice}</p>
-                <figure>
-                  {/* Unassigned tours keep the existing honest regional overview. */}
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="/media/reference/andaman-user-map.png" alt={mapCopy.regionAlt} loading="lazy" decoding="async" />
-                  <figcaption>{mapCopy.regionCaption}</figcaption>
-                </figure></>}
+            {linkedRoutes.length>0&&<figcaption className={styles.photoMap}>
+              <details className={styles.regionalMap}>
+                <summary><span>{mapCopy.tourMap}</span><Plus size={18} strokeWidth={1.5} aria-hidden="true" /></summary>
+                <PublishedTourRoutes routes={linkedRoutes}/>
               </details>
-            </figcaption>
+            </figcaption>}
           </figure>
           <ApprovedBrochures productId={tour.id}/>
 
@@ -111,7 +103,6 @@ export function CompactTourDetail({
               </ol>
             ) : <p className={styles.emptyNote}>{tr("Подробную программу уточним перед подтверждением поездки.")}</p>}
             {model.routeNotes.length > 0 && <div className={styles.routeNotes}>{model.routeNotes.map((line, index) => <p key={index}>{tr(line)}</p>)}</div>}
-            {(isApprovedReviewTour(tour) || (tour.id==='p_40cbe5f22267527c94bc5a8b' && tour.slug==='phi-phi-sunrise') || (tour.id==='p_3667f6d249165a538cd50188' && tour.slug==='phi-phi-fishing') || (tour.id==='p_26d3b3eb87f65341b3af9fcc' && tour.slug==='phi-phi-racha-party')) && variant.stops.length > 0 && <div className="stop-tags">{variant.stops.map(stop => <a key={stop.sequence} href={localHref('/?destination=' + encodeURIComponent(stop.destinationId) + '#selected')}><span>{stop.name}<small>{tr(visitNames[stop.visitType])}</small></span></a>)}</div>}
           </section>
           </div>
 

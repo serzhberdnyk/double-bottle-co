@@ -1,8 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {sortAdminServices,companyNames} from '../lib/public/admin-service-sort';
-import {adminServiceCompanies} from '../lib/server/admin-service-companies';
+import {sortAdminServices,companyNames,adminCompanyChoices,filterAdminServices} from '../lib/public/admin-service-sort';
+import {adminServiceCompanies,adminServiceCompanyRefs} from '../lib/server/admin-service-companies';
 import {testDatabase} from './d1-adapter';
 import {stageImport,publishRelease,type ImportPacket} from '../lib/server/management';
 import {editorState} from '../lib/server/catalog-editor';
@@ -38,12 +38,16 @@ test('company labels follow existing bindings, survive content revisions and nev
  const state=await editorState(db);
  const imported=packet.products[0];
  assert(state.serviceCompanies[imported.id].includes(imported.supplier.name.trim()));
+ assert(state.serviceCompanyRefs[imported.id].some(c=>c.id===imported.supplier.id&&c.name===imported.supplier.name.trim()));
+ assert(state.serviceCompanyRefs[imported.id].every(c=>Object.keys(c).sort().join(',')==='id,name'));
+ assert(!('serviceCompanyRefs' in JSON.parse(publicBefore)));
  assert(!('suppliers' in state));assert(!('serviceCompanies' in JSON.parse(publicBefore)));
  const variant=db.sqlite.prepare('SELECT rv.* FROM catalog_release_variants rv JOIN catalog_variants v ON v.id=rv.variant_id WHERE v.product_id=? LIMIT 1').get(imported.id) as any;
  db.sqlite.prepare('INSERT INTO catalog_variant_revisions SELECT ?,variant_id,hash||?,name,duration,days,transport,format,terms_json FROM catalog_variant_revisions WHERE id=?').run('test-content-revision','-edit',variant.revision_id);
  db.sqlite.prepare('UPDATE catalog_release_variants SET revision_id=? WHERE release_id=? AND variant_id=?').run('test-content-revision',variant.release_id,variant.variant_id);
  const labels=await adminServiceCompanies(db,state.state.release_id);
  assert.deepEqual(labels,state.serviceCompanies);
+ assert.deepEqual(await adminServiceCompanyRefs(db,state.state.release_id),state.serviceCompanyRefs);
  db.sqlite.prepare('UPDATE catalog_release_variants SET revision_id=? WHERE release_id=? AND variant_id=?').run(variant.revision_id,variant.release_id,variant.variant_id);
  assert.equal(JSON.stringify(await catalog(db,{limit:48})),publicBefore);
  assert.equal(JSON.stringify(db.sqlite.prepare('SELECT * FROM internal_supply_bindings ORDER BY id').all()),bindingsBefore);
@@ -51,10 +55,16 @@ test('company labels follow existing bindings, survive content revisions and nev
  assert.equal((await adminServiceCompanies(db,state.state.release_id))[imported.id],undefined);
 });
 
-test('admin selection uses existing IDs and defaults to existing order',()=>{
- const source=readFileSync('app/admin/catalog-panel.tsx','utf8');
- assert(source.includes("useState<ServiceSort>('default')"));
- assert(source.includes('aria-label="Сортировка услуг"'));
- assert(source.includes('sortAdminServices(data.tours,data.serviceCompanies,serviceSort)'));
- assert(source.includes('value={t.id}'));assert(source.includes('disabled={busy||dirty}'));
+test('company filtering uses stable IDs, keeps original order and retains unknown companies in All',()=>{
+ const services=[{id:'unknown'},{id:'multi',hidden:true},{id:'same-name'},{id:'a'}];
+ const companies={multi:[{id:'a',name:'Острова'},{id:'b',name:'Яхты'},{id:'a',name:'Острова'}],a:[{id:'a',name:'Острова'}],'same-name':[{id:'c',name:'Острова'}]};
+ const before=JSON.stringify({services,companies});
+ assert.deepEqual(filterAdminServices(services,companies),services);
+ assert.deepEqual(filterAdminServices(services,companies,'a'),[services[1],services[3]]);
+ assert.deepEqual(filterAdminServices(services,companies,'b'),[services[1]]);
+ assert.deepEqual(filterAdminServices(services,companies,'c'),[services[2]]);
+ assert.deepEqual(filterAdminServices(services,companies,'missing'),[]);
+ assert.deepEqual(adminCompanyChoices(services,companies).map(c=>c.id),['a','c','b']);
+ assert.deepEqual(adminCompanyChoices([{id:'unknown'}],companies),[]);
+ assert.equal(JSON.stringify({services,companies}),before);
 });

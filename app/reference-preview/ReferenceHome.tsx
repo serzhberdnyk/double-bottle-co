@@ -16,6 +16,7 @@ import {todayInThailand,displayRates} from '@/lib/public/pricing';
 import {TourImage} from '../components/TourImage';
 import {LicenseBadge} from '../components/LicenseBadge';
 import {BrandMark} from '../components/BrandMark';
+import {CatalogBrandLink} from '../components/CatalogBrandLink';
 import {referenceCopy as copy} from './reference-copy';
 import {useReferenceCatalog} from './useReferenceCatalog';
 import {SupplementalArtPOIs} from './SupplementalArtPOIs';
@@ -133,7 +134,7 @@ export function ReferenceHome({data:initial,initialQuery,onlyFavorites=false,sea
         </div>
         <div className={styles.readabilityMask} aria-hidden="true"/>
         <div className={styles.editorial}>
-          <Link className={styles.heroBrand} href={localHref("/#selected")} aria-label={tr("Double Bottle Co’ — главная")}><BrandMark/><div>Double Bottle Co’<span>PHUKET &amp; BEYOND</span></div></Link>
+          <CatalogBrandLink className={styles.heroBrand} label={tr("Double Bottle Co’ — главная")}><BrandMark/><div>Double Bottle Co’<span>PHUKET &amp; BEYOND</span></div></CatalogBrandLink>
           <div className={styles.mobileHeadingRow}>
             <h1 id="reference-heading">{copy.headline.map(line => <span key={line}>{tr(line)}</span>)}</h1>
             <HeroMapPreview/>

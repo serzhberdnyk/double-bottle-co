@@ -1,10 +1,10 @@
-# Double Bottle public source v0.8.3
+# Double Bottle public source v0.8.4
 
-This v0.8.3 public-source update applies the reviewed 18-file program-route correction to public commit `7c526a5f9db1a20063f19e10ae6c05723da1ff66`. It corresponds to the application changes released as Sites107. See [CHANGELOG.md](CHANGELOG.md).
+This v0.8.4 public-source update applies the reviewed 32-file price, company-filter, program-map and navigation patch to public commit `a7bf06fa8279d7c895e2dd8a3031091092512f0b`. It corresponds to the application changes released as Sites108. See [CHANGELOG.md](CHANGELOG.md).
 
 This is sanitized public source, not a production backup or deployable copy of the live Site. The reviewed v0.8.1 export was published in this repository; subsequent updates retain its synthetic data, empty exported translation maps, DEMO brochures, bundled license notices and privacy exclusions. No production media, catalog rows or private project history are imported by this update. No blanket project OSS license is assigned.
 
-The original v0.8.1 audit reports (`PUBLIC-CANDIDATE-VALIDATION.json`, `SOURCE-PROVENANCE.json`, `ASSET-DECISIONS.json` and `ASSET-REVIEW.json`) remain historical review records. Their prepublication status and earlier test results are not the status or test results of v0.8.3. `EXPORT-MANIFEST.json` describes the current distributed files.
+The original v0.8.1 audit reports (`PUBLIC-CANDIDATE-VALIDATION.json`, `SOURCE-PROVENANCE.json`, `ASSET-DECISIONS.json` and `ASSET-REVIEW.json`) remain historical review records. Their prepublication status and earlier test results are not the status or test results of v0.8.4. `EXPORT-MANIFEST.json` describes the current distributed files.
 
 ## Supported local setup
 
@@ -37,7 +37,15 @@ Those brochure substitutions did not change IDs, structural stems, slugs, guards
 
 ## Validation
 
-### v0.8.3 public-source update
+### v0.8.4 public-source update
+
+The release executor confirmed 62 focused tests, TypeScript and production build PASS for the exact source published as Sites108. That existing release evidence is reused; the cloud synchronization does not claim another full build, full historical-suite run or browser/pixel QA. All 32 patch preimages and postimages match the reviewed hashes exactly, with no reconciliation. Production data is not copied.
+
+On the sanitized public source, cloud TypeScript passed. The bounded test run passed 73 tests and had one fixture-loading failure (`ENOENT`) in `tests/supplier-sort.test.ts`, because its integration case reads an intentionally excluded private-import dataset. A separate focused map-copy test passed, giving 74 passed checks in total, including 11 synthetic export/import and 4 DEMO component checks. Two persistence cases in `tests/catalog-editor.test.ts` require that same excluded dataset and were not rerun here. These are public-export verification limits, not assertion failures on the live release. The private fixture was not restored, and tests or security guards were not changed to conceal the limit.
+
+The reported THB issue was not reproduced. Diagnostic tests preserve currency and amounts, but this release does not claim a THB fix.
+
+### Historical v0.8.3 public-source update
 
 The release executor confirmed 38/38 focused tests, TypeScript and production build PASS for the exact published Sites107 source. That existing evidence is reused for this code synchronization; a new full cloud build, full historical suite and browser/pixel QA are not claimed. The 18-file patch is checked against exact preimage/postimage hashes before application. The public copy retains synthetic fixtures and DEMO substitutions rather than importing production data.
 

@@ -1,7 +1,8 @@
 'use client';
 import {SellingPriceFields} from './selling-price-fields';
 import {sellingMinorUnits} from '../../lib/public/selling-price-editor';
-import {type ServiceCompanies} from '@/lib/public/admin-service-sort';
+import {adminCompanyChoices,filterAdminServices,type ServiceCompanies,type ServiceCompanyRefs} from '@/lib/public/admin-service-sort';
+import {CompanyFilter} from './company-filter';
 import {ProgrammeEditor} from './programme-editor';
 import {VariantImageEditor} from './variant-image-editor';
 import {programmeItemsSchema} from '@/lib/public/programme-items';
@@ -14,22 +15,32 @@ import {editorPayload,type EditorDraft,type EditorPayload} from '@/lib/public/ca
 import type {Tour} from '@/lib/public/types';
 import {tourCover} from '@/lib/public/tour-cover';
 import styles from './catalog-panel.module.css';
-type State={state:{release_id:string;generation:number};tours:Tour[];serviceCompanies:ServiceCompanies;drafts:EditorDraft[];releases:{id:string;createdAt:string}[]};
+type State={state:{release_id:string;generation:number};tours:Tour[];serviceCompanies:ServiceCompanies;serviceCompanyRefs:ServiceCompanyRefs;drafts:EditorDraft[];releases:{id:string;createdAt:string}[]};
 async function api<T>(body?:unknown):Promise<T>{const r=await fetch('/api/admin/catalog',body?{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)}:undefined);const data=await r.json() as T&{error?:string};if(!r.ok)throw Error(data.error||'Не удалось выполнить действие');return data;}
 
 export function CatalogEditorPanel(){
  const [data,setData]=useState<State|null>(null),[tourId,setTourId]=useState(''),[payload,setPayload]=useState<EditorPayload|null>(null),[draft,setDraft]=useState<EditorDraft|null>(null),[amounts,setAmounts]=useState<Record<string,string>>({}),[message,setMessage]=useState(''),[actionBusy,setBusy]=useState(false),[dirty,setDirty]=useState(false),[confirm,setConfirm]=useState<string|null>(null);
  const [imageSession,setImageSession]=useState(0);
+ const [companyId,setCompanyId]=useState('');
+ const companies=data?adminCompanyChoices(data.tours,data.serviceCompanyRefs||{}):[];
+ const visibleTours=data?filterAdminServices(data.tours,data.serviceCompanyRefs||{},companyId):[];
  const tour=data?.tours.find(t=>t.id===tourId);
  const [selectedFileName,setSelectedFileName]=useState(''),[uploadStatus,setUploadStatus]=useState('');
  const imageUpload=useEditorImageUpload(path=>{if(payload)change({...payload,image:path});});
  const [creationBusy,setCreationBusy]=useState(false),[variantUploadBusy,setVariantUploadBusy]=useState(false);
  const busy=actionBusy||imageUpload.busy||creationBusy||variantUploadBusy;
  const fileInputId=useId(),fileNameId=fileInputId+'-name',uploadStatusId=fileInputId+'-status';
- async function read(){const next=await api<State>();setData(next);return next;}
+ async function read(){const next=await api<State>();setData(next);setCompanyId(current=>adminCompanyChoices(next.tours,next.serviceCompanyRefs||{}).some(c=>c.id===current)?current:'');return next;}
  useEffect(()=>{let active=true;api<State>().then(next=>{if(active)setData(next);}).catch(e=>{if(active)setMessage(e.message);});return()=>{active=false;};},[]);
  function open(t:Tour,d:EditorDraft|null=null){setImageSession(n=>n+1);const p={...(d?.payload||editorPayload(t)),visible:d?.payload.visible??!t.hidden};setTourId(t.id);setPayload(structuredClone(p));setDraft(d);setAmounts(Object.fromEntries(p.variants.flatMap(v=>[...v.rates.map(r=>[r.id,r.amountMinor===null?'':String(r.amountMinor/100)]),...(v.newRates||[]).map((r,i)=>['new:'+v.id+':'+i,String(r.amountMinor/100)])])));setDirty(false);setConfirm(null);setMessage('');setSelectedFileName('');setUploadStatus('');imageUpload.reset();}
  function change(p:EditorPayload){setPayload(p);setDirty(true);setConfirm(null);}
+ function changeCompany(id:string){
+  if(busy||dirty||id&&!companies.some(c=>c.id===id))return;
+  setCompanyId(id);
+  if(data&&!filterAdminServices(data.tours,data.serviceCompanyRefs||{},id).some(t=>t.id===tourId)){
+   setTourId('');setPayload(null);setDraft(null);setAmounts({});setConfirm(null);setMessage('');setSelectedFileName('');setUploadStatus('');imageUpload.reset();
+  }
+ }
  async function run(action:()=>Promise<void>){setBusy(true);setMessage('');try{await action();}catch(e){setMessage((e as Error).message);}finally{setBusy(false);}}
  async function save(){if(!data||!tour||!payload)return;await run(async()=>{for(const v of payload.variants){if(v.name!==undefined&&(!v.name.trim()||v.name.trim().length>500))throw Error('Название варианта: введите от 1 до 500 символов.');if(v.itinerary!==undefined){const valid=programmeItemsSchema.safeParse(v.itinerary);if(!valid.success)throw Error('Программа: '+valid.error.issues[0].message);}}const p={...payload,variants:payload.variants.map(v=>({...v,rates:v.rates.map(r=>({...r,amountMinor:sellingMinorUnits(amounts[r.id]??'')})),...(v.newRates?{newRates:v.newRates.flatMap((r,i)=>{const n=sellingMinorUnits(amounts['new:'+v.id+':'+i]??'');return n===null?[]:[{...r,amountMinor:n}];})}:{})}))};const saved=await api<EditorDraft>({action:'save',draft:{...(draft?{id:draft.id}:{}),revision:draft?.revision||0,productId:tour.id,baseReleaseId:draft?.baseReleaseId||data.state.release_id,baseGeneration:draft?.baseGeneration??data.state.generation,payload:p}});await read();open(tour,saved);setMessage('Изменения сохранены. Для показа на сайте нажмите «Опубликовать».');});}
  async function publish(){if(!draft||dirty)return;await run(async()=>{await api({action:'publish',id:draft.id,revision:draft.revision});const next=await read(),current=next.tours.find(t=>t.id===tourId);if(current)open(current);setConfirm(null);setMessage('Изменения опубликованы в каталоге.');});}
@@ -37,8 +48,8 @@ export function CatalogEditorPanel(){
 
  const image=tour&&payload?tourCover({...tour,image:payload.image,imageAlt:payload.imageAlt}).src:null;
  return <section className={styles.editor} aria-label="Редактор каталога"><div className={styles.heading}><div><h2>Редактор экскурсий</h2></div><button type="button" disabled={busy||dirty} onClick={()=>run(async()=>{const next=await read(),t=next.tours.find(t=>t.id===tourId);if(t)open(t);})}>Обновить данные</button></div>
-  <p role="status" className={styles.message}>{message}</p><CreateTourPanel disabled={actionBusy||imageUpload.busy||variantUploadBusy||dirty} onBusyChange={setCreationBusy} onPublished={async id=>{const next=await read(),t=next.tours.find(t=>t.id===id);if(t)open(t);}}/>
-  {!data?<p>Загрузка каталога…</p>:<><label>Экскурсия<select aria-label="Экскурсия для редактирования" value={tourId} disabled={busy||dirty} onChange={e=>{const t=data.tours.find(t=>t.id===e.target.value);if(t)open(t,data.drafts.find(d=>d.productId===t.id&&d.status==='editing'&&d.baseReleaseId===data.state.release_id&&d.baseGeneration===data.state.generation)||null);}}><option value="">Выберите экскурсию</option>{data.tours.map(t=><option key={t.id} value={t.id}>{t.hidden?'Скрыта · ':''}{t.title}{' · '+(data.serviceCompanies[t.id]?.join(', ')||'Компания не указана')}</option>)}</select></label>
+  <p role="status" className={styles.message}>{message}</p><CreateTourPanel disabled={actionBusy||imageUpload.busy||variantUploadBusy||dirty} onBusyChange={setCreationBusy} onPublished={async id=>{setCompanyId('');const next=await read(),t=next.tours.find(t=>t.id===id);if(t)open(t);}}/>
+  {!data?<p>Загрузка каталога…</p>:<><CompanyFilter companies={companies} value={companyId} onChange={changeCompany} disabled={busy||dirty}/><label>Экскурсия<select aria-label="Экскурсия для редактирования" value={tourId} disabled={busy||dirty} onChange={e=>{const t=visibleTours.find(t=>t.id===e.target.value);if(t)open(t,data.drafts.find(d=>d.productId===t.id&&d.status==='editing'&&d.baseReleaseId===data.state.release_id&&d.baseGeneration===data.state.generation)||null);}}><option value="">Выберите экскурсию</option>{visibleTours.map(t=><option key={t.id} value={t.id}>{t.hidden?'Скрыта · ':''}{t.title}{' · '+(data.serviceCompanies[t.id]?.join(', ')||'Компания не указана')}</option>)}</select></label>
    {tour&&payload&&<div className={styles.form}><div className={styles.fields}>
     <fieldset><legend>Видимость карточки</legend><p role="status">{tour.hidden?'Сейчас скрыта с сайта':'Сейчас видна на сайте'}</p><label><select aria-label="Видимость после публикации" value={payload.visible===false?'hidden':'visible'} disabled={busy} onChange={e=>change({...payload,visible:e.target.value==='visible'})}><option value="visible">Показывать на сайте</option><option value="hidden">Скрыть с сайта</option></select></label><small>Изменение вступит в силу после сохранения и публикации. Данные и фотографии сохранятся.</small></fieldset>
     <label>Название<input value={payload.title} maxLength={500} disabled={busy} onChange={e=>change({...payload,title:e.target.value})}/></label>

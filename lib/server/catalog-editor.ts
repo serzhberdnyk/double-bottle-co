@@ -1,5 +1,7 @@
-import {validateNewSellingRates} from '../public/selling-price-editor';
-import {adminServiceCompanies} from './admin-service-companies';
+import {validateNewSellingRates,resolveNewSellingRate} from '../public/selling-price-editor';
+import {todayInThailand} from '../public/pricing';
+import {adminServiceCompanyRefs} from './admin-service-companies';
+import {companyNames} from '../public/admin-service-sort';
 import {cloneReleaseRows} from './catalog-release-copy';
 import {z} from 'zod';
 import {activeState,catalog,product} from './catalog';
@@ -17,10 +19,12 @@ async function editorTour(db:D1Database,productId:string,release:string):Promise
 export async function editorState(db:D1Database){
  const state=await activeState(db),first=await catalog(db,{limit:48,release:state.release_id},true,true);const tours=[...first.items];
  for(let page=2;page<=first.pages;page++)tours.push(...(await catalog(db,{page,limit:48,release:state.release_id},true,true)).items);
- // Return only company display names for this admin list, never supplier details, rates, contacts or settings.
+ // Admin-only company IDs and labels; no supplier details, rates, contacts or settings.
+ const serviceCompanyRefs=await adminServiceCompanyRefs(db,state.release_id);
+ const serviceCompanies=Object.fromEntries(Object.entries(serviceCompanyRefs).map(([id,companies])=>[id,companyNames(companies.map(c=>c.name))]));
  const drafts=await db.prepare('SELECT * FROM catalog_editor_drafts ORDER BY updated_at DESC LIMIT 100').all<DraftRow>();
  const releases=await db.prepare("SELECT id,created_at,summary_json FROM catalog_releases WHERE status='published' ORDER BY created_at DESC LIMIT 30").all<{id:string;created_at:string;summary_json:string}>();
- return {state,tours,serviceCompanies:await adminServiceCompanies(db,state.release_id),drafts:drafts.results.map(draftDto),releases:releases.results.map(r=>({id:r.id,createdAt:r.created_at,summary:JSON.parse(r.summary_json)}))};
+ return {state,tours,serviceCompanies,serviceCompanyRefs,drafts:drafts.results.map(draftDto),releases:releases.results.map(r=>({id:r.id,createdAt:r.created_at,summary:JSON.parse(r.summary_json)}))};
 }
 const saveSchema=z.object({id:z.string().max(100).optional(),revision:z.number().int().nonnegative(),productId:z.string().min(1).max(100),baseReleaseId:z.string().min(1).max(100),baseGeneration:z.number().int().nonnegative(),payload:editorPayloadSchema}).strict();
 function sameIds(a:{id:string}[],b:{id:string}[]){return a.length===b.length&&new Set(b.map(x=>x.id)).size===b.length&&a.every(x=>b.some(y=>y.id===x.id));}
@@ -33,6 +37,8 @@ export async function saveEditorDraft(db:D1Database,input:unknown,actor:string){
  if(body.payload.image!==before.image&&body.payload.image!==null){const media=await db.prepare('SELECT id FROM catalog_media WHERE path=?').bind(body.payload.image).first();if(!media)throw Error('IMAGE_NOT_APPROVED');}
  await approvedVariantImages(db,body.payload);
  const id=body.id||'draft_'+uuid(),now=new Date().toISOString();
+ // Persist the technical start once at save so preview and later publication agree.
+ for(const v of body.payload.variants)if(v.newRates)v.newRates=v.newRates.map(r=>resolveNewSellingRate(r,todayInThailand(new Date(now))));
  if(body.id){const draft=await editorDraft(db,body.id);if(draft.productId!==body.productId||draft.baseReleaseId!==body.baseReleaseId||draft.baseGeneration!==body.baseGeneration)throw Error('INVALID_CONTENT_IDENTITY');
   const r=await db.prepare("UPDATE catalog_editor_drafts SET payload_json=?,revision=revision+1,updated_at=?,updated_by=? WHERE id=? AND revision=? AND status='editing'").bind(JSON.stringify(body.payload),now,actor,id,body.revision).run();if(r.meta.changes!==1)throw Error('DRAFT_CONFLICT');
  }else{if(body.revision!==0)throw Error('DRAFT_CONFLICT');await db.prepare("INSERT INTO catalog_editor_drafts (id,product_id,base_release_id,base_generation,revision,status,payload_json,updated_at,updated_by) VALUES (?,?,?,?,1,'editing',?,?,?)").bind(id,body.productId,body.baseReleaseId,body.baseGeneration,JSON.stringify(body.payload),now,actor).run();}
@@ -84,7 +90,7 @@ export async function publishEditorDraft(db:D1Database,id:string,revision:number
      if(rate.amountMinor===null)statements.push(db.prepare('DELETE FROM catalog_public_rates WHERE release_id=? AND variant_id=? AND id=?').bind(releaseId,edit.id,rateId));
      else if(rate.amountMinor!==original.rates.find(r=>r.id===rate.id)!.amountMinor)statements.push(db.prepare('UPDATE catalog_public_rates SET amount_minor=? WHERE release_id=? AND variant_id=? AND id=?').bind(rate.amountMinor,releaseId,edit.id,rateId));
     }
-    for(const [i,rate] of (edit.newRates||[]).entries())statements.push(db.prepare('INSERT INTO catalog_public_rates (id,release_id,variant_id,option_key,amount_minor,currency,unit,audience,valid_from,valid_until,conditions,supplements_json) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)').bind(releaseId+'__price_'+(await hash(id+':'+revision+':'+edit.id+':'+i)).slice(0,24),releaseId,edit.id,rate.optionKey||null,rate.amountMinor,rate.currency,rate.unit,rate.audience,rate.validFrom,rate.validUntil,rate.conditions,'[]'));
+    for(const [i,input] of (edit.newRates||[]).entries()){const rate=resolveNewSellingRate(input,todayInThailand(new Date(draft.updatedAt)));statements.push(db.prepare('INSERT INTO catalog_public_rates (id,release_id,variant_id,option_key,amount_minor,currency,unit,audience,valid_from,valid_until,conditions,supplements_json) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)').bind(releaseId+'__price_'+(await hash(id+':'+revision+':'+edit.id+':'+i)).slice(0,24),releaseId,edit.id,rate.optionKey||null,rate.amountMinor,rate.currency,rate.unit,rate.audience,rate.validFrom,rate.validUntil,rate.conditions,'[]'));}
    }
    await db.batch(statements);
   }

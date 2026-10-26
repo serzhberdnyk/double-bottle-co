@@ -18,7 +18,9 @@ export type MapPlacement={id:MapObjectId;x:number;y:number;image:string;title?:s
 export type MapLayout=MapPlacement[];
 export const mapPointColors={cream:'#fff2d3',sea:'#4bd4f1',land:'#c5e877',gold:'#ffca48',coral:'#ff9d8a',violet:'#cfb6ff'} as const;
 export type MapPointColor=keyof typeof mapPointColors;
-export type MapRoutePoint={x:number;y:number;label?:string;color?:MapPointColor};
+export type MapRoutePoint={x:number;y:number;label?:string;color?:MapPointColor;placeId?:string|null;icon?:string|null;
+ /** Resolved public/editor preview only; never accepted in saved input. */
+ image?:string};
 export type MapProgramChoice={id:string;name:string;visible:boolean;status:'on_request'|'temporarily_unavailable'};
 export type MapTourChoice={id:string;slug:string;title:string;hidden?:boolean;variants?:MapProgramChoice[]};
 export type MapRoute={id:string;title:string;points:MapRoutePoint[];color:'sea'|'land';style:'solid'|'dashed';closed?:boolean;tourId?:string|null;variantId?:string|null;
@@ -43,6 +45,23 @@ const builtinImages=new Set<string>([...mapObjects.map(item=>item.image),'/media
 export function isBuiltinMapObjectId(id:string):id is BuiltinMapObjectId{return builtinIds.has(id);}
 export function isApprovedMapImage(path:string){return builtinImages.has(path)||/^\/api\/catalog-media\/[a-f0-9]{64}$/.test(path);}
 export function mapPlacementTitle(placement:MapPlacement){return placement.title||mapObjects.find(item=>item.id===placement.id)?.title||'Новый значок';}
+/** Keep the stable place reference in storage; resolve its current artwork and
+ * position only for display. A route's own point name and colour take priority. */
+export function resolveMapRoutePoint(point:MapRoutePoint,placements:MapLayout):MapRoutePoint{
+ const place=point.placeId?placements.find(item=>item.id===point.placeId):undefined;
+ if(place)return {...point,x:place.x,y:place.y,label:point.label||mapPlacementTitle(place),image:mapPlacementDisplayImage(place)};
+ return point.icon?{...point,image:point.icon}:point;
+}
+export function resolveMapRoute(route:MapRoute,placements:MapLayout):MapRoute{return {...route,points:route.points.map(point=>resolveMapRoutePoint(point,placements))};}
+/** Detaching keeps the last displayed stop, without changing/deleting the place. */
+export function setMapRoutePointPlace(point:MapRoutePoint,placeId:string|null,placements:MapLayout):MapRoutePoint{
+ if(placeId){const place=placements.find(item=>item.id===placeId);if(!place)throw Error('MAP_PLACE_UNAVAILABLE');return {...point,placeId,icon:null,x:place.x,y:place.y};}
+ const resolved=resolveMapRoutePoint(point,placements);
+ return {...point,x:resolved.x,y:resolved.y,...(resolved.label!==undefined?{label:resolved.label}:{}),placeId:null,icon:point.icon??null};
+}
+export function removeMapPlacement(document:MapDocument,placeId:string):MapDocument{
+ return {...document,placements:document.placements.filter(place=>place.id!==placeId),routes:document.routes.map(route=>({...route,points:route.points.map(point=>point.placeId===placeId?setMapRoutePointPlace(point,null,document.placements):point)}))};
+}
 export function mapPlacementImageSize(placement:MapPlacement){
  const native=mapObjects.find(item=>item.id===placement.id)?.size||48;
  if(placement.sizePx!=null)return placement.sizePx;
@@ -78,7 +97,7 @@ export const legacyMapLayoutSchema=z.array(z.object(placementShape).strict()).le
  if(new Set(items.map(item=>item.id)).size!==legacyMapObjects.length||items.some(item=>!legacyMapObjects.some(original=>original.id===item.id)))ctx.addIssue({code:'custom',message:'INVALID_MAP_OBJECTS'});
  for(const item of items){const original=mapObjects.find(object=>object.id===item.id);if(original&&item.image!==original.image&&!item.image.startsWith('/api/catalog-media/'))ctx.addIssue({code:'custom',message:'INVALID_MAP_IMAGE'});}
 });
-const point=z.object({x:z.number().finite().min(0).max(100),y:z.number().finite().min(0).max(100),label:z.string().trim().max(120).optional(),color:z.enum(['cream','sea','land','gold','coral','violet']).optional()}).strict();
+const point=z.object({x:z.number().finite().min(0).max(100),y:z.number().finite().min(0).max(100),label:z.string().trim().max(120).optional(),color:z.enum(['cream','sea','land','gold','coral','violet']).optional(),placeId:id.nullable().optional(),icon:image.nullable().optional()}).strict().refine(point=>!(point.placeId&&point.icon),'MAP_POINT_CHOOSE_PLACE_OR_ICON');
 export const mapRouteSchema=z.object({
  id,
  title:z.string().trim().min(1).max(120),
@@ -94,6 +113,12 @@ export const mapRouteSchema=z.object({
 });
 export const mapDocumentSchema=z.object({version:z.literal(2),placements:mapLayoutSchema,routes:z.array(mapRouteSchema).max(50)}).strict().superRefine((document,ctx)=>{
  if(new Set(document.routes.map(route=>route.id)).size!==document.routes.length)ctx.addIssue({code:'custom',message:'DUPLICATE_MAP_ROUTES'});
+  for(const route of document.routes){
+   if(route.points.some(point=>point.placeId&&!document.placements.some(place=>place.id===point.placeId)))ctx.addIssue({code:'custom',message:'MAP_PLACE_UNAVAILABLE'});
+   const points=resolveMapRoute(route,document.placements).points;
+   if(!points.some(point=>point.x!==points[0].x||point.y!==points[0].y))ctx.addIssue({code:'custom',message:'MAP_ROUTE_NEEDS_DISTINCT_POINTS'});
+   if(route.closed&&!canCloseMapRoute(points))ctx.addIssue({code:'custom',message:'MAP_CLOSED_ROUTE_NEEDS_THREE_DISTINCT_POINTS'});
+  }
 });
 export function parseMapDocument(input:unknown):MapDocument{
  const document=Array.isArray(input)?{version:2 as const,placements:legacyMapLayoutSchema.parse(input),routes:[]}:mapDocumentSchema.parse(input);
@@ -122,9 +147,11 @@ export function mergeMapDocument(input:unknown,current:MapDocument,{preserveRout
   const before=previousRoutes.get(route.id);if(!before)return route;
   const points=route.points.map((point,index)=>{
    const old=before.points.find(item=>item.x===point.x&&item.y===point.y)||(before.points.length===route.points.length?before.points[index]:undefined);
-   return {...point,...(!Object.hasOwn(point,'label')&&old?.label!==undefined?{label:old.label}:{}),...(!Object.hasOwn(point,'color')&&old?.color!==undefined?{color:old.color}:{})};
+   const same=before.points.find(item=>item.x===point.x&&item.y===point.y);
+   const binding=!Object.hasOwn(point,'placeId')&&!Object.hasOwn(point,'icon')&&same?{...(same.placeId!==undefined?{placeId:same.placeId}:{}),...(same.icon!==undefined?{icon:same.icon}:{})}:{};
+   return {...point,...binding,...(preserveRouteMetadata&&!Object.hasOwn(point,'label')&&old?.label!==undefined?{label:old.label}:{}),...(preserveRouteMetadata&&!Object.hasOwn(point,'color')&&old?.color!==undefined?{color:old.color}:{})};
   });
-  const merged=preserveRouteMetadata?{...route,points,...(!Object.hasOwn(route,'closed')&&before.closed!==undefined?{closed:before.closed&&canCloseMapRoute(points)}:{}),...(!Object.hasOwn(route,'tourId')&&before.tourId!==undefined?{tourId:before.tourId}:{})}:route;
+  const merged=preserveRouteMetadata?{...route,points,...(!Object.hasOwn(route,'closed')&&before.closed!==undefined?{closed:before.closed&&canCloseMapRoute(points)}:{}),...(!Object.hasOwn(route,'tourId')&&before.tourId!==undefined?{tourId:before.tourId}:{})}:{...route,points};
   // An already-open tour-only editor must not erase a newer program binding.
   // Changing/detaching the tour never carries its old program to another owner.
   return !Object.hasOwn(route,'variantId')&&merged.tourId===before.tourId&&before.variantId!==undefined?{...merged,variantId:before.variantId}:merged;

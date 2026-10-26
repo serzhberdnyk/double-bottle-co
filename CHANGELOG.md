@@ -1,5 +1,18 @@
 # Changelog
 
+## v0.8.4 · 2026-10-26
+
+Public-source synchronization of the reviewed 32-file update released as Sites108.
+
+* Newly entered selling prices no longer ask for validity dates. Their technical start is resolved once when saved and they have no expiry by default; existing and imported date windows are preserved.
+* The administrative company dropdown supports name search and selection by stable supplier ID. Filtering retains catalog order and protects dirty or busy edits.
+* Program pages omit the destination-link tiles, static fallback map and technical map commentary. A route map is shown only for the selected program when a linked route exists; the general public map remains without program routes.
+* Activating the header brand returns to the catalog, removing program and price-option selection while retaining supported catalog filters.
+* A route point can reference an existing place by stable ID or use a separate approved icon. Linked points follow the place; detaching or removing a custom place retains the point. Existing name, color, order, closure and program-binding protections remain.
+* THB was not reproduced and is not claimed fixed. Currency diagnostics are tests, not a new currency conversion feature.
+* The release executor confirmed 62 focused tests, TypeScript and build PASS on the published source. The cloud public-copy verification separately passed TypeScript and 74 bounded checks. One supplier integration case failed to load an intentionally excluded private fixture; two persistence cases needing that fixture were not rerun. No full historical-suite, cloud build or browser/pixel pass is claimed.
+* Exactly 32 reviewed code/test files, plus README, this changelog and the file manifest are synchronized. Synthetic fixtures, DEMO brochures, media, license notices, package/lock bytes and existing clean public history are retained. No production data or private history is uploaded.
+
 ## v0.8.3 · 2026-10-25
 
 Public-source synchronization of the reviewed 18-file correction released as Sites107.

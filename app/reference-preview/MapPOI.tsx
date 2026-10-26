@@ -89,7 +89,6 @@ export function MapPOI(props:MapPOIProps) {
           <div><h3 id={titleId}>{tr(item.title)}</h3><span>{tr(item.category)}</span></div>
         </div>
         <div className={styles.cardBody} id={descriptionId}>
-          {props.placement==='art'&&props.placementNotice&&<p className={styles.caution}>{tr(props.placementNotice)}</p>}
           {item.descriptions.map((description,index)=><p key={index}>{tr(description)}</p>)}
           {saved?.photos?.length?<div className={styles.gallery}>{saved.photos.map((src,index)=><img key={src} src={src} alt={`${tr(item.title)} · ${index+1}`} loading="lazy"/>)}</div>:null}
           {item.notice&&<p className={styles.notice}>{tr(item.notice)}</p>}

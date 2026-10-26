@@ -1,4 +1,4 @@
-import {defaultMapDocument,legacyMapLayout,mergeMapDocument,mergeLegacyMapLayout,parseMapDocument,type MapDocument,type MapLayout,type MapTourChoice,type MapProgramChoice} from '../public/map-layout';
+import {defaultMapDocument,legacyMapLayout,mergeMapDocument,mergeLegacyMapLayout,parseMapDocument,resolveMapRoute,type MapDocument,type MapLayout,type MapTourChoice,type MapProgramChoice} from '../public/map-layout';
 import {uuid} from './management';
 import {variantPublication} from './variant-visibility';
 import {currentLocale} from '../i18n/server';
@@ -29,7 +29,7 @@ export async function publishedMapDocument(db:D1Database):Promise<MapDocument>{
  }
  const byId=new Map(tours.map(tour=>[tour.id,tour]));
  // Do not leak a hidden/deleted excursion through a previously published map.
- return {...document,routes:document.routes.filter(route=>route.tourId&&route.variantId&&byId.get(route.tourId)?.variants?.some(program=>program.id===route.variantId)).map(route=>{const {id,slug,title}=byId.get(route.tourId!)!;return {...route,tour:{id,slug,title}};})};
+ return {...document,routes:document.routes.filter(route=>route.tourId&&route.variantId&&byId.get(route.tourId)?.variants?.some(program=>program.id===route.variantId)).map(route=>{const {id,slug,title}=byId.get(route.tourId!)!;return {...resolveMapRoute(route,document.placements),tour:{id,slug,title}};})};
 }
 /** Existing public consumers may continue reading placements only. */
 export async function publishedMapLayout(db:D1Database):Promise<MapLayout>{return storedDocument((await row(db))?.published_json).placements;}
@@ -38,7 +38,7 @@ export async function mapEditorState(db:D1Database){
  return {...await mapTourChoices(db,true),schemaVersion:2 as const,revision:current?.revision||0,publishedRevision:current?.published_revision||0,published:legacyMapLayout(publishedDocument),draft:draftDocument?legacyMapLayout(draftDocument):null,publishedDocument,draftDocument};
 }
 async function validateUploadedMedia(db:D1Database,document:MapDocument){
- const paths=new Set(document.placements.flatMap(item=>[item.image,...item.photos||[]]).filter(path=>path.startsWith('/api/catalog-media/')));
+ const paths=new Set([...document.placements.flatMap(item=>[item.image,...item.photos||[]]),...document.routes.flatMap(route=>route.points.flatMap(point=>point.icon?[point.icon]:[]))].filter(path=>path.startsWith('/api/catalog-media/')));
  for(const path of paths){if(!await db.prepare('SELECT id FROM catalog_media_uploads WHERE id=?').bind(path.split('/').at(-1)).first())throw Error('MAP_IMAGE_MISSING');}
 }
 function validateRouteTours(document:MapDocument,tours:MapTourChoice[]){

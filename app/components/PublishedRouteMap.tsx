@@ -11,10 +11,10 @@ export function PublishedRouteOverlay({routes}:{routes:MapRoute[]}) {
   const copy=mapRouteCopy[locale];
   if(!routes.length)return null;
   return <div className={styles.overlay} data-editor-map-routes>
-    <svg className={styles.lines} viewBox="0 0 1280 1083" role="img" aria-label={copy.schematic}>
+    <svg className={styles.lines} viewBox="0 0 1280 1083" role="img" aria-label={copy.tourMap}>
       {routes.map(route=><polyline key={route.id} data-route-id={route.id} points={mapRouteLinePoints(route)} fill="none" stroke={route.color==='sea'?'#4bd4f1':'#c5e877'} strokeWidth={3} strokeDasharray={route.style==='dashed'?'10 8':undefined} vectorEffect="non-scaling-stroke"><title>{route.title}</title></polyline>)}
     </svg>
-    {routes.flatMap(route=>route.points.map((point,index)=><span key={route.id+'-'+index} className={styles.point} data-route-point={route.id+'-'+index} style={{left:point.x+'%',top:point.y+'%',backgroundColor:mapPointColors[point.color||'cream']}} title={`${route.title}: ${point.label||copy.point+' '+(index+1)}`} aria-hidden="true">{index+1}</span>))}
+    {routes.flatMap(route=>route.points.map((point,index)=><span key={route.id+'-'+index} className={styles.point} data-route-point={route.id+'-'+index} style={{left:point.x+'%',top:point.y+'%',backgroundColor:mapPointColors[point.color||'cream']}} title={`${route.title}: ${point.label||copy.point+' '+(index+1)}`} aria-hidden="true">{(point.image||point.icon)&&<img className={styles.pointIcon} src={point.image||point.icon!} alt="" loading="lazy" decoding="async"/>}{index+1}</span>))}
   </div>;
 }
 
@@ -27,7 +27,7 @@ export function PublishedRouteLegend({routes,linkTours=false}:{routes:MapRoute[]
       <h3><span className={styles.lineKey} style={{borderColor:route.color==='sea'?'#4bd4f1':'#c5e877',borderTopStyle:route.style==='dashed'?'dashed':'solid'}} aria-hidden="true"/>{route.title}</h3>
       {route.closed&&<p className={styles.notice}>{copy.closed}</p>}
       {linkTours&&route.tour&&<a className={styles.tourLink} href={href('/tour/'+encodeURIComponent(route.tour.slug))}>{copy.openTour}: {route.tour.title}</a>}
-      <ol>{route.points.map((point,index)=><li key={index}><span className={styles.legendPoint} style={{backgroundColor:mapPointColors[point.color||'cream']}} aria-hidden="true">{index+1}</span><span>{point.label||copy.point+' '+(index+1)}</span></li>)}</ol>
+      <ol>{route.points.map((point,index)=><li key={index}><span className={styles.legendPoint} style={{backgroundColor:mapPointColors[point.color||'cream']}} aria-hidden="true">{index+1}</span>{(point.image||point.icon)&&<img className={styles.legendIcon} src={point.image||point.icon!} alt="" loading="lazy" decoding="async"/>}<span>{point.label||copy.point+' '+(index+1)}</span></li>)}</ol>
     </section>)}
   </div>;
 }
@@ -38,7 +38,6 @@ export function PublishedTourRoutes({routes}:{routes:MapRoute[]}) {
   const copy=mapRouteCopy[locale];
   if(!routes.length)return null;
   return <div className={styles.tourRoutes} data-tour-route-map>
-    <p className={styles.notice}>{copy.schematic}</p>
     <div className={styles.canvas}>
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img src="/media/reference/andaman-user-map.png" alt={copy.tourMap} loading="lazy" decoding="async" width={1280} height={1083}/>
